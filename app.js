@@ -57,7 +57,7 @@ function stats() {
 
 /* ---------------------------------------------------------------- charts */
 
-var W = 720, PAD = { l: 56, r: 52, t: 12, b: 24 };
+var W = 560, PAD = { l: 56, r: 56, t: 18, b: 34 };
 var AXIS = "font-size:9px;font-family:inherit;fill:#666";
 var AXIS_DARK = "font-size:9px;font-family:inherit;fill:#111";
 
@@ -143,7 +143,7 @@ function buildCharts(mount) {
   var years = ["2025-01-01", "2026-01-01"];
 
   /* Exhibit 1 - NAV against cost */
-  var H1 = 200;
+  var H1 = 440;
   var navMax = Math.max.apply(null, pts.map(function (p) { return p[1]; })) * 1.05;
   var yNav = function (v) { return H1 - PAD.b - (v / navMax) * (H1 - PAD.t - PAD.b); };
 
@@ -158,7 +158,7 @@ function buildCharts(mount) {
     s1.appendChild(el("text", { x: PAD.l - 6, y: yNav(v) + 3, "text-anchor": "end", style: AXIS }, v >= 1000 ? v / 1000 + "k" : String(v)));
   });
   years.forEach(function (d) {
-    s1.appendChild(el("text", { x: x(d), y: H1 - 8, "text-anchor": "middle", style: AXIS }, d.slice(0, 4)));
+    s1.appendChild(el("text", { x: x(d), y: H1 - PAD.b + 16, "text-anchor": "middle", style: AXIS }, d.slice(0, 4)));
   });
   s1.appendChild(el("path", { d: line(yNav, 2), fill: "none", stroke: "#999", "stroke-width": "1", "stroke-dasharray": "4 3" }));
   s1.appendChild(el("path", { d: line(yNav, 1), fill: "none", stroke: "#111", "stroke-width": "1.5" }));
@@ -175,7 +175,7 @@ function buildCharts(mount) {
     " mark is straight-line modelled; no intramonth marks exist."));
 
   /* Exhibit 2 - unrealized return */
-  var H2 = 140;
+  var H2 = 380;
   var perfs = pts.map(function (p) { return p[3]; });
   var pMin = Math.min.apply(null, [0].concat(perfs));
   var pMax = Math.max.apply(null, perfs) * 1.1;
@@ -192,7 +192,7 @@ function buildCharts(mount) {
     s2.appendChild(el("text", { x: PAD.l - 6, y: yPerf(v) + 3, "text-anchor": "end", style: AXIS }, v + "%"));
   });
   years.forEach(function (d) {
-    s2.appendChild(el("text", { x: x(d), y: H2 - 8, "text-anchor": "middle", style: AXIS }, d.slice(0, 4)));
+    s2.appendChild(el("text", { x: x(d), y: H2 - PAD.b + 16, "text-anchor": "middle", style: AXIS }, d.slice(0, 4)));
   });
   s2.appendChild(el("path", { d: line(yPerf, 3), fill: "none", stroke: "#111", "stroke-width": "1.5" }));
   s2.appendChild(el("text", { x: W - PAD.r, y: yPerf(pts[pts.length - 1][3]) - 6, "text-anchor": "end", style: AXIS_DARK }, pct(pts[pts.length - 1][3])));
