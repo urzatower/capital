@@ -1,4 +1,4 @@
-# Sol Ring Capital LP
+# Urza Tower Capital LP
 
 Single-page fund site for a personal book of sealed trading card product. Static build of the Base44 app `Sol Ring Capital`, converted from React to plain HTML so it can be served directly by GitHub Pages with no build step, no bundler, and no dependencies.
 
