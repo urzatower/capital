@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sol Ring Capital LP</title>
+<meta name="description" content="Sol Ring Capital LP. Sealed trading card portfolio. Magic: The Gathering and Universes Beyond." />
+<meta name="robots" content="index, follow" />
+<meta property="og:title" content="Sol Ring Capital LP" />
+<meta property="og:description" content="Sealed trading card portfolio. Magic: The Gathering and Universes Beyond." />
+<meta property="og:type" content="website" />
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    color: #111;
+    background: #fff;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  hr { border: none; border-top: 1px solid #ddd; margin: 32px 0; }
+  h1 { font-size: 20px; font-weight: 700; margin: 0; line-height: 1.6; }
+  h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 12px; }
+  p { margin: 0 0 16px; }
+  p:last-child { margin-bottom: 0; }
+  .sub { color: #555; }
+  nav { display: flex; flex-wrap: wrap; gap: 16px; font-size: 13px; margin: 12px 0 0; }
+  a { color: #111; text-decoration: underline; }
+  a:focus-visible { outline: 2px solid #111; outline-offset: 2px; }
+  table { border-collapse: collapse; width: 100%; }
+  table.terms { width: auto; }
+  th {
+    text-align: left;
+    border-bottom: 1px solid #111;
+    padding: 4px 8px 4px 0;
+    font-weight: 700;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  td {
+    border-bottom: 1px solid #eee;
+    padding: 4px 8px 4px 0;
+    font-size: 12px;
+    vertical-align: top;
+  }
+  .num { text-align: right; white-space: nowrap; }
+  .lbl { font-weight: 700; padding-right: 24px; }
+  .strong { font-weight: 700; margin: 0 0 4px; }
+  .strong-gap { font-weight: 700; margin: 24px 0 4px; }
+  ul { margin: 0 0 16px; padding-left: 20px; }
+  ul.tight { margin: 0; }
+  svg { width: 100%; height: auto; display: block; }
+  .note { font-size: 11px; color: #666; margin: 4px 0 0; }
+  .scroll { overflow-x: auto; }
+  footer { font-size: 11px; color: #666; }
+  footer p { margin: 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Sol Ring Capital LP</h1>
+  <div class="sub">Sealed trading card portfolio. Magic: The Gathering and Universes Beyond.</div>
+  <nav>
+    <a href="#about">about</a>
+    <a href="#strategy">strategy</a>
+    <a href="#portfolio">portfolio</a>
+    <a href="#terms">terms</a>
+    <a href="#contact">contact</a>
+  </nav>
+</header>
+
+<hr />
+
+<section id="about">
+  <h2>About</h2>
+  <p>
+    Sol Ring Capital is a personal, self-funded book of sealed trading card product, run as a fund:
+    every acquisition is recorded in a provenance-stamped ledger at its all-in order cost (after discount and tax),
+    and every position is marked against public marketplace prices. Sealed product has a supply schedule
+    that ends when the print run ends, and available float shrinks each time a box is opened. The book exists
+    to hold that scarcity, not to trade it.
+  </p>
+</section>
+
+<hr />
+
+<section id="strategy">
+  <h2>Strategy</h2>
+  <p class="strong">Focus areas</p>
+  <ul>
+    <li>Crossover sets with an audience outside the game: Lord of the Rings, The Hobbit, Marvel.</li>
+    <li>Vintage and legacy sealed: out-of-print packs, tournament packs, starter and theme decks from 1994 to 2004.</li>
+    <li>Small, dated entries rather than single large allocations.</li>
+  </ul>
+  <p class="strong">Approach</p>
+  <ul class="tight">
+    <li>100% sealed inventory. Nothing gets opened.</li>
+    <li>Marks from public retail and marketplace price data, never from asking prices alone.</li>
+    <li>No leverage, no borrowed capital, no obligation to sell.</li>
+    <li>Reprint risk is the main hazard and is tracked per set.</li>
+  </ul>
+</section>
+
+<hr />
+
+<section id="portfolio">
+  <h2>Portfolio</h2>
+  <p id="summary-line"></p>
+
+  <div id="charts"></div>
+
+  <p class="strong-gap">By strategy bucket</p>
+  <table id="buckets">
+    <thead>
+      <tr>
+        <th>Bucket</th>
+        <th class="num">Cost</th>
+        <th class="num">Value</th>
+        <th class="num">P&amp;L</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <p class="strong-gap" id="holdings-title">Holdings</p>
+  <div class="scroll">
+    <table id="holdings">
+      <thead>
+        <tr>
+          <th>Position</th>
+          <th>Bucket</th>
+          <th class="num">Qty</th>
+          <th class="num">Cost</th>
+          <th class="num">Value</th>
+          <th class="num">P&amp;L</th>
+          <th class="num">Acquired</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</section>
+
+<hr />
+
+<section id="terms">
+  <h2>Terms</h2>
+  <table class="terms">
+    <tbody>
+      <tr><td class="lbl">Structure</td><td>Personal book, run with fund discipline</td></tr>
+      <tr><td class="lbl">Outside capital</td><td>None accepted</td></tr>
+      <tr><td class="lbl">Fees</td><td>None</td></tr>
+      <tr><td class="lbl">Leverage</td><td>None</td></tr>
+      <tr><td class="lbl">Valuation</td><td>Public marketplace marks, USD</td></tr>
+      <tr><td class="lbl">Custody</td><td>Self custody, sealed storage</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<hr />
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Arthur Mota</p>
+</section>
+
+<hr />
+
+<footer>
+  <p>
+    Levels sourced from public retail and marketplace data as of 2026-08-28; the NAV path between marks is
+    straight-line modelled. No 2023 data exists: the first acquisition in the book is 2024-06-06. This page
+    describes a personal collection tracked with fund discipline. It is not an offer to sell securities and
+    not investment advice.
+  </p>
+</footer>
+
+<script>
+// Sol Ring Capital LP - single page fund site, static build.
+// All figures generated from 02_Data/portfolio_ledger.json, 2026-08-28.
+// NAV path is a straight-line model between acquisition cost and the latest verified mark.
+// The same payload is mirrored in data.json for reuse.
+var DATA = {
+  summary: {
+    nav: 8436.55, invested: 8063.68, perf_pct: 4.62, positions: 41,
+    first_acq: "2024-06-06", inception: "2024-11-01", asof: "2026-08-28"
+  },
+  series: [
+    ["2024-06-06", 51.3, 51.3, 0.0], ["2024-06-30", 52.27, 51.3, 1.9],
+    ["2024-07-31", 53.53, 51.3, 4.35], ["2024-08-31", 54.79, 51.3, 6.8],
+    ["2024-09-30", 56.01, 51.3, 9.18], ["2024-10-31", 57.27, 51.3, 11.63],
+    ["2024-11-30", 104.37, 96.68, 7.95], ["2024-12-31", 106.68, 96.68, 10.34],
+    ["2025-01-31", 108.99, 96.68, 12.74], ["2025-02-28", 111.08, 96.68, 14.9],
+    ["2025-03-31", 113.4, 96.68, 17.29], ["2025-04-30", 115.64, 96.68, 19.61],
+    ["2025-05-31", 117.95, 96.68, 22.0], ["2025-06-30", 120.19, 96.68, 24.32],
+    ["2025-07-31", 122.5, 96.68, 26.71], ["2025-08-31", 124.82, 96.68, 29.1],
+    ["2025-09-30", 127.05, 96.68, 31.42], ["2025-10-31", 129.37, 96.68, 33.81],
+    ["2025-11-30", 208.33, 173.18, 20.29], ["2025-12-31", 212.0, 173.18, 22.42],
+    ["2026-01-31", 215.68, 173.18, 24.54], ["2026-02-28", 297.39, 251.28, 18.35],
+    ["2026-03-31", 380.63, 329.66, 15.46], ["2026-04-30", 386.44, 329.66, 17.22],
+    ["2026-05-31", 3688.66, 3598.33, 2.51], ["2026-06-30", 4920.16, 4758.6, 3.4],
+    ["2026-07-31", 5842.91, 5598.45, 4.37], ["2026-08-28", 8436.55, 8063.68, 4.62]
+  ],
+  buckets: [
+    ["Vintage / Legacy sealed", 3294.2, 3426.78, 4.02],
+    ["The Hobbit", 2853.54, 2936.04, 2.89],
+    ["Marvel Super Heroes", 1287.55, 1348.3, 4.72],
+    ["LOTR: Tales of Middle-earth", 550.29, 642.51, 16.76],
+    ["Marvel's Spider-Man", 78.1, 82.92, 6.17]
+  ],
+  holdings: [
+    ["The Hobbit Collector Booster Display", "The Hobbit", 1, 839.85, 858.81, 2.26, "2026-07-18"],
+    ["The Hobbit Collector Booster Box", "The Hobbit", 1, 795.0, 810.97, 2.01, "2026-08-13"],
+    ["Antiquities Booster Pack", "Vintage / Legacy sealed", 1, 535.0, 561.58, 4.97, "2026-05-13"],
+    ["Marvel Super Heroes Collector Booster Box", "Marvel Super Heroes", 1, 534.95, 559.68, 4.62, "2026-06-06"],
+    ["Fallen Empires Booster Box (sealed)", "Vintage / Legacy sealed", 1, 534.99, 543.92, 1.67, "2026-08-08"],
+    ["Marvel Super Heroes Collector Booster Display", "Marvel Super Heroes", 1, 502.33, 526.41, 4.79, "2026-06-03"],
+    ["Urza's Saga Tournament Pack", "Vintage / Legacy sealed", 1, 481.48, 505.4, 4.97, "2026-05-13"],
+    ["LOTR Tales of Middle-earth Set Booster Box", "LOTR: Tales of Middle-earth", 1, 337.1, 359.21, 6.56, "2026-05-16"],
+    ["Revised Edition Booster Pack", "Vintage / Legacy sealed", 1, 300.66, 315.6, 4.97, "2026-05-13"],
+    ["Urza's Saga Booster Pack", "Vintage / Legacy sealed", 1, 288.89, 303.24, 4.97, "2026-05-13"],
+    ["The Hobbit Sleeved Set Booster Pack", "The Hobbit", 28, 239.4, 244.16, 1.99, "2026-08-23"],
+    ["The Hobbit Play Booster Box", "The Hobbit", 1, 203.29, 214.9, 5.71, "2026-05-18"],
+    ["The Hobbit Play Booster Box", "The Hobbit", 1, 207.05, 211.21, 2.01, "2026-08-18"],
+    ["Ice Age Starter Deck (1995)", "Vintage / Legacy sealed", 1, 207.58, 211.04, 1.67, "2026-08-08"],
+    ["The Hobbit Play Booster Box", "The Hobbit", 1, 206.26, 210.4, 2.01, "2026-08-24"],
+    ["The Hobbit Play Booster Box", "The Hobbit", 1, 197.94, 209.81, 6.0, "2026-05-13"],
+    ["Urza's Legacy Booster Pack", "Vintage / Legacy sealed", 1, 147.93, 155.28, 4.97, "2026-05-13"],
+    ["Fifth Edition Starter Deck", "Vintage / Legacy sealed", 1, 141.23, 143.59, 1.67, "2026-08-01"],
+    ["Marvel Super Heroes Play Booster Box", "Marvel Super Heroes", 1, 127.28, 133.67, 5.02, "2026-05-30"],
+    ["Marvel Super Heroes Jumpstart Booster Box", "Marvel Super Heroes", 1, 122.99, 128.54, 4.51, "2026-06-08"],
+    ["Mirrodin Tournament Pack", "Vintage / Legacy sealed", 1, 113.42, 118.62, 4.58, "2026-05-21"],
+    ["Legions Theme Deck - Zombies Unleashed", "Vintage / Legacy sealed", 1, 107.0, 111.91, 4.59, "2026-05-21"],
+    ["LOTR Commander Deck 2 + Collector Booster Sample Pack", "LOTR: Tales of Middle-earth", 1, 78.38, 86.32, 10.13, "2026-03-23"],
+    ["LOTR Tales of Middle-earth Sleeved Set Booster Pack", "LOTR: Tales of Middle-earth", 6, 51.3, 84.3, 64.33, "2024-06-06"],
+    ["Marvel's Spider-Man Bundle: Gift Edition", "Marvel's Spider-Man", 1, 78.1, 82.92, 6.17, "2026-02-16"],
+    ["The Hobbit Bundle", "The Hobbit", 1, 74.89, 79.9, 6.69, "2026-05-01"],
+    ["Classic Sixth Edition 2-Player Starter Deck", "Vintage / Legacy sealed", 1, 69.54, 70.7, 1.67, "2026-08-03"],
+    ["Darksteel Theme Deck - Transference", "Vintage / Legacy sealed", 1, 66.06, 69.09, 4.59, "2026-05-21"],
+    ["Portal Starter Set Demo / Sealed Pack", "Vintage / Legacy sealed", 1, 63.56, 66.78, 5.07, "2026-05-11"],
+    ["Urza's Saga Theme Deck - Sleeper", "Vintage / Legacy sealed", 1, 64.18, 65.25, 1.67, "2026-08-01"],
+    ["Fifth Edition Booster Pack", "Vintage / Legacy sealed", 1, 46.74, 49.22, 5.31, "2026-05-06"],
+    ["The Hobbit Scene Box - Crack the Plates", "The Hobbit", 1, 44.93, 47.94, 6.7, "2026-05-01"],
+    ["The Hobbit Scene Box - Treasures of Smaug", "The Hobbit", 1, 44.93, 47.94, 6.7, "2026-05-01"],
+    ["Fourth Edition Booster Pack", "Vintage / Legacy sealed", 1, 41.58, 43.78, 5.29, "2026-05-06"],
+    ["Fallen Empires Booster Pack", "Vintage / Legacy sealed", 3, 38.37, 43.47, 13.29, "2025-11-25"],
+    ["LOTR Scene Box - Gandalf in Pelennor Fields", "LOTR: Tales of Middle-earth", 1, 23.99, 35.42, 47.64, "2024-11-28"],
+    ["LOTR Starter Kit", "LOTR: Tales of Middle-earth", 1, 21.39, 32.11, 50.12, "2024-11-01"],
+    ["LOTR Collector Booster Sample Pack", "LOTR: Tales of Middle-earth", 2, 26.41, 31.28, 18.44, "2025-11-25"],
+    ["Chronicles Booster Pack", "Vintage / Legacy sealed", 1, 26.74, 28.09, 5.05, "2026-05-11"],
+    ["Fallen Empires Booster Pack", "Vintage / Legacy sealed", 1, 19.25, 20.22, 5.04, "2026-05-11"],
+    ["LOTR Collector Booster Sample Pack", "LOTR: Tales of Middle-earth", 1, 11.72, 13.87, 18.34, "2025-11-25"]
+  ]
+};
+
+var usd = function (v) {
+  return "$" + v.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+};
+var pct = function (v) { return (v >= 0 ? "+" : "") + v.toFixed(2) + "%"; };
+
+var NS = "http://www.w3.org/2000/svg";
+function el(name, attrs, text) {
+  var n = document.createElementNS(NS, name);
+  for (var k in attrs) { if (attrs[k] !== undefined) n.setAttribute(k, attrs[k]); }
+  if (text !== undefined) n.textContent = text;
+  return n;
+}
+
+function buildCharts(mount) {
+  var W = 720, H = 200, PAD = { l: 56, r: 52, t: 12, b: 24 };
+  var pts = DATA.series;
+  var t0 = Date.parse(pts[0][0]);
+  var t1 = Date.parse(pts[pts.length - 1][0]);
+  var x = function (d) { return PAD.l + ((Date.parse(d) - t0) / (t1 - t0)) * (W - PAD.l - PAD.r); };
+
+  var navMax = Math.max.apply(null, pts.map(function (p) { return p[1]; })) * 1.05;
+  var yNav = function (v) { return H - PAD.b - (v / navMax) * (H - PAD.t - PAD.b); };
+
+  var perfs = pts.map(function (p) { return p[3]; });
+  var pMin = Math.min.apply(null, [0].concat(perfs));
+  var pMax = Math.max.apply(null, perfs) * 1.1;
+  var yPerf = function (v) { return 140 - PAD.b - ((v - pMin) / (pMax - pMin)) * (140 - PAD.t - PAD.b); };
+
+  var line = function (ys, idx) {
+    return pts.map(function (p, i) {
+      return (i ? "L" : "M") + x(p[0]).toFixed(1) + " " + ys(p[idx]).toFixed(1);
+    }).join(" ");
+  };
+
+  var years = ["2025-01-01", "2026-01-01"];
+  var navTicks = [0, 2000, 4000, 6000, 8000];
+  var perfTicks = [0, 10, 20, 30];
+  var AXIS = "font-size:9px;font-family:inherit;fill:#666";
+  var AXIS_DARK = "font-size:9px;font-family:inherit;fill:#111";
+
+  var s1 = el("svg", { viewBox: "0 0 " + W + " " + H, role: "img" });
+  s1.appendChild(el("title", {}, "NAV and invested capital since first acquisition"));
+  navTicks.forEach(function (v) {
+    s1.appendChild(el("line", { x1: PAD.l, x2: W - PAD.r, y1: yNav(v), y2: yNav(v), stroke: "#eee", "stroke-width": "1" }));
+    s1.appendChild(el("text", { x: PAD.l - 6, y: yNav(v) + 3, "text-anchor": "end", style: AXIS }, v >= 1000 ? v / 1000 + "k" : String(v)));
+  });
+  years.forEach(function (d) {
+    s1.appendChild(el("text", { x: x(d), y: H - 8, "text-anchor": "middle", style: AXIS }, d.slice(0, 4)));
+  });
+  s1.appendChild(el("path", { d: line(yNav, 2), fill: "none", stroke: "#999", "stroke-width": "1", "stroke-dasharray": "4 3" }));
+  s1.appendChild(el("path", { d: line(yNav, 1), fill: "none", stroke: "#111", "stroke-width": "1.5" }));
+  s1.appendChild(el("text", { x: W - PAD.r, y: yNav(pts[pts.length - 1][1]) - 6, "text-anchor": "end", style: AXIS_DARK }, "NAV " + usd(pts[pts.length - 1][1])));
+  s1.appendChild(el("text", { x: W - PAD.r, y: yNav(pts[pts.length - 1][2]) + 14, "text-anchor": "end", style: AXIS }, "cost " + usd(pts[pts.length - 1][2])));
+  mount.appendChild(s1);
+
+  var s2 = el("svg", { viewBox: "0 0 " + W + " 140", role: "img" });
+  s2.appendChild(el("title", {}, "Cumulative unrealized return percent"));
+  perfTicks.forEach(function (v) {
+    var y = yPerf(v);
+    s2.appendChild(el("line", { x1: PAD.l, x2: W - PAD.r, y1: y, y2: y, stroke: "#eee", "stroke-width": "1" }));
+    s2.appendChild(el("text", { x: PAD.l - 6, y: y + 3, "text-anchor": "end", style: AXIS }, v + "%"));
+  });
+  years.forEach(function (d) {
+    s2.appendChild(el("text", { x: x(d), y: 140 - 8, "text-anchor": "middle", style: AXIS }, d.slice(0, 4)));
+  });
+  s2.appendChild(el("path", { d: line(yPerf, 3), fill: "none", stroke: "#111", "stroke-width": "1.5" }));
+  s2.appendChild(el("text", { x: W - PAD.r, y: yPerf(pts[pts.length - 1][3]) - 6, "text-anchor": "end", style: AXIS_DARK }, pct(pts[pts.length - 1][3])));
+  mount.appendChild(s2);
+
+  var note = document.createElement("p");
+  note.className = "note";
+  note.textContent =
+    "Top: NAV (solid) against cumulative acquisition cost (dashed), USD. Bottom: unrealized return on invested capital. " +
+    "Monthly points. Path between a position's acquisition and its 2026-08-28 mark is straight-line modelled; no intramonth marks exist. " +
+    "The early swings sit on a very small base (one position of " + usd(51.3) + " until Nov 2024).";
+  mount.appendChild(note);
+}
+
+function cell(text, cls) {
+  var td = document.createElement("td");
+  if (cls) td.className = cls;
+  td.textContent = text;
+  return td;
+}
+
+function render() {
+  var s = DATA.summary;
+
+  document.getElementById("summary-line").textContent =
+    "As of " + s.asof + ". Invested capital " + usd(s.invested) + ", marked at " + usd(s.nav) +
+    ", unrealized " + pct(s.perf_pct) + ". " + s.positions + " positions across " + DATA.buckets.length +
+    " strategy buckets. First acquisition " + s.first_acq + ".";
+
+  buildCharts(document.getElementById("charts"));
+
+  var bt = document.querySelector("#buckets tbody");
+  DATA.buckets.forEach(function (r) {
+    var tr = document.createElement("tr");
+    tr.appendChild(cell(r[0]));
+    tr.appendChild(cell(usd(r[1]), "num"));
+    tr.appendChild(cell(usd(r[2]), "num"));
+    tr.appendChild(cell(pct(r[3]), "num"));
+    bt.appendChild(tr);
+  });
+
+  document.getElementById("holdings-title").textContent = "Holdings (" + s.positions + ")";
+
+  var ht = document.querySelector("#holdings tbody");
+  DATA.holdings.forEach(function (r) {
+    var tr = document.createElement("tr");
+    tr.appendChild(cell(r[0]));
+    tr.appendChild(cell(r[1]));
+    tr.appendChild(cell(String(r[2]), "num"));
+    tr.appendChild(cell(usd(r[3]), "num"));
+    tr.appendChild(cell(usd(r[4]), "num"));
+    tr.appendChild(cell(pct(r[5]), "num"));
+    tr.appendChild(cell(r[6], "num"));
+    ht.appendChild(tr);
+  });
+}
+
+render();
+</script>
+</body>
+</html>

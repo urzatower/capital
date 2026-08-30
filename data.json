@@ -1,0 +1,611 @@
+{
+  "meta": {
+    "name": "Sol Ring Capital LP",
+    "asof": "2026-08-28",
+    "currency": "USD",
+    "source": "portfolio_ledger.json"
+  },
+  "summary": {
+    "nav": 8436.55,
+    "invested": 8063.68,
+    "perf_pct": 4.62,
+    "positions": 41,
+    "first_acq": "2024-06-06",
+    "inception": "2024-11-01",
+    "asof": "2026-08-28"
+  },
+  "series_columns": [
+    "date",
+    "nav",
+    "invested",
+    "unrealized_pct"
+  ],
+  "series": [
+    [
+      "2024-06-06",
+      51.3,
+      51.3,
+      0
+    ],
+    [
+      "2024-06-30",
+      52.27,
+      51.3,
+      1.9
+    ],
+    [
+      "2024-07-31",
+      53.53,
+      51.3,
+      4.35
+    ],
+    [
+      "2024-08-31",
+      54.79,
+      51.3,
+      6.8
+    ],
+    [
+      "2024-09-30",
+      56.01,
+      51.3,
+      9.18
+    ],
+    [
+      "2024-10-31",
+      57.27,
+      51.3,
+      11.63
+    ],
+    [
+      "2024-11-30",
+      104.37,
+      96.68,
+      7.95
+    ],
+    [
+      "2024-12-31",
+      106.68,
+      96.68,
+      10.34
+    ],
+    [
+      "2025-01-31",
+      108.99,
+      96.68,
+      12.74
+    ],
+    [
+      "2025-02-28",
+      111.08,
+      96.68,
+      14.9
+    ],
+    [
+      "2025-03-31",
+      113.4,
+      96.68,
+      17.29
+    ],
+    [
+      "2025-04-30",
+      115.64,
+      96.68,
+      19.61
+    ],
+    [
+      "2025-05-31",
+      117.95,
+      96.68,
+      22
+    ],
+    [
+      "2025-06-30",
+      120.19,
+      96.68,
+      24.32
+    ],
+    [
+      "2025-07-31",
+      122.5,
+      96.68,
+      26.71
+    ],
+    [
+      "2025-08-31",
+      124.82,
+      96.68,
+      29.1
+    ],
+    [
+      "2025-09-30",
+      127.05,
+      96.68,
+      31.42
+    ],
+    [
+      "2025-10-31",
+      129.37,
+      96.68,
+      33.81
+    ],
+    [
+      "2025-11-30",
+      208.33,
+      173.18,
+      20.29
+    ],
+    [
+      "2025-12-31",
+      212,
+      173.18,
+      22.42
+    ],
+    [
+      "2026-01-31",
+      215.68,
+      173.18,
+      24.54
+    ],
+    [
+      "2026-02-28",
+      297.39,
+      251.28,
+      18.35
+    ],
+    [
+      "2026-03-31",
+      380.63,
+      329.66,
+      15.46
+    ],
+    [
+      "2026-04-30",
+      386.44,
+      329.66,
+      17.22
+    ],
+    [
+      "2026-05-31",
+      3688.66,
+      3598.33,
+      2.51
+    ],
+    [
+      "2026-06-30",
+      4920.16,
+      4758.6,
+      3.4
+    ],
+    [
+      "2026-07-31",
+      5842.91,
+      5598.45,
+      4.37
+    ],
+    [
+      "2026-08-28",
+      8436.55,
+      8063.68,
+      4.62
+    ]
+  ],
+  "buckets_columns": [
+    "bucket",
+    "cost",
+    "value",
+    "pnl_pct"
+  ],
+  "buckets": [
+    [
+      "Vintage / Legacy sealed",
+      3294.2,
+      3426.78,
+      4.02
+    ],
+    [
+      "The Hobbit",
+      2853.54,
+      2936.04,
+      2.89
+    ],
+    [
+      "Marvel Super Heroes",
+      1287.55,
+      1348.3,
+      4.72
+    ],
+    [
+      "LOTR: Tales of Middle-earth",
+      550.29,
+      642.51,
+      16.76
+    ],
+    [
+      "Marvel's Spider-Man",
+      78.1,
+      82.92,
+      6.17
+    ]
+  ],
+  "holdings_columns": [
+    "position",
+    "bucket",
+    "qty",
+    "cost",
+    "value",
+    "pnl_pct",
+    "acquired"
+  ],
+  "holdings": [
+    [
+      "The Hobbit Collector Booster Display",
+      "The Hobbit",
+      1,
+      839.85,
+      858.81,
+      2.26,
+      "2026-07-18"
+    ],
+    [
+      "The Hobbit Collector Booster Box",
+      "The Hobbit",
+      1,
+      795,
+      810.97,
+      2.01,
+      "2026-08-13"
+    ],
+    [
+      "Antiquities Booster Pack",
+      "Vintage / Legacy sealed",
+      1,
+      535,
+      561.58,
+      4.97,
+      "2026-05-13"
+    ],
+    [
+      "Marvel Super Heroes Collector Booster Box",
+      "Marvel Super Heroes",
+      1,
+      534.95,
+      559.68,
+      4.62,
+      "2026-06-06"
+    ],
+    [
+      "Fallen Empires Booster Box (sealed)",
+      "Vintage / Legacy sealed",
+      1,
+      534.99,
+      543.92,
+      1.67,
+      "2026-08-08"
+    ],
+    [
+      "Marvel Super Heroes Collector Booster Display",
+      "Marvel Super Heroes",
+      1,
+      502.33,
+      526.41,
+      4.79,
+      "2026-06-03"
+    ],
+    [
+      "Urza's Saga Tournament Pack",
+      "Vintage / Legacy sealed",
+      1,
+      481.48,
+      505.4,
+      4.97,
+      "2026-05-13"
+    ],
+    [
+      "LOTR Tales of Middle-earth Set Booster Box",
+      "LOTR: Tales of Middle-earth",
+      1,
+      337.1,
+      359.21,
+      6.56,
+      "2026-05-16"
+    ],
+    [
+      "Revised Edition Booster Pack",
+      "Vintage / Legacy sealed",
+      1,
+      300.66,
+      315.6,
+      4.97,
+      "2026-05-13"
+    ],
+    [
+      "Urza's Saga Booster Pack",
+      "Vintage / Legacy sealed",
+      1,
+      288.89,
+      303.24,
+      4.97,
+      "2026-05-13"
+    ],
+    [
+      "The Hobbit Sleeved Set Booster Pack",
+      "The Hobbit",
+      28,
+      239.4,
+      244.16,
+      1.99,
+      "2026-08-23"
+    ],
+    [
+      "The Hobbit Play Booster Box",
+      "The Hobbit",
+      1,
+      203.29,
+      214.9,
+      5.71,
+      "2026-05-18"
+    ],
+    [
+      "The Hobbit Play Booster Box",
+      "The Hobbit",
+      1,
+      207.05,
+      211.21,
+      2.01,
+      "2026-08-18"
+    ],
+    [
+      "Ice Age Starter Deck (1995)",
+      "Vintage / Legacy sealed",
+      1,
+      207.58,
+      211.04,
+      1.67,
+      "2026-08-08"
+    ],
+    [
+      "The Hobbit Play Booster Box",
+      "The Hobbit",
+      1,
+      206.26,
+      210.4,
+      2.01,
+      "2026-08-24"
+    ],
+    [
+      "The Hobbit Play Booster Box",
+      "The Hobbit",
+      1,
+      197.94,
+      209.81,
+      6,
+      "2026-05-13"
+    ],
+    [
+      "Urza's Legacy Booster Pack",
+      "Vintage / Legacy sealed",
+      1,
+      147.93,
+      155.28,
+      4.97,
+      "2026-05-13"
+    ],
+    [
+      "Fifth Edition Starter Deck",
+      "Vintage / Legacy sealed",
+      1,
+      141.23,
+      143.59,
+      1.67,
+      "2026-08-01"
+    ],
+    [
+      "Marvel Super Heroes Play Booster Box",
+      "Marvel Super Heroes",
+      1,
+      127.28,
+      133.67,
+      5.02,
+      "2026-05-30"
+    ],
+    [
+      "Marvel Super Heroes Jumpstart Booster Box",
+      "Marvel Super Heroes",
+      1,
+      122.99,
+      128.54,
+      4.51,
+      "2026-06-08"
+    ],
+    [
+      "Mirrodin Tournament Pack",
+      "Vintage / Legacy sealed",
+      1,
+      113.42,
+      118.62,
+      4.58,
+      "2026-05-21"
+    ],
+    [
+      "Legions Theme Deck - Zombies Unleashed",
+      "Vintage / Legacy sealed",
+      1,
+      107,
+      111.91,
+      4.59,
+      "2026-05-21"
+    ],
+    [
+      "LOTR Commander Deck 2 + Collector Booster Sample Pack",
+      "LOTR: Tales of Middle-earth",
+      1,
+      78.38,
+      86.32,
+      10.13,
+      "2026-03-23"
+    ],
+    [
+      "LOTR Tales of Middle-earth Sleeved Set Booster Pack",
+      "LOTR: Tales of Middle-earth",
+      6,
+      51.3,
+      84.3,
+      64.33,
+      "2024-06-06"
+    ],
+    [
+      "Marvel's Spider-Man Bundle: Gift Edition",
+      "Marvel's Spider-Man",
+      1,
+      78.1,
+      82.92,
+      6.17,
+      "2026-02-16"
+    ],
+    [
+      "The Hobbit Bundle",
+      "The Hobbit",
+      1,
+      74.89,
+      79.9,
+      6.69,
+      "2026-05-01"
+    ],
+    [
+      "Classic Sixth Edition 2-Player Starter Deck",
+      "Vintage / Legacy sealed",
+      1,
+      69.54,
+      70.7,
+      1.67,
+      "2026-08-03"
+    ],
+    [
+      "Darksteel Theme Deck - Transference",
+      "Vintage / Legacy sealed",
+      1,
+      66.06,
+      69.09,
+      4.59,
+      "2026-05-21"
+    ],
+    [
+      "Portal Starter Set Demo / Sealed Pack",
+      "Vintage / Legacy sealed",
+      1,
+      63.56,
+      66.78,
+      5.07,
+      "2026-05-11"
+    ],
+    [
+      "Urza's Saga Theme Deck - Sleeper",
+      "Vintage / Legacy sealed",
+      1,
+      64.18,
+      65.25,
+      1.67,
+      "2026-08-01"
+    ],
+    [
+      "Fifth Edition Booster Pack",
+      "Vintage / Legacy sealed",
+      1,
+      46.74,
+      49.22,
+      5.31,
+      "2026-05-06"
+    ],
+    [
+      "The Hobbit Scene Box - Crack the Plates",
+      "The Hobbit",
+      1,
+      44.93,
+      47.94,
+      6.7,
+      "2026-05-01"
+    ],
+    [
+      "The Hobbit Scene Box - Treasures of Smaug",
+      "The Hobbit",
+      1,
+      44.93,
+      47.94,
+      6.7,
+      "2026-05-01"
+    ],
+    [
+      "Fourth Edition Booster Pack",
+      "Vintage / Legacy sealed",
+      1,
+      41.58,
+      43.78,
+      5.29,
+      "2026-05-06"
+    ],
+    [
+      "Fallen Empires Booster Pack",
+      "Vintage / Legacy sealed",
+      3,
+      38.37,
+      43.47,
+      13.29,
+      "2025-11-25"
+    ],
+    [
+      "LOTR Scene Box - Gandalf in Pelennor Fields",
+      "LOTR: Tales of Middle-earth",
+      1,
+      23.99,
+      35.42,
+      47.64,
+      "2024-11-28"
+    ],
+    [
+      "LOTR Starter Kit",
+      "LOTR: Tales of Middle-earth",
+      1,
+      21.39,
+      32.11,
+      50.12,
+      "2024-11-01"
+    ],
+    [
+      "LOTR Collector Booster Sample Pack",
+      "LOTR: Tales of Middle-earth",
+      2,
+      26.41,
+      31.28,
+      18.44,
+      "2025-11-25"
+    ],
+    [
+      "Chronicles Booster Pack",
+      "Vintage / Legacy sealed",
+      1,
+      26.74,
+      28.09,
+      5.05,
+      "2026-05-11"
+    ],
+    [
+      "Fallen Empires Booster Pack",
+      "Vintage / Legacy sealed",
+      1,
+      19.25,
+      20.22,
+      5.04,
+      "2026-05-11"
+    ],
+    [
+      "LOTR Collector Booster Sample Pack",
+      "LOTR: Tales of Middle-earth",
+      1,
+      11.72,
+      13.87,
+      18.34,
+      "2025-11-25"
+    ]
+  ]
+}
