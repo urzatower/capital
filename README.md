@@ -42,7 +42,7 @@ Position weights are shown to one decimal and may not sum to exactly 100.0%. Cos
 
 Open `letters.html`. Copy an existing `<article>` block, give it the next id in sequence (`l004`), update the `meta` line with the letter number and date, write the title and body, and add one line to the index list at the top pointing at the new anchor. Newest letter goes directly under the index, so the page reads most recent first. No build step and no front matter.
 
-The three seed letters cover the structural framework, the publisher supply picture from Hasbro's reported results, and a self-critical review of the book's own marks. Figures in them are sourced from Hasbro quarterly filings and public marketplace data as of late August 2026 and will date; check them before reusing any number elsewhere.
+The first three seed letters cover the structural framework, the publisher supply picture from Hasbro's reported results, and a self-critical review of the book's own marks. Letters 004 and 005 add a reprint-risk case study from the fund's forum archive and the cash policy. Figures in them are sourced from Hasbro quarterly filings and public marketplace data as of late August 2026 and will date; check them before reusing any number elsewhere.
 
 ## Updating the numbers
 
