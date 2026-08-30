@@ -68,7 +68,18 @@ ul.tight { margin: 0; }
 
 .exhibit { margin: 24px 0 4px; font-size: 12px; font-weight: 700; }
 .exhibit span { font-weight: 400; color: #555; }
+.readout {
+  margin: 0 0 4px;
+  font-size: 11px;
+  color: #111;
+  white-space: pre;
+  overflow-x: auto;
+  min-height: 18px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 2px;
+}
 .plot { border: 1px solid #ddd; padding: 8px 4px 4px; }
+.plot svg:focus { outline: 2px solid #111; outline-offset: 2px; }
 svg { width: 100%; height: auto; display: block; }
 .note { font-size: 11px; color: #666; margin: 6px 0 0; }
 .scroll { overflow-x: auto; }
