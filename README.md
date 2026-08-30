@@ -10,7 +10,7 @@ Live at `https://urzatower.github.io/capital/`.
 
 `facts.html` is the fund facts sheet on its own page: vehicle, mandate, portfolio statistics, terms, valuation policy and risk.
 
-`letters.html` is the commentary page. Each letter is a self-contained `<article>` with an anchor id, plus one line in the index list at the top.
+`letters.html` is the commentary page and holds all twenty letters on one page. Each letter is a self-contained `<article>` with an anchor id, plus one line in the index list at the top.
 
 `data.js` holds the `DATA` ledger object and is the single source of truth for every number on the site. Both `index.html` and `facts.html` load it.
 
@@ -40,9 +40,13 @@ Position weights are shown to one decimal and may not sum to exactly 100.0%. Cos
 
 ## Adding a letter
 
-Open `letters.html`. Copy an existing `<article>` block, give it the next id in sequence (`l004`), update the `meta` line with the letter number and date, write the title and body, and add one line to the index list at the top pointing at the new anchor. Newest letter goes directly under the index, so the page reads most recent first. No build step and no front matter.
+Open `letters.html`. Copy an existing `<article>` block, give it the next id in sequence (`l021`), update the `meta` line with the letter number, date and the Miami dateline, write the title and body, and add one line to the index list at the top pointing at the new anchor. Newest letter goes directly under the index, so the page reads most recent first. Body sections use `<h3>` subheads, which are already styled. No build step and no front matter.
 
-The first three seed letters cover the structural framework, the publisher supply picture from Hasbro's reported results, and a self-critical review of the book's own marks. Letters 004 and 005 add a reprint-risk case study from the fund's forum archive and the cash policy. Figures in them are sourced from Hasbro quarterly filings and public marketplace data as of late August 2026 and will date; check them before reusing any number elsewhere.
+There are twenty letters, dated 30 June 2026 through 30 August 2026, written in the register of a fund memo rather than a research note: each opens on a story or a question and reaches its argument several paragraphs in. They run roughly 1,200 to 1,800 words.
+
+The sequence moves from framework (001 to 004: the two supply flows, singles versus sealed, float destruction, the junk wax analogy) through the publisher (005, 008, 010: the issuer's accounts, print-to-demand, reprint velocity), through evidence from the archive (007, 009, 011, 013, 018: the fetchland reprint experiment, the marginal buyer, whether a floor exists, public price discovery, dead shelf product), through self-criticism of specific positions (006, 012, 014, 015, 016, 017: the display bought at the top, the Fallen Empires marking error, the second Tolkien bite, why every position being green proves nothing, counterparty risk, the Target shelf buy), and closes on policy (019 cash, 020 the falsification conditions for the whole book).
+
+Two sourcing notes. Portfolio figures come from `02_Data/portfolio_ledger.json` and are marked as of 2026-08-28. Historical market episodes come from the fund's archive of 316 public forum threads spanning 2011 to 2026, and are referenced by date and subject only, never by author, because those threads were written by private individuals. Hasbro figures come from published quarterly results. All of it will date; check any number before reusing it elsewhere.
 
 ## Updating the numbers
 
