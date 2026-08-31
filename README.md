@@ -10,13 +10,15 @@ Live at `https://urzatower.github.io/capital/`.
 
 `facts.html` is the fund facts sheet on its own page: vehicle, mandate, portfolio statistics, terms, valuation policy and risk.
 
-`letters.html` is the commentary page and holds all twenty letters on one page. Each letter is a self-contained `<article>` with an anchor id, plus one line in the index list at the top.
+`letters.html` is the commentary index page and holds the table of contents of all letters.
+
+`letters/` holds the individual letter pages (`001.html`, `002.html`, etc.), each formatted as a clean standalone article with previous/next letter pagination and links back to the fund.
 
 `data.js` holds the `DATA` ledger object and is the single source of truth for every number on the site. Both `index.html` and `facts.html` load it.
 
 `app.js` is the rendering layer, shared by both pages. It renders whichever mount points exist on the page, so the same file drives the charts and tables on one page and the facts sheet on the other.
 
-`style.css` is shared by all three pages.
+`style.css` is shared across all pages.
 
 There is no `notes.html` any more. If an older copy is still in the repository, delete it.
 
@@ -40,7 +42,7 @@ Position weights are shown to one decimal and may not sum to exactly 100.0%. Cos
 
 ## Adding a letter
 
-Open `letters.html`. Copy an existing `<article>` block, give it the next id in sequence (`l021`), update the `meta` line with the letter number, date and the Miami dateline, write the title and body, and add one line to the index list at the top pointing at the new anchor. Newest letter goes directly under the index, so the page reads most recent first. Body sections use `<h3>` subheads, which are already styled. No build step and no front matter.
+Create the next letter page in `letters/` (e.g. `letters/021.html`) using the template from an existing letter. Update the title, metadata line (letter number, date, Miami dateline), article body, and pagination links (`prev` and `next`). Then, add one line at the top of the `index-list` in `letters.html` pointing to `letters/021.html`. No build step and no front matter.
 
 There are twenty letters, dated 30 June 2026 through 30 August 2026, written in the register of a fund memo rather than a research note: each opens on a story or a question and reaches its argument several paragraphs in. They run roughly 1,200 to 1,800 words.
 

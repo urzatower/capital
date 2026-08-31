@@ -102,6 +102,21 @@ article blockquote { margin: 16px 0 16px 20px; padding-left: 16px; border-left: 
 .backtop { margin-top: 20px; }
 @media print { .backtop { display: none; } }
 
+/* Letter navigation */
+.letter-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 36px 0 0;
+  padding: 16px 0 0;
+  border-top: 1px solid #eee;
+  font-size: 12px;
+  gap: 12px;
+}
+.letter-nav .prev, .letter-nav .next { flex: 1; }
+.letter-nav .next { text-align: right; }
+.letter-nav .index-link { text-align: center; white-space: nowrap; }
+
 footer { font-size: 11px; color: #666; }
 footer p { margin: 0; }
 
