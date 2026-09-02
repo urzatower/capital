@@ -34,7 +34,7 @@ The two tables are labelled Table 1 and Table 2. Only the charts are exhibits.
 
 ## Data
 
-Figures are generated from `02_Data/portfolio_ledger.json` and marked as of 2026-08-28. Invested capital is 8,063.68 USD, marked at 8,436.55 USD, unrealized +4.62%, across 41 positions and 76 sealed units. Holdings sum to the bucket totals and to the summary line, and both tables render an explicit total row computed from the holdings rather than restating the summary. That identity is the first thing to re-check after any edit.
+Figures are generated from `02_Data/portfolio_ledger.json` and marked as of 2026-08-30. Invested capital is 8,063.68 USD, marked at 8,442.66 USD, unrealized +4.70%, across 41 positions and 76 sealed units. Holdings sum to the bucket totals and to the summary line, and both tables render an explicit total row computed from the holdings rather than restating the summary. That identity is the first thing to re-check after any edit.
 
 The NAV path between a position's acquisition and its latest verified mark is straight-line modelled. There are no intramonth marks. The first acquisition is 2024-06-06, so the pre-November-2024 section of Exhibit 2 sits on a single 51.30 USD position and the percentages there are not comparable with later periods.
 
@@ -42,13 +42,13 @@ Position weights are shown to one decimal and may not sum to exactly 100.0%. Cos
 
 ## Adding a letter
 
-Create the next letter page in `letters/` (e.g. `letters/021.html`) using the template from an existing letter. Update the title, metadata line (letter number, date, Miami dateline), article body, and pagination links (`prev` and `next`). Then, add one line at the top of the `index-list` in `letters.html` pointing to `letters/021.html`. No build step and no front matter.
+Create the next letter page in `letters/` (e.g. `letters/022.html`) using the template from an existing letter. Update the title, metadata line (letter number, date, Miami dateline), article body, and pagination links (`prev` and `next`). Then, add one line at the top of the `index-list` in `letters.html` pointing to `letters/022.html`. No build step and no front matter.
 
-There are twenty letters, dated 30 June 2026 through 30 August 2026, written in the register of a fund memo rather than a research note: each opens on a story or a question and reaches its argument several paragraphs in. They run roughly 1,200 to 1,800 words.
+There are twenty-one letters, dated 30 June 2026 through 1 September 2026, written in the register of a fund memo rather than a research note: each opens on a story or a question and reaches its argument several paragraphs in. They run roughly 1,200 to 1,800 words.
 
 The sequence moves from framework (001 to 004: the two supply flows, singles versus sealed, float destruction, the junk wax analogy) through the publisher (005, 008, 010: the issuer's accounts, print-to-demand, reprint velocity), through evidence from the archive (007, 009, 011, 013, 018: the fetchland reprint experiment, the marginal buyer, whether a floor exists, public price discovery, dead shelf product), through self-criticism of specific positions (006, 012, 014, 015, 016, 017: the display bought at the top, the Fallen Empires marking error, the second Tolkien bite, why every position being green proves nothing, counterparty risk, the Target shelf buy), and closes on policy (019 cash, 020 the falsification conditions for the whole book).
 
-Two sourcing notes. Portfolio figures come from `02_Data/portfolio_ledger.json` and are marked as of 2026-08-28. Historical market episodes come from the fund's archive of 316 public forum threads spanning 2011 to 2026, and are referenced by date and subject only, never by author, because those threads were written by private individuals. Hasbro figures come from published quarterly results. All of it will date; check any number before reusing it elsewhere.
+Two sourcing notes. Portfolio figures come from `02_Data/portfolio_ledger.json` and are marked as of 2026-08-30. Historical market episodes come from the fund's archive of 316 public forum threads spanning 2011 to 2026, and are referenced by date and subject only, never by author, because those threads were written by private individuals. Hasbro figures come from published quarterly results. All of it will date; check any number before reusing it elsewhere.
 
 ## Updating the numbers
 
