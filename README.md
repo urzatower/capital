@@ -42,9 +42,9 @@ Position weights are shown to one decimal and may not sum to exactly 100.0%. Cos
 
 ## Adding a letter
 
-Create the next letter page in `letters/` (e.g. `letters/022.html`) using the template from an existing letter. Update the title, metadata line (letter number, date, Miami dateline), article body, and pagination links (`prev` and `next`). Then, add one line at the top of the `index-list` in `letters.html` pointing to `letters/022.html`. No build step and no front matter.
+Create the next letter page in `letters/` (e.g. `letters/023.html`) using the template from an existing letter. Update the title, metadata line (letter number, date, Miami dateline), article body, and pagination links (`prev` and `next`). Then, add one line at the top of the `index-list` in `letters.html` pointing to `letters/023.html`. No build step and no front matter.
 
-There are twenty-one letters, dated 30 June 2026 through 1 September 2026, written in the register of a fund memo rather than a research note: each opens on a story or a question and reaches its argument several paragraphs in. They run roughly 1,200 to 1,800 words.
+There are twenty-two letters, dated 30 June 2026 through 4 September 2026, written in the register of a fund memo rather than a research note: each opens on a story or a question and reaches its argument several paragraphs in. They run roughly 1,200 to 1,800 words.
 
 The sequence moves from framework (001 to 004: the two supply flows, singles versus sealed, float destruction, the junk wax analogy) through the publisher (005, 008, 010: the issuer's accounts, print-to-demand, reprint velocity), through evidence from the archive (007, 009, 011, 013, 018: the fetchland reprint experiment, the marginal buyer, whether a floor exists, public price discovery, dead shelf product), through self-criticism of specific positions (006, 012, 014, 015, 016, 017: the display bought at the top, the Fallen Empires marking error, the second Tolkien bite, why every position being green proves nothing, counterparty risk, the Target shelf buy), and closes on policy (019 cash, 020 the falsification conditions for the whole book).
 
