@@ -230,17 +230,18 @@ function buildTables() {
   btot.appendChild(cell("100.0%", "num"));
   bt.appendChild(btot);
 
-  document.querySelector("#holdings-title span").textContent = "Holdings, all " + s.positions + " positions";
+  document.querySelector("#holdings-title span").textContent =
+    "Holdings, all " + s.positions + " positions. An asterisk marks a position the price feed does not cover, carried at cost";
 
   var ht = document.querySelector("#holdings tbody");
   DATA.holdings.forEach(function (r) {
     var tr = document.createElement("tr");
-    tr.appendChild(cell(r[0]));
+    tr.appendChild(cell(r[7] === false ? r[0] + " *" : r[0]));
     tr.appendChild(cell(r[1]));
     tr.appendChild(cell(String(r[2]), "num"));
     tr.appendChild(cell(usd(r[3]), "num"));
     tr.appendChild(cell(usd(r[4]), "num"));
-    tr.appendChild(cell(pct(r[5]), "num"));
+    tr.appendChild(cell(r[7] === false ? "at cost" : pct(r[5]), "num"));
     tr.appendChild(cell(wgt(r[4] / s.nav * 100), "num"));
     tr.appendChild(cell(r[6], "num"));
     ht.appendChild(tr);
@@ -305,7 +306,8 @@ function buildFacts(tb) {
   factsRow(tb, "Top five concentration", wgt(k.top5w) + " of NAV");
   factsRow(tb, "Top ten concentration", wgt(k.top10w) + " of NAV");
   factsRow(tb, "Largest bucket", k.bigBucket[0] + ", " + wgt(k.bigBucketW) + " of NAV");
-  factsRow(tb, "Positions above cost", k.above + " of " + s.positions);
+  factsRow(tb, "Positions marked to market", s.marked + " of " + s.positions);
+  factsRow(tb, "Positions above cost", k.above + " of " + s.marked + " marked");
   factsRow(tb, "Most recent acquisition", k.lastBuy);
 
   factsGroup(tb, "Terms");
@@ -317,10 +319,12 @@ function buildFacts(tb) {
   factsRow(tb, "Custody", "Self custody, sealed storage");
 
   factsGroup(tb, "Valuation");
-  factsRow(tb, "Marks", "Public retail and marketplace data");
-  factsRow(tb, "Frequency", "Monthly, at month end");
+  factsRow(tb, "Marks", "Observed marketplace sale prices only");
+  factsRow(tb, "Coverage", s.marked + " of " + s.positions + " positions, " + wgt(s.marked_pct) + " of cost basis");
+  factsRow(tb, "Unpriced positions", "Carried at cost, never estimated");
+  factsRow(tb, "Frequency", "Daily price collection, marked on refresh");
   factsRow(tb, "Cost basis", "All-in order cost, after discount and tax");
-  factsRow(tb, "Excluded inputs", "Asking prices and single outlier listings");
+  factsRow(tb, "Excluded inputs", "Asking prices, dealer bids, single outlier listings");
   factsRow(tb, "Intramonth path", "Straight-line modelled between marks");
 
   factsGroup(tb, "Risk");
@@ -341,7 +345,9 @@ function buildFacts(tb) {
     summary.textContent =
       "As of " + s.asof + ". Invested capital " + usd(s.invested) + ", marked at " + usd(s.nav) +
       ", unrealized " + pct(s.perf_pct) + ". " + s.positions + " positions and " + k.units +
-      " sealed units across " + DATA.buckets.length + " strategy buckets. First acquisition " + s.first_acq + ".";
+      " sealed units across " + DATA.buckets.length + " strategy buckets. First acquisition " + s.first_acq +
+      ". " + s.marked + " of " + s.positions + " positions, " + wgt(s.marked_pct) +
+      " of cost basis, are marked to observed sale prices; the rest are carried at cost.";
   }
 
   var charts = document.getElementById("charts");

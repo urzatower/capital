@@ -34,7 +34,11 @@ The two tables are labelled Table 1 and Table 2. Only the charts are exhibits.
 
 ## Data
 
-Figures are generated from `02_Data/portfolio_ledger.json` and marked as of 2026-08-30. Invested capital is 8,063.68 USD, marked at 8,442.66 USD, unrealized +4.70%, across 41 positions and 76 sealed units. Holdings sum to the bucket totals and to the summary line, and both tables render an explicit total row computed from the holdings rather than restating the summary. That identity is the first thing to re-check after any edit.
+Figures are generated from `02_Data/portfolio_ledger.json` and marked as of 2026-09-04. Invested capital is 8,063.68 USD, marked at 7,927.32 USD, unrealized -1.69%, across 41 positions and 76 sealed units.
+
+**Marking policy.** A position is marked only from an observed marketplace sale price (TCGplayer market, latest observation in `02_Data/parquet/price_history.parquet`). Dealer asks and dealer bids are not substituted for a market price. A position the feed does not cover is carried at cost and flagged `priced: false`, shown as "at cost" and asterisked in Table 2. Currently 17 of 41 positions, 39.7% of cost basis, are genuinely marked; The Hobbit, Tales of Middle-earth and Spider-Man buckets have no feed coverage at all and sit entirely at cost. Holdings sum to the bucket totals and to the summary line, and both tables render an explicit total row computed from the holdings. That identity is the first thing to re-check after any edit.
+
+**What changed on 2026-09-04.** Every mark previously published here was produced by `01_Engines/fund_engine/urza_tower_ingest.py` as `unit_cost * (1 + cagr) ** years_held`, using hardcoded rates (18% vintage, 22% Hobbit and Marvel, 25% Tales of Middle-earth, 12% other) and floored at cost by `max(unit_cost, ...)`. Those were assumptions, not prices, and the floor made a markdown arithmetically impossible, which is why the book always read green. The formula is removed; the ingest now records cost basis only, and `01_Engines/fund_engine/mark_to_market.py` does the valuation from the price lake. Re-mark with `python3 01_Engines/fund_engine/mark_to_market.py` (add `--dry-run` to preview); it backs up the ledger to `07_Archive/ledger_backups/` before writing.
 
 The NAV path between a position's acquisition and its latest verified mark is straight-line modelled. There are no intramonth marks. The first acquisition is 2024-06-06, so the pre-November-2024 section of Exhibit 2 sits on a single 51.30 USD position and the percentages there are not comparable with later periods.
 
