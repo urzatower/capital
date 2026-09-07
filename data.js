@@ -5,7 +5,7 @@
 var DATA = {
   summary: {
     nav: 7953.6, invested: 8063.68, perf_pct: -1.37, positions: 41,
-    marked: 17, marked_pct: 39.7,
+    marked: 17, marked_pct: 39.7, feed_start: "2026-08-28",
     first_acq: "2024-06-06", inception: "2024-11-01", asof: "2026-09-06"
   },
   series: [
