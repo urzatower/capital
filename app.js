@@ -134,144 +134,129 @@ function track(svg, H, x, ys, cols, readout, fmt, series) {
 }
 
 function buildCharts(mount) {
-  var pts = DATA.series;
+  var pts = DATA.series;                 /* date, nav, cost, unreal%, priced, held, twr% */
   var x = xScale();
-  var line = function (ys, idx, from, to) {
+  var years = ["2025-01-01", "2026-01-01"];
+  var FAINT = "#c9c9c9";
+
+  var seg = function (ys, idx, from, to) {
     var a = from == null ? 0 : from, b = to == null ? pts.length - 1 : to;
     return pts.slice(a, b + 1).map(function (p, i) {
       return (i ? "L" : "M") + x(p[0]).toFixed(1) + " " + ys(p[idx]).toFixed(1);
     }).join(" ");
   };
-  var years = ["2025-01-01", "2026-01-01"];
 
-  /* Where the price feed starts. Before it every position is held at cost, so a
-     value line there is an accounting identity, not a measurement. Drawing it
-     solid made the first real mark look like a collapse. It is drawn faint, with
-     a rule at the boundary, and the readout says "at cost" rather than 0.00%. */
-  var feedStart = DATA.summary.feed_start || null;
+  /* The first stretch of the book had nothing the price feed covered, so it sits
+     at cost by necessity. It is drawn faint and excluded from the return, rather
+     than presented as a flat zero that later falls off a cliff. */
   var cov = 0;
-  if (feedStart) {
-    while (cov < pts.length - 1 && pts[cov][0] < feedStart) { cov++; }
-  }
-  var covered = feedStart && cov > 0 && cov < pts.length;
-  var FAINT = "#c9c9c9";
-  function coverageRule(svg, H) {
+  while (cov < pts.length - 1 && pts[cov][4] === 0) { cov++; }
+  var covered = cov > 0 && cov < pts.length;
+
+  function ruleAt(svg, H) {
     if (!covered) return;
     var px = x(pts[cov][0]);
     svg.appendChild(el("line", { x1: px, x2: px, y1: PAD.t, y2: H - PAD.b,
                                  stroke: "#bbb", "stroke-width": "1", "stroke-dasharray": "2 3" }));
-    svg.appendChild(el("text", { x: px - 5, y: PAD.t + 9, "text-anchor": "end", style: AXIS },
-                       "marks begin"));
+    svg.appendChild(el("text", { x: px + 5, y: PAD.t + 9, "text-anchor": "start", style: AXIS },
+                       "first mark"));
   }
-  function coverageNote() {
-    return covered
-      ? " Before " + pts[cov][0] + " the price feed covered nothing in the book, so that stretch is" +
-        " every position at cost and is drawn faint. It is not a measured return."
-      : "";
+  function split(svg, ys, idx, colour) {
+    if (covered) {
+      svg.appendChild(el("path", { d: seg(ys, idx, 0, cov), fill: "none", stroke: FAINT, "stroke-width": "1.5" }));
+      svg.appendChild(el("path", { d: seg(ys, idx, cov), fill: "none", stroke: colour, "stroke-width": "1.5" }));
+    } else {
+      svg.appendChild(el("path", { d: seg(ys, idx), fill: "none", stroke: colour, "stroke-width": "1.5" }));
+    }
   }
+  function ticks(lo, hi, want) {
+    var step = [0.1, 0.25, 0.5, 1, 2, 5, 10, 20, 25, 50, 100, 200].filter(
+      function (t) { return (hi - lo) / t <= want; })[0] || 500;
+    var out = [];
+    for (var v = Math.floor(lo / step) * step; v <= hi + 1e-9; v += step) { out.push(Math.round(v * 100) / 100); }
+    return out;
+  }
+  var last = pts[pts.length - 1];
 
   /* Exhibit 1 - NAV against cost */
   var H1 = 440;
   var navMax = Math.max.apply(null, pts.map(function (p) { return Math.max(p[1], p[2]); })) * 1.05;
   var yNav = function (v) { return H1 - PAD.b - (v / navMax) * (H1 - PAD.t - PAD.b); };
 
-  label(mount, "Exhibit", 1, "Net asset value against invested capital, USD");
+  label(mount, "Exhibit", 1, "Assets under management against cumulative subscriptions, USD");
   var r1 = tag("p", "readout");
   mount.appendChild(r1);
   var box1 = tag("div", "plot");
   var s1 = el("svg", { viewBox: "0 0 " + W + " " + H1, role: "img", tabindex: "0",
-                       "aria-label": "Net asset value against invested capital. Use arrow keys to step through months." });
-  [0, 2000, 4000, 6000, 8000].forEach(function (v) {
+                       "aria-label": "Net asset value against invested capital. Use arrow keys to step through observations." });
+  ticks(0, navMax, 5).forEach(function (v) {
     s1.appendChild(el("line", { x1: PAD.l, x2: W - PAD.r, y1: yNav(v), y2: yNav(v), stroke: "#eee", "stroke-width": "1" }));
-    s1.appendChild(el("text", { x: PAD.l - 6, y: yNav(v) + 3, "text-anchor": "end", style: AXIS }, v >= 1000 ? v / 1000 + "k" : String(v)));
+    s1.appendChild(el("text", { x: PAD.l - 6, y: yNav(v) + 3, "text-anchor": "end", style: AXIS },
+                       v >= 1000 ? (v / 1000) + "k" : String(v)));
   });
   years.forEach(function (d) {
     s1.appendChild(el("text", { x: x(d), y: H1 - PAD.b + 16, "text-anchor": "middle", style: AXIS }, d.slice(0, 4)));
   });
-  coverageRule(s1, H1);
-  s1.appendChild(el("path", { d: line(yNav, 2), fill: "none", stroke: "#999", "stroke-width": "1", "stroke-dasharray": "4 3" }));
-  if (covered) {
-    s1.appendChild(el("path", { d: line(yNav, 1, 0, cov), fill: "none", stroke: FAINT, "stroke-width": "1.5" }));
-    s1.appendChild(el("path", { d: line(yNav, 1, cov), fill: "none", stroke: "#111", "stroke-width": "1.5" }));
-  } else {
-    s1.appendChild(el("path", { d: line(yNav, 1), fill: "none", stroke: "#111", "stroke-width": "1.5" }));
-  }
-  s1.appendChild(el("text", { x: W - PAD.r, y: yNav(pts[pts.length - 1][1]) - 6, "text-anchor": "end", style: AXIS_DARK }, "NAV " + usd(pts[pts.length - 1][1])));
-  s1.appendChild(el("text", { x: W - PAD.r, y: yNav(pts[pts.length - 1][2]) + 14, "text-anchor": "end", style: AXIS }, "cost " + usd(pts[pts.length - 1][2])));
+  ruleAt(s1, H1);
+  s1.appendChild(el("path", { d: seg(yNav, 2), fill: "none", stroke: "#999", "stroke-width": "1", "stroke-dasharray": "4 3" }));
+  split(s1, yNav, 1, "#111");
+  s1.appendChild(el("text", { x: W - PAD.r, y: yNav(last[1]) - 6, "text-anchor": "end", style: AXIS_DARK }, "AUM " + usd(last[1])));
+  s1.appendChild(el("text", { x: W - PAD.r, y: yNav(last[2]) + 14, "text-anchor": "end", style: AXIS }, "subscribed " + usd(last[2])));
   box1.appendChild(s1);
   mount.appendChild(box1);
   track(s1, H1, x, [yNav, yNav], [1, 2], r1, function (p) {
-    return p[0] + "   NAV " + usd(p[1]) + "   cost " + usd(p[2]) +
-           "   unrealized " + (covered && p[0] < pts[cov][0] ? "at cost" : pct(p[3]));
+    return p[0] + "   AUM " + usd(p[1]) + "   subscribed " + usd(p[2]) +
+           "   " + (p[4] ? p[4] + " of " + p[5] + " positions marked" : "all positions at cost");
   });
   mount.appendChild(tag("p", "note",
-    "NAV solid, cumulative acquisition cost dashed. Monthly points. Hover or use arrow keys to read a month. " +
-    "Each month end values a position at the latest observed sale price on or before that date, and at cost " +
-    "where the feed had none yet." + coverageNote()));
+    "AUM solid, cumulative subscriptions dashed. One point per date the price feed actually observed a " +
+    "holding, back to " + pts[0][0] + ". A position is valued at the latest observed sale price on or before " +
+    "each date, at cost on the day it was bought, and at cost throughout if the feed never covered it. " +
+    (covered ? "Nothing in the book was covered before " + pts[cov][0] + ", so that stretch is drawn faint." : "")));
 
-  /* Exhibit 2 - unrealized return, measured period only.
-     Plotting this back to 2024 drew a two year flat line at zero followed by a
-     cliff, which is what an accounting identity looks like when you chart it
-     against a real observation. The exhibit now covers only the dates the feed
-     actually priced. It is short, and it says so. */
-  var cpts = covered ? pts.slice(cov) : pts;
+  /* Exhibit 2 - the two returns, money-weighted and time-weighted */
+  var H2 = 380;
+  var both = pts.map(function (p) { return p[3]; }).concat(pts.map(function (p) { return p[6]; }));
+  var tT = ticks(Math.min.apply(null, both.concat(0)), Math.max.apply(null, both.concat(0)) * 1.06, 5);
+  var tMin = tT[0], tMax = tT[tT.length - 1];
+  var yR = function (v) { return H2 - PAD.b - ((v - tMin) / (tMax - tMin)) * (H2 - PAD.t - PAD.b); };
 
-  if (cpts.length < 2) {
-    label(mount, "Exhibit", 2, "Unrealized return on invested capital");
-    mount.appendChild(tag("p", "note",
-      "Not shown. The price feed has priced this book on " + cpts.length + " date" +
-      (cpts.length === 1 ? "" : "s") + ", which is not a series. The exhibit returns once there " +
-      "is more than one observation to draw."));
-  } else {
-    var H2 = 300;
-    var x2 = xScale(cpts);
-    var line2 = function (ys) {
-      return cpts.map(function (p, i) {
-        return (i ? "L" : "M") + x2(p[0]).toFixed(1) + " " + ys(p[3]).toFixed(1);
-      }).join(" ");
-    };
-    var perfs = cpts.map(function (p) { return p[3]; });
-    /* zero is kept in view as the reference, and the step is chosen from the
-       span that results, so the axis lands on four or five gridlines whatever
-       the book is doing */
-    var pLo = Math.min.apply(null, perfs.concat(0)), pHi = Math.max.apply(null, perfs.concat(0));
-    var pStep = [0.1, 0.25, 0.5, 1, 2, 5, 10, 20, 50].filter(function (t) { return (pHi - pLo) / t <= 4; })[0] || 100;
-    var pMin = Math.floor(pLo / pStep) * pStep;
-    var pMax = Math.ceil(pHi / pStep) * pStep;
-    if (pMax === pMin) { pMax = pMin + pStep; }
-    var yPerf = function (v) { return H2 - PAD.b - ((v - pMin) / (pMax - pMin)) * (H2 - PAD.t - PAD.b); };
-
-    label(mount, "Exhibit", 2, "Unrealized return on invested capital, measured period");
-    var r2 = tag("p", "readout");
-    mount.appendChild(r2);
-    var box2 = tag("div", "plot");
-    var s2 = el("svg", { viewBox: "0 0 " + W + " " + H2, role: "img", tabindex: "0",
-                         "aria-label": "Unrealized return on invested capital over the period the price feed covers. Use arrow keys to step through observations." });
-    for (var v = pMin; v <= pMax + 1e-9; v += pStep) {
-      var lbl = (Math.round(v * 100) / 100) + "%";
-      s2.appendChild(el("line", { x1: PAD.l, x2: W - PAD.r, y1: yPerf(v), y2: yPerf(v), stroke: "#eee", "stroke-width": "1" }));
-      s2.appendChild(el("text", { x: PAD.l - 6, y: yPerf(v) + 3, "text-anchor": "end", style: AXIS }, lbl));
-    }
-    [cpts[0][0], cpts[cpts.length - 1][0]].forEach(function (d, i) {
-      s2.appendChild(el("text", { x: x2(d), y: H2 - PAD.b + 16, "text-anchor": i ? "end" : "start", style: AXIS }, d));
-    });
-    s2.appendChild(el("path", { d: line2(yPerf), fill: "none", stroke: "#111", "stroke-width": "1.5" }));
-    cpts.forEach(function (p) {
-      s2.appendChild(el("circle", { cx: x2(p[0]), cy: yPerf(p[3]), r: "2", fill: "#111" }));
-    });
-    s2.appendChild(el("text", { x: W - PAD.r, y: yPerf(cpts[cpts.length - 1][3]) - 8, "text-anchor": "end", style: AXIS_DARK }, pct(cpts[cpts.length - 1][3])));
-    box2.appendChild(s2);
-    mount.appendChild(box2);
-    track(s2, H2, x2, [yPerf], [3], r2, function (p) {
-      return p[0] + "   unrealized " + pct(p[3]) + "   on cost " + usd(p[2]);
-    }, cpts);
-    mount.appendChild(tag("p", "note",
-      "Return on invested capital, not a time-weighted return, and only over the dates the price feed " +
-      "covers: " + cpts[0][0] + " to " + cpts[cpts.length - 1][0] + ", " + cpts.length + " observations. " +
-      "Earlier periods are not plotted because every position was carried at cost, so a return there would " +
-      "be an accounting identity rather than a measurement. The opening level is the first observation of a " +
-      "book assembled over two years, not a fall from zero. Exhibit 1 carries the full history."));
-  }
+  label(mount, "Exhibit", 2, "NAV per unit, base 100 at inception, against the investor return");
+  var r2 = tag("p", "readout");
+  mount.appendChild(r2);
+  var box2 = tag("div", "plot");
+  var s2 = el("svg", { viewBox: "0 0 " + W + " " + H2, role: "img", tabindex: "0",
+                       "aria-label": "Money-weighted and time-weighted return. Use arrow keys to step through observations." });
+  tT.forEach(function (v) {
+    s2.appendChild(el("line", { x1: PAD.l, x2: W - PAD.r, y1: yR(v), y2: yR(v),
+                                stroke: v === 0 ? "#ccc" : "#eee", "stroke-width": "1" }));
+    s2.appendChild(el("text", { x: PAD.l - 6, y: yR(v) + 3, "text-anchor": "end", style: AXIS }, v + "%"));
+  });
+  years.forEach(function (d) {
+    s2.appendChild(el("text", { x: x(d), y: H2 - PAD.b + 16, "text-anchor": "middle", style: AXIS }, d.slice(0, 4)));
+  });
+  ruleAt(s2, H2);
+  s2.appendChild(el("path", { d: seg(yR, 6), fill: "none", stroke: "#999", "stroke-width": "1", "stroke-dasharray": "4 3" }));
+  split(s2, yR, 3, "#111");
+  s2.appendChild(el("text", { x: W - PAD.r, y: yR(last[6]) - 6, "text-anchor": "end", style: AXIS },
+                     "NAV per unit " + (100 + last[6]).toFixed(1)));
+  s2.appendChild(el("text", { x: W - PAD.r, y: yR(last[3]) + 14, "text-anchor": "end", style: AXIS_DARK },
+                     "investor return " + pct(last[3])));
+  box2.appendChild(s2);
+  mount.appendChild(box2);
+  track(s2, H2, x, [yR, yR], [3, 6], r2, function (p) {
+    return p[0] + "   NAV per unit " + (100 + p[6]).toFixed(1) + "   investor return " + pct(p[3]) +
+           "   subscriptions " + usd(p[2]);
+  });
+  mount.appendChild(tag("p", "note",
+    "Investor return solid, NAV per unit dashed, both read on the same scale as a percentage from base. " +
+    "NAV per unit is the fund measure: it chains each period's return on the positions marked at both ends " +
+    "of it and ignores how much money was in at the time, so it stands at " + (100 + DATA.summary.twr_pct).toFixed(1) +
+    " against 100 at inception. The investor return is money-weighted, the gain on capital actually at risk, " +
+    "and annualises to " + pct(DATA.summary.mwr_irr_pct) + ". The gap between the two lines is the whole story " +
+    "of this book. Average capital at risk over the period was " + usd(DATA.summary.avg_capital) + " against " +
+    usd(DATA.summary.invested) + " subscribed today, and most of that arrived after May 2026, so the early " +
+    "doubling happened on a position too small to move the money. A fund reports both for exactly this reason."));
 }
 
 /* ---------------------------------------------------------------- tables */
@@ -412,7 +397,9 @@ function buildFacts(tb) {
   if (summary) {
     summary.textContent =
       "As of " + s.asof + ". Invested capital " + usd(s.invested) + ", marked at " + usd(s.nav) +
-      ", unrealized " + pct(s.perf_pct) + ". " + s.positions + " positions and " + k.units +
+      ". NAV per unit " + (100 + s.twr_pct).toFixed(1) + " against 100 at inception " + s.inception +
+      "; investor return " + pct(s.mwr_pct) + ", " + pct(s.mwr_irr_pct) + " a year, on average capital at " +
+      "risk of " + usd(s.avg_capital) + ". " + s.positions + " positions and " + k.units +
       " sealed units across " + DATA.buckets.length + " strategy buckets. First acquisition " + s.first_acq +
       ". " + s.marked + " of " + s.positions + " positions, " + wgt(s.marked_pct) +
       " of cost basis, are marked to observed sale prices; the rest are carried at cost.";
