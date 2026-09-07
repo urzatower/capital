@@ -144,7 +144,7 @@ function buildCharts(mount) {
 
   /* Exhibit 1 - NAV against cost */
   var H1 = 440;
-  var navMax = Math.max.apply(null, pts.map(function (p) { return p[1]; })) * 1.05;
+  var navMax = Math.max.apply(null, pts.map(function (p) { return Math.max(p[1], p[2]); })) * 1.05;
   var yNav = function (v) { return H1 - PAD.b - (v / navMax) * (H1 - PAD.t - PAD.b); };
 
   label(mount, "Exhibit", 1, "Net asset value against invested capital, USD");
@@ -171,14 +171,20 @@ function buildCharts(mount) {
   });
   mount.appendChild(tag("p", "note",
     "NAV solid, cumulative acquisition cost dashed. Monthly points. Hover or use arrow keys to read a month. " +
-    "The path between a position's acquisition and its " + DATA.summary.asof +
-    " mark is straight-line modelled; no intramonth marks exist."));
+    "Each month end values a position at the latest observed sale price on or before that date, and at cost " +
+    "where the feed had none yet, so the path is flat until the feed begins on 2026-08-28."));
 
   /* Exhibit 2 - unrealized return */
   var H2 = 380;
   var perfs = pts.map(function (p) { return p[3]; });
-  var pMin = Math.min.apply(null, [0].concat(perfs));
-  var pMax = Math.max.apply(null, perfs) * 1.1;
+  var pLo = Math.min.apply(null, perfs);
+  var pHi = Math.max.apply(null, perfs);
+  /* step chosen from the observed range, so a flat or negative book still gets readable gridlines */
+  var pStep = [1, 2, 5, 10, 20, 50].filter(function (t) { return (pHi - pLo) / t <= 6; })[0] || 100;
+  var pMin = Math.floor(Math.min(pLo, 0) / pStep) * pStep;
+  var pMax = Math.ceil(Math.max(pHi, pStep) / pStep) * pStep;
+  var pTicks = [];
+  for (var t = pMin; t <= pMax + 1e-9; t += pStep) { pTicks.push(Math.round(t)); }
   var yPerf = function (v) { return H2 - PAD.b - ((v - pMin) / (pMax - pMin)) * (H2 - PAD.t - PAD.b); };
 
   label(mount, "Exhibit", 2, "Unrealized return on invested capital");
@@ -187,7 +193,7 @@ function buildCharts(mount) {
   var box2 = tag("div", "plot");
   var s2 = el("svg", { viewBox: "0 0 " + W + " " + H2, role: "img", tabindex: "0",
                        "aria-label": "Unrealized return on invested capital. Use arrow keys to step through months." });
-  [0, 10, 20, 30].forEach(function (v) {
+  pTicks.forEach(function (v) {
     s2.appendChild(el("line", { x1: PAD.l, x2: W - PAD.r, y1: yPerf(v), y2: yPerf(v), stroke: "#eee", "stroke-width": "1" }));
     s2.appendChild(el("text", { x: PAD.l - 6, y: yPerf(v) + 3, "text-anchor": "end", style: AXIS }, v + "%"));
   });
@@ -325,7 +331,7 @@ function buildFacts(tb) {
   factsRow(tb, "Frequency", "Daily price collection, marked on refresh");
   factsRow(tb, "Cost basis", "All-in order cost, after discount and tax");
   factsRow(tb, "Excluded inputs", "Asking prices, dealer bids, single outlier listings");
-  factsRow(tb, "Intramonth path", "Straight-line modelled between marks");
+  factsRow(tb, "Intramonth path", "None. Month ends only, valued at the latest observation on or before each date");
 
   factsGroup(tb, "Risk");
   factsRow(tb, "Principal risk", "Reprint of a set, tracked per set");

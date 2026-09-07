@@ -34,13 +34,13 @@ The two tables are labelled Table 1 and Table 2. Only the charts are exhibits.
 
 ## Data
 
-Figures are generated from `02_Data/portfolio_ledger.json` and marked as of 2026-09-04. Invested capital is 8,063.68 USD, marked at 7,927.32 USD, unrealized -1.69%, across 41 positions and 76 sealed units.
+Figures are generated from `02_Data/portfolio_ledger.json` and marked as of 2026-09-06. Invested capital is 8,063.68 USD, marked at 7,953.60 USD, unrealized -1.37%, across 41 positions and 76 sealed units.
 
 **Marking policy.** A position is marked only from an observed marketplace sale price (TCGplayer market, latest observation in `02_Data/parquet/price_history.parquet`). Dealer asks and dealer bids are not substituted for a market price. A position the feed does not cover is carried at cost and flagged `priced: false`, shown as "at cost" and asterisked in Table 2. Currently 17 of 41 positions, 39.7% of cost basis, are genuinely marked; The Hobbit, Tales of Middle-earth and Spider-Man buckets have no feed coverage at all and sit entirely at cost. Holdings sum to the bucket totals and to the summary line, and both tables render an explicit total row computed from the holdings. That identity is the first thing to re-check after any edit.
 
 **What changed on 2026-09-04.** Every mark previously published here was produced by `01_Engines/fund_engine/urza_tower_ingest.py` as `unit_cost * (1 + cagr) ** years_held`, using hardcoded rates (18% vintage, 22% Hobbit and Marvel, 25% Tales of Middle-earth, 12% other) and floored at cost by `max(unit_cost, ...)`. Those were assumptions, not prices, and the floor made a markdown arithmetically impossible, which is why the book always read green. The formula is removed; the ingest now records cost basis only, and `01_Engines/fund_engine/mark_to_market.py` does the valuation from the price lake. Re-mark with `python3 01_Engines/fund_engine/mark_to_market.py` (add `--dry-run` to preview); it backs up the ledger to `07_Archive/ledger_backups/` before writing.
 
-The NAV path between a position's acquisition and its latest verified mark is straight-line modelled. There are no intramonth marks. The first acquisition is 2024-06-06, so the pre-November-2024 section of Exhibit 2 sits on a single 51.30 USD position and the percentages there are not comparable with later periods.
+The monthly path is rebuilt from the lake rather than interpolated. Each month end values a position held on that date at the latest observed tcgplayer market price on or before it, and at cost where no observation existed yet. The marketplace feed starts on 2026-08-28, so every point before that sits at cost and the early path is flat by construction, not by luck. There are no intramonth marks. The first acquisition is 2024-06-06, so the pre-November-2024 section of Exhibit 2 sits on a single 51.30 USD position and the percentages there are not comparable with later periods.
 
 Position weights are shown to one decimal and may not sum to exactly 100.0%. Cost and value columns tie exactly.
 
@@ -48,15 +48,22 @@ Position weights are shown to one decimal and may not sum to exactly 100.0%. Cos
 
 Create the next letter page in `letters/` (e.g. `letters/023.html`) using the template from an existing letter. Update the title, metadata line (letter number, date, Miami dateline), article body, and pagination links (`prev` and `next`). Then, add one line at the top of the `index-list` in `letters.html` pointing to `letters/023.html`. No build step and no front matter.
 
-There are twenty-two letters, dated 30 June 2026 through 4 September 2026, written in the register of a fund memo rather than a research note: each opens on a story or a question and reaches its argument several paragraphs in. They run roughly 1,200 to 1,800 words.
+There are twenty-three letters, dated 30 June 2026 through 6 September 2026, written in the register of a fund memo rather than a research note: each opens on a story or a question and reaches its argument several paragraphs in. They run roughly 1,200 to 1,800 words.
 
-The sequence moves from framework (001 to 004: the two supply flows, singles versus sealed, float destruction, the junk wax analogy) through the publisher (005, 008, 010: the issuer's accounts, print-to-demand, reprint velocity), through evidence from the archive (007, 009, 011, 013, 018: the fetchland reprint experiment, the marginal buyer, whether a floor exists, public price discovery, dead shelf product), through self-criticism of specific positions (006, 012, 014, 015, 016, 017: the display bought at the top, the Fallen Empires marking error, the second Tolkien bite, why every position being green proves nothing, counterparty risk, the Target shelf buy), and closes on policy (019 cash, 020 the falsification conditions for the whole book).
+The sequence moves from framework (001 to 004: the two supply flows, singles versus sealed, float destruction, the junk wax analogy) through the publisher (005, 008, 010: the issuer's accounts, print-to-demand, reprint velocity), through evidence from the archive (007, 009, 011, 013, 018: the fetchland reprint experiment, the marginal buyer, whether a floor exists, public price discovery, dead shelf product), through self-criticism of specific positions (006, 012, 014, 015, 016, 017: the display bought at the top, the Fallen Empires marking error, the second Tolkien bite, why every position being green proves nothing, counterparty risk, the Target shelf buy), and closes on policy (019 cash, 020 the falsification conditions for the whole book). Letters 021 to 023 run on the current market: Secret Lair randomization, obsolescence and the trough, and The Zeta Set's twelve new commons rewriting the Pauper card pool.
 
-Two sourcing notes. Portfolio figures come from `02_Data/portfolio_ledger.json` and are marked as of 2026-08-30. Historical market episodes come from the fund's archive of 316 public forum threads spanning 2011 to 2026, and are referenced by date and subject only, never by author, because those threads were written by private individuals. Hasbro figures come from published quarterly results. All of it will date; check any number before reusing it elsewhere.
+Two sourcing notes. Portfolio figures come from `02_Data/portfolio_ledger.json` and are marked as of 2026-09-06. Historical market episodes come from the fund's archive of 316 public forum threads spanning 2011 to 2026, and are referenced by date and subject only, never by author, because those threads were written by private individuals. Hasbro figures come from published quarterly results. All of it will date; check any number before reusing it elsewhere.
 
 ## Updating the numbers
 
-Edit the `DATA` object in `data.js`, then mirror the change into `data.json`. The summary line, both tables, both totals rows, both charts, and the entire Portfolio group of the facts sheet derive from that object. Nothing else needs touching.
+Do not hand edit `data.js`. Re-mark the book, then regenerate both files together:
+
+```
+python3 01_Engines/fund_engine/mark_to_market.py
+python3 01_Engines/report_engine/capital_site_data.py --out <this repo>
+```
+
+The builder writes `data.js` and `data.json` from the same object, so they cannot drift, and it fails rather than writing if the holdings and bucket totals stop tying to the summary. `--check` prints the summary and that identity without writing. The summary line, both tables, both totals rows, both charts, and the entire Portfolio group of the facts sheet derive from `DATA`. Nothing else needs touching.
 
 Two things are hardcoded and will need attention as the book grows: the axis tick arrays in `buildCharts`, which should be widened once NAV clears 8,000 USD or unrealized return clears 30%, and the qualitative rows in `buildFacts`, which are statements of practice rather than derived values.
 
