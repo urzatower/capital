@@ -1,26 +1,26 @@
 {
   "meta": {
     "name": "Urza Tower Capital LP",
-    "asof": "2026-09-06",
+    "asof": "2026-09-09",
     "currency": "USD",
     "source": "portfolio_ledger.json"
   },
   "summary": {
-    "nav": 8066.44,
-    "invested": 8063.68,
-    "perf_pct": 0.03,
-    "positions": 41,
-    "marked": 33,
-    "marked_pct": 93.3,
+    "nav": 9067.93,
+    "invested": 9229.92,
+    "perf_pct": -1.76,
+    "positions": 44,
+    "marked": 36,
+    "marked_pct": 94.2,
     "first_acq": "2024-06-06",
     "inception": "2024-11-01",
     "feed_start": "2024-02-08",
-    "asof": "2026-09-06",
-    "mwr_pct": 0.03,
-    "mwr_irr_pct": 0.14,
+    "asof": "2026-09-09",
+    "mwr_pct": -1.76,
+    "mwr_irr_pct": -7.88,
     "twr_pct": 131.98,
-    "capital_years": 1940.0,
-    "avg_capital": 862.03
+    "capital_years": 2012.0,
+    "avg_capital": 890.77
   },
   "series_columns": [
     "date",
@@ -1222,6 +1222,36 @@
       41,
       131.98,
       0.14
+    ],
+    [
+      "2026-09-07",
+      9082.89,
+      9080.13,
+      0.03,
+      33,
+      43,
+      131.98,
+      0.14
+    ],
+    [
+      "2026-09-08",
+      9069.97,
+      9229.92,
+      -1.73,
+      35,
+      44,
+      131.98,
+      -7.88
+    ],
+    [
+      "2026-09-09",
+      9067.93,
+      9229.92,
+      -1.76,
+      36,
+      44,
+      131.98,
+      -7.88
     ]
   ],
   "buckets_columns": [
@@ -1239,15 +1269,21 @@
     ],
     [
       "The Hobbit",
-      2853.54,
-      2723.05,
-      -4.57
+      3228.04,
+      3045.21,
+      -5.66
     ],
     [
       "Marvel Super Heroes",
       1287.55,
       1191.98,
       -7.42
+    ],
+    [
+      "Reality Fracture",
+      791.74,
+      679.33,
+      -14.2
     ],
     [
       "LOTR: Tales of Middle-earth",
@@ -1291,6 +1327,16 @@
       828.28,
       4.19,
       "2026-08-13",
+      true
+    ],
+    [
+      "Reality Fracture Collector Booster Box",
+      "Reality Fracture",
+      1,
+      641.95,
+      531.58,
+      -17.19,
+      "2026-09-07",
       true
     ],
     [
@@ -1341,6 +1387,16 @@
       466.1,
       -3.19,
       "2026-05-13",
+      true
+    ],
+    [
+      "The Hobbit Play Booster Box",
+      "The Hobbit",
+      2,
+      374.5,
+      322.16,
+      -13.98,
+      "2026-09-07",
       true
     ],
     [
@@ -1431,6 +1487,16 @@
       161.08,
       -18.62,
       "2026-05-13",
+      true
+    ],
+    [
+      "Reality Fracture Play Booster Box",
+      "Reality Fracture",
+      1,
+      149.79,
+      147.75,
+      -1.36,
+      "2026-09-08",
       true
     ],
     [

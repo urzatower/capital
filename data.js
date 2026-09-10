@@ -1,14 +1,14 @@
 // Urza Tower Capital LP - portfolio ledger.
 // Single source of truth for both index.html and facts.html.
-// Generated from 02_Data/portfolio_ledger.json, marked 2026-09-06.
+// Generated from 02_Data/portfolio_ledger.json, marked 2026-09-09.
 // Built by 01_Engines/report_engine/capital_site_data.py. Do not hand edit.
 var DATA = {
   summary: {
-    nav: 8066.44, invested: 8063.68, perf_pct: 0.03, positions: 41,
-    marked: 33, marked_pct: 93.3, feed_start: "2024-02-08",
-    mwr_pct: 0.03, mwr_irr_pct: 0.14, twr_pct: 131.98,
-    capital_years: 1940.0, avg_capital: 862.03,
-    first_acq: "2024-06-06", inception: "2024-11-01", asof: "2026-09-06"
+    nav: 9067.93, invested: 9229.92, perf_pct: -1.76, positions: 44,
+    marked: 36, marked_pct: 94.2, feed_start: "2024-02-08",
+    mwr_pct: -1.76, mwr_irr_pct: -7.88, twr_pct: 131.98,
+    capital_years: 2012.0, avg_capital: 890.77,
+    first_acq: "2024-06-06", inception: "2024-11-01", asof: "2026-09-09"
   },
   series: [
     ["2024-11-01", 72.69, 72.69, 0.0, 0, 2, 0.0, 0.0], ["2024-11-04", 73.91, 72.69, 1.68, 1, 2, 0.0, 5.8],
@@ -70,23 +70,27 @@ var DATA = {
     ["2026-08-28", 8211.94, 8063.68, 1.84, 33, 41, 136.47, 8.7], ["2026-08-31", 8114.78, 8063.68, 0.63, 33, 41, 133.47, 2.85],
     ["2026-09-01", 8058.53, 8063.68, -0.06, 33, 41, 131.74, -0.28], ["2026-09-02", 8046.9, 8063.68, -0.21, 33, 41, 131.38, -0.9],
     ["2026-09-04", 8004.29, 8063.68, -0.74, 33, 41, 130.07, -3.11], ["2026-09-05", 8015.42, 8063.68, -0.6, 33, 41, 130.41, -2.5],
-    ["2026-09-06", 8066.44, 8063.68, 0.03, 33, 41, 131.98, 0.14]
+    ["2026-09-06", 8066.44, 8063.68, 0.03, 33, 41, 131.98, 0.14], ["2026-09-07", 9082.89, 9080.13, 0.03, 33, 43, 131.98, 0.14],
+    ["2026-09-08", 9069.97, 9229.92, -1.73, 35, 44, 131.98, -7.88], ["2026-09-09", 9067.93, 9229.92, -1.76, 36, 44, 131.98, -7.88]
   ],
   buckets: [
     ["Vintage / Legacy sealed", 3294.2, 3275.92, -0.55],
-    ["The Hobbit", 2853.54, 2723.05, -4.57],
+    ["The Hobbit", 3228.04, 3045.21, -5.66],
     ["Marvel Super Heroes", 1287.55, 1191.98, -7.42],
+    ["Reality Fracture", 791.74, 679.33, -14.2],
     ["LOTR: Tales of Middle-earth", 550.29, 785.7, 42.78],
     ["Marvel's Spider-Man", 78.1, 89.79, 14.97]
   ],
   holdings: [
     ["The Hobbit Collector Booster Display", "The Hobbit", 1, 839.85, 828.28, -1.38, "2026-07-18", true],
     ["The Hobbit Collector Booster Box", "The Hobbit", 1, 795.0, 828.28, 4.19, "2026-08-13", true],
+    ["Reality Fracture Collector Booster Box", "Reality Fracture", 1, 641.95, 531.58, -17.19, "2026-09-07", true],
     ["Antiquities Booster Pack", "Vintage / Legacy sealed", 1, 535.0, 547.85, 2.4, "2026-05-13", true],
     ["Fallen Empires Booster Box (sealed)", "Vintage / Legacy sealed", 1, 534.99, 565.75, 5.75, "2026-08-08", true],
     ["Marvel Super Heroes Collector Booster Box", "Marvel Super Heroes", 1, 534.95, 482.8, -9.75, "2026-06-06", true],
     ["Marvel Super Heroes Collector Booster Display", "Marvel Super Heroes", 1, 502.33, 482.8, -3.89, "2026-06-03", true],
     ["Urza's Saga Tournament Pack", "Vintage / Legacy sealed", 1, 481.48, 466.1, -3.19, "2026-05-13", true],
+    ["The Hobbit Play Booster Box", "The Hobbit", 2, 374.5, 322.16, -13.98, "2026-09-07", true],
     ["LOTR Tales of Middle-earth Set Booster Box", "LOTR: Tales of Middle-earth", 1, 337.1, 471.65, 39.91, "2026-05-16", true],
     ["Revised Edition Booster Pack", "Vintage / Legacy sealed", 1, 300.66, 324.66, 7.98, "2026-05-13", true],
     ["Urza's Saga Booster Pack", "Vintage / Legacy sealed", 1, 288.89, 246.75, -14.59, "2026-05-13", true],
@@ -96,6 +100,7 @@ var DATA = {
     ["The Hobbit Play Booster Box", "The Hobbit", 1, 206.26, 161.08, -21.9, "2026-08-24", true],
     ["The Hobbit Play Booster Box", "The Hobbit", 1, 203.29, 161.08, -20.76, "2026-05-18", true],
     ["The Hobbit Play Booster Box", "The Hobbit", 1, 197.94, 161.08, -18.62, "2026-05-13", true],
+    ["Reality Fracture Play Booster Box", "Reality Fracture", 1, 149.79, 147.75, -1.36, "2026-09-08", true],
     ["Urza's Legacy Booster Pack", "Vintage / Legacy sealed", 1, 147.93, 130.98, -11.46, "2026-05-13", true],
     ["Fifth Edition Starter Deck", "Vintage / Legacy sealed", 1, 141.23, 131.81, -6.67, "2026-08-01", true],
     ["Marvel Super Heroes Play Booster Box", "Marvel Super Heroes", 1, 127.28, 115.1, -9.57, "2026-05-30", true],
