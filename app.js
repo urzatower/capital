@@ -301,6 +301,31 @@ function buildTables() {
     tr.appendChild(cell(r[6], "num"));
     ht.appendChild(tr);
   });
+  var mt = document.querySelector("#monthly tbody");
+  if (mt && DATA.monthly) {
+    mt.textContent = "";
+    var one = function (v) {  // one decimal, half away from zero; capital_site_seo.py uses the same arithmetic
+      var r = Math.floor(Math.abs(v) * 10 + 0.5) / 10;
+      return (v < 0 && r > 0 ? "-" : "+") + r.toFixed(1) + "%";
+    };
+    var yearly = {};
+    DATA.yearly.forEach(function (r) { yearly[r[0]] = r[1]; });
+    var years = [];
+    DATA.monthly.forEach(function (r) { if (years.indexOf(r[0]) < 0) years.push(r[0]); });
+    years.forEach(function (y) {
+      var tr = document.createElement("tr");
+      tr.appendChild(cell(String(y)));
+      for (var m = 1; m <= 12; m++) {
+        var hit = DATA.monthly.filter(function (r) { return r[0] === y && r[1] === m; })[0];
+        var td = cell(hit ? one(hit[2]) : "", "num");
+        if (hit && hit[3] < DATA.thin_book) td.className = "num thin";
+        tr.appendChild(td);
+      }
+      tr.appendChild(cell(one(yearly[y]), "num strong"));
+      mt.appendChild(tr);
+    });
+  }
+
   var htot = document.createElement("tr");
   htot.className = "total";
   htot.appendChild(cell("Total"));

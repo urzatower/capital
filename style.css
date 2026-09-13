@@ -127,3 +127,8 @@ footer p { margin: 0; }
   a { text-decoration: none; }
   hr { margin: 18px 0; }
 }
+
+/* Monthly returns grid */
+#monthly th, #monthly td { font-size: 12px; padding-left: 6px; padding-right: 6px; }
+#monthly td.thin { color: #999; }
+#monthly td.strong { font-weight: 600; }
