@@ -1,7 +1,7 @@
 {
   "meta": {
     "name": "Urza Tower Capital LP",
-    "asof": "2026-09-12",
+    "asof": "2026-09-13",
     "currency": "USD",
     "source": "portfolio_ledger.json"
   },
@@ -15,12 +15,12 @@
     "first_acq": "2024-06-06",
     "inception": "2024-11-01",
     "feed_start": "2024-02-08",
-    "asof": "2026-09-12",
+    "asof": "2026-09-13",
     "mwr_pct": -2.13,
-    "mwr_irr_pct": -9.19,
+    "mwr_irr_pct": -9.09,
     "twr_pct": 131.07,
-    "capital_years": 2088.0,
-    "avg_capital": 921.07,
+    "capital_years": 2113.0,
+    "avg_capital": 930.97,
     "bench_pct": 43.53
   },
   "series_columns": [
@@ -1386,6 +1386,17 @@
       44,
       131.07,
       -9.19,
+      43.53
+    ],
+    [
+      "2026-09-13",
+      9032.98,
+      9229.92,
+      -2.13,
+      36,
+      44,
+      131.07,
+      -9.09,
       43.53
     ]
   ],

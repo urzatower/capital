@@ -1,14 +1,14 @@
 // Urza Tower Capital LP - portfolio ledger.
 // Single source of truth for both index.html and facts.html.
-// Generated from 02_Data/portfolio_ledger.json, marked 2026-09-12.
+// Generated from 02_Data/portfolio_ledger.json, marked 2026-09-13.
 // Built by 01_Engines/report_engine/capital_site_data.py. Do not hand edit.
 var DATA = {
   summary: {
     nav: 9032.98, invested: 9229.92, perf_pct: -2.13, positions: 44,
     marked: 36, marked_pct: 94.2, feed_start: "2024-02-08",
-    mwr_pct: -2.13, mwr_irr_pct: -9.19, twr_pct: 131.07,
-    capital_years: 2088.0, avg_capital: 921.07, bench_pct: 43.53,
-    first_acq: "2024-06-06", inception: "2024-11-01", asof: "2026-09-12"
+    mwr_pct: -2.13, mwr_irr_pct: -9.09, twr_pct: 131.07,
+    capital_years: 2113.0, avg_capital: 930.97, bench_pct: 43.53,
+    first_acq: "2024-06-06", inception: "2024-11-01", asof: "2026-09-13"
   },
   series: [
     ["2024-11-01", 72.69, 72.69, 0.0, 0, 2, 0.0, 0.0, 0.0], ["2024-11-04", 73.91, 72.69, 1.68, 1, 2, 0.0, 5.8, 0.07],
@@ -72,7 +72,7 @@ var DATA = {
     ["2026-09-04", 8004.29, 8063.68, -0.74, 33, 41, 130.07, -3.11, 42.72], ["2026-09-05", 8015.42, 8063.68, -0.6, 33, 41, 130.41, -2.5, 42.75],
     ["2026-09-06", 8066.44, 8063.68, 0.03, 33, 41, 131.98, 0.14, 42.78], ["2026-09-07", 9082.89, 9080.13, 0.03, 33, 43, 131.98, 0.14, 42.78],
     ["2026-09-08", 9069.97, 9229.92, -1.73, 35, 44, 131.98, -7.88, 42.78], ["2026-09-09", 9075.01, 9229.92, -1.68, 36, 44, 132.21, -7.54, 43.24],
-    ["2026-09-12", 9032.98, 9229.92, -2.13, 36, 44, 131.07, -9.19, 43.53]
+    ["2026-09-12", 9032.98, 9229.92, -2.13, 36, 44, 131.07, -9.19, 43.53], ["2026-09-13", 9032.98, 9229.92, -2.13, 36, 44, 131.07, -9.09, 43.53]
   ],
   buckets: [
     ["Vintage / Legacy sealed", 3294.2, 3344.37, 1.52],
