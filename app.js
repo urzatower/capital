@@ -398,10 +398,10 @@ function buildFacts(tb) {
   var summary = document.getElementById("summary-line");
   if (summary) {
     summary.textContent =
-      "As of " + s.asof + ". Invested capital " + usd(s.invested) + ", marked at " + usd(s.nav) +
-      ". NAV per unit " + (100 + s.twr_pct).toFixed(1) + " against 100 at inception " + s.inception +
-      "; investor return " + pct(s.mwr_pct) + ", " + pct(s.mwr_irr_pct) + " a year, on average capital at " +
-      "risk of " + usd(s.avg_capital) + ". " + s.positions + " positions and " + k.units +
+      "As of " + s.asof + ". Investor return " + pct(s.mwr_pct) + ", " + pct(s.mwr_irr_pct) + " a year: " +
+      "invested capital " + usd(s.invested) + ", marked at " + usd(s.nav) + ", on average capital at " +
+      "risk of " + usd(s.avg_capital) + ". NAV per unit " + (100 + s.twr_pct).toFixed(1) + " against 100 at inception " +
+      s.inception + ". " + s.positions + " positions and " + k.units +
       " sealed units across " + DATA.buckets.length + " strategy buckets. First acquisition " + s.first_acq +
       ". " + s.marked + " of " + s.positions + " positions, " + wgt(s.marked_pct) +
       " of cost basis, are marked to observed sale prices; the rest are carried at cost.";
