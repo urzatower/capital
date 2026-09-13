@@ -17,6 +17,7 @@ h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacin
 h3 { font-size: 13px; font-weight: 700; margin: 24px 0 4px; }
 p { margin: 0 0 16px; }
 p:last-child { margin-bottom: 0; }
+.tagline { color: #111; font-size: 13px; letter-spacing: 0.02em; margin: 10px 0 2px; }
 .sub { color: #555; }
 nav { display: flex; flex-wrap: wrap; gap: 16px; font-size: 13px; margin: 12px 0 0; }
 a { color: #111; text-decoration: underline; }
