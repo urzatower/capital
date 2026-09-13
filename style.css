@@ -132,3 +132,5 @@ footer p { margin: 0; }
 #monthly th, #monthly td { font-size: 12px; padding-left: 6px; padding-right: 6px; }
 #monthly td.thin { color: #999; }
 #monthly td.strong { font-weight: 600; }
+#monthly tr.bench td { color: #888; font-size: 11px; border-top: 0; }
+#monthly tr.bench td:first-child { font-style: italic; }

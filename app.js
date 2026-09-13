@@ -216,12 +216,14 @@ function buildCharts(mount) {
 
   /* Exhibit 2 - the two returns, money-weighted and time-weighted */
   var H2 = 380;
-  var both = pts.map(function (p) { return p[3]; }).concat(pts.map(function (p) { return p[6]; }));
+  var HASB = pts[0].length > 8;
+  var both = pts.map(function (p) { return p[3]; }).concat(pts.map(function (p) { return p[6]; }))
+    .concat(HASB ? pts.map(function (p) { return p[8]; }) : []);
   var tT = ticks(Math.min.apply(null, both.concat(0)), Math.max.apply(null, both.concat(0)) * 1.06, 5);
   var tMin = tT[0], tMax = tT[tT.length - 1];
   var yR = function (v) { return H2 - PAD.b - ((v - tMin) / (tMax - tMin)) * (H2 - PAD.t - PAD.b); };
 
-  label(mount, "Exhibit", 2, "NAV per unit, base 100 at inception, against the investor return");
+  label(mount, "Exhibit", 2, "NAV per unit, base 100 at inception, against the investor return" + (HASB ? " and the benchmark" : ""));
   var r2 = tag("p", "readout");
   mount.appendChild(r2);
   var box2 = tag("div", "plot");
@@ -236,17 +238,24 @@ function buildCharts(mount) {
     s2.appendChild(el("text", { x: x(d), y: H2 - PAD.b + 16, "text-anchor": "middle", style: AXIS }, d.slice(0, 4)));
   });
   ruleAt(s2, H2);
+  if (HASB) {
+    s2.appendChild(el("path", { d: seg(yR, 8), fill: "none", stroke: "#b5b5b5", "stroke-width": "1.5" }));
+  }
   s2.appendChild(el("path", { d: seg(yR, 6), fill: "none", stroke: "#999", "stroke-width": "1", "stroke-dasharray": "4 3" }));
   split(s2, yR, 3, "#111");
   s2.appendChild(el("text", { x: W - PAD.r, y: yR(last[6]) - 6, "text-anchor": "end", style: AXIS },
                      "NAV per unit " + (100 + last[6]).toFixed(1)));
   s2.appendChild(el("text", { x: W - PAD.r, y: yR(last[3]) + 14, "text-anchor": "end", style: AXIS_DARK },
                      "investor return " + pct(last[3])));
+  if (HASB) {
+    s2.appendChild(el("text", { x: W - PAD.r, y: yR(last[8]) - 6, "text-anchor": "end", style: AXIS },
+                       "benchmark " + pct(last[8])));
+  }
   box2.appendChild(s2);
   mount.appendChild(box2);
   track(s2, H2, x, [yR, yR], [3, 6], r2, function (p) {
     return p[0] + "   NAV per unit " + (100 + p[6]).toFixed(1) + "   investor return " + pct(p[3]) +
-           "   subscriptions " + usd(p[2]);
+           (HASB ? "   benchmark " + pct(p[8]) : "") + "   subscriptions " + usd(p[2]);
   });
   mount.appendChild(tag("p", "note",
     "Investor return solid, NAV per unit dashed, both read on the same scale as a percentage from base. " +
@@ -256,7 +265,10 @@ function buildCharts(mount) {
     "and annualises to " + pct(DATA.summary.mwr_irr_pct) + ". The gap between the two lines is the whole story " +
     "of this book. Average capital at risk over the period was " + usd(DATA.summary.avg_capital) + " against " +
     usd(DATA.summary.invested) + " subscribed today, and most of that arrived after May 2026, so the early " +
-    "doubling happened on a position too small to move the money. A fund reports both for exactly this reason."));
+    "doubling happened on a position too small to move the money. A fund reports both for exactly this reason." +
+    (HASB ? " The grey line is the benchmark, the " + DATA.benchmark.name + ": every Magic booster box TCGplayer " +
+      "prices (" + DATA.benchmark.constituents + " today), capped value-weighted and chain-linked from the same " +
+      "price source that marks the book, " + pct(DATA.benchmark.since_inception_pct) + " since inception." : "")));
 }
 
 /* ---------------------------------------------------------------- tables */
@@ -309,7 +321,8 @@ function buildTables() {
       return (v < 0 && r > 0 ? "-" : "+") + r.toFixed(1) + "%";
     };
     var yearly = {};
-    DATA.yearly.forEach(function (r) { yearly[r[0]] = r[1]; });
+    var yearlyB = {};
+    DATA.yearly.forEach(function (r) { yearly[r[0]] = r[1]; if (r.length > 2) yearlyB[r[0]] = r[2]; });
     var years = [];
     DATA.monthly.forEach(function (r) { if (years.indexOf(r[0]) < 0) years.push(r[0]); });
     years.forEach(function (y) {
@@ -323,6 +336,17 @@ function buildTables() {
       }
       tr.appendChild(cell(one(yearly[y]), "num strong"));
       mt.appendChild(tr);
+      if (DATA.monthly[0].length > 4) {
+        var br = document.createElement("tr");
+        br.className = "bench";
+        br.appendChild(cell("benchmark"));
+        for (var bm = 1; bm <= 12; bm++) {
+          var bh = DATA.monthly.filter(function (r) { return r[0] === y && r[1] === bm; })[0];
+          br.appendChild(cell(bh ? one(bh[4]) : "", "num"));
+        }
+        br.appendChild(cell(one(yearlyB[y]), "num"));
+        mt.appendChild(br);
+      }
     });
   }
 
