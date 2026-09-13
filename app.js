@@ -338,6 +338,7 @@ function buildFacts(tb) {
   factsRow(tb, "Name", "Urza Tower Capital LP");
   factsRow(tb, "Structure", "Personal book, run with fund discipline");
   factsRow(tb, "Location", "Miami, Florida");
+  factsRow(tb, "Contact", "urzatowercapital@gmail.com");
   factsRow(tb, "Base currency", "USD");
   factsRow(tb, "First acquisition", s.first_acq);
   factsRow(tb, "Inception of the book", s.inception);
