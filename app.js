@@ -265,6 +265,7 @@ function buildTables() {
   var s = DATA.summary, k = stats();
 
   var bt = document.querySelector("#buckets tbody");
+  bt.textContent = "";  // replace the static snapshot written by capital_site_seo.py
   DATA.buckets.forEach(function (r) {
     var tr = document.createElement("tr");
     tr.appendChild(cell(r[0]));
@@ -287,6 +288,7 @@ function buildTables() {
     "Holdings, all " + s.positions + " positions. An asterisk marks a position the price feed does not cover, carried at cost";
 
   var ht = document.querySelector("#holdings tbody");
+  ht.textContent = "";
   DATA.holdings.forEach(function (r) {
     var tr = document.createElement("tr");
     tr.appendChild(cell(r[7] === false ? r[0] + " *" : r[0]));
