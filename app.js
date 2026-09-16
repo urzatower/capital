@@ -396,7 +396,7 @@ function buildFacts(tb) {
   factsGroup(tb, "Mandate");
   factsRow(tb, "Strategy", "Long-only sealed trading card product");
   factsRow(tb, "Instruments", "Sealed boxes, displays, packs, decks, bundles");
-  factsRow(tb, "Universe", "Magic: The Gathering and Universes Beyond");
+  factsRow(tb, "Universe", "Magic: The Gathering and Universes Beyond, with a small allocation to other sealed trading card and collectible product");
   factsRow(tb, "Holding period", "Indefinite. No position has been sold");
   factsRow(tb, "Benchmark", "None");
 
