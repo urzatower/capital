@@ -134,3 +134,19 @@ footer p { margin: 0; }
 #monthly td.strong { font-weight: 600; }
 #monthly tr.bench td { color: #888; font-size: 11px; border-top: 0; }
 #monthly tr.bench td:first-child { font-style: italic; }
+
+/* Letter exhibits and the standing market gauge (letter 025 onward) */
+.chart-exhibit { margin: 22px 0 18px; }
+.chart-exhibit svg { width: 100%; height: auto; display: block; border: 1px solid #ededed; padding: 6px 4px; }
+.chart-exhibit figcaption { font-size: 12px; color: #666; margin-top: 6px; }
+table.gauge { border-collapse: collapse; width: 100%; margin: 18px 0 20px; }
+table.gauge caption { text-align: left; font-size: 12px; letter-spacing: 1px; text-transform: uppercase;
+  color: #666; padding-bottom: 6px; border-bottom: 1px solid #111; }
+table.gauge td { border-bottom: 1px solid #ededed; padding: 7px 8px 7px 0; vertical-align: top; font-size: 14px; }
+table.gauge td.g-l { width: 26%; font-weight: 700; }
+table.gauge td.g-v { width: 38%; font-variant-numeric: tabular-nums; }
+table.gauge td.g-n { color: #777; font-size: 12.5px; }
+@media (max-width: 640px) {
+  table.gauge td { display: block; width: auto; padding: 2px 0; }
+  table.gauge td.g-l { border: none; padding-top: 10px; }
+}
