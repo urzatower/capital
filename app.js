@@ -396,7 +396,7 @@ function buildFacts(tb) {
   factsGroup(tb, "Mandate");
   factsRow(tb, "Strategy", "Long-only sealed trading card product");
   factsRow(tb, "Instruments", "Sealed boxes, displays, packs, decks, bundles");
-  factsRow(tb, "Universe", "Magic: The Gathering and Universes Beyond, with a small allocation to other sealed trading card and collectible product");
+  factsRow(tb, "Universe", "Magic: The Gathering, Universes Beyond and others");
   factsRow(tb, "Holding period", "Indefinite. No position has been sold");
   factsRow(tb, "Benchmark", "None");
 
@@ -454,7 +454,7 @@ function buildFacts(tb) {
       s.inception + ". " + s.positions + " positions and " + k.units +
       " sealed units across " + DATA.buckets.length + " strategy buckets. First acquisition " + s.first_acq +
       ". " + s.marked + " of " + s.positions + " positions, " + wgt(s.marked_pct) +
-      " of cost basis, are marked to observed sale prices; the rest are carried at cost.";
+      " of cost basis, are marked to observed market prices or, where a product has no sale history yet, to the lowest public ask; the rest are carried at cost.";
   }
 
   var charts = document.getElementById("charts");
