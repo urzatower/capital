@@ -1,14 +1,14 @@
 // Urza Tower Capital LP - portfolio ledger.
 // Single source of truth for both index.html and facts.html.
-// Generated from 02_Data/portfolio_ledger.json, marked 2026-09-13.
+// Generated from 02_Data/portfolio_ledger.json, marked 2026-09-15.
 // Built by 01_Engines/report_engine/capital_site_data.py. Do not hand edit.
 var DATA = {
   summary: {
-    nav: 9032.98, invested: 9229.92, perf_pct: -2.13, positions: 44,
-    marked: 36, marked_pct: 94.2, feed_start: "2024-02-08",
-    mwr_pct: -2.13, mwr_irr_pct: -9.09, twr_pct: 131.07,
-    capital_years: 2113.0, avg_capital: 930.97, bench_pct: 43.53,
-    first_acq: "2024-06-06", inception: "2024-11-01", asof: "2026-09-13"
+    nav: 9781.8, invested: 9978.74, perf_pct: -1.97, positions: 50,
+    marked: 36, marked_pct: 87.1, feed_start: "2024-02-08",
+    mwr_pct: -1.97, mwr_irr_pct: -8.81, twr_pct: 131.07,
+    capital_years: 2181.0, avg_capital: 958.62, bench_pct: 43.53,
+    first_acq: "2024-06-06", inception: "2024-11-01", asof: "2026-09-15"
   },
   series: [
     ["2024-11-01", 72.69, 72.69, 0.0, 0, 2, 0.0, 0.0, 0.0], ["2024-11-04", 73.91, 72.69, 1.68, 1, 2, 0.0, 5.8, 0.07],
@@ -68,11 +68,11 @@ var DATA = {
     ["2026-08-17", 7527.87, 7410.97, 1.58, 31, 38, 134.49, 7.91, 40.37], ["2026-08-18", 7734.92, 7618.02, 1.53, 31, 39, 134.49, 7.8, 40.37],
     ["2026-08-23", 7960.45, 7857.42, 1.31, 32, 40, 134.49, 6.42, 40.37], ["2026-08-24", 8241.26, 8063.68, 2.2, 32, 41, 136.85, 11.04, 41.54],
     ["2026-08-28", 8211.94, 8063.68, 1.84, 33, 41, 136.47, 8.7, 41.54], ["2026-08-31", 8114.78, 8063.68, 0.63, 33, 41, 133.47, 2.85, 42.51],
-    ["2026-09-01", 8058.53, 8063.68, -0.06, 33, 41, 131.74, -0.28, 42.56], ["2026-09-02", 8046.9, 8063.68, -0.21, 33, 41, 131.38, -0.9, 42.58],
-    ["2026-09-04", 8004.29, 8063.68, -0.74, 33, 41, 130.07, -3.11, 42.72], ["2026-09-05", 8015.42, 8063.68, -0.6, 33, 41, 130.41, -2.5, 42.75],
-    ["2026-09-06", 8066.44, 8063.68, 0.03, 33, 41, 131.98, 0.14, 42.78], ["2026-09-07", 9082.89, 9080.13, 0.03, 33, 43, 131.98, 0.14, 42.78],
-    ["2026-09-08", 9069.97, 9229.92, -1.73, 35, 44, 131.98, -7.88, 42.78], ["2026-09-09", 9075.01, 9229.92, -1.68, 36, 44, 132.21, -7.54, 43.24],
-    ["2026-09-12", 9032.98, 9229.92, -2.13, 36, 44, 131.07, -9.19, 43.53], ["2026-09-13", 9032.98, 9229.92, -2.13, 36, 44, 131.07, -9.09, 43.53]
+    ["2026-09-01", 8058.53, 8063.68, -0.06, 33, 41, 131.74, -0.28, 42.56], ["2026-09-02", 8460.29, 8477.07, -0.2, 33, 45, 131.38, -0.9, 42.58],
+    ["2026-09-04", 8417.68, 8477.07, -0.7, 33, 45, 130.07, -3.1, 42.72], ["2026-09-05", 8428.81, 8477.07, -0.57, 33, 45, 130.41, -2.5, 42.75],
+    ["2026-09-06", 8479.83, 8477.07, 0.03, 33, 45, 131.98, 0.14, 42.78], ["2026-09-07", 9496.28, 9493.52, 0.03, 33, 47, 131.98, 0.14, 42.78],
+    ["2026-09-08", 9628.33, 9788.28, -1.63, 35, 49, 131.98, -7.85, 42.78], ["2026-09-09", 9633.37, 9788.28, -1.58, 36, 49, 132.21, -7.51, 43.24],
+    ["2026-09-12", 9591.34, 9788.28, -2.01, 36, 49, 131.07, -9.14, 43.53], ["2026-09-15", 9781.8, 9978.74, -1.97, 36, 50, 131.07, -8.81, 43.53]
   ],
   buckets: [
     ["Vintage / Legacy sealed", 3294.2, 3344.37, 1.52],
@@ -80,6 +80,9 @@ var DATA = {
     ["Marvel Super Heroes", 1287.55, 1166.69, -9.39],
     ["Reality Fracture", 791.74, 721.05, -8.93],
     ["LOTR: Tales of Middle-earth", 550.29, 742.91, 35.0],
+    ["Secret Lair x MSCHF", 413.39, 413.39, 0.0],
+    ["Other collectibles", 190.46, 190.46, 0.0],
+    ["Pokemon", 144.97, 144.97, 0.0],
     ["Marvel's Spider-Man", 78.1, 89.43, 14.51]
   ],
   holdings: [
@@ -101,13 +104,19 @@ var DATA = {
     ["The Hobbit Play Booster Box", "The Hobbit", 1, 206.26, 161.33, -21.78, "2026-08-24", true],
     ["The Hobbit Play Booster Box", "The Hobbit", 1, 203.29, 161.33, -20.64, "2026-05-18", true],
     ["The Hobbit Play Booster Box", "The Hobbit", 1, 197.94, 161.33, -18.5, "2026-05-13", true],
+    ["World of Warcraft: Forever Collector's Edition", "Other collectibles", 1, 190.46, 190.46, 0.0, "2026-09-15", false],
     ["Reality Fracture Play Booster Box", "Reality Fracture", 1, 149.79, 190.95, 27.48, "2026-09-08", true],
     ["Urza's Legacy Booster Pack", "Vintage / Legacy sealed", 1, 147.93, 132.22, -10.62, "2026-05-13", true],
+    ["Pokemon TCG: 30th Celebration Booster Bundle", "Pokemon", 1, 144.97, 144.97, 0.0, "2026-09-08", false],
     ["Fifth Edition Starter Deck", "Vintage / Legacy sealed", 1, 141.23, 131.79, -6.68, "2026-08-01", true],
     ["Marvel Super Heroes Play Booster Box", "Marvel Super Heroes", 1, 127.28, 114.95, -9.69, "2026-05-30", true],
     ["Marvel Super Heroes Jumpstart Booster Box", "Marvel Super Heroes", 1, 122.99, 112.6, -8.45, "2026-06-08", true],
+    ["Secret Lair x MSCHF - The Zeta Set Booster Pack", "Secret Lair x MSCHF", 1, 119.13, 119.13, 0.0, "2026-09-02", false],
+    ["Secret Lair x MSCHF - The Zeta Set Booster Pack", "Secret Lair x MSCHF", 1, 117.1, 117.1, 0.0, "2026-09-02", false],
     ["Mirrodin Tournament Pack", "Vintage / Legacy sealed", 1, 113.42, 95.51, -15.79, "2026-05-21", true],
     ["Legions Theme Deck - Zombies Unleashed", "Vintage / Legacy sealed", 1, 107.0, 134.99, 26.16, "2026-05-21", true],
+    ["Secret Lair x MSCHF - The Zeta Set Booster Pack", "Secret Lair x MSCHF", 1, 89.88, 89.88, 0.0, "2026-09-02", false],
+    ["Secret Lair x MSCHF - The Zeta Set Booster Pack", "Secret Lair x MSCHF", 1, 87.28, 87.28, 0.0, "2026-09-02", false],
     ["LOTR Commander Deck 2 + Collector Booster Sample Pack", "LOTR: Tales of Middle-earth", 1, 78.38, 78.38, 0.0, "2026-03-23", false],
     ["Marvel's Spider-Man Bundle: Gift Edition", "Marvel's Spider-Man", 1, 78.1, 89.43, 14.51, "2026-02-16", true],
     ["The Hobbit Bundle", "The Hobbit", 1, 74.89, 67.53, -9.83, "2026-05-01", true],

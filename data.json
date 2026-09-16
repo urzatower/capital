@@ -1,26 +1,26 @@
 {
   "meta": {
     "name": "Urza Tower Capital LP",
-    "asof": "2026-09-13",
+    "asof": "2026-09-15",
     "currency": "USD",
     "source": "portfolio_ledger.json"
   },
   "summary": {
-    "nav": 9032.98,
-    "invested": 9229.92,
-    "perf_pct": -2.13,
-    "positions": 44,
+    "nav": 9781.8,
+    "invested": 9978.74,
+    "perf_pct": -1.97,
+    "positions": 50,
     "marked": 36,
-    "marked_pct": 94.2,
+    "marked_pct": 87.1,
     "first_acq": "2024-06-06",
     "inception": "2024-11-01",
     "feed_start": "2024-02-08",
-    "asof": "2026-09-13",
-    "mwr_pct": -2.13,
-    "mwr_irr_pct": -9.09,
+    "asof": "2026-09-15",
+    "mwr_pct": -1.97,
+    "mwr_irr_pct": -8.81,
     "twr_pct": 131.07,
-    "capital_years": 2113.0,
-    "avg_capital": 930.97,
+    "capital_years": 2181.0,
+    "avg_capital": 958.62,
     "bench_pct": 43.53
   },
   "series_columns": [
@@ -1302,101 +1302,101 @@
     ],
     [
       "2026-09-02",
-      8046.9,
-      8063.68,
-      -0.21,
+      8460.29,
+      8477.07,
+      -0.2,
       33,
-      41,
+      45,
       131.38,
       -0.9,
       42.58
     ],
     [
       "2026-09-04",
-      8004.29,
-      8063.68,
-      -0.74,
+      8417.68,
+      8477.07,
+      -0.7,
       33,
-      41,
+      45,
       130.07,
-      -3.11,
+      -3.1,
       42.72
     ],
     [
       "2026-09-05",
-      8015.42,
-      8063.68,
-      -0.6,
+      8428.81,
+      8477.07,
+      -0.57,
       33,
-      41,
+      45,
       130.41,
       -2.5,
       42.75
     ],
     [
       "2026-09-06",
-      8066.44,
-      8063.68,
+      8479.83,
+      8477.07,
       0.03,
       33,
-      41,
+      45,
       131.98,
       0.14,
       42.78
     ],
     [
       "2026-09-07",
-      9082.89,
-      9080.13,
+      9496.28,
+      9493.52,
       0.03,
       33,
-      43,
+      47,
       131.98,
       0.14,
       42.78
     ],
     [
       "2026-09-08",
-      9069.97,
-      9229.92,
-      -1.73,
+      9628.33,
+      9788.28,
+      -1.63,
       35,
-      44,
+      49,
       131.98,
-      -7.88,
+      -7.85,
       42.78
     ],
     [
       "2026-09-09",
-      9075.01,
-      9229.92,
-      -1.68,
+      9633.37,
+      9788.28,
+      -1.58,
       36,
-      44,
+      49,
       132.21,
-      -7.54,
+      -7.51,
       43.24
     ],
     [
       "2026-09-12",
-      9032.98,
-      9229.92,
-      -2.13,
+      9591.34,
+      9788.28,
+      -2.01,
       36,
-      44,
+      49,
       131.07,
-      -9.19,
+      -9.14,
       43.53
     ],
     [
-      "2026-09-13",
-      9032.98,
-      9229.92,
-      -2.13,
+      "2026-09-15",
+      9781.8,
+      9978.74,
+      -1.97,
       36,
-      44,
+      50,
       131.07,
-      -9.09,
+      -8.81,
       43.53
     ]
   ],
@@ -1436,6 +1436,24 @@
       550.29,
       742.91,
       35.0
+    ],
+    [
+      "Secret Lair x MSCHF",
+      413.39,
+      413.39,
+      0.0
+    ],
+    [
+      "Other collectibles",
+      190.46,
+      190.46,
+      0.0
+    ],
+    [
+      "Pokemon",
+      144.97,
+      144.97,
+      0.0
     ],
     [
       "Marvel's Spider-Man",
@@ -1636,6 +1654,16 @@
       true
     ],
     [
+      "World of Warcraft: Forever Collector's Edition",
+      "Other collectibles",
+      1,
+      190.46,
+      190.46,
+      0.0,
+      "2026-09-15",
+      false
+    ],
+    [
       "Reality Fracture Play Booster Box",
       "Reality Fracture",
       1,
@@ -1654,6 +1682,16 @@
       -10.62,
       "2026-05-13",
       true
+    ],
+    [
+      "Pokemon TCG: 30th Celebration Booster Bundle",
+      "Pokemon",
+      1,
+      144.97,
+      144.97,
+      0.0,
+      "2026-09-08",
+      false
     ],
     [
       "Fifth Edition Starter Deck",
@@ -1686,6 +1724,26 @@
       true
     ],
     [
+      "Secret Lair x MSCHF - The Zeta Set Booster Pack",
+      "Secret Lair x MSCHF",
+      1,
+      119.13,
+      119.13,
+      0.0,
+      "2026-09-02",
+      false
+    ],
+    [
+      "Secret Lair x MSCHF - The Zeta Set Booster Pack",
+      "Secret Lair x MSCHF",
+      1,
+      117.1,
+      117.1,
+      0.0,
+      "2026-09-02",
+      false
+    ],
+    [
       "Mirrodin Tournament Pack",
       "Vintage / Legacy sealed",
       1,
@@ -1704,6 +1762,26 @@
       26.16,
       "2026-05-21",
       true
+    ],
+    [
+      "Secret Lair x MSCHF - The Zeta Set Booster Pack",
+      "Secret Lair x MSCHF",
+      1,
+      89.88,
+      89.88,
+      0.0,
+      "2026-09-02",
+      false
+    ],
+    [
+      "Secret Lair x MSCHF - The Zeta Set Booster Pack",
+      "Secret Lair x MSCHF",
+      1,
+      87.28,
+      87.28,
+      0.0,
+      "2026-09-02",
+      false
     ],
     [
       "LOTR Commander Deck 2 + Collector Booster Sample Pack",
