@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Urza Tower Capital LP investor deck 2026-09-15</title>
+<style>
+@page { size: 13.333in 7.5in; margin: 0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #f2f2f0; }
+body { font: 11.2pt/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; color: #111111;
+        -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.slide { width: 13.333in; height: 7.5in; background: #fff; padding: 0.42in 0.55in 0.36in;
+          position: relative; page-break-after: always; overflow: hidden; display: flex; flex-direction: column; }
+.slide:last-child { page-break-after: auto; }
+header { display: flex; align-items: flex-start; gap: 16px; border-bottom: 1.5px solid #111111;
+          padding-bottom: 9px; margin-bottom: 14px; }
+.brand { display: flex; align-items: center; gap: 7px; }
+.mark { width: 26px; height: 30px; }
+.word { line-height: 1; }
+.word b { display: block; font-size: 12pt; letter-spacing: 2.4px; font-weight: 700; }
+.word span { display: block; font-size: 7.4pt; letter-spacing: 4.3px; color: #8c8c8c; margin-top: 1px; }
+.head { margin-left: auto; text-align: right; }
+h1 { font-size: 34pt; font-weight: 300; letter-spacing: -0.5px; margin: 0; }
+h2 { font-size: 16pt; font-weight: 600; margin: 0; letter-spacing: -0.2px; }
+h3 { font-size: 9.5pt; font-weight: 700; margin: 0 0 6px; text-transform: uppercase; letter-spacing: 1.1px; }
+.kicker { font-size: 8.6pt; color: #8c8c8c; margin-top: 2px; }
+.body { flex: 1; display: flex; flex-direction: column; gap: 14px; min-height: 0; }
+.wide .chart { max-height: 3.1in; }
+footer { display: flex; justify-content: space-between; font-size: 7.4pt; color: #8c8c8c;
+          border-top: 1px solid #dcdcdc; padding-top: 6px; margin-top: 10px; }
+p { margin: 0 0 8px; }
+ul { margin: 0 0 8px; padding-left: 15px; }
+li { margin-bottom: 5px; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+.two.tight { gap: 20px; }
+.split { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 24px; }
+.growcol { min-width: 0; }
+.wide { width: 100%; }
+.chart { width: 100%; height: auto; display: block; }
+.grid { stroke: #dcdcdc; stroke-width: 0.7; }
+.zero { stroke: #111111; stroke-width: 0.9; }
+.navline { fill: none; stroke: #111111; stroke-width: 2; }
+.benchline { fill: none; stroke: #b5b5b5; stroke-width: 1.6; }
+.invline { fill: none; stroke: #8a6a3b; stroke-width: 1.6; }
+.navfill { fill: #111111; opacity: 0.08; }
+.invfill { fill: #8a6a3b; opacity: 0.16; }
+.ddfill { fill: #9d3b34; opacity: 0.13; }
+.ddline { fill: none; stroke: #9d3b34; stroke-width: 1.4; }
+.bar-book { fill: #111111; }
+.bar-bench { fill: #b5b5b5; }
+.ax { font-size: 8px; fill: #8c8c8c; }
+.val { font-size: 8px; fill: #111111; text-anchor: middle; }
+.tag { font-size: 8.5px; font-weight: 700; }
+.tag.nav { fill: #111111; }
+.tag.bench { fill: #8c8c8c; font-weight: 400; }
+.tag.inv { fill: #8a6a3b; }
+.instack { font-size: 8px; fill: #fff; text-anchor: middle; }
+.dcenter { font-size: 26px; font-weight: 300; text-anchor: middle; }
+.dsub { font-size: 8px; fill: #8c8c8c; text-anchor: middle; letter-spacing: 1px; }
+.donutwrap { display: flex; gap: 14px; align-items: center; }
+.donut { width: 2.5in; height: 2.5in; flex: none; }
+.legend { font-size: 8.8pt; }
+.lgh { font-size: 7.4pt; color: #8c8c8c; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px; }
+.lg { display: flex; align-items: center; gap: 6px; margin-bottom: 3px; }
+.lg i { width: 8px; height: 8px; display: inline-block; flex: none; }
+.lg span { flex: 1; }
+.lg b { font-variant-numeric: tabular-nums; }
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: #dcdcdc;
+         border: 1px solid #dcdcdc; }
+.kpis.six { grid-template-columns: repeat(6, 1fr); }
+.kpi { background: #fff; padding: 12px 13px; }
+.kl { font-size: 7.4pt; color: #8c8c8c; text-transform: uppercase; letter-spacing: 1px; }
+.kv { font-size: 20pt; font-weight: 300; letter-spacing: -0.4px; margin: 2px 0 1px;
+       font-variant-numeric: tabular-nums; }
+.ks { font-size: 7.6pt; color: #8c8c8c; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.facts td, .facts th { padding: 6px 7px; text-align: right; border-bottom: 1px solid #dcdcdc; font-size: 9.2pt; }
+.facts th { font-size: 7.4pt; color: #8c8c8c; text-transform: uppercase; letter-spacing: 0.8px;
+             border-bottom: 1px solid #111111; }
+.facts td.l, .facts th:first-child { text-align: left; }
+.facts td:first-child { text-align: left; }
+.facts.small td, .facts.small th { font-size: 8.6pt; padding: 4.5px 6px; }
+.wide-table td, .wide-table th { font-size: 8.8pt; padding: 5px 7px; }
+.mute { color: #8c8c8c; }
+.up { color: #2f6d4f; }
+.dn { color: #9d3b34; }
+.total td { font-weight: 700; border-top: 1px solid #111111; border-bottom: none; }
+.grid td, .grid th { font-size: 8pt; padding: 4px 3.5px; text-align: right; border-bottom: 1px solid #dcdcdc; }
+.grid th { color: #8c8c8c; text-transform: uppercase; letter-spacing: 0.4px; border-bottom: 1px solid #111111; }
+.grid td.l, .grid th:first-child { text-align: left; }
+.grid td.b { font-weight: 700; }
+.grid td.thin { color: #a6a6a6; }
+.grid td.bench, .grid tr .bench { color: #8c8c8c; font-size: 7.2pt; }
+.callout { background: #fafaf8; border-left: 2px solid #8a6a3b; padding: 10px 12px; }
+.foot { font-size: 7.6pt; color: #8c8c8c; margin-top: 6px; }
+.cover { justify-content: center; align-items: flex-start; gap: 0; }
+.cover .coverbrand { display: flex; align-items: center; gap: 14px; margin-bottom: 42px; }
+.cover .mark { width: 54px; height: 62px; }
+.word.big b { font-size: 26pt; letter-spacing: 6px; }
+.word.big span { font-size: 13pt; letter-spacing: 11.5px; color: #111111; }
+.coversub { font-size: 11pt; color: #8c8c8c; margin-top: 14px; line-height: 1.7; }
+.coverfoot { position: absolute; left: 0.55in; right: 0.55in; bottom: 0.42in; display: flex;
+              justify-content: space-between; border-top: 1px solid #111111; padding-top: 8px;
+              font-size: 8.4pt; color: #8c8c8c; }
+.back h1 { display: none; }
+</style></head>
+<body>
+<section class="slide cover">
+  <div class="coverbrand"><svg class="mark" viewBox="0 0 48 56" xmlns="http://www.w3.org/2000/svg"><g fill="#111"><rect x="14" y="6" width="5" height="8"/><rect x="21.5" y="6" width="5" height="8"/><rect x="29" y="6" width="5" height="8"/><rect x="12" y="14" width="24" height="4"/><polygon points="17,18 31,18 30,42 18,42"/><rect x="15" y="42" width="18" height="3"/><rect x="12" y="45" width="24" height="5"/></g><rect x="23" y="24" width="2.5" height="6" fill="#fff"/><path d="M21.5 42 v-4.5 a2.5 2.5 0 0 1 5 0 v4.5 z" fill="#fff"/></svg><div class="word big"><b>URZA</b><span>TOWER</span></div></div>
+  <h1>Investor presentation</h1>
+  <div class="coversub">Sealed Magic: The Gathering, Universes Beyond and others.<br>
+  Unlevered, self-funded, marked to market daily.</div>
+  <div class="coverfoot"><span>As of 2026-09-15</span><span>urzatower.github.io/capital</span><span>urzatowercapital@gmail.com</span></div>
+</section>
+<section class="slide">
+  <header>
+    <div class="brand"><svg class="mark" viewBox="0 0 48 56" xmlns="http://www.w3.org/2000/svg"><g fill="#111"><rect x="14" y="6" width="5" height="8"/><rect x="21.5" y="6" width="5" height="8"/><rect x="29" y="6" width="5" height="8"/><rect x="12" y="14" width="24" height="4"/><polygon points="17,18 31,18 30,42 18,42"/><rect x="15" y="42" width="18" height="3"/><rect x="12" y="45" width="24" height="5"/></g><rect x="23" y="24" width="2.5" height="6" fill="#fff"/><path d="M21.5 42 v-4.5 a2.5 2.5 0 0 1 5 0 v4.5 z" fill="#fff"/></svg><div class="word"><b>URZA</b><span>TOWER</span></div></div>
+    <div class="head"><h2>The fund at a glance</h2><div class="kicker">As of 2026-09-15</div></div>
+  </header>
+  <div class="body">
+<div class="kpis">
+  <div class="kpi"><div class="kl">NAV per unit</div><div class="kv">328.9</div><div class="ks">base 100 at inception 2024-11-01</div></div>
+  <div class="kpi"><div class="kl">Since inception</div><div class="kv">+228.9%</div><div class="ks">benchmark +43.5%</div></div>
+  <div class="kpi"><div class="kl">Marked value</div><div class="kv">$16,589</div><div class="ks">invested $12,571</div></div>
+  <div class="kpi"><div class="kl">Unrealized</div><div class="kv">$4,018</div><div class="ks">+32.0% on cost</div></div>
+  <div class="kpi"><div class="kl">Positions</div><div class="kv">51</div><div class="ks">87 sealed units</div></div>
+  <div class="kpi"><div class="kl">Annualised</div><div class="kv">+89.0%</div><div class="ks">over 1.9 years</div></div>
+  <div class="kpi"><div class="kl">Max drawdown</div><div class="kv">-8.4%</div><div class="ks">trough 2024-12-02</div></div>
+  <div class="kpi"><div class="kl">Price coverage</div><div class="kv">91%</div><div class="ks">38 of 51 positions marked</div></div>
+</div>
+<div class="two">
+  <div><h3>The book in one paragraph</h3>
+  <p>Urza Tower Capital LP is a personal, self-funded book of sealed trading card product held for scarcity rather than
+  traded. Every acquisition is recorded at its all-in order cost after discount and tax, and every position is
+  marked daily against public marketplace prices. Nothing is opened, nothing is levered, and no position has
+  been sold since inception on 2024-11-01.</p></div>
+  <div><h3>Why sealed</h3>
+  <p>Print runs end. Each box that is opened leaves the float and does not come back, so supply falls while the
+  audience for a set widens through films, games and reprint-free formats. The book exists to hold that
+  scarcity through the reprint cycle, funded only by its own capital.</p></div>
+</div></div>
+  <footer><span>Urza Tower Capital LP</span><span class="note"></span><span>2</span></footer>
+</section>
+<section class="slide">
+  <header>
+    <div class="brand"><svg class="mark" viewBox="0 0 48 56" xmlns="http://www.w3.org/2000/svg"><g fill="#111"><rect x="14" y="6" width="5" height="8"/><rect x="21.5" y="6" width="5" height="8"/><rect x="29" y="6" width="5" height="8"/><rect x="12" y="14" width="24" height="4"/><polygon points="17,18 31,18 30,42 18,42"/><rect x="15" y="42" width="18" height="3"/><rect x="12" y="45" width="24" height="5"/></g><rect x="23" y="24" width="2.5" height="6" fill="#fff"/><path d="M21.5 42 v-4.5 a2.5 2.5 0 0 1 5 0 v4.5 z" fill="#fff"/></svg><div class="word"><b>URZA</b><span>TOWER</span></div></div>
+    <div class="head"><h2>Mandate and philosophy</h2><div class="kicker">What the book buys and why</div></div>
+  </header>
+  <div class="body">
+<div class="two">
+  <div><h3>Mandate</h3>
+  <table class="facts">
+   <tr><td>Strategy</td><td>Long-only sealed trading card product</td></tr>
+   <tr><td>Universe</td><td>Magic: The Gathering, Universes Beyond and others</td></tr>
+   <tr><td>Instruments</td><td>Booster boxes, collector displays, packs, decks, bundles</td></tr>
+   <tr><td>Holding period</td><td>Indefinite. No position has been sold</td></tr>
+   <tr><td>Leverage</td><td>None. Self-funded</td></tr>
+   <tr><td>Base currency</td><td>USD</td></tr>
+   <tr><td>Inception</td><td>2024-11-01, first acquisition 2024-06-06</td></tr>
+   <tr><td>Valuation</td><td>Daily, public marketplace prices</td></tr>
+  </table></div>
+  <div><h3>How positions are chosen</h3>
+  <ul>
+    <li><b>Crossover sets</b> with an audience outside the game, where demand is not only from players.</li>
+    <li><b>Vintage and legacy sealed</b>, out-of-print packs, tournament packs, starter and theme decks.</li>
+    <li><b>Small, dated entries</b> rather than single large allocations, so the entry price is an average.</li>
+  </ul>
+  <h3>How risk is controlled</h3>
+  <ul>
+    <li>100% sealed inventory. Nothing is opened, so condition risk stays at grading rather than contents.</li>
+    <li>Reprint risk is the main hazard and is tracked per set.</li>
+    <li>No leverage and no redemption pressure, so a drawdown is never a forced seller.</li>
+  </ul></div>
+</div></div>
+  <footer><span>Urza Tower Capital LP</span><span class="note"></span><span>3</span></footer>
+</section>
+<section class="slide">
+  <header>
+    <div class="brand"><svg class="mark" viewBox="0 0 48 56" xmlns="http://www.w3.org/2000/svg"><g fill="#111"><rect x="14" y="6" width="5" height="8"/><rect x="21.5" y="6" width="5" height="8"/><rect x="29" y="6" width="5" height="8"/><rect x="12" y="14" width="24" height="4"/><polygon points="17,18 31,18 30,42 18,42"/><rect x="15" y="42" width="18" height="3"/><rect x="12" y="45" width="24" height="5"/></g><rect x="23" y="24" width="2.5" height="6" fill="#fff"/><path d="M21.5 42 v-4.5 a2.5 2.5 0 0 1 5 0 v4.5 z" fill="#fff"/></svg><div class="word"><b>URZA</b><span>TOWER</span></div></div>
+    <div class="head"><h2>Performance</h2><div class="kicker">NAV per unit against the benchmark, base 100</div></div>
+  </header>
+  <div class="body">
+<div class="wide"><svg viewBox="0 0 980 300" class="chart"><line x1="58" x2="904" y1="256.9" y2="256.9" class="grid"/><text x="50.0" y="259.9" class="ax" text-anchor="end">75</text><line x1="58" x2="904" y1="192.9" y2="192.9" class="grid"/><text x="50.0" y="195.9" class="ax" text-anchor="end">150</text><line x1="58" x2="904" y1="128.9" y2="128.9" class="grid"/><text x="50.0" y="131.9" class="ax" text-anchor="end">225</text><line x1="58" x2="904" y1="64.9" y2="64.9" class="grid"/><text x="50.0" y="67.9" class="ax" text-anchor="end">300</text><text x="58.0" y="288.0" class="ax" text-anchor="middle">2024-11</text><text x="195.6" y="288.0" class="ax" text-anchor="middle">2025-03</text><text x="333.1" y="288.0" class="ax" text-anchor="middle">2025-07</text><text x="470.7" y="288.0" class="ax" text-anchor="middle">2025-12</text><text x="608.2" y="288.0" class="ax" text-anchor="middle">2026-04</text><text x="745.8" y="288.0" class="ax" text-anchor="middle">2026-07</text><text x="883.4" y="288.0" class="ax" text-anchor="middle">2026-09</text><polyline points="58.0,235.5 64.9,235.5 71.8,235.4 78.6,235.0 85.5,235.0 92.4,235.0 99.3,234.6 106.1,234.6 113.0,234.2 119.9,234.1 126.8,234.2 133.7,234.1 140.5,234.0 147.4,233.9 154.3,233.8 161.2,233.7 168.0,233.6 174.9,233.6 181.8,233.5 188.7,233.6 195.6,233.6 202.4,233.3 209.3,232.9 216.2,232.6 223.1,232.4 230.0,232.3 236.8,232.1 243.7,231.9 250.6,231.7 257.5,231.7 264.3,231.2 271.2,231.0 278.1,230.9 285.0,230.7 291.9,230.4 298.7,230.0 305.6,229.7 312.5,229.4 319.4,228.9 326.2,228.3 333.1,227.8 340.0,226.6 346.9,225.9 353.8,225.2 360.6,224.9 367.5,224.0 374.4,223.4 381.3,223.1 388.1,223.1 395.0,223.0 401.9,222.8 408.8,223.1 415.7,223.0 422.5,223.0 429.4,223.2 436.3,223.3 443.2,223.0 450.0,223.3 456.9,223.3 463.8,223.8 470.7,223.8 477.6,223.9 484.4,223.7 491.3,223.4 498.2,223.0 505.1,222.1 512.0,221.6 518.8,221.1 525.7,220.6 532.6,220.1 539.5,219.4 546.3,218.6 553.2,217.7 560.1,217.3 567.0,216.6 573.9,215.7 580.7,215.2 587.6,214.6 594.5,214.2 601.4,213.8 608.2,213.4 615.1,213.4 622.0,213.0 628.9,213.0 635.8,212.7 642.6,212.7 649.5,212.7 656.4,212.8 663.3,212.8 670.1,212.5 677.0,212.5 683.9,211.2 690.8,211.2 697.7,211.2 704.5,210.7 711.4,210.2 718.3,209.3 725.2,207.3 732.0,206.1 738.9,205.0 745.8,205.0 752.7,203.7 759.6,203.2 766.4,203.2 773.3,202.4 780.2,202.4 787.1,201.8 794.0,201.8 800.8,201.1 807.7,201.1 814.6,201.1 821.5,200.1 828.3,200.1 835.2,199.3 842.1,199.2 849.0,199.2 855.9,199.1 862.7,199.1 869.6,199.0 876.5,199.0 883.4,199.0 890.2,198.6 897.1,198.4 904.0,198.4" class="benchline"/><text x="910" y="202.4" class="tag bench">benchmark</text><text x="910" y="215.4" class="tag bench">144</text><polyline points="58.0,235.5 64.9,235.5 71.8,235.6 78.6,234.6 85.5,240.6 92.4,240.6 99.3,241.8 106.1,239.9 113.0,238.3 119.9,239.8 126.8,239.5 133.7,238.7 140.5,231.3 147.4,225.8 154.3,220.8 161.2,218.8 168.0,220.1 174.9,218.9 181.8,216.1 188.7,213.7 195.6,211.2 202.4,205.9 209.3,210.0 216.2,206.6 223.1,202.0 230.0,201.1 236.8,200.7 243.7,201.7 250.6,201.4 257.5,203.8 264.3,202.0 271.2,201.4 278.1,199.1 285.0,194.7 291.9,190.7 298.7,191.3 305.6,190.8 312.5,184.0 319.4,181.5 326.2,177.8 333.1,175.6 340.0,174.7 346.9,173.4 353.8,168.3 360.6,166.1 367.5,162.5 374.4,158.1 381.3,156.3 388.1,155.3 395.0,153.7 401.9,152.9 408.8,158.8 415.7,152.9 422.5,152.8 429.4,152.9 436.3,152.2 443.2,152.3 450.0,152.3 456.9,152.3 463.8,152.1 470.7,151.7 477.6,151.5 484.4,153.0 491.3,153.0 498.2,154.1 505.1,154.8 512.0,154.6 518.8,157.6 525.7,158.8 532.6,162.5 539.5,161.5 546.3,160.3 553.2,159.9 560.1,157.3 567.0,152.8 573.9,145.1 580.7,145.0 587.6,141.5 594.5,141.5 601.4,139.9 608.2,138.7 615.1,138.7 622.0,135.4 628.9,135.4 635.8,131.2 642.6,131.2 649.5,131.2 656.4,119.8 663.3,119.8 670.1,119.6 677.0,119.6 683.9,118.3 690.8,118.3 697.7,118.3 704.5,115.1 711.4,114.3 718.3,106.7 725.2,66.9 732.0,65.2 738.9,60.5 745.8,60.5 752.7,54.8 759.6,57.3 766.4,57.3 773.3,52.9 780.2,52.9 787.1,54.6 794.0,54.6 800.8,53.3 807.7,53.3 814.6,53.3 821.5,50.2 828.3,47.4 835.2,46.6 842.1,47.7 849.0,47.9 855.9,48.8 862.7,48.6 869.6,47.6 876.5,47.6 883.4,47.6 890.2,42.0 897.1,40.2 904.0,40.2" class="navline"/><text x="910" y="44.2" class="tag nav">book</text><text x="910" y="57.2" class="tag nav">329</text></svg></div>
+<div class="two tight">
+  <table class="facts small">
+    <tr><th>Period</th><th>Book</th><th>Benchmark</th><th>Difference</th></tr><tr><td class='l'>1 month</td><td>+5.4%</td><td class='bench'>+2.9%</td><td class='b'>+2.6%</td></tr><tr><td class='l'>3 months</td><td>+35.9%</td><td class='bench'>+10.7%</td><td class='b'>+25.2%</td></tr><tr><td class='l'>6 months</td><td>+71.5%</td><td class='bench'>+18.3%</td><td class='b'>+53.3%</td></tr><tr><td class='l'>Year to date</td><td>+67.2%</td><td class='bench'>+25.6%</td><td class='b'>+41.5%</td></tr><tr><td class='l'>1 year</td><td>+70.6%</td><td class='bench'>+25.3%</td><td class='b'>+45.3%</td></tr><tr><td class='l'>Since inception</td><td>+228.9%</td><td class='bench'>+43.5%</td><td class='b'>+185.4%</td></tr>
+  </table>
+  <div class="callout"><h3>Reading the line</h3>
+  <p>NAV per unit is time-weighted, so new capital never counts as return. A position joins the line at its
+  first observed price, which is why an entry is not a jump. The benchmark is the Sealed Magic booster box index,
+  255 booster boxes priced from the same source that marks the book.</p></div>
+</div></div>
+  <footer><span>Urza Tower Capital LP</span><span class="note"></span><span>4</span></footer>
+</section>
+<section class="slide">
+  <header>
+    <div class="brand"><svg class="mark" viewBox="0 0 48 56" xmlns="http://www.w3.org/2000/svg"><g fill="#111"><rect x="14" y="6" width="5" height="8"/><rect x="21.5" y="6" width="5" height="8"/><rect x="29" y="6" width="5" height="8"/><rect x="12" y="14" width="24" height="4"/><polygon points="17,18 31,18 30,42 18,42"/><rect x="15" y="42" width="18" height="3"/><rect x="12" y="45" width="24" height="5"/></g><rect x="23" y="24" width="2.5" height="6" fill="#fff"/><path d="M21.5 42 v-4.5 a2.5 2.5 0 0 1 5 0 v4.5 z" fill="#fff"/></svg><div class="word"><b>URZA</b><span>TOWER</span></div></div>
+    <div class="head"><h2>Monthly returns</h2><div class="kicker">Book and benchmark, calendar months</div></div>
+  </header>
+  <div class="body">
+<div class="two tight">
+  <div><table class='grid'><tr><th>Year</th><th>Jan</th><th>Feb</th><th>Mar</th><th>Apr</th><th>May</th><th>Jun</th><th>Jul</th><th>Aug</th><th>Sep</th><th>Oct</th><th>Nov</th><th>Dec</th><th>Year</th></tr><tr><td class='l'>2024</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='thin'>-5.9%</td><td class='thin'>+1.4%</td><td class='b'>-4.6%</td></tr><tr><td class='l bench'>benchmark</td><td class='bench'></td><td class='bench'></td><td class='bench'></td><td class='bench'></td><td class='bench'></td><td class='bench'></td><td class='bench'></td><td class='bench'></td><td class='bench'></td><td class='bench'></td><td class='bench'>+0.7%</td><td class='bench'>+0.9%</td><td class='bench'>+1.6%</td></tr><tr><td class='l'>2025</td><td class='thin'>+23.0%</td><td class='thin'>+4.7%</td><td class='thin'>+9.1%</td><td class='thin'>+4.3%</td><td class='thin'>+0.2%</td><td class='thin'>+8.9%</td><td class='thin'>+11.7%</td><td class='thin'>+6.5%</td><td class='thin'>+8.0%</td><td class='thin'>+0.5%</td><td class='thin'>+0.3%</td><td class='thin'>-0.4%</td><td class='b'>+106.2%</td></tr><tr><td class='l bench'>benchmark</td><td class='bench'>+0.5%</td><td class='bench'>+0.3%</td><td class='bench'>+1.1%</td><td class='bench'>+0.8%</td><td class='bench'>+1.0%</td><td class='bench'>+1.5%</td><td class='bench'>+2.0%</td><td class='bench'>+3.2%</td><td class='bench'>+1.9%</td><td class='bench'>+0.0%</td><td class='bench'>-0.3%</td><td class='bench'>-0.1%</td><td class='bench'>+12.4%</td></tr><tr><td class='l'>2026</td><td class='thin'>-2.8%</td><td class=''>-1.6%</td><td class=''>+9.5%</td><td class=''>+3.6%</td><td class=''>+10.5%</td><td class=''>+26.2%</td><td class=''>+3.8%</td><td class=''>+4.1%</td><td class=''>+2.3%</td><td></td><td></td><td></td><td class='b'>+67.2%</td></tr><tr><td class='l bench'>benchmark</td><td class='bench'>+2.4%</td><td class='bench'>+2.5%</td><td class='bench'>+3.4%</td><td class='bench'>+1.7%</td><td class='bench'>+0.8%</td><td class='bench'>+4.7%</td><td class='bench'>+3.6%</td><td class='bench'>+3.4%</td><td class='bench'>+0.7%</td><td class='bench'></td><td class='bench'></td><td class='bench'></td><td class='bench'>+25.6%</td></tr></table>
+  <p class="foot">Grey months ended with fewer than 5 positions marked to an observed
+  price and are not comparable with later months. Benchmark rows in light grey.</p></div>
+  <div><svg viewBox="0 0 470 300" class="chart"><rect x="73.5" y="228.9" width="40.4" height="8.0" class="bar-book"/><text x="93.7" y="248.9" class="val" text-anchor="middle">-4.6%</text><rect x="119.3" y="226.1" width="40.4" height="2.8" class="bar-bench"/><text x="139.5" y="221.1" class="val" text-anchor="middle">+1.6%</text><text x="119.3" y="288.0" class="ax" text-anchor="middle">2024</text><rect x="208.2" y="43.1" width="40.4" height="185.8" class="bar-book"/><text x="228.4" y="38.1" class="val" text-anchor="middle">+106.2%</text><rect x="254.0" y="207.1" width="40.4" height="21.8" class="bar-bench"/><text x="274.2" y="202.1" class="val" text-anchor="middle">+12.4%</text><text x="254.0" y="288.0" class="ax" text-anchor="middle">2025</text><rect x="342.9" y="111.4" width="40.4" height="117.5" class="bar-book"/><text x="363.1" y="106.4" class="val" text-anchor="middle">+67.2%</text><rect x="388.7" y="184.0" width="40.4" height="44.8" class="bar-bench"/><text x="408.9" y="179.0" class="val" text-anchor="middle">+25.6%</text><text x="388.7" y="288.0" class="ax" text-anchor="middle">2026</text><line x1="52" x2="456" y1="228.9" y2="228.9" class="zero"/></svg>
+  <p class="foot">Calendar year returns, book in black against the benchmark in grey. The current year is
+  year to date through 2026-09-15.</p></div>
+</div></div>
+  <footer><span>Urza Tower Capital LP</span><span class="note"></span><span>5</span></footer>
+</section>
+<section class="slide">
+  <header>
+    <div class="brand"><svg class="mark" viewBox="0 0 48 56" xmlns="http://www.w3.org/2000/svg"><g fill="#111"><rect x="14" y="6" width="5" height="8"/><rect x="21.5" y="6" width="5" height="8"/><rect x="29" y="6" width="5" height="8"/><rect x="12" y="14" width="24" height="4"/><polygon points="17,18 31,18 30,42 18,42"/><rect x="15" y="42" width="18" height="3"/><rect x="12" y="45" width="24" height="5"/></g><rect x="23" y="24" width="2.5" height="6" fill="#fff"/><path d="M21.5 42 v-4.5 a2.5 2.5 0 0 1 5 0 v4.5 z" fill="#fff"/></svg><div class="word"><b>URZA</b><span>TOWER</span></div></div>
+    <div class="head"><h2>Risk</h2><div class="kicker">Drawdown and dispersion</div></div>
+  </header>
+  <div class="body">
+<div class="wide"><svg viewBox="0 0 980 210" class="chart"><line x1="58" x2="960" y1="14.0" y2="14.0" class="grid"/><text x="50.0" y="17.0" class="ax" text-anchor="end">-0%</text><line x1="58" x2="960" y1="97.0" y2="97.0" class="grid"/><text x="50.0" y="100.0" class="ax" text-anchor="end">-4%</text><line x1="58" x2="960" y1="180.0" y2="180.0" class="grid"/><text x="50.0" y="183.0" class="ax" text-anchor="end">-8%</text><text x="58.0" y="200.0" class="ax" text-anchor="middle">2024-11</text><text x="204.7" y="200.0" class="ax" text-anchor="middle">2025-03</text><text x="351.3" y="200.0" class="ax" text-anchor="middle">2025-07</text><text x="498.0" y="200.0" class="ax" text-anchor="middle">2025-12</text><text x="644.7" y="200.0" class="ax" text-anchor="middle">2026-04</text><text x="791.3" y="200.0" class="ax" text-anchor="middle">2026-07</text><text x="938.0" y="200.0" class="ax" text-anchor="middle">2026-09</text><polygon points="58.0,14.0 58.0,14.0 65.3,14.0 72.7,15.8 80.0,14.0 87.3,152.3 94.7,152.3 102.0,180.0 109.3,137.2 116.7,100.0 124.0,134.0 131.3,126.2 138.7,109.5 146.0,14.0 153.3,14.0 160.7,14.0 168.0,14.0 175.3,39.4 182.7,15.0 190.0,14.0 197.3,14.0 204.7,14.0 212.0,14.0 219.3,84.7 226.7,26.2 234.0,14.0 241.3,14.0 248.7,14.0 256.0,29.7 263.3,24.3 270.7,65.2 278.0,34.2 285.3,24.9 292.7,14.0 300.0,14.0 307.3,14.0 314.7,22.7 322.0,14.8 329.3,14.0 336.7,14.0 344.0,14.0 351.3,14.0 358.7,14.0 366.0,14.0 373.3,14.0 380.7,14.0 388.0,14.0 395.3,14.0 402.7,14.0 410.0,14.0 417.3,14.0 424.7,14.0 432.0,83.3 439.3,14.1 446.7,14.0 454.0,14.3 461.3,14.0 468.7,14.9 476.0,15.3 483.3,15.3 490.7,14.0 498.0,14.0 505.3,14.0 512.7,30.6 520.0,31.0 527.3,44.6 534.7,52.4 542.0,50.4 549.3,85.7 556.7,99.3 564.0,142.7 571.3,131.0 578.7,116.4 586.0,112.7 593.3,81.1 600.7,28.4 608.0,14.0 615.3,14.0 622.7,14.0 630.0,14.4 637.3,14.0 644.7,14.0 652.0,14.0 659.3,14.0 666.7,14.0 674.0,14.0 681.3,14.0 688.7,14.0 696.0,14.0 703.3,14.0 710.7,14.0 718.0,14.0 725.3,14.0 732.7,14.0 740.0,14.0 747.3,14.0 754.7,14.0 762.0,14.0 769.3,14.0 776.7,14.0 784.0,14.0 791.3,14.0 798.7,14.0 806.0,32.9 813.3,32.9 820.7,14.0 828.0,14.0 835.3,26.6 842.7,26.6 850.0,16.9 857.3,16.9 864.7,16.9 872.0,14.0 879.3,14.0 886.7,14.0 894.0,22.0 901.3,23.7 908.7,29.8 916.0,28.2 923.3,20.9 930.7,20.9 938.0,20.9 945.3,14.0 952.7,14.0 960.0,14.0 960.0,14.0" class="ddfill"/><polyline points="58.0,14.0 65.3,14.0 72.7,15.8 80.0,14.0 87.3,152.3 94.7,152.3 102.0,180.0 109.3,137.2 116.7,100.0 124.0,134.0 131.3,126.2 138.7,109.5 146.0,14.0 153.3,14.0 160.7,14.0 168.0,14.0 175.3,39.4 182.7,15.0 190.0,14.0 197.3,14.0 204.7,14.0 212.0,14.0 219.3,84.7 226.7,26.2 234.0,14.0 241.3,14.0 248.7,14.0 256.0,29.7 263.3,24.3 270.7,65.2 278.0,34.2 285.3,24.9 292.7,14.0 300.0,14.0 307.3,14.0 314.7,22.7 322.0,14.8 329.3,14.0 336.7,14.0 344.0,14.0 351.3,14.0 358.7,14.0 366.0,14.0 373.3,14.0 380.7,14.0 388.0,14.0 395.3,14.0 402.7,14.0 410.0,14.0 417.3,14.0 424.7,14.0 432.0,83.3 439.3,14.1 446.7,14.0 454.0,14.3 461.3,14.0 468.7,14.9 476.0,15.3 483.3,15.3 490.7,14.0 498.0,14.0 505.3,14.0 512.7,30.6 520.0,31.0 527.3,44.6 534.7,52.4 542.0,50.4 549.3,85.7 556.7,99.3 564.0,142.7 571.3,131.0 578.7,116.4 586.0,112.7 593.3,81.1 600.7,28.4 608.0,14.0 615.3,14.0 622.7,14.0 630.0,14.4 637.3,14.0 644.7,14.0 652.0,14.0 659.3,14.0 666.7,14.0 674.0,14.0 681.3,14.0 688.7,14.0 696.0,14.0 703.3,14.0 710.7,14.0 718.0,14.0 725.3,14.0 732.7,14.0 740.0,14.0 747.3,14.0 754.7,14.0 762.0,14.0 769.3,14.0 776.7,14.0 784.0,14.0 791.3,14.0 798.7,14.0 806.0,32.9 813.3,32.9 820.7,14.0 828.0,14.0 835.3,26.6 842.7,26.6 850.0,16.9 857.3,16.9 864.7,16.9 872.0,14.0 879.3,14.0 886.7,14.0 894.0,22.0 901.3,23.7 908.7,29.8 916.0,28.2 923.3,20.9 930.7,20.9 938.0,20.9 945.3,14.0 952.7,14.0 960.0,14.0" class="ddline"/></svg></div>
+<div class="kpis six">
+  <div class="kpi"><div class="kl">Max drawdown</div><div class="kv">-8.4%</div><div class="ks">trough 2024-12-02</div></div>
+  <div class="kpi"><div class="kl">Volatility</div><div class="kv">26.0%</div><div class="ks">annualised, monthly returns</div></div>
+  <div class="kpi"><div class="kl">Benchmark vol</div><div class="kv">4.7%</div><div class="ks">same basis</div></div>
+  <div class="kpi"><div class="kl">Best month</div><div class="kv">+26.2%</div><div class="ks"></div></div>
+  <div class="kpi"><div class="kl">Worst month</div><div class="kv">-5.9%</div><div class="ks"></div></div>
+  <div class="kpi"><div class="kl">Positive months</div><div class="kv">19 of 23</div><div class="ks">83% hit rate</div></div>
+</div>
+<p class="foot">Drawdown is measured on NAV per unit from its running peak. Volatility is the standard deviation
+of monthly returns annualised by the square root of twelve, over 23 months, and early months rest on a
+thin book. Correlation with the benchmark is 0.37.</p></div>
+  <footer><span>Urza Tower Capital LP</span><span class="note"></span><span>6</span></footer>
+</section>
+<section class="slide">
+  <header>
+    <div class="brand"><svg class="mark" viewBox="0 0 48 56" xmlns="http://www.w3.org/2000/svg"><g fill="#111"><rect x="14" y="6" width="5" height="8"/><rect x="21.5" y="6" width="5" height="8"/><rect x="29" y="6" width="5" height="8"/><rect x="12" y="14" width="24" height="4"/><polygon points="17,18 31,18 30,42 18,42"/><rect x="15" y="42" width="18" height="3"/><rect x="12" y="45" width="24" height="5"/></g><rect x="23" y="24" width="2.5" height="6" fill="#fff"/><path d="M21.5 42 v-4.5 a2.5 2.5 0 0 1 5 0 v4.5 z" fill="#fff"/></svg><div class="word"><b>URZA</b><span>TOWER</span></div></div>
+    <div class="head"><h2>Portfolio composition</h2><div class="kicker">By strategy bucket, on marked value</div></div>
+  </header>
+  <div class="body">
+<div class="split">
+  <div><div class="donutwrap"><svg viewBox="0 0 300 300" class="donut"><path d="M150.0,32.0 A118,118 0 0 1 186.7,262.1 L172.4,218.4 A72,72 0 0 0 150.0,78.0 Z" fill="#111111"/><path d="M186.7,262.1 A118,118 0 0 1 54.0,218.6 L91.4,191.9 A72,72 0 0 0 172.4,218.4 Z" fill="#3d3d3d"/><path d="M54.0,218.6 A118,118 0 0 1 46.7,93.0 L87.0,115.2 A72,72 0 0 0 91.4,191.9 Z" fill="#606060"/><path d="M46.7,93.0 A118,118 0 0 1 81.0,54.3 L107.9,91.6 A72,72 0 0 0 87.0,115.2 Z" fill="#8a6a3b"/><path d="M81.0,54.3 A118,118 0 0 1 109.3,39.2 L125.2,82.4 A72,72 0 0 0 107.9,91.6 Z" fill="#a98c5f"/><path d="M109.3,39.2 A118,118 0 0 1 127.1,34.2 L136.0,79.4 A72,72 0 0 0 125.2,82.4 Z" fill="#c2b092"/><path d="M127.1,34.2 A118,118 0 0 1 139.5,32.5 L143.6,78.3 A72,72 0 0 0 136.0,79.4 Z" fill="#8c8c8c"/><path d="M139.5,32.5 A118,118 0 0 1 146.0,32.1 L147.6,78.0 A72,72 0 0 0 143.6,78.3 Z" fill="#b5b5b5"/><path d="M146.0,32.1 A118,118 0 0 1 150.0,32.0 L150.0,78.0 A72,72 0 0 0 147.6,78.0 Z" fill="#d4d4d4"/><text x="150" y="148" class="dcenter">9</text><text x="150" y="166" class="dsub">buckets</text></svg><div class="legend"><div class="lgh">of marked value</div><div class="lg"><i style="background:#111111"></i><span>LOTR: Tales of Middle-earth</span><b>45.0%</b></div><div class="lg"><i style="background:#3d3d3d"></i><span>Vintage / Legacy sealed</span><b>20.2%</b></div><div class="lg"><i style="background:#606060"></i><span>The Hobbit</span><b>17.9%</b></div><div class="lg"><i style="background:#8a6a3b"></i><span>Marvel Super Heroes</span><b>7.0%</b></div><div class="lg"><i style="background:#a98c5f"></i><span>Reality Fracture</span><b>4.3%</b></div><div class="lg"><i style="background:#c2b092"></i><span>Secret Lair x MSCHF</span><b>2.5%</b></div><div class="lg"><i style="background:#8c8c8c"></i><span>Other collectibles</span><b>1.7%</b></div><div class="lg"><i style="background:#b5b5b5"></i><span>Pokemon</span><b>0.9%</b></div><div class="lg"><i style="background:#d4d4d4"></i><span>Marvel&#x27;s Spider-Man</span><b>0.5%</b></div></div></div></div>
+  <div class="growcol">
+    <h3>Cost against marked value</h3>
+    <svg viewBox="0 0 470 120" class="chart"><rect x="96.0" y="18" width="90.0" height="30" fill="#111111"/><text x="141.0" y="37" class="instack">25</text><rect x="186.0" y="18" width="94.3" height="30" fill="#3d3d3d"/><text x="233.2" y="37" class="instack">26</text><rect x="280.3" y="18" width="92.4" height="30" fill="#606060"/><text x="326.5" y="37" class="instack">26</text><rect x="372.8" y="18" width="36.9" height="30" fill="#8a6a3b"/><text x="391.2" y="37" class="instack">10</text><rect x="409.6" y="18" width="22.7" height="30" fill="#a98c5f"/><rect x="432.3" y="18" width="11.8" height="30" fill="#c2b092"/><rect x="444.2" y="18" width="5.5" height="30" fill="#8c8c8c"/><rect x="449.6" y="18" width="4.2" height="30" fill="#b5b5b5"/><rect x="453.8" y="18" width="2.2" height="30" fill="#d4d4d4"/><text x="88.0" y="38.0" class="ax" text-anchor="end">cost</text><rect x="96.0" y="66" width="161.9" height="30" fill="#111111"/><text x="176.9" y="85" class="instack">45</text><rect x="257.9" y="66" width="72.6" height="30" fill="#3d3d3d"/><text x="294.2" y="85" class="instack">20</text><rect x="330.5" y="66" width="64.4" height="30" fill="#606060"/><text x="362.7" y="85" class="instack">18</text><rect x="394.9" y="66" width="25.3" height="30" fill="#8a6a3b"/><rect x="420.2" y="66" width="15.6" height="30" fill="#a98c5f"/><rect x="435.8" y="66" width="9.0" height="30" fill="#c2b092"/><rect x="444.8" y="66" width="6.1" height="30" fill="#8c8c8c"/><rect x="450.9" y="66" width="3.1" height="30" fill="#b5b5b5"/><rect x="454.1" y="66" width="1.9" height="30" fill="#d4d4d4"/><text x="88.0" y="86.0" class="ax" text-anchor="end">value</text></svg>
+    <table class="facts small">
+      <tr><th>Bucket</th><th>Cost</th><th>Value</th><th>Weight</th><th>P&amp;L</th></tr>
+      <tr><td class='l'>LOTR: Tales of Middle-earth</td><td>$3,142</td><td>$7,459</td><td>45.0%</td><td class='up'>+137.4%</td></tr><tr><td class='l'>Vintage / Legacy sealed</td><td>$3,294</td><td>$3,344</td><td>20.2%</td><td class='up'>+1.5%</td></tr><tr><td class='l'>The Hobbit</td><td>$3,228</td><td>$2,969</td><td>17.9%</td><td class='dn'>-8.0%</td></tr><tr><td class='l'>Marvel Super Heroes</td><td>$1,288</td><td>$1,167</td><td>7.0%</td><td class='dn'>-9.4%</td></tr><tr><td class='l'>Reality Fracture</td><td>$792</td><td>$721</td><td>4.3%</td><td class='dn'>-8.9%</td></tr><tr><td class='l'>Secret Lair x MSCHF</td><td>$413</td><td>$413</td><td>2.5%</td><td class='up'>+0.0%</td></tr><tr><td class='l'>Other collectibles</td><td>$190</td><td>$281</td><td>1.7%</td><td class='up'>+47.6%</td></tr><tr><td class='l'>Pokemon</td><td>$145</td><td>$145</td><td>0.9%</td><td class='up'>+0.0%</td></tr><tr><td class='l'>Marvel&#x27;s Spider-Man</td><td>$78</td><td>$89</td><td>0.5%</td><td class='up'>+14.5%</td></tr>
+    </table>
+  </div>
+</div></div>
+  <footer><span>Urza Tower Capital LP</span><span class="note"></span><span>7</span></footer>
+</section>
+<section class="slide">
+  <header>
+    <div class="brand"><svg class="mark" viewBox="0 0 48 56" xmlns="http://www.w3.org/2000/svg"><g fill="#111"><rect x="14" y="6" width="5" height="8"/><rect x="21.5" y="6" width="5" height="8"/><rect x="29" y="6" width="5" height="8"/><rect x="12" y="14" width="24" height="4"/><polygon points="17,18 31,18 30,42 18,42"/><rect x="15" y="42" width="18" height="3"/><rect x="12" y="45" width="24" height="5"/></g><rect x="23" y="24" width="2.5" height="6" fill="#fff"/><path d="M21.5 42 v-4.5 a2.5 2.5 0 0 1 5 0 v4.5 z" fill="#fff"/></svg><div class="word"><b>URZA</b><span>TOWER</span></div></div>
+    <div class="head"><h2>Largest holdings</h2><div class="kicker">Top 14 by marked value</div></div>
+  </header>
+  <div class="body">
+<table class="facts wide-table">
+  <tr><th>Position</th><th>Bucket</th><th>Qty</th><th>Cost</th><th>Value</th><th>Weight</th><th>P&amp;L</th><th>Acquired</th></tr>
+  <tr><td class='l'>The Lord of the Rings: Tales of Middle-earth Specia…</td><td class='l mute'>LOTR: Tales of Middle-ear…</td><td>1</td><td>$2,592</td><td>$6,716</td><td>40.5%</td><td class='up'>+159.1%</td><td class='mute'>2025-09-29</td></tr><tr><td class='l'>The Hobbit Collector Booster Display</td><td class='l mute'>The Hobbit</td><td>1</td><td>$840</td><td>$787</td><td>4.7%</td><td class='dn'>-6.3%</td><td class='mute'>2026-07-18</td></tr><tr><td class='l'>The Hobbit Collector Booster Box</td><td class='l mute'>The Hobbit</td><td>1</td><td>$795</td><td>$787</td><td>4.7%</td><td class='dn'>-1.0%</td><td class='mute'>2026-08-13</td></tr><tr><td class='l'>Fallen Empires Booster Box (sealed)</td><td class='l mute'>Vintage / Legacy sealed</td><td>1</td><td>$535</td><td>$569</td><td>3.4%</td><td class='up'>+6.3%</td><td class='mute'>2026-08-08</td></tr><tr><td class='l'>Antiquities Booster Pack</td><td class='l mute'>Vintage / Legacy sealed</td><td>1</td><td>$535</td><td>$553</td><td>3.3%</td><td class='up'>+3.4%</td><td class='mute'>2026-05-13</td></tr><tr><td class='l'>Reality Fracture Collector Booster Box</td><td class='l mute'>Reality Fracture</td><td>1</td><td>$642</td><td>$530</td><td>3.2%</td><td class='dn'>-17.4%</td><td class='mute'>2026-09-07</td></tr><tr><td class='l'>Marvel Super Heroes Collector Booster Box</td><td class='l mute'>Marvel Super Heroes</td><td>1</td><td>$535</td><td>$470</td><td>2.8%</td><td class='dn'>-12.2%</td><td class='mute'>2026-06-06</td></tr><tr><td class='l'>Marvel Super Heroes Collector Booster Display</td><td class='l mute'>Marvel Super Heroes</td><td>1</td><td>$502</td><td>$470</td><td>2.8%</td><td class='dn'>-6.5%</td><td class='mute'>2026-06-03</td></tr><tr><td class='l'>Urza&#x27;s Saga Tournament Pack</td><td class='l mute'>Vintage / Legacy sealed</td><td>1</td><td>$481</td><td>$464</td><td>2.8%</td><td class='dn'>-3.7%</td><td class='mute'>2026-05-13</td></tr><tr><td class='l'>LOTR Tales of Middle-earth Set Booster Box</td><td class='l mute'>LOTR: Tales of Middle-ear…</td><td>1</td><td>$337</td><td>$429</td><td>2.6%</td><td class='up'>+27.3%</td><td class='mute'>2026-05-16</td></tr><tr><td class='l'>Revised Edition Booster Pack</td><td class='l mute'>Vintage / Legacy sealed</td><td>1</td><td>$301</td><td>$328</td><td>2.0%</td><td class='up'>+9.0%</td><td class='mute'>2026-05-13</td></tr><tr><td class='l'>The Hobbit Play Booster Box</td><td class='l mute'>The Hobbit</td><td>2</td><td>$374</td><td>$323</td><td>1.9%</td><td class='dn'>-13.8%</td><td class='mute'>2026-09-07</td></tr><tr><td class='l'>World of Warcraft: Forever Collector&#x27;s Edition</td><td class='l mute'>Other collectibles</td><td>1</td><td>$190</td><td>$281</td><td>1.7%</td><td class='up'>+47.6%</td><td class='mute'>2026-09-15</td></tr><tr><td class='l'>Urza&#x27;s Saga Booster Pack</td><td class='l mute'>Vintage / Legacy sealed</td><td>1</td><td>$289</td><td>$254</td><td>1.5%</td><td class='dn'>-12.0%</td><td class='mute'>2026-05-13</td></tr>
+  <tr class="total"><td class='l'>Top 14 of 51 positions</td><td></td>
+    <td>15</td><td>$8,949</td><td>$12,961</td>
+    <td>78.1%</td><td></td><td></td></tr>
+</table>
+<p class="foot">An asterisk marks a position the price feed does not cover, carried at cost. Weights are on
+marked value. The full holdings table is published on the fund site and refreshed with every mark.</p></div>
+  <footer><span>Urza Tower Capital LP</span><span class="note"></span><span>8</span></footer>
+</section>
+<section class="slide">
+  <header>
+    <div class="brand"><svg class="mark" viewBox="0 0 48 56" xmlns="http://www.w3.org/2000/svg"><g fill="#111"><rect x="14" y="6" width="5" height="8"/><rect x="21.5" y="6" width="5" height="8"/><rect x="29" y="6" width="5" height="8"/><rect x="12" y="14" width="24" height="4"/><polygon points="17,18 31,18 30,42 18,42"/><rect x="15" y="42" width="18" height="3"/><rect x="12" y="45" width="24" height="5"/></g><rect x="23" y="24" width="2.5" height="6" fill="#fff"/><path d="M21.5 42 v-4.5 a2.5 2.5 0 0 1 5 0 v4.5 z" fill="#fff"/></svg><div class="word"><b>URZA</b><span>TOWER</span></div></div>
+    <div class="head"><h2>Attribution</h2><div class="kicker">Where the profit and loss came from</div></div>
+  </header>
+  <div class="body">
+<div class="split">
+  <div class="growcol"><h3>Profit and loss by bucket</h3><svg viewBox="0 0 470 360" class="chart"><rect x="278.9" y="16.7" width="7.1" height="23.0" fill="#9d3b34"/><text x="160.0" y="33.0" class="ax" text-anchor="end">The Hobbit</text><text x="272.9" y="33.0" class="val" text-anchor="end">-$260</text><rect x="282.7" y="53.8" width="3.3" height="23.0" fill="#9d3b34"/><text x="160.0" y="70.1" class="ax" text-anchor="end">Marvel Super Heroes</text><text x="276.7" y="70.1" class="val" text-anchor="end">-$121</text><rect x="284.1" y="90.9" width="1.9" height="23.0" fill="#9d3b34"/><text x="160.0" y="107.2" class="ax" text-anchor="end">Reality Fracture</text><text x="278.1" y="107.2" class="val" text-anchor="end">-$71</text><rect x="286.0" y="128.0" width="0.0" height="23.0" fill="#2f6d4f"/><text x="160.0" y="144.3" class="ax" text-anchor="end">Secret Lair x MSCHF</text><text x="292.0" y="144.3" class="val" text-anchor="start">$0</text><rect x="286.0" y="165.1" width="0.0" height="23.0" fill="#2f6d4f"/><text x="160.0" y="181.5" class="ax" text-anchor="end">Pokemon</text><text x="292.0" y="181.5" class="val" text-anchor="start">$0</text><rect x="286.0" y="202.2" width="0.3" height="23.0" fill="#2f6d4f"/><text x="160.0" y="218.6" class="ax" text-anchor="end">Marvel&#x27;s Spider-Man</text><text x="292.3" y="218.6" class="val" text-anchor="start">$11</text><rect x="286.0" y="239.3" width="1.4" height="23.0" fill="#2f6d4f"/><text x="160.0" y="255.7" class="ax" text-anchor="end">Vintage / Legacy sealed</text><text x="293.4" y="255.7" class="val" text-anchor="start">$50</text><rect x="286.0" y="276.5" width="2.5" height="23.0" fill="#2f6d4f"/><text x="160.0" y="292.8" class="ax" text-anchor="end">Other collectibles</text><text x="294.5" y="292.8" class="val" text-anchor="start">$91</text><rect x="286.0" y="313.6" width="118.0" height="23.0" fill="#2f6d4f"/><text x="160.0" y="329.9" class="ax" text-anchor="end">LOTR: Tales of Middle-ear…</text><text x="410.0" y="329.9" class="val" text-anchor="start">$4,317</text><line x1="286.0" x2="286.0" y1="10" y2="346" class="zero"/></svg></div>
+  <div class="growcol"><h3>Largest contributors</h3>
+    <table class="facts small">
+      <tr><th>Position</th><th>P&amp;L</th><th>On cost</th></tr>
+      <tr><td class='l'>The Lord of the Rings: Tales of Middle-…</td><td class='up'>$4,125</td><td class='up'>+159.1%</td></tr><tr><td class='l'>LOTR Tales of Middle-earth Set Booster…</td><td class='up'>$92</td><td class='up'>+27.3%</td></tr><tr><td class='l'>World of Warcraft: Forever Collector&#x27;s…</td><td class='up'>$91</td><td class='up'>+47.6%</td></tr><tr><td class='l'>Classic Sixth Edition 2-Player Starter…</td><td class='up'>$75</td><td class='up'>+108.5%</td></tr><tr><td class='l'>LOTR Starter Kit</td><td class='up'>$65</td><td class='up'>+303.3%</td></tr><tr><td class='l'>Reality Fracture Play Booster Box</td><td class='up'>$41</td><td class='up'>+27.5%</td></tr>
+    </table>
+    <h3>Largest detractors</h3>
+    <table class="facts small">
+      <tr><th>Position</th><th>P&amp;L</th><th>On cost</th></tr>
+      <tr><td class='l'>Reality Fracture Collector Booster Box</td><td class='dn'>-$112</td><td class='dn'>-17.4%</td></tr><tr><td class='l'>Marvel Super Heroes Collector Booster B…</td><td class='dn'>-$65</td><td class='dn'>-12.2%</td></tr><tr><td class='l'>The Hobbit Collector Booster Display</td><td class='dn'>-$52</td><td class='dn'>-6.3%</td></tr><tr><td class='l'>The Hobbit Play Booster Box</td><td class='dn'>-$52</td><td class='dn'>-13.8%</td></tr><tr><td class='l'>The Hobbit Play Booster Box</td><td class='dn'>-$46</td><td class='dn'>-22.1%</td></tr><tr><td class='l'>The Hobbit Play Booster Box</td><td class='dn'>-$45</td><td class='dn'>-21.8%</td></tr>
+    </table>
+  </div>
+</div></div>
+  <footer><span>Urza Tower Capital LP</span><span class="note"></span><span>9</span></footer>
+</section>
+<section class="slide">
+  <header>
+    <div class="brand"><svg class="mark" viewBox="0 0 48 56" xmlns="http://www.w3.org/2000/svg"><g fill="#111"><rect x="14" y="6" width="5" height="8"/><rect x="21.5" y="6" width="5" height="8"/><rect x="29" y="6" width="5" height="8"/><rect x="12" y="14" width="24" height="4"/><polygon points="17,18 31,18 30,42 18,42"/><rect x="15" y="42" width="18" height="3"/><rect x="12" y="45" width="24" height="5"/></g><rect x="23" y="24" width="2.5" height="6" fill="#fff"/><path d="M21.5 42 v-4.5 a2.5 2.5 0 0 1 5 0 v4.5 z" fill="#fff"/></svg><div class="word"><b>URZA</b><span>TOWER</span></div></div>
+    <div class="head"><h2>Capital deployment</h2><div class="kicker">Invested capital against marked value</div></div>
+  </header>
+  <div class="body">
+<div class="wide"><svg viewBox="0 0 980 270" class="chart"><line x1="68" x2="902" y1="238.0" y2="238.0" class="grid"/><text x="60.0" y="241.0" class="ax" text-anchor="end">$0</text><line x1="68" x2="902" y1="182.0" y2="182.0" class="grid"/><text x="60.0" y="185.0" class="ax" text-anchor="end">$4,620</text><line x1="68" x2="902" y1="126.0" y2="126.0" class="grid"/><text x="60.0" y="129.0" class="ax" text-anchor="end">$9,239</text><line x1="68" x2="902" y1="70.0" y2="70.0" class="grid"/><text x="60.0" y="73.0" class="ax" text-anchor="end">$13,859</text><line x1="68" x2="902" y1="14.0" y2="14.0" class="grid"/><text x="60.0" y="17.0" class="ax" text-anchor="end">$18,478</text><text x="68.0" y="260.0" class="ax" text-anchor="middle">2024-11</text><text x="203.6" y="260.0" class="ax" text-anchor="middle">2025-03</text><text x="339.2" y="260.0" class="ax" text-anchor="middle">2025-07</text><text x="474.8" y="260.0" class="ax" text-anchor="middle">2025-12</text><text x="610.4" y="260.0" class="ax" text-anchor="middle">2026-04</text><text x="746.0" y="260.0" class="ax" text-anchor="middle">2026-07</text><text x="881.7" y="260.0" class="ax" text-anchor="middle">2026-09</text><polygon points="68.0,238.0 68.0,237.1 74.8,237.1 81.6,237.1 88.3,237.1 95.1,237.1 101.9,236.8 108.7,236.8 115.5,236.8 122.2,236.8 129.0,236.8 135.8,236.8 142.6,236.8 149.4,236.7 156.1,236.7 162.9,236.7 169.7,236.6 176.5,236.7 183.3,236.6 190.0,236.6 196.8,236.6 203.6,236.6 210.4,236.6 217.2,236.6 224.0,236.6 230.7,236.5 237.5,236.5 244.3,236.5 251.1,236.5 257.9,236.5 264.6,236.5 271.4,236.5 278.2,236.5 285.0,236.5 291.8,236.5 298.5,236.4 305.3,236.5 312.1,236.4 318.9,236.4 325.7,236.4 332.4,236.4 339.2,236.3 346.0,236.3 352.8,236.3 359.6,236.3 366.3,236.3 373.1,236.2 379.9,236.2 386.7,236.2 393.5,236.2 400.2,204.8 407.0,204.8 413.8,205.9 420.6,204.8 427.4,204.7 434.1,204.8 440.9,204.6 447.7,204.6 454.5,204.6 461.3,203.7 468.0,203.7 474.8,203.6 481.6,203.6 488.4,203.9 495.2,203.9 502.0,204.1 508.7,204.2 515.5,204.2 522.3,204.8 529.1,205.0 535.9,205.7 542.6,204.6 549.4,204.5 556.2,204.4 563.0,203.9 569.8,202.9 576.5,200.5 583.3,200.4 590.1,199.7 596.9,199.7 603.7,199.4 610.4,199.2 617.2,197.2 624.0,194.9 630.8,193.8 637.6,191.6 644.3,168.0 651.1,164.9 657.9,157.8 664.7,154.1 671.5,154.2 678.2,152.7 685.0,152.2 691.8,146.1 698.6,140.0 705.4,137.4 712.1,137.1 718.9,133.6 725.7,114.8 732.5,114.0 739.3,111.8 746.0,101.6 752.8,98.5 759.6,99.8 766.4,97.3 773.2,94.3 780.0,85.2 786.7,85.8 793.5,76.2 800.3,75.0 807.1,72.5 813.9,69.8 820.6,65.4 827.4,63.9 834.2,63.4 841.0,64.1 847.8,59.2 854.5,59.7 861.3,59.6 868.1,59.0 874.9,46.7 881.7,45.1 888.4,41.5 895.2,40.3 902.0,38.0 902.0,238.0" class="navfill"/><polygon points="68.0,238.0 68.0,237.1 74.8,237.1 81.6,237.1 88.3,237.1 95.1,237.1 101.9,236.8 108.7,236.8 115.5,236.8 122.2,236.8 129.0,236.8 135.8,236.8 142.6,236.8 149.4,236.8 156.1,236.8 162.9,236.8 169.7,236.8 176.5,236.8 183.3,236.8 190.0,236.8 196.8,236.8 203.6,236.8 210.4,236.8 217.2,236.8 224.0,236.8 230.7,236.8 237.5,236.8 244.3,236.8 251.1,236.8 257.9,236.8 264.6,236.8 271.4,236.8 278.2,236.8 285.0,236.8 291.8,236.8 298.5,236.8 305.3,236.8 312.1,236.8 318.9,236.8 325.7,236.8 332.4,236.8 339.2,236.8 346.0,236.8 352.8,236.8 359.6,236.8 366.3,236.8 373.1,236.8 379.9,236.8 386.7,236.8 393.5,236.8 400.2,205.4 407.0,205.4 413.8,205.4 420.6,205.4 427.4,205.4 434.1,205.4 440.9,205.4 447.7,205.4 454.5,205.4 461.3,204.5 468.0,204.5 474.8,204.5 481.6,204.5 488.4,204.5 495.2,204.5 502.0,204.5 508.7,204.5 515.5,204.5 522.3,204.5 529.1,204.5 535.9,204.5 542.6,203.5 549.4,203.5 556.2,203.5 563.0,203.5 569.8,203.5 576.5,202.6 583.3,202.6 590.1,202.6 596.9,202.6 603.7,202.6 610.4,202.6 617.2,200.6 624.0,200.6 630.8,199.5 637.6,198.2 644.3,174.5 651.1,170.4 657.9,168.0 664.7,164.5 671.5,164.5 678.2,163.0 685.0,163.0 691.8,156.9 698.6,150.4 705.4,148.9 712.1,148.9 718.9,148.9 725.7,148.9 732.5,148.9 739.3,148.9 746.0,138.7 752.8,138.7 759.6,138.7 766.4,136.2 773.2,135.4 780.0,126.4 786.7,126.4 793.5,116.7 800.3,116.7 807.1,114.2 813.9,111.3 820.6,108.8 827.4,108.8 834.2,108.8 841.0,108.8 847.8,103.8 854.5,103.8 861.3,103.8 868.1,103.8 874.9,91.5 881.7,87.9 888.4,87.9 895.2,87.9 902.0,85.6 902.0,238.0" class="invfill"/><polyline points="68.0,237.1 74.8,237.1 81.6,237.1 88.3,237.1 95.1,237.1 101.9,236.8 108.7,236.8 115.5,236.8 122.2,236.8 129.0,236.8 135.8,236.8 142.6,236.8 149.4,236.7 156.1,236.7 162.9,236.7 169.7,236.6 176.5,236.7 183.3,236.6 190.0,236.6 196.8,236.6 203.6,236.6 210.4,236.6 217.2,236.6 224.0,236.6 230.7,236.5 237.5,236.5 244.3,236.5 251.1,236.5 257.9,236.5 264.6,236.5 271.4,236.5 278.2,236.5 285.0,236.5 291.8,236.5 298.5,236.4 305.3,236.5 312.1,236.4 318.9,236.4 325.7,236.4 332.4,236.4 339.2,236.3 346.0,236.3 352.8,236.3 359.6,236.3 366.3,236.3 373.1,236.2 379.9,236.2 386.7,236.2 393.5,236.2 400.2,204.8 407.0,204.8 413.8,205.9 420.6,204.8 427.4,204.7 434.1,204.8 440.9,204.6 447.7,204.6 454.5,204.6 461.3,203.7 468.0,203.7 474.8,203.6 481.6,203.6 488.4,203.9 495.2,203.9 502.0,204.1 508.7,204.2 515.5,204.2 522.3,204.8 529.1,205.0 535.9,205.7 542.6,204.6 549.4,204.5 556.2,204.4 563.0,203.9 569.8,202.9 576.5,200.5 583.3,200.4 590.1,199.7 596.9,199.7 603.7,199.4 610.4,199.2 617.2,197.2 624.0,194.9 630.8,193.8 637.6,191.6 644.3,168.0 651.1,164.9 657.9,157.8 664.7,154.1 671.5,154.2 678.2,152.7 685.0,152.2 691.8,146.1 698.6,140.0 705.4,137.4 712.1,137.1 718.9,133.6 725.7,114.8 732.5,114.0 739.3,111.8 746.0,101.6 752.8,98.5 759.6,99.8 766.4,97.3 773.2,94.3 780.0,85.2 786.7,85.8 793.5,76.2 800.3,75.0 807.1,72.5 813.9,69.8 820.6,65.4 827.4,63.9 834.2,63.4 841.0,64.1 847.8,59.2 854.5,59.7 861.3,59.6 868.1,59.0 874.9,46.7 881.7,45.1 888.4,41.5 895.2,40.3 902.0,38.0" class="navline"/><polyline points="68.0,237.1 74.8,237.1 81.6,237.1 88.3,237.1 95.1,237.1 101.9,236.8 108.7,236.8 115.5,236.8 122.2,236.8 129.0,236.8 135.8,236.8 142.6,236.8 149.4,236.8 156.1,236.8 162.9,236.8 169.7,236.8 176.5,236.8 183.3,236.8 190.0,236.8 196.8,236.8 203.6,236.8 210.4,236.8 217.2,236.8 224.0,236.8 230.7,236.8 237.5,236.8 244.3,236.8 251.1,236.8 257.9,236.8 264.6,236.8 271.4,236.8 278.2,236.8 285.0,236.8 291.8,236.8 298.5,236.8 305.3,236.8 312.1,236.8 318.9,236.8 325.7,236.8 332.4,236.8 339.2,236.8 346.0,236.8 352.8,236.8 359.6,236.8 366.3,236.8 373.1,236.8 379.9,236.8 386.7,236.8 393.5,236.8 400.2,205.4 407.0,205.4 413.8,205.4 420.6,205.4 427.4,205.4 434.1,205.4 440.9,205.4 447.7,205.4 454.5,205.4 461.3,204.5 468.0,204.5 474.8,204.5 481.6,204.5 488.4,204.5 495.2,204.5 502.0,204.5 508.7,204.5 515.5,204.5 522.3,204.5 529.1,204.5 535.9,204.5 542.6,203.5 549.4,203.5 556.2,203.5 563.0,203.5 569.8,203.5 576.5,202.6 583.3,202.6 590.1,202.6 596.9,202.6 603.7,202.6 610.4,202.6 617.2,200.6 624.0,200.6 630.8,199.5 637.6,198.2 644.3,174.5 651.1,170.4 657.9,168.0 664.7,164.5 671.5,164.5 678.2,163.0 685.0,163.0 691.8,156.9 698.6,150.4 705.4,148.9 712.1,148.9 718.9,148.9 725.7,148.9 732.5,148.9 739.3,148.9 746.0,138.7 752.8,138.7 759.6,138.7 766.4,136.2 773.2,135.4 780.0,126.4 786.7,126.4 793.5,116.7 800.3,116.7 807.1,114.2 813.9,111.3 820.6,108.8 827.4,108.8 834.2,108.8 841.0,108.8 847.8,103.8 854.5,103.8 861.3,103.8 868.1,103.8 874.9,91.5 881.7,87.9 888.4,87.9 895.2,87.9 902.0,85.6" class="invline"/><text x="908" y="42.0" class="tag nav">marked</text><text x="908" y="89.6" class="tag inv">invested</text></svg></div>
+<div class="two tight">
+  <table class="facts small">
+    <tr><th>Year of purchase</th><th>Capital deployed</th><th>Share</th></tr>
+    <tr><td class='l'>2024</td><td>$97</td><td>0.8%</td></tr><tr><td class='l'>2025</td><td>$2,668</td><td>21.2%</td></tr><tr><td class='l'>2026</td><td>$9,806</td><td>78.0%</td></tr>
+    <tr class="total"><td class='l'>Total</td><td>$12,571</td><td>100.0%</td></tr>
+  </table>
+  <div class="callout"><h3>Deployment discipline</h3>
+  <p>Capital is committed in small dated entries rather than single allocations, so the cost basis is an
+  average across a cycle rather than one print. Average capital at risk since inception is
+  $2,053, against $12,571 deployed today. The money-weighted return on
+  that capital is +90.9% a year.</p></div>
+</div></div>
+  <footer><span>Urza Tower Capital LP</span><span class="note"></span><span>10</span></footer>
+</section>
+<section class="slide">
+  <header>
+    <div class="brand"><svg class="mark" viewBox="0 0 48 56" xmlns="http://www.w3.org/2000/svg"><g fill="#111"><rect x="14" y="6" width="5" height="8"/><rect x="21.5" y="6" width="5" height="8"/><rect x="29" y="6" width="5" height="8"/><rect x="12" y="14" width="24" height="4"/><polygon points="17,18 31,18 30,42 18,42"/><rect x="15" y="42" width="18" height="3"/><rect x="12" y="45" width="24" height="5"/></g><rect x="23" y="24" width="2.5" height="6" fill="#fff"/><path d="M21.5 42 v-4.5 a2.5 2.5 0 0 1 5 0 v4.5 z" fill="#fff"/></svg><div class="word"><b>URZA</b><span>TOWER</span></div></div>
+    <div class="head"><h2>Valuation policy</h2><div class="kicker">How every position is priced</div></div>
+  </header>
+  <div class="body">
+<div class="split">
+  <div><div class="donutwrap"><svg viewBox="0 0 300 300" class="donut"><path d="M150.0,32.0 A118,118 0 1 1 32.1,153.6 L78.0,152.2 A72,72 0 1 0 150.0,78.0 Z" fill="#111111"/><path d="M32.1,153.6 A118,118 0 0 1 150.0,32.0 L150.0,78.0 A72,72 0 0 0 78.0,152.2 Z" fill="#3d3d3d"/><text x="150" y="148" class="dcenter">91%</text><text x="150" y="166" class="dsub">of cost marked</text></svg><div class="legend"><div class="lgh">of positions</div><div class="lg"><i style="background:#111111"></i><span>Marked to observed prices</span><b>74.5%</b></div><div class="lg"><i style="background:#3d3d3d"></i><span>Carried at cost</span><b>25.5%</b></div></div></div>
+  <table class="facts small" style="margin-top:14px">
+    <tr><td>Positions marked</td><td>38 of 51</td></tr>
+    <tr><td>Carried at cost</td><td>13</td></tr>
+    <tr><td>Cost basis marked</td><td>91.3%</td></tr>
+    <tr><td>Last mark</td><td>2026-09-15</td></tr>
+  </table></div>
+  <div class="growcol"><h3>Valuation policy</h3>
+  <ul>
+    <li>A position is marked only from the transaction-derived market price for its product, latest observation
+        per item, from the same public feed that builds the benchmark.</li>
+    <li>Dealer retail and dealer buylist are an ask and a bid, not a market price, and are never substituted.</li>
+    <li>A product the feed does not cover is carried at cost and flagged, never estimated. Today that is
+        13 of 51 positions, 8.7% of cost basis.</li>
+    <li>Where a product has no sale history at all, such as a presale, the position may be marked to the lowest
+        public ask and is labelled as an ask in the ledger.</li>
+  </ul>
+  <h3>Data and cadence</h3>
+  <table class="facts small">
+    <tr><td>Price feed</td><td>Public marketplace market prices, daily</td></tr>
+    <tr><td>History</td><td>Weekly archive from 2024-02-08, daily from 2026-08-28</td></tr>
+    <tr><td>Marks</td><td>Every position, every business day</td></tr>
+    <tr><td>Reporting</td><td>Site daily, factsheet daily, this deck monthly</td></tr>
+  </table></div>
+</div></div>
+  <footer><span>Urza Tower Capital LP</span><span class="note"></span><span>11</span></footer>
+</section>
+<section class="slide">
+  <header>
+    <div class="brand"><svg class="mark" viewBox="0 0 48 56" xmlns="http://www.w3.org/2000/svg"><g fill="#111"><rect x="14" y="6" width="5" height="8"/><rect x="21.5" y="6" width="5" height="8"/><rect x="29" y="6" width="5" height="8"/><rect x="12" y="14" width="24" height="4"/><polygon points="17,18 31,18 30,42 18,42"/><rect x="15" y="42" width="18" height="3"/><rect x="12" y="45" width="24" height="5"/></g><rect x="23" y="24" width="2.5" height="6" fill="#fff"/><path d="M21.5 42 v-4.5 a2.5 2.5 0 0 1 5 0 v4.5 z" fill="#fff"/></svg><div class="word"><b>URZA</b><span>TOWER</span></div></div>
+    <div class="head"><h2>Benchmark</h2><div class="kicker">Sealed Magic booster box index</div></div>
+  </header>
+  <div class="body">
+<div class="two">
+  <div><h3>Sealed Magic booster box index</h3>
+  <p>Capped value-weighted, chain-linked index of every Magic booster box priced by TCGplayer (market price; weekly archive from 2024-02-08, daily from 2026-08-28). No box above 10% of the basket; a price that moves more than fivefold between observations is treated as an error. Rebased to the book&#x27;s inception.</p>
+  <table class="facts small">
+    <tr><td>Constituents</td><td>255 booster boxes</td></tr>
+    <tr><td>First observation</td><td>2024-02-08</td></tr>
+    <tr><td>Rebased</td><td>100 at 2024-11-01</td></tr>
+    <tr><td>Since inception</td><td>+43.5%</td></tr>
+    <tr><td>Book against benchmark</td><td>+185.4%</td></tr>
+  </table></div>
+  <div><h3>Why this benchmark</h3>
+  <p>A book of sealed product has no published index to be measured against, so the benchmark is built from the
+  same price source that marks the book: every Magic booster box the feed covers, value-weighted with a cap so
+  no single box drives the index, chain-linked across the boxes priced at both ends of each step.</p>
+  <p>It answers the only question that matters for this strategy: would simply holding the market in sealed
+  boxes have done better. The book is measured against it in every monthly table and in the chart on the
+  performance page.</p>
+  <h3>Limits</h3>
+  <ul><li>Ask-marked and uncovered positions are in the book but not in the index.</li>
+  <li>The index is price only. It has no fees, no shipping and no tax, while the book's cost basis is all-in.</li></ul></div>
+</div></div>
+  <footer><span>Urza Tower Capital LP</span><span class="note"></span><span>12</span></footer>
+</section>
+<section class="slide">
+  <header>
+    <div class="brand"><svg class="mark" viewBox="0 0 48 56" xmlns="http://www.w3.org/2000/svg"><g fill="#111"><rect x="14" y="6" width="5" height="8"/><rect x="21.5" y="6" width="5" height="8"/><rect x="29" y="6" width="5" height="8"/><rect x="12" y="14" width="24" height="4"/><polygon points="17,18 31,18 30,42 18,42"/><rect x="15" y="42" width="18" height="3"/><rect x="12" y="45" width="24" height="5"/></g><rect x="23" y="24" width="2.5" height="6" fill="#fff"/><path d="M21.5 42 v-4.5 a2.5 2.5 0 0 1 5 0 v4.5 z" fill="#fff"/></svg><div class="word"><b>URZA</b><span>TOWER</span></div></div>
+    <div class="head"><h2>Recent activity</h2><div class="kicker">Acquisitions and sales</div></div>
+  </header>
+  <div class="body">
+<table class="facts wide-table">
+  <tr><th>Acquired</th><th>Position</th><th>Bucket</th><th>Qty</th><th>Cost</th><th>Value</th><th>P&amp;L</th></tr>
+  <tr><td class='l'>2026-09-15</td><td class='l'>World of Warcraft: Forever Collector&#x27;s Edition</td><td class='l mute'>Other collectibles</td><td>1</td><td>$190</td><td>$281</td><td class='up'>+47.6%</td></tr><tr><td class='l'>2026-09-08</td><td class='l'>Reality Fracture Play Booster Box</td><td class='l mute'>Reality Fracture</td><td>1</td><td>$150</td><td>$191</td><td class='up'>+27.5%</td></tr><tr><td class='l'>2026-09-08</td><td class='l'>Pokemon TCG: 30th Celebration Booster Bundle</td><td class='l mute'>Pokemon</td><td>1</td><td>$145</td><td>$145</td><td class='up'>+0.0%</td></tr><tr><td class='l'>2026-09-07</td><td class='l'>Reality Fracture Collector Booster Box</td><td class='l mute'>Reality Fracture</td><td>1</td><td>$642</td><td>$530</td><td class='dn'>-17.4%</td></tr><tr><td class='l'>2026-09-07</td><td class='l'>The Hobbit Play Booster Box</td><td class='l mute'>The Hobbit</td><td>2</td><td>$374</td><td>$323</td><td class='dn'>-13.8%</td></tr><tr><td class='l'>2026-09-02</td><td class='l'>Secret Lair x MSCHF - The Zeta Set Booster Pack</td><td class='l mute'>Secret Lair x MSCHF</td><td>1</td><td>$119</td><td>$119</td><td class='up'>+0.0%</td></tr><tr><td class='l'>2026-09-02</td><td class='l'>Secret Lair x MSCHF - The Zeta Set Booster Pack</td><td class='l mute'>Secret Lair x MSCHF</td><td>1</td><td>$117</td><td>$117</td><td class='up'>+0.0%</td></tr><tr><td class='l'>2026-09-02</td><td class='l'>Secret Lair x MSCHF - The Zeta Set Booster Pack</td><td class='l mute'>Secret Lair x MSCHF</td><td>1</td><td>$90</td><td>$90</td><td class='up'>+0.0%</td></tr><tr><td class='l'>2026-09-02</td><td class='l'>Secret Lair x MSCHF - The Zeta Set Booster Pack</td><td class='l mute'>Secret Lair x MSCHF</td><td>1</td><td>$87</td><td>$87</td><td class='up'>+0.0%</td></tr><tr><td class='l'>2026-08-24</td><td class='l'>The Hobbit Play Booster Box</td><td class='l mute'>The Hobbit</td><td>1</td><td>$206</td><td>$161</td><td class='dn'>-21.8%</td></tr>
+</table>
+<p class="foot">The ten most recent acquisitions. Sales: none. No position has been sold since inception, so
+realised profit and loss is nil and the whole return shown in this deck is unrealised.</p></div>
+  <footer><span>Urza Tower Capital LP</span><span class="note"></span><span>13</span></footer>
+</section>
+<section class="slide">
+  <header>
+    <div class="brand"><svg class="mark" viewBox="0 0 48 56" xmlns="http://www.w3.org/2000/svg"><g fill="#111"><rect x="14" y="6" width="5" height="8"/><rect x="21.5" y="6" width="5" height="8"/><rect x="29" y="6" width="5" height="8"/><rect x="12" y="14" width="24" height="4"/><polygon points="17,18 31,18 30,42 18,42"/><rect x="15" y="42" width="18" height="3"/><rect x="12" y="45" width="24" height="5"/></g><rect x="23" y="24" width="2.5" height="6" fill="#fff"/><path d="M21.5 42 v-4.5 a2.5 2.5 0 0 1 5 0 v4.5 z" fill="#fff"/></svg><div class="word"><b>URZA</b><span>TOWER</span></div></div>
+    <div class="head"><h2>Terms and reporting</h2><div class="kicker">How the book is run and published</div></div>
+  </header>
+  <div class="body">
+<div class="two">
+  <div><h3>Fund facts</h3>
+  <table class="facts">
+    <tr><td>Vehicle</td><td>Personal collection tracked with fund discipline</td></tr>
+    <tr><td>Manager</td><td>Arthur Mota</td></tr>
+    <tr><td>Domicile of the manager</td><td>Miami, Florida</td></tr>
+    <tr><td>Inception</td><td>2024-11-01</td></tr>
+    <tr><td>Reporting date</td><td>2026-09-15</td></tr>
+    <tr><td>Fees</td><td>None. Returns are gross of any fee and net of all-in purchase cost</td></tr>
+    <tr><td>Subscriptions and redemptions</td><td>Not offered</td></tr>
+    <tr><td>Auditor</td><td>None. Marks are reproducible from the published price source</td></tr>
+    <tr><td>Contact</td><td>urzatowercapital@gmail.com</td></tr>
+  </table></div>
+  <div><h3>Reporting</h3>
+  <ul>
+    <li><b>Fund site</b>, urzatower.github.io/capital, refreshed daily with holdings, buckets and the NAV series.</li>
+    <li><b>Factsheet</b>, one page, rebuilt with every mark.</li>
+    <li><b>Letters</b>, published on the site, covering what changed in the book and in the market.</li>
+    <li><b>Terminal</b>, the price and analytics workbench behind the marks, public at urzatower.github.io/capital/terminal.</li>
+    <li><b>This deck</b>, monthly.</li>
+  </ul>
+  <h3>Transparency</h3>
+  <p>Every number in this deck is generated from the same ledger and price lake that the site publishes, and no
+  figure is typed by hand. Where a number cannot be sourced it is shown as carried at cost rather than
+  estimated.</p></div>
+</div></div>
+  <footer><span>Urza Tower Capital LP</span><span class="note"></span><span>14</span></footer>
+</section>
+<section class="slide">
+  <header>
+    <div class="brand"><svg class="mark" viewBox="0 0 48 56" xmlns="http://www.w3.org/2000/svg"><g fill="#111"><rect x="14" y="6" width="5" height="8"/><rect x="21.5" y="6" width="5" height="8"/><rect x="29" y="6" width="5" height="8"/><rect x="12" y="14" width="24" height="4"/><polygon points="17,18 31,18 30,42 18,42"/><rect x="15" y="42" width="18" height="3"/><rect x="12" y="45" width="24" height="5"/></g><rect x="23" y="24" width="2.5" height="6" fill="#fff"/><path d="M21.5 42 v-4.5 a2.5 2.5 0 0 1 5 0 v4.5 z" fill="#fff"/></svg><div class="word"><b>URZA</b><span>TOWER</span></div></div>
+    <div class="head"><h2>Risks and disclosures</h2><div class="kicker">What can go wrong</div></div>
+  </header>
+  <div class="body">
+<div class="two">
+  <div><h3>Principal risks</h3>
+  <ul>
+    <li><b>Reprint risk.</b> A reprint of a set or a card inside it can reset the price of sealed product. This
+        is the main hazard in the book and is tracked per set.</li>
+    <li><b>Concentration.</b> The largest bucket is LOTR: Tales of Middle-earth at 45.0%
+        of marked value, and the largest position is The Lord of the Rings: Tales of Middle-… at
+        40.5%.</li>
+    <li><b>Liquidity.</b> Sealed product trades in a retail marketplace. Exiting a large box at the marked price
+        is not guaranteed, and shipping, fees and grading all cost money on the way out.</li>
+    <li><b>Marking.</b> 13 positions are carried at cost and one product is marked to an ask. Those
+        marks are not transaction prices.</li>
+    <li><b>Physical risk.</b> Condition, storage, theft and damage. The book holds sealed goods, not securities.</li>
+    <li><b>Single-publisher risk.</b> Most of the book depends on decisions taken by one publisher.</li>
+  </ul></div>
+  <div><h3>Important information</h3>
+  <p>This document describes a personal collection tracked with fund discipline. It is not an offer to sell or a
+  solicitation to buy any security, interest or product, and it is not investment advice. Nothing here is an
+  invitation to invest, and no interests are available.</p>
+  <p>Past performance is not a guide to future results. Returns shown are unrealised, calculated from public
+  marketplace prices, and no position has been sold. Marks can move sharply, and the value of sealed product
+  can fall as well as rise.</p>
+  <p>Figures are in US dollars as of 2026-09-15 and are produced automatically from the fund's own ledger and
+  price data. They are unaudited.</p></div>
+</div></div>
+  <footer><span>Urza Tower Capital LP</span><span class="note"></span><span>15</span></footer>
+</section>
+<section class="slide cover back">
+  <div class="coverbrand"><svg class="mark" viewBox="0 0 48 56" xmlns="http://www.w3.org/2000/svg"><g fill="#111"><rect x="14" y="6" width="5" height="8"/><rect x="21.5" y="6" width="5" height="8"/><rect x="29" y="6" width="5" height="8"/><rect x="12" y="14" width="24" height="4"/><polygon points="17,18 31,18 30,42 18,42"/><rect x="15" y="42" width="18" height="3"/><rect x="12" y="45" width="24" height="5"/></g><rect x="23" y="24" width="2.5" height="6" fill="#fff"/><path d="M21.5 42 v-4.5 a2.5 2.5 0 0 1 5 0 v4.5 z" fill="#fff"/></svg><div class="word big"><b>URZA</b><span>TOWER</span></div></div>
+  <div class="coversub">Urza Tower Capital LP<br>urzatowercapital@gmail.com<br>urzatower.github.io/capital</div>
+  <div class="coverfoot"><span>As of 2026-09-15</span><span>Unaudited</span><span>Not an offer</span></div>
+</section></body></html>
