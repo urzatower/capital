@@ -1,14 +1,14 @@
 // Urza Tower Capital LP - portfolio ledger.
 // Single source of truth for both index.html and facts.html.
-// Generated from 02_Data/portfolio_ledger.json, marked 2026-09-25.
+// Generated from 02_Data/portfolio_ledger.json, marked 2026-09-26.
 // Built by 01_Engines/report_engine/capital_site_data.py. Do not hand edit.
 var DATA = {
   summary: {
-    nav: 16637.18, invested: 12570.67, perf_pct: 32.35, positions: 51,
+    nav: 16602.39, invested: 12570.67, perf_pct: 32.07, positions: 51,
     marked: 42, marked_pct: 94.6, feed_start: "2024-02-08",
-    mwr_pct: 32.35, mwr_irr_pct: 85.36, twr_pct: 227.3,
-    capital_years: 5016.0, avg_capital: 2178.47, bench_pct: 44.7,
-    first_acq: "2024-06-06", inception: "2024-11-01", asof: "2026-09-25"
+    mwr_pct: 32.07, mwr_irr_pct: 83.96, twr_pct: 226.58,
+    capital_years: 5051.0, avg_capital: 2191.07, bench_pct: 44.69,
+    first_acq: "2024-06-06", inception: "2024-11-01", asof: "2026-09-26"
   },
   series: [
     ["2024-11-01", 72.69, 72.69, 0.0, 0, 2, 0.0, 0.0, 0.0], ["2024-11-04", 73.91, 72.69, 1.68, 1, 2, 0.0, 5.8, 0.07],
@@ -76,46 +76,47 @@ var DATA = {
     ["2026-09-17", 16612.71, 12570.67, 32.15, 41, 51, 228.69, 92.27, 43.62], ["2026-09-19", 16653.19, 12570.67, 32.48, 41, 51, 229.53, 91.82, 43.67],
     ["2026-09-20", 16659.15, 12570.67, 32.52, 41, 51, 229.66, 91.26, 44.01], ["2026-09-21", 16682.93, 12570.67, 32.71, 41, 51, 230.15, 91.13, 44.13],
     ["2026-09-22", 16656.55, 12570.67, 32.5, 41, 51, 229.6, 89.83, 44.17], ["2026-09-23", 16614.06, 12570.67, 32.17, 41, 51, 228.71, 88.19, 44.17],
-    ["2026-09-24", 16603.49, 12570.67, 32.08, 41, 51, 228.49, 87.29, 44.73], ["2026-09-25", 16546.55, 12570.67, 31.63, 41, 51, 227.3, 85.36, 44.7]
+    ["2026-09-24", 16603.49, 12570.67, 32.08, 41, 51, 228.49, 87.29, 44.73], ["2026-09-25", 16546.55, 12570.67, 31.63, 41, 51, 227.3, 85.36, 44.7],
+    ["2026-09-26", 16511.76, 12570.67, 31.35, 41, 51, 226.58, 83.96, 44.69]
   ],
   buckets: [
-    ["Vintage / Legacy sealed", 3294.2, 3358.1, 1.94],
-    ["The Hobbit", 3228.04, 2786.49, -13.68],
-    ["LOTR: Tales of Middle-earth", 3142.22, 7469.06, 137.7],
-    ["Marvel Super Heroes", 1287.55, 1181.99, -8.2],
-    ["Reality Fracture", 791.74, 747.27, -5.62],
+    ["Vintage / Legacy sealed", 3294.2, 3364.62, 2.14],
+    ["The Hobbit", 3228.04, 2764.46, -14.36],
+    ["LOTR: Tales of Middle-earth", 3142.22, 7459.55, 137.4],
+    ["Marvel Super Heroes", 1287.55, 1180.3, -8.33],
+    ["Reality Fracture", 791.74, 739.23, -6.63],
     ["Secret Lair x MSCHF", 413.39, 573.04, 38.62],
     ["Other collectibles", 190.46, 281.09, 47.58],
     ["Pokemon", 144.97, 144.97, 0.0],
-    ["Marvel's Spider-Man", 78.1, 95.17, 21.86]
+    ["Marvel's Spider-Man", 78.1, 95.13, 21.81]
   ],
   holdings: [
     ["The Lord of the Rings: Tales of Middle-earth Special Edition Collector Booster Box", "LOTR: Tales of Middle-earth", 1, 2591.93, 6826.4, 163.37, "2025-09-29", true],
-    ["The Hobbit Collector Booster Display", "The Hobbit", 1, 839.85, 699.73, -16.68, "2026-07-18", true],
-    ["The Hobbit Collector Booster Box", "The Hobbit", 1, 795.0, 699.73, -11.98, "2026-08-13", true],
-    ["Reality Fracture Collector Booster Box", "Reality Fracture", 1, 641.95, 574.54, -10.5, "2026-09-07", true],
+    ["The Hobbit Collector Booster Display", "The Hobbit", 1, 839.85, 690.8, -17.75, "2026-07-18", true],
+    ["The Hobbit Collector Booster Box", "The Hobbit", 1, 795.0, 690.8, -13.11, "2026-08-13", true],
+    ["Reality Fracture Collector Booster Box", "Reality Fracture", 1, 641.95, 572.71, -10.79, "2026-09-07", true],
     ["Antiquities Booster Pack", "Vintage / Legacy sealed", 1, 535.0, 555.0, 3.74, "2026-05-13", true],
     ["Fallen Empires Booster Box (sealed)", "Vintage / Legacy sealed", 1, 534.99, 568.92, 6.34, "2026-08-08", true],
-    ["Marvel Super Heroes Collector Booster Box", "Marvel Super Heroes", 1, 534.95, 480.68, -10.14, "2026-06-06", true],
-    ["Marvel Super Heroes Collector Booster Display", "Marvel Super Heroes", 1, 502.33, 480.68, -4.31, "2026-06-03", true],
+    ["Marvel Super Heroes Collector Booster Box", "Marvel Super Heroes", 1, 534.95, 479.63, -10.34, "2026-06-06", true],
+    ["Marvel Super Heroes Collector Booster Display", "Marvel Super Heroes", 1, 502.33, 479.63, -4.52, "2026-06-03", true],
     ["Urza's Saga Tournament Pack", "Vintage / Legacy sealed", 1, 481.48, 466.71, -3.07, "2026-05-13", true],
-    ["The Hobbit Play Booster Box", "The Hobbit", 2, 374.5, 320.06, -14.54, "2026-09-07", true],
-    ["LOTR Tales of Middle-earth Set Booster Box", "LOTR: Tales of Middle-earth", 1, 337.1, 331.34, -1.71, "2026-05-16", true],
-    ["Revised Edition Booster Pack", "Vintage / Legacy sealed", 1, 300.66, 330.42, 9.9, "2026-05-13", true],
+    ["The Hobbit Play Booster Box", "The Hobbit", 2, 374.5, 318.02, -15.08, "2026-09-07", true],
+    ["LOTR Tales of Middle-earth Set Booster Box", "LOTR: Tales of Middle-earth", 1, 337.1, 321.83, -4.53, "2026-05-16", true],
+    ["Revised Edition Booster Pack", "Vintage / Legacy sealed", 1, 300.66, 337.18, 12.15, "2026-05-13", true],
     ["Urza's Saga Booster Pack", "Vintage / Legacy sealed", 1, 288.89, 256.11, -11.35, "2026-05-13", true],
     ["The Hobbit Sleeved Set Booster Pack", "The Hobbit", 28, 239.4, 239.4, 0.0, "2026-08-23", false],
     ["Ice Age Starter Deck (1995)", "Vintage / Legacy sealed", 1, 207.58, 192.58, -7.23, "2026-08-08", true],
-    ["The Hobbit Play Booster Box", "The Hobbit", 1, 207.05, 160.03, -22.71, "2026-08-18", true],
-    ["The Hobbit Play Booster Box", "The Hobbit", 1, 206.26, 160.03, -22.41, "2026-08-24", true],
-    ["The Hobbit Play Booster Box", "The Hobbit", 1, 203.29, 160.03, -21.28, "2026-05-18", true],
-    ["The Hobbit Play Booster Box", "The Hobbit", 1, 197.94, 160.03, -19.15, "2026-05-13", true],
+    ["The Hobbit Play Booster Box", "The Hobbit", 1, 207.05, 159.01, -23.2, "2026-08-18", true],
+    ["The Hobbit Play Booster Box", "The Hobbit", 1, 206.26, 159.01, -22.91, "2026-08-24", true],
+    ["The Hobbit Play Booster Box", "The Hobbit", 1, 203.29, 159.01, -21.78, "2026-05-18", true],
+    ["The Hobbit Play Booster Box", "The Hobbit", 1, 197.94, 159.01, -19.67, "2026-05-13", true],
     ["World of Warcraft: Forever Collector's Edition", "Other collectibles", 1, 190.46, 281.09, 47.58, "2026-09-15", true],
-    ["Reality Fracture Play Booster Box", "Reality Fracture", 1, 149.79, 172.73, 15.31, "2026-09-08", true],
+    ["Reality Fracture Play Booster Box", "Reality Fracture", 1, 149.79, 166.52, 11.17, "2026-09-08", true],
     ["Urza's Legacy Booster Pack", "Vintage / Legacy sealed", 1, 147.93, 133.82, -9.54, "2026-05-13", true],
     ["Pokemon TCG: 30th Celebration Booster Bundle", "Pokemon", 1, 144.97, 144.97, 0.0, "2026-09-08", false],
     ["Fifth Edition Starter Deck", "Vintage / Legacy sealed", 1, 141.23, 131.79, -6.68, "2026-08-01", true],
-    ["Marvel Super Heroes Play Booster Box", "Marvel Super Heroes", 1, 127.28, 108.95, -14.4, "2026-05-30", true],
-    ["Marvel Super Heroes Jumpstart Booster Box", "Marvel Super Heroes", 1, 122.99, 111.68, -9.2, "2026-06-08", true],
+    ["Marvel Super Heroes Play Booster Box", "Marvel Super Heroes", 1, 127.28, 109.97, -13.6, "2026-05-30", true],
+    ["Marvel Super Heroes Jumpstart Booster Box", "Marvel Super Heroes", 1, 122.99, 111.07, -9.69, "2026-06-08", true],
     ["Secret Lair x MSCHF - The Zeta Set Booster Pack", "Secret Lair x MSCHF", 1, 119.13, 143.26, 20.26, "2026-09-02", true],
     ["Secret Lair x MSCHF - The Zeta Set Booster Pack", "Secret Lair x MSCHF", 1, 117.1, 143.26, 22.34, "2026-09-02", true],
     ["Mirrodin Tournament Pack", "Vintage / Legacy sealed", 1, 113.42, 96.97, -14.5, "2026-05-21", true],
@@ -123,16 +124,16 @@ var DATA = {
     ["Secret Lair x MSCHF - The Zeta Set Booster Pack", "Secret Lair x MSCHF", 1, 89.88, 143.26, 59.39, "2026-09-02", true],
     ["Secret Lair x MSCHF - The Zeta Set Booster Pack", "Secret Lair x MSCHF", 1, 87.28, 143.26, 64.14, "2026-09-02", true],
     ["LOTR Commander Deck 2 + Collector Booster Sample Pack", "LOTR: Tales of Middle-earth", 1, 78.38, 78.38, 0.0, "2026-03-23", false],
-    ["Marvel's Spider-Man Bundle: Gift Edition", "Marvel's Spider-Man", 1, 78.1, 95.17, 21.86, "2026-02-16", true],
-    ["The Hobbit Bundle", "The Hobbit", 1, 74.89, 63.75, -14.88, "2026-05-01", true],
+    ["Marvel's Spider-Man Bundle: Gift Edition", "Marvel's Spider-Man", 1, 78.1, 95.13, 21.81, "2026-02-16", true],
+    ["The Hobbit Bundle", "The Hobbit", 1, 74.89, 65.9, -12.0, "2026-05-01", true],
     ["Classic Sixth Edition 2-Player Starter Deck", "Vintage / Legacy sealed", 1, 69.54, 145.01, 108.53, "2026-08-03", true],
     ["Darksteel Theme Deck - Transference", "Vintage / Legacy sealed", 1, 66.06, 62.03, -6.1, "2026-05-21", true],
     ["Urza's Saga Theme Deck - Sleeper", "Vintage / Legacy sealed", 1, 64.18, 63.78, -0.62, "2026-08-01", true],
     ["Portal Starter Set Demo / Sealed Pack", "Vintage / Legacy sealed", 1, 63.56, 63.56, 0.0, "2026-05-11", false],
     ["The Lord of the Rings: Tales of Middle-earth Sleeved Set Booster Pack", "LOTR: Tales of Middle-earth", 6, 51.3, 51.3, 0.0, "2024-06-06", false],
-    ["Fifth Edition Booster Pack", "Vintage / Legacy sealed", 1, 46.74, 41.53, -11.15, "2026-05-06", true],
-    ["The Hobbit Scene Box - Treasures of Smaug", "The Hobbit", 1, 44.93, 68.2, 51.79, "2026-05-01", true],
-    ["The Hobbit Scene Box - Crack the Plates", "The Hobbit", 1, 44.93, 55.5, 23.53, "2026-05-01", true],
+    ["Fifth Edition Booster Pack", "Vintage / Legacy sealed", 1, 46.74, 41.29, -11.66, "2026-05-06", true],
+    ["The Hobbit Scene Box - Treasures of Smaug", "The Hobbit", 1, 44.93, 68.11, 51.59, "2026-05-01", true],
+    ["The Hobbit Scene Box - Crack the Plates", "The Hobbit", 1, 44.93, 55.39, 23.28, "2026-05-01", true],
     ["Fourth Edition Booster Pack", "Vintage / Legacy sealed", 1, 41.58, 41.58, 0.0, "2026-05-06", false],
     ["Fallen Empires Booster Pack", "Vintage / Legacy sealed", 3, 38.37, 34.92, -8.99, "2025-11-25", true],
     ["Chronicles Booster Pack", "Vintage / Legacy sealed", 1, 26.74, 26.74, 0.0, "2026-05-11", false],
@@ -142,8 +143,8 @@ var DATA = {
     ["Fallen Empires Booster Pack", "Vintage / Legacy sealed", 1, 19.25, 11.64, -39.53, "2026-05-11", true],
     ["LOTR Collector Booster Sample Pack", "LOTR: Tales of Middle-earth", 1, 11.72, 11.72, 0.0, "2025-11-25", false]
   ],
-  monthly: [[2024, 11, -5.93, 1, 0.65], [2024, 12, 1.41, 2, 0.93], [2025, 1, 22.95, 2, 0.49], [2025, 2, 4.68, 2, 0.25], [2025, 3, 9.09, 2, 1.06], [2025, 4, 4.28, 2, 0.79], [2025, 5, 0.24, 2, 1.03], [2025, 6, 8.87, 2, 1.49], [2025, 7, 11.72, 2, 1.99], [2025, 8, 6.48, 2, 3.18], [2025, 9, 8.02, 2, 1.94], [2025, 10, 0.53, 3, 0.0], [2025, 11, 0.32, 3, -0.28], [2025, 12, -0.4, 4, -0.1], [2026, 1, -2.78, 4, 2.37], [2026, 2, -1.6, 5, 2.45], [2026, 3, 9.52, 5, 3.39], [2026, 4, 3.57, 5, 1.7], [2026, 5, 10.48, 21, 0.84], [2026, 6, 26.16, 25, 4.73], [2026, 7, 3.8, 26, 3.63], [2026, 8, 4.06, 34, 3.36], [2026, 9, 1.84, 41, 1.54]],
-  yearly: [[2024, -4.6, 1.59], [2025, 106.24, 12.44], [2026, 66.37, 26.67]],
+  monthly: [[2024, 11, -5.93, 1, 0.65], [2024, 12, 1.41, 2, 0.93], [2025, 1, 22.95, 2, 0.49], [2025, 2, 4.68, 2, 0.25], [2025, 3, 9.09, 2, 1.06], [2025, 4, 4.28, 2, 0.79], [2025, 5, 0.24, 2, 1.03], [2025, 6, 8.87, 2, 1.49], [2025, 7, 11.72, 2, 1.99], [2025, 8, 6.48, 2, 3.18], [2025, 9, 8.02, 2, 1.94], [2025, 10, 0.53, 3, 0.0], [2025, 11, 0.32, 3, -0.28], [2025, 12, -0.4, 4, -0.1], [2026, 1, -2.78, 4, 2.37], [2026, 2, -1.6, 5, 2.45], [2026, 3, 9.52, 5, 3.39], [2026, 4, 3.57, 5, 1.7], [2026, 5, 10.48, 21, 0.84], [2026, 6, 26.16, 25, 4.73], [2026, 7, 3.8, 26, 3.63], [2026, 8, 4.06, 34, 3.36], [2026, 9, 1.61, 41, 1.53]],
+  yearly: [[2024, -4.6, 1.59], [2025, 106.24, 12.44], [2026, 66.0, 26.65]],
   thin_book: 5,
-  benchmark: {"name": "Sealed Magic booster box index", "base_date": "2024-11-01", "as_of": "2026-09-25", "constituents": 253, "since_inception_pct": 44.7, "first_observation": "2024-02-08", "method": "Capped value-weighted, chain-linked index of every Magic booster box priced by TCGplayer (market price; weekly archive from 2024-02-08, daily from 2026-08-28). No box above 10% of the basket; a price that moves more than fivefold between observations is treated as an error. Rebased to the book's inception."}
+  benchmark: {"name": "Sealed Magic booster box index", "base_date": "2024-11-01", "as_of": "2026-09-26", "constituents": 253, "since_inception_pct": 44.69, "first_observation": "2024-02-08", "method": "Capped value-weighted, chain-linked index of every Magic booster box priced by TCGplayer (market price; weekly archive from 2024-02-08, daily from 2026-08-28). No box above 10% of the basket; a price that moves more than fivefold between observations is treated as an error. Rebased to the book's inception."}
 };

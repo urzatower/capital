@@ -1,27 +1,27 @@
 {
   "meta": {
     "name": "Urza Tower Capital LP",
-    "asof": "2026-09-25",
+    "asof": "2026-09-26",
     "currency": "USD",
     "source": "portfolio_ledger.json"
   },
   "summary": {
-    "nav": 16637.18,
+    "nav": 16602.39,
     "invested": 12570.67,
-    "perf_pct": 32.35,
+    "perf_pct": 32.07,
     "positions": 51,
     "marked": 42,
     "marked_pct": 94.6,
     "first_acq": "2024-06-06",
     "inception": "2024-11-01",
     "feed_start": "2024-02-08",
-    "asof": "2026-09-25",
-    "mwr_pct": 32.35,
-    "mwr_irr_pct": 85.36,
-    "twr_pct": 227.3,
-    "capital_years": 5016.0,
-    "avg_capital": 2178.47,
-    "bench_pct": 44.7
+    "asof": "2026-09-26",
+    "mwr_pct": 32.07,
+    "mwr_irr_pct": 83.96,
+    "twr_pct": 226.58,
+    "capital_years": 5051.0,
+    "avg_capital": 2191.07,
+    "bench_pct": 44.69
   },
   "series_columns": [
     "date",
@@ -1486,6 +1486,17 @@
       227.3,
       85.36,
       44.7
+    ],
+    [
+      "2026-09-26",
+      16511.76,
+      12570.67,
+      31.35,
+      41,
+      51,
+      226.58,
+      83.96,
+      44.69
     ]
   ],
   "buckets_columns": [
@@ -1498,32 +1509,32 @@
     [
       "Vintage / Legacy sealed",
       3294.2,
-      3358.1,
-      1.94
+      3364.62,
+      2.14
     ],
     [
       "The Hobbit",
       3228.04,
-      2786.49,
-      -13.68
+      2764.46,
+      -14.36
     ],
     [
       "LOTR: Tales of Middle-earth",
       3142.22,
-      7469.06,
-      137.7
+      7459.55,
+      137.4
     ],
     [
       "Marvel Super Heroes",
       1287.55,
-      1181.99,
-      -8.2
+      1180.3,
+      -8.33
     ],
     [
       "Reality Fracture",
       791.74,
-      747.27,
-      -5.62
+      739.23,
+      -6.63
     ],
     [
       "Secret Lair x MSCHF",
@@ -1546,8 +1557,8 @@
     [
       "Marvel's Spider-Man",
       78.1,
-      95.17,
-      21.86
+      95.13,
+      21.81
     ]
   ],
   "holdings_columns": [
@@ -1576,8 +1587,8 @@
       "The Hobbit",
       1,
       839.85,
-      699.73,
-      -16.68,
+      690.8,
+      -17.75,
       "2026-07-18",
       true
     ],
@@ -1586,8 +1597,8 @@
       "The Hobbit",
       1,
       795.0,
-      699.73,
-      -11.98,
+      690.8,
+      -13.11,
       "2026-08-13",
       true
     ],
@@ -1596,8 +1607,8 @@
       "Reality Fracture",
       1,
       641.95,
-      574.54,
-      -10.5,
+      572.71,
+      -10.79,
       "2026-09-07",
       true
     ],
@@ -1626,8 +1637,8 @@
       "Marvel Super Heroes",
       1,
       534.95,
-      480.68,
-      -10.14,
+      479.63,
+      -10.34,
       "2026-06-06",
       true
     ],
@@ -1636,8 +1647,8 @@
       "Marvel Super Heroes",
       1,
       502.33,
-      480.68,
-      -4.31,
+      479.63,
+      -4.52,
       "2026-06-03",
       true
     ],
@@ -1656,8 +1667,8 @@
       "The Hobbit",
       2,
       374.5,
-      320.06,
-      -14.54,
+      318.02,
+      -15.08,
       "2026-09-07",
       true
     ],
@@ -1666,8 +1677,8 @@
       "LOTR: Tales of Middle-earth",
       1,
       337.1,
-      331.34,
-      -1.71,
+      321.83,
+      -4.53,
       "2026-05-16",
       true
     ],
@@ -1676,8 +1687,8 @@
       "Vintage / Legacy sealed",
       1,
       300.66,
-      330.42,
-      9.9,
+      337.18,
+      12.15,
       "2026-05-13",
       true
     ],
@@ -1716,8 +1727,8 @@
       "The Hobbit",
       1,
       207.05,
-      160.03,
-      -22.71,
+      159.01,
+      -23.2,
       "2026-08-18",
       true
     ],
@@ -1726,8 +1737,8 @@
       "The Hobbit",
       1,
       206.26,
-      160.03,
-      -22.41,
+      159.01,
+      -22.91,
       "2026-08-24",
       true
     ],
@@ -1736,8 +1747,8 @@
       "The Hobbit",
       1,
       203.29,
-      160.03,
-      -21.28,
+      159.01,
+      -21.78,
       "2026-05-18",
       true
     ],
@@ -1746,8 +1757,8 @@
       "The Hobbit",
       1,
       197.94,
-      160.03,
-      -19.15,
+      159.01,
+      -19.67,
       "2026-05-13",
       true
     ],
@@ -1766,8 +1777,8 @@
       "Reality Fracture",
       1,
       149.79,
-      172.73,
-      15.31,
+      166.52,
+      11.17,
       "2026-09-08",
       true
     ],
@@ -1806,8 +1817,8 @@
       "Marvel Super Heroes",
       1,
       127.28,
-      108.95,
-      -14.4,
+      109.97,
+      -13.6,
       "2026-05-30",
       true
     ],
@@ -1816,8 +1827,8 @@
       "Marvel Super Heroes",
       1,
       122.99,
-      111.68,
-      -9.2,
+      111.07,
+      -9.69,
       "2026-06-08",
       true
     ],
@@ -1896,8 +1907,8 @@
       "Marvel's Spider-Man",
       1,
       78.1,
-      95.17,
-      21.86,
+      95.13,
+      21.81,
       "2026-02-16",
       true
     ],
@@ -1906,8 +1917,8 @@
       "The Hobbit",
       1,
       74.89,
-      63.75,
-      -14.88,
+      65.9,
+      -12.0,
       "2026-05-01",
       true
     ],
@@ -1966,8 +1977,8 @@
       "Vintage / Legacy sealed",
       1,
       46.74,
-      41.53,
-      -11.15,
+      41.29,
+      -11.66,
       "2026-05-06",
       true
     ],
@@ -1976,8 +1987,8 @@
       "The Hobbit",
       1,
       44.93,
-      68.2,
-      51.79,
+      68.11,
+      51.59,
       "2026-05-01",
       true
     ],
@@ -1986,8 +1997,8 @@
       "The Hobbit",
       1,
       44.93,
-      55.5,
-      23.53,
+      55.39,
+      23.28,
       "2026-05-01",
       true
     ],
@@ -2075,9 +2086,9 @@
   "benchmark": {
     "name": "Sealed Magic booster box index",
     "base_date": "2024-11-01",
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-26",
     "constituents": 253,
-    "since_inception_pct": 44.7,
+    "since_inception_pct": 44.69,
     "first_observation": "2024-02-08",
     "method": "Capped value-weighted, chain-linked index of every Magic booster box priced by TCGplayer (market price; weekly archive from 2024-02-08, daily from 2026-08-28). No box above 10% of the basket; a price that moves more than fivefold between observations is treated as an error. Rebased to the book's inception."
   },
@@ -2246,9 +2257,9 @@
     [
       2026,
       9,
-      1.84,
+      1.61,
       41,
-      1.54
+      1.53
     ]
   ],
   "yearly": [
@@ -2264,8 +2275,8 @@
     ],
     [
       2026,
-      66.37,
-      26.67
+      66.0,
+      26.65
     ]
   ],
   "thin_book": 5
