@@ -150,3 +150,6 @@ table.gauge td.g-n { color: #777; font-size: 12.5px; }
   table.gauge td { display: block; width: auto; padding: 2px 0; }
   table.gauge td.g-l { border: none; padding-top: 10px; }
 }
+
+/* Source footnote under a letter that cites outside data */
+p.src { font-size: 12px; color: #777; border-top: 1px solid #ededed; padding-top: 10px; margin-top: 22px; }
