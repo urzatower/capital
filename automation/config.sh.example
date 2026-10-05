@@ -1,0 +1,24 @@
+# Copy this file to automation/config.sh on the Mac and fill in the five values.
+# config.sh is git-ignored, so machine paths never reach the repository.
+
+# Folder that contains 01_Engines, 02_Data and 07_Archive.
+WORKSPACE="$HOME/CHANGE_ME"
+
+# Clone of urzatower/capital (the folder holding index.html and data.js).
+REPO="$HOME/CHANGE_ME/capital"
+
+# Interpreter used by the engines. A venv python is fine.
+PYTHON="/usr/bin/python3"
+
+# Command that writes terminal/data/api inside REPO. Run from WORKSPACE.
+# Example: "$PYTHON 01_Engines/terminal_engine/export_static.py --out $REPO/terminal"
+TERMINAL_BUILD=""
+
+# Optional. Command that rebuilds deck.pdf, factsheet.pdf and prospectus.pdf.
+# Leave empty to keep yesterday's PDFs.
+PDF_BUILD=""
+
+# Abort guard. The new terminal export must keep at least this share of the
+# api file count that is already committed. 0.90 catches the 2026-09-19 failure,
+# where the export step died and published an empty terminal.
+MIN_API_FILES_RATIO="0.90"
