@@ -1,0 +1,579 @@
+{
+  "as_of": "2026-10-05",
+  "stale": false,
+  "stale_reason": null,
+  "scope": {
+    "categories": [
+      "booster_pack",
+      "booster_box",
+      "booster_case",
+      "deck"
+    ],
+    "excluded_subtypes": [
+      "commander",
+      "brawl"
+    ],
+    "min_price_usd": 20.0,
+    "products": 1370
+  },
+  "costs": {
+    "sales_tax": 0.07,
+    "defaults": true,
+    "stores": {
+      "cardkingdom_retail": {
+        "label": "Card Kingdom",
+        "shipping": 8.0,
+        "free_shipping_at": 100.0
+      },
+      "tcgplayer_market": {
+        "label": "TCGplayer market",
+        "shipping": 5.0,
+        "free_shipping_at": 50.0
+      },
+      "tcgplayer_listed_median": {
+        "label": "TCGplayer listed median",
+        "shipping": 5.0,
+        "free_shipping_at": 50.0
+      },
+      "ebay_ask": {
+        "label": "eBay",
+        "shipping": 6.0,
+        "free_shipping_at": null
+      }
+    }
+  },
+  "ebay": {
+    "connected": false,
+    "as_of": null,
+    "note": "eBay not connected"
+  },
+  "rules": {
+    "breakout": "price at least 10% above its level 24 to 32 days earlier and above the highest price of the prior 26 weeks, first week only",
+    "decline": "price 15% or more below its level 24 to 32 days earlier",
+    "store_gap": "landed price at one store 15% or more below the lowest landed price elsewhere, both seen within 3 days; gaps wider than 60% are dropped as data errors",
+    "fund_move": "one-week move of 10% or more in a product the fund holds, information only"
+  },
+  "counts": {
+    "new_breakouts": 2,
+    "tracked_breakouts": 0,
+    "declines": 0,
+    "store_gaps": 6,
+    "fund_moves": 4
+  },
+  "new_breakouts": [
+    {
+      "uuid": "82f149e3-03b0-54cd-bc5f-6dda9ed00477",
+      "name": "Modern Horizons 3 Play Booster Box Case",
+      "set": "Modern Horizons 3",
+      "category": "booster_case",
+      "subtype": "play",
+      "links": {
+        "tcgplayer": "https://mtgjson.com/links/6c67bd8816112f09",
+        "cardkingdom": null
+      },
+      "store": "tcgplayer_market",
+      "first_alert_date": "2026-10-05",
+      "first_alert_price": 1675.03,
+      "return_since_alert_pct": 0.0,
+      "price": 1675.03,
+      "reference_price": 1483.41,
+      "reference_date": "2026-09-06",
+      "change_pct": 12.9,
+      "high_26w": 1656.76,
+      "tcgplayer_market_date": "2026-10-05",
+      "scope_price": 1675.03
+    },
+    {
+      "uuid": "5921fbf2-986c-5f96-9ee2-5d8fa6527cc7",
+      "name": "Bloomburrow Play Booster Box Case",
+      "set": "Bloomburrow",
+      "category": "booster_case",
+      "subtype": "play",
+      "links": {
+        "tcgplayer": "https://mtgjson.com/links/6cc6c36f3127699b",
+        "cardkingdom": null
+      },
+      "store": "tcgplayer_market",
+      "first_alert_date": "2026-10-05",
+      "first_alert_price": 1186.05,
+      "return_since_alert_pct": 0.0,
+      "price": 1186.05,
+      "reference_price": 1057.71,
+      "reference_date": "2026-09-06",
+      "change_pct": 12.1,
+      "high_26w": 1173.95,
+      "tcgplayer_market_date": "2026-10-05",
+      "scope_price": 1186.05
+    }
+  ],
+  "tracked_breakouts": [],
+  "declines": [],
+  "store_gaps": [
+    {
+      "uuid": "a5e37936-b5bd-5590-a53e-eae594dfa141",
+      "name": "Antiquities Booster Box",
+      "set": "Antiquities",
+      "category": "booster_box",
+      "subtype": "default",
+      "links": {
+        "tcgplayer": "https://mtgjson.com/links/dd7092e0ba11ba78",
+        "cardkingdom": null
+      },
+      "store": "cardkingdom_retail",
+      "price": 34999.99,
+      "landed_price": 37449.99,
+      "reference_store": "tcgplayer_listed_median",
+      "reference_price": 64199.99,
+      "change_pct": -41.7,
+      "listed": {
+        "cardkingdom_retail": 34999.99,
+        "tcgplayer_listed_median": 59999.99
+      },
+      "landed_prices": {
+        "cardkingdom_retail": 37449.99,
+        "tcgplayer_listed_median": 64199.99
+      },
+      "observed": {
+        "cardkingdom_retail": "2026-10-05",
+        "tcgplayer_listed_median": "2026-10-05"
+      },
+      "scope_price": 34999.99,
+      "cross_venue": true,
+      "cardkingdom_buylist": 22750.0
+    },
+    {
+      "uuid": "6a96fe22-ef37-5ff6-8d40-aae91120ad31",
+      "name": "Exodus Booster Box",
+      "set": "Exodus",
+      "category": "booster_box",
+      "subtype": "draft",
+      "links": {
+        "tcgplayer": "https://mtgjson.com/links/224640f014f3b098",
+        "cardkingdom": null
+      },
+      "store": "cardkingdom_retail",
+      "price": 3599.99,
+      "landed_price": 3851.99,
+      "reference_store": "tcgplayer_listed_median",
+      "reference_price": 6416.78,
+      "change_pct": -40.0,
+      "listed": {
+        "cardkingdom_retail": 3599.99,
+        "tcgplayer_listed_median": 5996.99
+      },
+      "landed_prices": {
+        "cardkingdom_retail": 3851.99,
+        "tcgplayer_listed_median": 6416.78
+      },
+      "observed": {
+        "cardkingdom_retail": "2026-10-05",
+        "tcgplayer_listed_median": "2026-10-05"
+      },
+      "scope_price": 3599.99,
+      "cross_venue": true,
+      "cardkingdom_buylist": 2340.0
+    },
+    {
+      "uuid": "a1ea3da8-2816-5441-b4c2-a83c51238b15",
+      "name": "Urzas Destiny Booster Box",
+      "set": "Urza's Destiny",
+      "category": "booster_box",
+      "subtype": "draft",
+      "links": {
+        "tcgplayer": "https://mtgjson.com/links/10c17257c0946f85",
+        "cardkingdom": null
+      },
+      "store": "cardkingdom_retail",
+      "price": 5999.99,
+      "landed_price": 6419.99,
+      "reference_store": "tcgplayer_listed_median",
+      "reference_price": 9094.99,
+      "change_pct": -29.4,
+      "listed": {
+        "cardkingdom_retail": 5999.99,
+        "tcgplayer_listed_median": 8499.99
+      },
+      "landed_prices": {
+        "cardkingdom_retail": 6419.99,
+        "tcgplayer_listed_median": 9094.99
+      },
+      "observed": {
+        "cardkingdom_retail": "2026-10-05",
+        "tcgplayer_listed_median": "2026-10-05"
+      },
+      "scope_price": 5999.99,
+      "cross_venue": true,
+      "cardkingdom_buylist": 3900.0
+    },
+    {
+      "uuid": "e09568a6-c7b4-53a9-8ae6-7bfd05a9c769",
+      "name": "Portal Second Age Booster Box",
+      "set": "Portal Second Age",
+      "category": "booster_box",
+      "subtype": "default",
+      "links": {
+        "tcgplayer": "https://mtgjson.com/links/b6072f60c327aeb3",
+        "cardkingdom": null
+      },
+      "store": "cardkingdom_retail",
+      "price": 2199.99,
+      "landed_price": 2353.99,
+      "reference_store": "tcgplayer_listed_median",
+      "reference_price": 3209.99,
+      "change_pct": -26.7,
+      "listed": {
+        "cardkingdom_retail": 2199.99,
+        "tcgplayer_listed_median": 2999.99
+      },
+      "landed_prices": {
+        "cardkingdom_retail": 2353.99,
+        "tcgplayer_listed_median": 3209.99
+      },
+      "observed": {
+        "cardkingdom_retail": "2026-10-05",
+        "tcgplayer_listed_median": "2026-10-05"
+      },
+      "scope_price": 2199.99,
+      "cross_venue": true,
+      "cardkingdom_buylist": 1430.0
+    },
+    {
+      "uuid": "4a4bed55-a98f-592b-b52f-9d50f55d66d6",
+      "name": "Weatherlight Booster Box",
+      "set": "Weatherlight",
+      "category": "booster_box",
+      "subtype": "draft",
+      "links": {
+        "tcgplayer": "https://mtgjson.com/links/9b42e23255864b97",
+        "cardkingdom": null
+      },
+      "store": "cardkingdom_retail",
+      "price": 1899.99,
+      "landed_price": 2032.99,
+      "reference_store": "tcgplayer_listed_median",
+      "reference_price": 2567.99,
+      "change_pct": -20.8,
+      "listed": {
+        "cardkingdom_retail": 1899.99,
+        "tcgplayer_listed_median": 2399.99
+      },
+      "landed_prices": {
+        "cardkingdom_retail": 2032.99,
+        "tcgplayer_listed_median": 2567.99
+      },
+      "observed": {
+        "cardkingdom_retail": "2026-10-05",
+        "tcgplayer_listed_median": "2026-10-05"
+      },
+      "scope_price": 1899.99,
+      "cross_venue": true,
+      "cardkingdom_buylist": 1235.0
+    },
+    {
+      "uuid": "a65e0802-6422-5d24-bd04-8568cf5218ff",
+      "name": "March of the Machine Jumpstart Booster Box",
+      "set": "March of the Machine",
+      "category": "booster_box",
+      "subtype": "jumpstart",
+      "links": {
+        "tcgplayer": "https://mtgjson.com/links/362c73dd7d34ce5c",
+        "cardkingdom": null
+      },
+      "store": "cardkingdom_retail",
+      "price": 124.99,
+      "landed_price": 133.74,
+      "reference_store": "tcgplayer_market",
+      "reference_price": 164.19,
+      "change_pct": -18.5,
+      "listed": {
+        "cardkingdom_retail": 124.99,
+        "tcgplayer_market": 153.45,
+        "tcgplayer_listed_median": 169.99
+      },
+      "landed_prices": {
+        "cardkingdom_retail": 133.74,
+        "tcgplayer_market": 164.19,
+        "tcgplayer_listed_median": 181.89
+      },
+      "observed": {
+        "cardkingdom_retail": "2026-10-05",
+        "tcgplayer_market": "2026-10-05",
+        "tcgplayer_listed_median": "2026-10-05"
+      },
+      "scope_price": 153.45,
+      "cross_venue": true,
+      "cardkingdom_buylist": 81.0
+    }
+  ],
+  "fund_moves": [
+    {
+      "uuid": "3d76ef6d-1959-5995-b7d5-2c1abc7ac17a",
+      "name": "Reality Fracture Collector Booster Box",
+      "set": "Reality Fracture",
+      "category": "booster_box",
+      "subtype": "collector",
+      "links": {
+        "tcgplayer": "https://mtgjson.com/links/d4985e7f7af250bf",
+        "cardkingdom": null
+      },
+      "store": "tcgplayer_market",
+      "price": 454.07,
+      "reference_price": 555.63,
+      "reference_date": "2026-09-28",
+      "change_pct": -18.3,
+      "tcgplayer_market_date": "2026-10-05",
+      "held_as": "Reality Fracture Collector Booster Box"
+    },
+    {
+      "uuid": "fc92f5e4-94af-520a-b635-9403f7d8c26a",
+      "name": "Marvel Super Heroes Jumpstart Booster Box",
+      "set": "Marvel Super Heroes",
+      "category": "booster_box",
+      "subtype": "jumpstart",
+      "links": {
+        "tcgplayer": "https://mtgjson.com/links/a347181c70999ffb",
+        "cardkingdom": null
+      },
+      "store": "tcgplayer_market",
+      "price": 92.18,
+      "reference_price": 110.87,
+      "reference_date": "2026-09-28",
+      "change_pct": -16.9,
+      "tcgplayer_market_date": "2026-10-05",
+      "held_as": "Marvel Super Heroes Jumpstart Booster Box"
+    },
+    {
+      "uuid": "fbb14d9d-d8f1-593f-8a7c-dd4a50e437c3",
+      "name": "Reality Fracture Play Booster Box",
+      "set": "Reality Fracture",
+      "category": "booster_box",
+      "subtype": "play",
+      "links": {
+        "tcgplayer": "https://mtgjson.com/links/2245d5ac25207f1d",
+        "cardkingdom": null
+      },
+      "store": "tcgplayer_market",
+      "price": 150.03,
+      "reference_price": 170.87,
+      "reference_date": "2026-09-28",
+      "change_pct": -12.2,
+      "tcgplayer_market_date": "2026-10-05",
+      "held_as": "Reality Fracture Play Booster Box"
+    },
+    {
+      "uuid": "37505164-dd72-5df9-bee2-ce640b077694",
+      "name": "The Hobbit Scene Box Crack the Plates",
+      "set": "The Hobbit",
+      "category": "box_set",
+      "subtype": "other",
+      "links": {
+        "tcgplayer": "https://mtgjson.com/links/d2c5d133e5da02c4",
+        "cardkingdom": null
+      },
+      "store": "tcgplayer_market",
+      "price": 47.83,
+      "reference_price": 53.5,
+      "reference_date": "2026-09-28",
+      "change_pct": -10.6,
+      "tcgplayer_market_date": "2026-10-05",
+      "held_as": "The Hobbit Scene Box - Crack the Plates"
+    }
+  ],
+  "newly_added": [],
+  "data_quality": {
+    "store_gaps_dropped_as_implausible": 8,
+    "store_gaps_same_venue": 109,
+    "fresh_tcgplayer_market_products": 389,
+    "scope_products": 1370
+  },
+  "calibration": {
+    "weekly_snapshots": 134,
+    "first_date": "2024-02-12",
+    "last_date": "2026-08-31",
+    "products": 811,
+    "split_at": "2025-05-26",
+    "method": "Weekly TCGplayer market price (tcgcsv archive, Mondays) for in-scope products with at least 40 weekly observations at 20 dollars or more. Excess = forward log return minus the same-date median across the sample. Breakout: 4-week rise of 10% or more and above the previous 26 weeks' high. Decline: 4-week drop of 15% or more.",
+    "events": {
+      "breakout": {
+        "4": {
+          "n": 2193,
+          "beat_median_pct": 75.2,
+          "mean_excess_pts": 5.14
+        },
+        "13": {
+          "n": 1843,
+          "beat_median_pct": 71.1,
+          "mean_excess_pts": 7.78
+        },
+        "26": {
+          "n": 1484,
+          "beat_median_pct": 67.4,
+          "mean_excess_pts": 9.54
+        },
+        "events": 2421,
+        "halves": {
+          "first_half": {
+            "4": {
+              "n": 683,
+              "beat_median_pct": 70.4,
+              "mean_excess_pts": 4.24
+            },
+            "13": {
+              "n": 681,
+              "beat_median_pct": 70.2,
+              "mean_excess_pts": 8.45
+            },
+            "26": {
+              "n": 656,
+              "beat_median_pct": 70.9,
+              "mean_excess_pts": 12.87
+            }
+          },
+          "second_half": {
+            "4": {
+              "n": 1510,
+              "beat_median_pct": 77.4,
+              "mean_excess_pts": 5.55
+            },
+            "13": {
+              "n": 1162,
+              "beat_median_pct": 71.7,
+              "mean_excess_pts": 7.38
+            },
+            "26": {
+              "n": 828,
+              "beat_median_pct": 64.6,
+              "mean_excess_pts": 6.9
+            }
+          }
+        }
+      },
+      "breakout_first_week": {
+        "4": {
+          "n": 1066,
+          "beat_median_pct": 71.1,
+          "mean_excess_pts": 5.12
+        },
+        "13": {
+          "n": 911,
+          "beat_median_pct": 71.1,
+          "mean_excess_pts": 7.61
+        },
+        "26": {
+          "n": 726,
+          "beat_median_pct": 64.7,
+          "mean_excess_pts": 7.53
+        },
+        "events": 1177,
+        "halves": {
+          "first_half": {
+            "4": {
+              "n": 353,
+              "beat_median_pct": 68.8,
+              "mean_excess_pts": 4.42
+            },
+            "13": {
+              "n": 350,
+              "beat_median_pct": 71.4,
+              "mean_excess_pts": 7.23
+            },
+            "26": {
+              "n": 331,
+              "beat_median_pct": 65.3,
+              "mean_excess_pts": 8.68
+            }
+          },
+          "second_half": {
+            "4": {
+              "n": 713,
+              "beat_median_pct": 72.2,
+              "mean_excess_pts": 5.46
+            },
+            "13": {
+              "n": 561,
+              "beat_median_pct": 70.9,
+              "mean_excess_pts": 7.85
+            },
+            "26": {
+              "n": 395,
+              "beat_median_pct": 64.3,
+              "mean_excess_pts": 6.56
+            }
+          }
+        }
+      },
+      "decline": {
+        "4": {
+          "n": 565,
+          "beat_median_pct": 29.2,
+          "mean_excess_pts": -2.63
+        },
+        "13": {
+          "n": 533,
+          "beat_median_pct": 33.4,
+          "mean_excess_pts": -6.25
+        },
+        "26": {
+          "n": 474,
+          "beat_median_pct": 41.4,
+          "mean_excess_pts": -6.5
+        },
+        "events": 589,
+        "halves": {
+          "first_half": {
+            "4": {
+              "n": 230,
+              "beat_median_pct": 34.8,
+              "mean_excess_pts": 1.27
+            },
+            "13": {
+              "n": 222,
+              "beat_median_pct": 38.3,
+              "mean_excess_pts": -0.26
+            },
+            "26": {
+              "n": 193,
+              "beat_median_pct": 50.8,
+              "mean_excess_pts": 4.38
+            }
+          },
+          "second_half": {
+            "4": {
+              "n": 335,
+              "beat_median_pct": 25.4,
+              "mean_excess_pts": -5.31
+            },
+            "13": {
+              "n": 311,
+              "beat_median_pct": 29.9,
+              "mean_excess_pts": -10.53
+            },
+            "26": {
+              "n": 281,
+              "beat_median_pct": 34.9,
+              "mean_excess_pts": -13.97
+            }
+          }
+        }
+      }
+    },
+    "reference": {
+      "products": 839,
+      "breakout_events": 2593,
+      "breakout_beat_13w_pct": 71.0,
+      "breakout_mean_13w_pts": 7.6,
+      "breakout_first_week_beat_13w_pct": 72.0,
+      "decline_beat_13w_pct": 36.0,
+      "decline_mean_13w_pts": -5.3
+    },
+    "vs_reference": {
+      "products": -28,
+      "breakout_events": -172,
+      "breakout_beat_13w_pct": 0.1,
+      "breakout_mean_13w_pts": 0.18,
+      "breakout_first_week_beat_13w_pct": -0.9,
+      "decline_beat_13w_pct": -2.6,
+      "decline_mean_13w_pts": -0.95
+    }
+  }
+}
