@@ -4,9 +4,9 @@
 // Built by 01_Engines/report_engine/capital_site_data.py. Do not hand edit.
 var DATA = {
   summary: {
-    nav: 16616.46, invested: 12570.67, perf_pct: 32.18, positions: 51,
-    marked: 42, marked_pct: 94.6, feed_start: "2024-02-08",
-    mwr_pct: 32.18, mwr_irr_pct: 77.93, twr_pct: 226.87,
+    nav: 16769.91, invested: 12717.56, perf_pct: 31.86, positions: 52,
+    marked: 43, marked_pct: 94.6, feed_start: "2024-02-08",
+    mwr_pct: 31.86, mwr_irr_pct: 77.93, twr_pct: 226.87,
     capital_years: 5429.0, avg_capital: 2324.67, bench_pct: 46.01,
     first_acq: "2024-06-06", inception: "2024-11-01", asof: "2026-10-07"
   },
@@ -82,7 +82,7 @@ var DATA = {
     ["2026-09-30", 16677.8, 12570.67, 32.67, 41, 51, 230.04, 85.17, 45.57], ["2026-10-01", 16589.44, 12570.67, 31.97, 41, 51, 228.2, 82.65, 45.56],
     ["2026-10-02", 16639.39, 12570.67, 32.37, 41, 51, 229.24, 83.13, 45.8], ["2026-10-03", 16625.32, 12570.67, 32.25, 41, 51, 228.95, 82.25, 45.8],
     ["2026-10-04", 16593.54, 12570.67, 32.0, 41, 51, 228.29, 81.0, 45.86], ["2026-10-05", 16520.17, 12570.67, 31.42, 41, 51, 226.75, 78.9, 45.84],
-    ["2026-10-06", 16521.68, 12570.67, 31.43, 41, 51, 226.78, 78.39, 45.97], ["2026-10-07", 16525.83, 12570.67, 31.46, 41, 51, 226.87, 77.93, 46.01]
+    ["2026-10-06", 16521.68, 12570.67, 31.43, 41, 51, 226.78, 78.39, 45.97], ["2026-10-07", 16672.72, 12717.56, 31.1, 41, 52, 226.87, 77.93, 46.01]
   ],
   buckets: [
     ["Vintage / Legacy sealed", 3294.2, 3384.21, 2.73],
@@ -92,6 +92,7 @@ var DATA = {
     ["Reality Fracture", 791.74, 582.53, -26.42],
     ["Secret Lair x MSCHF", 413.39, 512.68, 24.02],
     ["Other collectibles", 190.46, 281.09, 47.58],
+    ["March of the Machine", 146.89, 153.45, 4.47],
     ["Pokemon", 144.97, 144.97, 0.0],
     ["Marvel's Spider-Man", 78.1, 95.21, 21.91]
   ],
@@ -118,6 +119,7 @@ var DATA = {
     ["World of Warcraft: Forever Collector's Edition", "Other collectibles", 1, 190.46, 281.09, 47.58, "2026-09-15", true],
     ["Reality Fracture Play Booster Box", "Reality Fracture", 1, 149.79, 143.11, -4.46, "2026-09-08", true],
     ["Urza's Legacy Booster Pack", "Vintage / Legacy sealed", 1, 147.93, 135.74, -8.24, "2026-05-13", true],
+    ["March of the Machine Jumpstart Booster Box", "March of the Machine", 1, 146.89, 153.45, 4.47, "2026-10-07", true],
     ["Pokemon TCG: 30th Celebration Booster Bundle", "Pokemon", 1, 144.97, 144.97, 0.0, "2026-09-08", false],
     ["Fifth Edition Starter Deck", "Vintage / Legacy sealed", 1, 141.23, 132.01, -6.53, "2026-08-01", true],
     ["Marvel Super Heroes Play Booster Box", "Marvel Super Heroes", 1, 127.28, 113.91, -10.5, "2026-05-30", true],

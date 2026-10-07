@@ -1172,10 +1172,7 @@
       }
     }
   ],
-  "newly_added": [
-    "83e2732b-e79e-5ca4-9ad0-764b4b289a7b",
-    "edde415d-40cb-599d-9427-add0e16a275f"
-  ],
+  "newly_added": [],
   "data_quality": {
     "store_gaps_dropped_as_implausible": 14,
     "store_gaps_same_venue": 192,

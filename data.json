@@ -6,17 +6,17 @@
     "source": "portfolio_ledger.json"
   },
   "summary": {
-    "nav": 16616.46,
-    "invested": 12570.67,
-    "perf_pct": 32.18,
-    "positions": 51,
-    "marked": 42,
+    "nav": 16769.91,
+    "invested": 12717.56,
+    "perf_pct": 31.86,
+    "positions": 52,
+    "marked": 43,
     "marked_pct": 94.6,
     "first_acq": "2024-06-06",
     "inception": "2024-11-01",
     "feed_start": "2024-02-08",
     "asof": "2026-10-07",
-    "mwr_pct": 32.18,
+    "mwr_pct": 31.86,
     "mwr_irr_pct": 77.93,
     "twr_pct": 226.87,
     "capital_years": 5429.0,
@@ -1610,11 +1610,11 @@
     ],
     [
       "2026-10-07",
-      16525.83,
-      12570.67,
-      31.46,
+      16672.72,
+      12717.56,
+      31.1,
       41,
-      51,
+      52,
       226.87,
       77.93,
       46.01
@@ -1668,6 +1668,12 @@
       190.46,
       281.09,
       47.58
+    ],
+    [
+      "March of the Machine",
+      146.89,
+      153.45,
+      4.47
     ],
     [
       "Pokemon",
@@ -1911,6 +1917,16 @@
       135.74,
       -8.24,
       "2026-05-13",
+      true
+    ],
+    [
+      "March of the Machine Jumpstart Booster Box",
+      "March of the Machine",
+      1,
+      146.89,
+      153.45,
+      4.47,
+      "2026-10-07",
       true
     ],
     [
