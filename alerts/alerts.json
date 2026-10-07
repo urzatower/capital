@@ -19,6 +19,8 @@
   "costs": {
     "sales_tax": 0.07,
     "defaults": true,
+    "buy_discount_to_market": 0.1,
+    "buy_discount_is_default": true,
     "sell_fee": 0.13,
     "sell_fee_is_default": true,
     "stores": {
@@ -54,6 +56,8 @@
     "decline": "price 15% or more below its level 24 to 32 days earlier",
     "entry": "cheapest landed price today among Card Kingdom retail, TCGplayer listed median and eBay asks, each seen within 3 days; TCGplayer market is never an entry price",
     "store_gap": "landed price at one store 15% or more below the lowest landed price elsewhere, both seen within 3 days; gaps wider than 60% are dropped as data errors",
+    "buy_breakout": "buy when the 13-week margin is above zero: the landed entry price sits less than the historical 13-week median breakout return above the TCGplayer market price; otherwise no_buy",
+    "buy_store_gap": "buy when the cheaper store's landed price is at least 10% below a TCGplayer market price seen within 3 days; otherwise no_buy. A default threshold with no historical test",
     "fund_move": "one-week move of 10% or more in a product the fund holds, information only"
   },
   "counts": {
@@ -61,7 +65,8 @@
     "tracked_breakouts": 2,
     "declines": 0,
     "store_gaps": 16,
-    "fund_moves": 4
+    "fund_moves": 4,
+    "buy_signals": 1
   },
   "new_breakouts": [
     {
@@ -101,7 +106,9 @@
         "breakeven_sale_pct": 72.24,
         "sell_fee": 0.13
       },
-      "entry_note": null
+      "entry_note": null,
+      "signal": "no_buy",
+      "signal_reason": "entry premium over market +49.9% is not below the historical 13-week median return of +10.1% (margin -39.7 points)"
     },
     {
       "uuid": "80d73d1b-eb1a-56c5-8ebf-1c6124393b25",
@@ -140,7 +147,9 @@
         "breakeven_sale_pct": 35.57,
         "sell_fee": 0.13
       },
-      "entry_note": null
+      "entry_note": null,
+      "signal": "no_buy",
+      "signal_reason": "entry premium over market +17.9% is not below the historical 13-week median return of +10.1% (margin -7.8 points)"
     }
   ],
   "tracked_breakouts": [
@@ -178,7 +187,9 @@
         "breakeven_sale_pct": 34.8,
         "sell_fee": 0.13
       },
-      "entry_note": null
+      "entry_note": null,
+      "signal": "no_buy",
+      "signal_reason": "entry premium over market +17.3% is not below the historical 13-week median return of +10.1% (margin -7.2 points)"
     },
     {
       "uuid": "82f149e3-03b0-54cd-bc5f-6dda9ed00477",
@@ -214,7 +225,9 @@
         "breakeven_sale_pct": 61.35,
         "sell_fee": 0.13
       },
-      "entry_note": null
+      "entry_note": null,
+      "signal": "no_buy",
+      "signal_reason": "entry premium over market +40.4% is not below the historical 13-week median return of +10.1% (margin -30.3 points)"
     }
   ],
   "declines": [],
@@ -248,6 +261,11 @@
         "tcgplayer_listed_median": "2026-10-06"
       },
       "scope_price": 34999.99,
+      "market_price": null,
+      "market_observed": null,
+      "discount_to_market_pct": null,
+      "signal": "no_buy",
+      "signal_reason": "no current TCGplayer market price to compare against. This rule has no historical test.",
       "cross_venue": true,
       "cardkingdom_buylist": 22750.0,
       "exit_note": {
@@ -289,6 +307,11 @@
         "tcgplayer_listed_median": "2026-10-06"
       },
       "scope_price": 3599.99,
+      "market_price": null,
+      "market_observed": null,
+      "discount_to_market_pct": null,
+      "signal": "no_buy",
+      "signal_reason": "no current TCGplayer market price to compare against. This rule has no historical test.",
       "cross_venue": true,
       "cardkingdom_buylist": 2340.0,
       "exit_note": {
@@ -330,6 +353,11 @@
         "tcgplayer_listed_median": "2026-10-06"
       },
       "scope_price": 2999.99,
+      "market_price": null,
+      "market_observed": null,
+      "discount_to_market_pct": null,
+      "signal": "no_buy",
+      "signal_reason": "no current TCGplayer market price to compare against. This rule has no historical test.",
       "cross_venue": true,
       "cardkingdom_buylist": 1800.0,
       "exit_note": {
@@ -371,6 +399,11 @@
         "tcgplayer_listed_median": "2026-10-06"
       },
       "scope_price": 5999.99,
+      "market_price": null,
+      "market_observed": null,
+      "discount_to_market_pct": null,
+      "signal": "no_buy",
+      "signal_reason": "no current TCGplayer market price to compare against. This rule has no historical test.",
       "cross_venue": true,
       "cardkingdom_buylist": 3900.0,
       "exit_note": {
@@ -412,6 +445,11 @@
         "tcgplayer_listed_median": "2026-10-06"
       },
       "scope_price": 2199.99,
+      "market_price": null,
+      "market_observed": null,
+      "discount_to_market_pct": null,
+      "signal": "no_buy",
+      "signal_reason": "no current TCGplayer market price to compare against. This rule has no historical test.",
       "cross_venue": true,
       "cardkingdom_buylist": 1430.0,
       "exit_note": {
@@ -453,6 +491,11 @@
         "tcgplayer_listed_median": "2026-10-06"
       },
       "scope_price": 54.99,
+      "market_price": null,
+      "market_observed": null,
+      "discount_to_market_pct": null,
+      "signal": "no_buy",
+      "signal_reason": "no current TCGplayer market price to compare against. This rule has no historical test.",
       "cross_venue": true,
       "cardkingdom_buylist": 35.0,
       "exit_note": {
@@ -494,6 +537,11 @@
         "tcgplayer_listed_median": "2026-10-06"
       },
       "scope_price": 1899.99,
+      "market_price": null,
+      "market_observed": null,
+      "discount_to_market_pct": null,
+      "signal": "no_buy",
+      "signal_reason": "no current TCGplayer market price to compare against. This rule has no historical test.",
       "cross_venue": true,
       "cardkingdom_buylist": 1235.0,
       "exit_note": {
@@ -535,6 +583,11 @@
         "tcgplayer_listed_median": "2026-10-06"
       },
       "scope_price": 39.99,
+      "market_price": null,
+      "market_observed": null,
+      "discount_to_market_pct": null,
+      "signal": "no_buy",
+      "signal_reason": "no current TCGplayer market price to compare against. This rule has no historical test.",
       "cross_venue": true,
       "cardkingdom_buylist": 26.0,
       "exit_note": {
@@ -579,6 +632,11 @@
         "tcgplayer_listed_median": "2026-10-06"
       },
       "scope_price": 27.85,
+      "market_price": 27.85,
+      "market_observed": "2026-10-06",
+      "discount_to_market_pct": 1.69,
+      "signal": "no_buy",
+      "signal_reason": "landed price is 1.7% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
       "cross_venue": true,
       "cardkingdom_buylist": 0.0,
       "exit_note": {
@@ -623,6 +681,11 @@
         "tcgplayer_listed_median": "2026-10-06"
       },
       "scope_price": 153.45,
+      "market_price": 153.45,
+      "market_observed": "2026-10-06",
+      "discount_to_market_pct": -12.84,
+      "signal": "buy",
+      "signal_reason": "landed price is 12.8% below the TCGplayer market price, at or beyond the 10% default threshold. This rule has no historical test.",
       "cross_venue": true,
       "cardkingdom_buylist": 81.0,
       "exit_note": {
@@ -667,6 +730,11 @@
         "tcgplayer_listed_median": "2026-10-06"
       },
       "scope_price": 27.77,
+      "market_price": 27.77,
+      "market_observed": "2026-10-06",
+      "discount_to_market_pct": 1.98,
+      "signal": "no_buy",
+      "signal_reason": "landed price is 2.0% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
       "cross_venue": true,
       "cardkingdom_buylist": 0.0,
       "exit_note": {
@@ -711,6 +779,11 @@
         "tcgplayer_listed_median": "2026-10-06"
       },
       "scope_price": 21.35,
+      "market_price": 21.35,
+      "market_observed": "2026-10-06",
+      "discount_to_market_pct": 7.59,
+      "signal": "no_buy",
+      "signal_reason": "landed price is 7.6% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
       "cross_venue": true,
       "cardkingdom_buylist": 0.0,
       "exit_note": {
@@ -752,6 +825,11 @@
         "tcgplayer_market": "2026-10-06"
       },
       "scope_price": 44.18,
+      "market_price": 44.18,
+      "market_observed": "2026-10-06",
+      "discount_to_market_pct": -1.99,
+      "signal": "no_buy",
+      "signal_reason": "landed price is 2.0% below the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
       "cross_venue": true,
       "cardkingdom_buylist": 13.0,
       "exit_note": {
@@ -793,6 +871,11 @@
         "tcgplayer_listed_median": "2026-10-06"
       },
       "scope_price": 2699.99,
+      "market_price": null,
+      "market_observed": null,
+      "discount_to_market_pct": null,
+      "signal": "no_buy",
+      "signal_reason": "no current TCGplayer market price to compare against. This rule has no historical test.",
       "cross_venue": true,
       "cardkingdom_buylist": 1755.0,
       "exit_note": {
@@ -834,6 +917,11 @@
         "tcgplayer_listed_median": "2026-10-06"
       },
       "scope_price": 199.99,
+      "market_price": null,
+      "market_observed": null,
+      "discount_to_market_pct": null,
+      "signal": "no_buy",
+      "signal_reason": "no current TCGplayer market price to compare against. This rule has no historical test.",
       "cross_venue": true,
       "cardkingdom_buylist": 130.0,
       "exit_note": {
@@ -878,6 +966,11 @@
         "tcgplayer_listed_median": "2026-10-06"
       },
       "scope_price": 25.53,
+      "market_price": 25.53,
+      "market_observed": "2026-10-06",
+      "discount_to_market_pct": 6.74,
+      "signal": "no_buy",
+      "signal_reason": "landed price is 6.7% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
       "cross_venue": true,
       "cardkingdom_buylist": 0.0,
       "exit_note": {
@@ -965,10 +1058,27 @@
       "held_as": "Secret Lair x MSCHF - The Zeta Set Booster Pack"
     }
   ],
-  "newly_added": [
-    "c2aedc93-0012-55de-a320-6e9c5a380620",
-    "80d73d1b-eb1a-56c5-8ebf-1c6124393b25"
+  "buy_signals": [
+    {
+      "kind": "store_gap",
+      "uuid": "a65e0802-6422-5d24-bd04-8568cf5218ff",
+      "name": "March of the Machine Jumpstart Booster Box",
+      "set": "March of the Machine",
+      "store": "cardkingdom_retail",
+      "landed_price": 133.74,
+      "market_price": 153.45,
+      "trigger": {
+        "metric": "discount_to_market_pct",
+        "value": -12.84
+      },
+      "signal_reason": "landed price is 12.8% below the TCGplayer market price, at or beyond the 10% default threshold. This rule has no historical test.",
+      "links": {
+        "tcgplayer": "https://mtgjson.com/links/362c73dd7d34ce5c",
+        "cardkingdom": null
+      }
+    }
   ],
+  "newly_added": [],
   "data_quality": {
     "store_gaps_dropped_as_implausible": 13,
     "store_gaps_same_venue": 192,
