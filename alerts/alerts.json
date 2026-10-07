@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-06",
+  "as_of": "2026-10-07",
   "stale": false,
   "stale_reason": null,
   "scope": {
@@ -62,94 +62,94 @@
   },
   "counts": {
     "new_breakouts": 2,
-    "tracked_breakouts": 2,
+    "tracked_breakouts": 4,
     "declines": 0,
     "store_gaps": 16,
-    "fund_moves": 4,
+    "fund_moves": 5,
     "buy_signals": 1
   },
   "new_breakouts": [
     {
-      "uuid": "c2aedc93-0012-55de-a320-6e9c5a380620",
-      "name": "Judgment Booster Box",
-      "set": "Judgment",
+      "uuid": "83e2732b-e79e-5ca4-9ad0-764b4b289a7b",
+      "name": "Shadows over Innistrad Booster Box",
+      "set": "Shadows over Innistrad",
       "category": "booster_box",
       "subtype": "draft",
       "links": {
-        "tcgplayer": "https://mtgjson.com/links/7fadcf9f1f4ccb9a",
+        "tcgplayer": "https://mtgjson.com/links/22d0d0769c082618",
         "cardkingdom": null
       },
       "store": "tcgplayer_market",
-      "first_alert_date": "2026-10-06",
-      "first_alert_price": 999.69,
+      "first_alert_date": "2026-10-07",
+      "first_alert_price": 224.1,
       "return_since_alert_pct": 0.0,
-      "price": 999.69,
-      "reference_price": 811.33,
+      "price": 224.1,
+      "reference_price": 203.28,
       "reference_date": "2026-09-09",
-      "change_pct": 23.2,
-      "high_26w": 936.85,
-      "tcgplayer_market_date": "2026-10-06",
-      "scope_price": 999.69,
-      "entry_store": "cardkingdom_retail",
-      "entry_listed": 1399.99,
-      "entry_landed": 1497.99,
-      "entry_observed": "2026-10-06",
-      "entry_premium_pct": 49.85,
-      "hist_13w_median_pct": 10.11,
-      "hist_26w_median_pct": 16.35,
-      "hist_13w_excess_mean_pct": 7.78,
-      "margin_13w_pct": -39.74,
-      "margin_26w_pct": -33.5,
-      "exit_note": {
-        "cardkingdom_buylist": 910.0,
-        "buylist_pct_of_entry_landed": 60.7,
-        "breakeven_sale_pct": 72.24,
-        "sell_fee": 0.13
-      },
-      "entry_note": null,
-      "signal": "no_buy",
-      "signal_reason": "entry premium over market +49.9% is not below the historical 13-week median return of +10.1% (margin -39.7 points)"
-    },
-    {
-      "uuid": "80d73d1b-eb1a-56c5-8ebf-1c6124393b25",
-      "name": "Innistrad Crimson Vow Set Booster Box",
-      "set": "Innistrad: Crimson Vow",
-      "category": "booster_box",
-      "subtype": "set",
-      "links": {
-        "tcgplayer": "https://mtgjson.com/links/51ac72429c238808",
-        "cardkingdom": null
-      },
-      "store": "tcgplayer_market",
-      "first_alert_date": "2026-10-06",
-      "first_alert_price": 272.16,
-      "return_since_alert_pct": 0.0,
-      "price": 272.16,
-      "reference_price": 238.53,
-      "reference_date": "2026-09-09",
-      "change_pct": 14.1,
-      "high_26w": 260.95,
-      "tcgplayer_market_date": "2026-10-06",
-      "scope_price": 272.16,
+      "change_pct": 10.2,
+      "high_26w": 215.47,
+      "tcgplayer_market_date": "2026-10-07",
+      "scope_price": 224.1,
       "entry_store": "cardkingdom_retail",
       "entry_listed": 299.99,
       "entry_landed": 320.99,
-      "entry_observed": "2026-10-06",
-      "entry_premium_pct": 17.94,
+      "entry_observed": "2026-10-07",
+      "entry_premium_pct": 43.24,
       "hist_13w_median_pct": 10.11,
       "hist_26w_median_pct": 16.35,
       "hist_13w_excess_mean_pct": 7.78,
-      "margin_13w_pct": -7.83,
-      "margin_26w_pct": -1.59,
+      "margin_13w_pct": -33.13,
+      "margin_26w_pct": -26.89,
       "exit_note": {
         "cardkingdom_buylist": 195.0,
         "buylist_pct_of_entry_landed": 60.7,
-        "breakeven_sale_pct": 35.57,
+        "breakeven_sale_pct": 64.64,
         "sell_fee": 0.13
       },
       "entry_note": null,
       "signal": "no_buy",
-      "signal_reason": "entry premium over market +17.9% is not below the historical 13-week median return of +10.1% (margin -7.8 points)"
+      "signal_reason": "entry premium over market +43.2% is not below the historical 13-week median return of +10.1% (margin -33.1 points)"
+    },
+    {
+      "uuid": "edde415d-40cb-599d-9427-add0e16a275f",
+      "name": "Duskmourn House of Horror Play Booster Box Case",
+      "set": "Duskmourn: House of Horror",
+      "category": "booster_case",
+      "subtype": "play",
+      "links": {
+        "tcgplayer": "https://mtgjson.com/links/450a0fa93ae341c1",
+        "cardkingdom": null
+      },
+      "store": "tcgplayer_market",
+      "first_alert_date": "2026-10-07",
+      "first_alert_price": 1028.15,
+      "return_since_alert_pct": 0.0,
+      "price": 1028.15,
+      "reference_price": 934.34,
+      "reference_date": "2026-09-09",
+      "change_pct": 10.0,
+      "high_26w": 1013.05,
+      "tcgplayer_market_date": "2026-10-07",
+      "scope_price": 1028.15,
+      "entry_store": "tcgplayer_listed_median",
+      "entry_listed": 1214.85,
+      "entry_landed": 1299.89,
+      "entry_observed": "2026-10-07",
+      "entry_premium_pct": 26.43,
+      "hist_13w_median_pct": 10.11,
+      "hist_26w_median_pct": 16.35,
+      "hist_13w_excess_mean_pct": 7.78,
+      "margin_13w_pct": -16.32,
+      "margin_26w_pct": -10.08,
+      "exit_note": {
+        "cardkingdom_buylist": null,
+        "buylist_pct_of_entry_landed": null,
+        "breakeven_sale_pct": 45.32,
+        "sell_fee": 0.13
+      },
+      "entry_note": null,
+      "signal": "no_buy",
+      "signal_reason": "entry premium over market +26.4% is not below the historical 13-week median return of +10.1% (margin -16.3 points)"
     }
   ],
   "tracked_breakouts": [
@@ -167,14 +167,14 @@
       "first_alert_date": "2026-10-05",
       "first_alert_price": 1186.05,
       "price": 1186.05,
-      "price_date": "2026-10-06",
+      "price_date": "2026-10-07",
       "scope_price": 1186.05,
       "return_since_alert_pct": 0.0,
       "weeks_tracked": 0,
       "entry_store": "tcgplayer_listed_median",
       "entry_listed": 1300.0,
       "entry_landed": 1391.0,
-      "entry_observed": "2026-10-06",
+      "entry_observed": "2026-10-07",
       "entry_premium_pct": 17.28,
       "hist_13w_median_pct": 10.11,
       "hist_26w_median_pct": 16.35,
@@ -192,6 +192,44 @@
       "signal_reason": "entry premium over market +17.3% is not below the historical 13-week median return of +10.1% (margin -7.2 points)"
     },
     {
+      "uuid": "80d73d1b-eb1a-56c5-8ebf-1c6124393b25",
+      "name": "Innistrad Crimson Vow Set Booster Box",
+      "set": "Innistrad: Crimson Vow",
+      "category": "booster_box",
+      "subtype": "set",
+      "links": {
+        "tcgplayer": "https://mtgjson.com/links/51ac72429c238808",
+        "cardkingdom": null
+      },
+      "store": "tcgplayer_market",
+      "first_alert_date": "2026-10-06",
+      "first_alert_price": 272.16,
+      "price": 272.16,
+      "price_date": "2026-10-07",
+      "scope_price": 272.16,
+      "return_since_alert_pct": 0.0,
+      "weeks_tracked": 0,
+      "entry_store": "cardkingdom_retail",
+      "entry_listed": 299.99,
+      "entry_landed": 320.99,
+      "entry_observed": "2026-10-07",
+      "entry_premium_pct": 17.94,
+      "hist_13w_median_pct": 10.11,
+      "hist_26w_median_pct": 16.35,
+      "hist_13w_excess_mean_pct": 7.78,
+      "margin_13w_pct": -7.83,
+      "margin_26w_pct": -1.59,
+      "exit_note": {
+        "cardkingdom_buylist": 195.0,
+        "buylist_pct_of_entry_landed": 60.7,
+        "breakeven_sale_pct": 35.57,
+        "sell_fee": 0.13
+      },
+      "entry_note": null,
+      "signal": "no_buy",
+      "signal_reason": "entry premium over market +17.9% is not below the historical 13-week median return of +10.1% (margin -7.8 points)"
+    },
+    {
       "uuid": "82f149e3-03b0-54cd-bc5f-6dda9ed00477",
       "name": "Modern Horizons 3 Play Booster Box Case",
       "set": "Modern Horizons 3",
@@ -205,14 +243,14 @@
       "first_alert_date": "2026-10-05",
       "first_alert_price": 1675.03,
       "price": 1675.03,
-      "price_date": "2026-10-06",
+      "price_date": "2026-10-07",
       "scope_price": 1675.03,
       "return_since_alert_pct": 0.0,
       "weeks_tracked": 0,
       "entry_store": "tcgplayer_listed_median",
       "entry_listed": 2197.5,
       "entry_landed": 2351.33,
-      "entry_observed": "2026-10-06",
+      "entry_observed": "2026-10-07",
       "entry_premium_pct": 40.38,
       "hist_13w_median_pct": 10.11,
       "hist_26w_median_pct": 16.35,
@@ -228,6 +266,44 @@
       "entry_note": null,
       "signal": "no_buy",
       "signal_reason": "entry premium over market +40.4% is not below the historical 13-week median return of +10.1% (margin -30.3 points)"
+    },
+    {
+      "uuid": "c2aedc93-0012-55de-a320-6e9c5a380620",
+      "name": "Judgment Booster Box",
+      "set": "Judgment",
+      "category": "booster_box",
+      "subtype": "draft",
+      "links": {
+        "tcgplayer": "https://mtgjson.com/links/7fadcf9f1f4ccb9a",
+        "cardkingdom": null
+      },
+      "store": "tcgplayer_market",
+      "first_alert_date": "2026-10-06",
+      "first_alert_price": 999.69,
+      "price": 999.69,
+      "price_date": "2026-10-07",
+      "scope_price": 999.69,
+      "return_since_alert_pct": 0.0,
+      "weeks_tracked": 0,
+      "entry_store": "cardkingdom_retail",
+      "entry_listed": 1399.99,
+      "entry_landed": 1497.99,
+      "entry_observed": "2026-10-07",
+      "entry_premium_pct": 49.85,
+      "hist_13w_median_pct": 10.11,
+      "hist_26w_median_pct": 16.35,
+      "hist_13w_excess_mean_pct": 7.78,
+      "margin_13w_pct": -39.74,
+      "margin_26w_pct": -33.5,
+      "exit_note": {
+        "cardkingdom_buylist": 910.0,
+        "buylist_pct_of_entry_landed": 60.7,
+        "breakeven_sale_pct": 72.24,
+        "sell_fee": 0.13
+      },
+      "entry_note": null,
+      "signal": "no_buy",
+      "signal_reason": "entry premium over market +49.9% is not below the historical 13-week median return of +10.1% (margin -39.7 points)"
     }
   ],
   "declines": [],
@@ -257,8 +333,8 @@
         "tcgplayer_listed_median": 64199.99
       },
       "observed": {
-        "cardkingdom_retail": "2026-10-06",
-        "tcgplayer_listed_median": "2026-10-06"
+        "cardkingdom_retail": "2026-10-07",
+        "tcgplayer_listed_median": "2026-10-07"
       },
       "scope_price": 34999.99,
       "market_price": null,
@@ -303,8 +379,8 @@
         "tcgplayer_listed_median": 6416.78
       },
       "observed": {
-        "cardkingdom_retail": "2026-10-06",
-        "tcgplayer_listed_median": "2026-10-06"
+        "cardkingdom_retail": "2026-10-07",
+        "tcgplayer_listed_median": "2026-10-07"
       },
       "scope_price": 3599.99,
       "market_price": null,
@@ -349,8 +425,8 @@
         "tcgplayer_listed_median": 4814.99
       },
       "observed": {
-        "cardkingdom_retail": "2026-10-06",
-        "tcgplayer_listed_median": "2026-10-06"
+        "cardkingdom_retail": "2026-10-07",
+        "tcgplayer_listed_median": "2026-10-07"
       },
       "scope_price": 2999.99,
       "market_price": null,
@@ -395,8 +471,8 @@
         "tcgplayer_listed_median": 9094.99
       },
       "observed": {
-        "cardkingdom_retail": "2026-10-06",
-        "tcgplayer_listed_median": "2026-10-06"
+        "cardkingdom_retail": "2026-10-07",
+        "tcgplayer_listed_median": "2026-10-07"
       },
       "scope_price": 5999.99,
       "market_price": null,
@@ -441,8 +517,8 @@
         "tcgplayer_listed_median": 3209.99
       },
       "observed": {
-        "cardkingdom_retail": "2026-10-06",
-        "tcgplayer_listed_median": "2026-10-06"
+        "cardkingdom_retail": "2026-10-07",
+        "tcgplayer_listed_median": "2026-10-07"
       },
       "scope_price": 2199.99,
       "market_price": null,
@@ -487,8 +563,8 @@
         "tcgplayer_listed_median": 51.01
       },
       "observed": {
-        "cardkingdom_retail": "2026-10-06",
-        "tcgplayer_listed_median": "2026-10-06"
+        "cardkingdom_retail": "2026-10-07",
+        "tcgplayer_listed_median": "2026-10-07"
       },
       "scope_price": 54.99,
       "market_price": null,
@@ -533,8 +609,8 @@
         "tcgplayer_listed_median": 2567.99
       },
       "observed": {
-        "cardkingdom_retail": "2026-10-06",
-        "tcgplayer_listed_median": "2026-10-06"
+        "cardkingdom_retail": "2026-10-07",
+        "tcgplayer_listed_median": "2026-10-07"
       },
       "scope_price": 1899.99,
       "market_price": null,
@@ -579,8 +655,8 @@
         "tcgplayer_listed_median": 40.31
       },
       "observed": {
-        "cardkingdom_retail": "2026-10-06",
-        "tcgplayer_listed_median": "2026-10-06"
+        "cardkingdom_retail": "2026-10-07",
+        "tcgplayer_listed_median": "2026-10-07"
       },
       "scope_price": 39.99,
       "market_price": null,
@@ -627,13 +703,13 @@
         "tcgplayer_listed_median": 36.0
       },
       "observed": {
-        "cardkingdom_retail": "2026-10-06",
-        "tcgplayer_market": "2026-10-06",
-        "tcgplayer_listed_median": "2026-10-06"
+        "cardkingdom_retail": "2026-10-07",
+        "tcgplayer_market": "2026-10-07",
+        "tcgplayer_listed_median": "2026-10-07"
       },
       "scope_price": 27.85,
       "market_price": 27.85,
-      "market_observed": "2026-10-06",
+      "market_observed": "2026-10-07",
       "discount_to_market_pct": 1.69,
       "signal": "no_buy",
       "signal_reason": "landed price is 1.7% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
@@ -676,13 +752,13 @@
         "tcgplayer_listed_median": 189.39
       },
       "observed": {
-        "cardkingdom_retail": "2026-10-06",
-        "tcgplayer_market": "2026-10-06",
-        "tcgplayer_listed_median": "2026-10-06"
+        "cardkingdom_retail": "2026-10-07",
+        "tcgplayer_market": "2026-10-07",
+        "tcgplayer_listed_median": "2026-10-07"
       },
       "scope_price": 153.45,
       "market_price": 153.45,
-      "market_observed": "2026-10-06",
+      "market_observed": "2026-10-07",
       "discount_to_market_pct": -12.84,
       "signal": "buy",
       "signal_reason": "landed price is 12.8% below the TCGplayer market price, at or beyond the 10% default threshold. This rule has no historical test.",
@@ -725,13 +801,13 @@
         "tcgplayer_listed_median": 39.9
       },
       "observed": {
-        "cardkingdom_retail": "2026-10-06",
-        "tcgplayer_market": "2026-10-06",
-        "tcgplayer_listed_median": "2026-10-06"
+        "cardkingdom_retail": "2026-10-07",
+        "tcgplayer_market": "2026-10-07",
+        "tcgplayer_listed_median": "2026-10-07"
       },
       "scope_price": 27.77,
       "market_price": 27.77,
-      "market_observed": "2026-10-06",
+      "market_observed": "2026-10-07",
       "discount_to_market_pct": 1.98,
       "signal": "no_buy",
       "signal_reason": "landed price is 2.0% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
@@ -774,13 +850,13 @@
         "tcgplayer_listed_median": 31.75
       },
       "observed": {
-        "cardkingdom_retail": "2026-10-06",
-        "tcgplayer_market": "2026-10-06",
-        "tcgplayer_listed_median": "2026-10-06"
+        "cardkingdom_retail": "2026-10-07",
+        "tcgplayer_market": "2026-10-07",
+        "tcgplayer_listed_median": "2026-10-07"
       },
       "scope_price": 21.35,
       "market_price": 21.35,
-      "market_observed": "2026-10-06",
+      "market_observed": "2026-10-07",
       "discount_to_market_pct": 7.59,
       "signal": "no_buy",
       "signal_reason": "landed price is 7.6% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
@@ -821,12 +897,12 @@
         "tcgplayer_market": 52.27
       },
       "observed": {
-        "cardkingdom_retail": "2026-10-06",
-        "tcgplayer_market": "2026-10-06"
+        "cardkingdom_retail": "2026-10-07",
+        "tcgplayer_market": "2026-10-07"
       },
       "scope_price": 44.18,
       "market_price": 44.18,
-      "market_observed": "2026-10-06",
+      "market_observed": "2026-10-07",
       "discount_to_market_pct": -1.99,
       "signal": "no_buy",
       "signal_reason": "landed price is 2.0% below the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
@@ -867,8 +943,8 @@
         "tcgplayer_listed_median": 3477.5
       },
       "observed": {
-        "cardkingdom_retail": "2026-10-06",
-        "tcgplayer_listed_median": "2026-10-06"
+        "cardkingdom_retail": "2026-10-07",
+        "tcgplayer_listed_median": "2026-10-07"
       },
       "scope_price": 2699.99,
       "market_price": null,
@@ -913,8 +989,8 @@
         "tcgplayer_listed_median": 179.21
       },
       "observed": {
-        "cardkingdom_retail": "2026-10-06",
-        "tcgplayer_listed_median": "2026-10-06"
+        "cardkingdom_retail": "2026-10-07",
+        "tcgplayer_listed_median": "2026-10-07"
       },
       "scope_price": 199.99,
       "market_price": null,
@@ -961,13 +1037,13 @@
         "tcgplayer_listed_median": 40.31
       },
       "observed": {
-        "cardkingdom_retail": "2026-10-06",
-        "tcgplayer_market": "2026-10-06",
-        "tcgplayer_listed_median": "2026-10-06"
+        "cardkingdom_retail": "2026-10-07",
+        "tcgplayer_market": "2026-10-07",
+        "tcgplayer_listed_median": "2026-10-07"
       },
       "scope_price": 25.53,
       "market_price": 25.53,
-      "market_observed": "2026-10-06",
+      "market_observed": "2026-10-07",
       "discount_to_market_pct": 6.74,
       "signal": "no_buy",
       "signal_reason": "landed price is 6.7% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
@@ -986,24 +1062,6 @@
   ],
   "fund_moves": [
     {
-      "uuid": "3d76ef6d-1959-5995-b7d5-2c1abc7ac17a",
-      "name": "Reality Fracture Collector Booster Box",
-      "set": "Reality Fracture",
-      "category": "booster_box",
-      "subtype": "collector",
-      "links": {
-        "tcgplayer": "https://mtgjson.com/links/d4985e7f7af250bf",
-        "cardkingdom": null
-      },
-      "store": "tcgplayer_market",
-      "price": 437.52,
-      "reference_price": 546.61,
-      "reference_date": "2026-09-29",
-      "change_pct": -20.0,
-      "tcgplayer_market_date": "2026-10-06",
-      "held_as": "Reality Fracture Collector Booster Box"
-    },
-    {
       "uuid": "fc92f5e4-94af-520a-b635-9403f7d8c26a",
       "name": "Marvel Super Heroes Jumpstart Booster Box",
       "set": "Marvel Super Heroes",
@@ -1014,11 +1072,11 @@
         "cardkingdom": null
       },
       "store": "tcgplayer_market",
-      "price": 92.97,
-      "reference_price": 110.71,
-      "reference_date": "2026-09-29",
-      "change_pct": -16.0,
-      "tcgplayer_market_date": "2026-10-06",
+      "price": 93.94,
+      "reference_price": 109.07,
+      "reference_date": "2026-09-30",
+      "change_pct": -13.9,
+      "tcgplayer_market_date": "2026-10-07",
       "held_as": "Marvel Super Heroes Jumpstart Booster Box"
     },
     {
@@ -1032,12 +1090,30 @@
         "cardkingdom": null
       },
       "store": "tcgplayer_market",
-      "price": 144.03,
-      "reference_price": 170.87,
-      "reference_date": "2026-09-28",
-      "change_pct": -15.7,
-      "tcgplayer_market_date": "2026-10-06",
+      "price": 143.11,
+      "reference_price": 166.03,
+      "reference_date": "2026-09-30",
+      "change_pct": -13.8,
+      "tcgplayer_market_date": "2026-10-07",
       "held_as": "Reality Fracture Play Booster Box"
+    },
+    {
+      "uuid": "3d76ef6d-1959-5995-b7d5-2c1abc7ac17a",
+      "name": "Reality Fracture Collector Booster Box",
+      "set": "Reality Fracture",
+      "category": "booster_box",
+      "subtype": "collector",
+      "links": {
+        "tcgplayer": "https://mtgjson.com/links/d4985e7f7af250bf",
+        "cardkingdom": null
+      },
+      "store": "tcgplayer_market",
+      "price": 439.42,
+      "reference_price": 509.4,
+      "reference_date": "2026-09-30",
+      "change_pct": -13.7,
+      "tcgplayer_market_date": "2026-10-07",
+      "held_as": "Reality Fracture Collector Booster Box"
     },
     {
       "uuid": "4fef7824-8ef6-5c23-a649-2886a4170823",
@@ -1051,11 +1127,29 @@
       },
       "store": "tcgplayer_market",
       "price": 128.17,
-      "reference_price": 146.78,
-      "reference_date": "2026-09-29",
-      "change_pct": -12.7,
-      "tcgplayer_market_date": "2026-10-06",
+      "reference_price": 146.02,
+      "reference_date": "2026-09-30",
+      "change_pct": -12.2,
+      "tcgplayer_market_date": "2026-10-07",
       "held_as": "Secret Lair x MSCHF - The Zeta Set Booster Pack"
+    },
+    {
+      "uuid": "ac894328-92e0-52fc-b0e1-c2362c666b3e",
+      "name": "The Hobbit Bundle",
+      "set": "The Hobbit",
+      "category": "bundle",
+      "subtype": "default",
+      "links": {
+        "tcgplayer": "https://mtgjson.com/links/f1224fc1d0908f4f",
+        "cardkingdom": null
+      },
+      "store": "tcgplayer_market",
+      "price": 60.29,
+      "reference_price": 67.24,
+      "reference_date": "2026-09-30",
+      "change_pct": -10.3,
+      "tcgplayer_market_date": "2026-10-07",
+      "held_as": "The Hobbit Bundle"
     }
   ],
   "buy_signals": [
@@ -1078,11 +1172,14 @@
       }
     }
   ],
-  "newly_added": [],
+  "newly_added": [
+    "83e2732b-e79e-5ca4-9ad0-764b4b289a7b",
+    "edde415d-40cb-599d-9427-add0e16a275f"
+  ],
   "data_quality": {
-    "store_gaps_dropped_as_implausible": 13,
+    "store_gaps_dropped_as_implausible": 14,
     "store_gaps_same_venue": 192,
-    "fresh_tcgplayer_market_products": 1047,
+    "fresh_tcgplayer_market_products": 1049,
     "scope_products": 1370
   },
   "calibration": {
@@ -1303,8 +1400,8 @@
     }
   },
   "entry_summary": {
-    "breakouts": 4,
-    "with_margin": 4,
+    "breakouts": 6,
+    "with_margin": 6,
     "positive_13w_margin": 0
   }
 }
