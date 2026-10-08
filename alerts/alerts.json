@@ -21,6 +21,9 @@
     "defaults": true,
     "buy_discount_to_market": 0.1,
     "buy_discount_is_default": true,
+    "near_band": 0.1,
+    "near_band_is_default": true,
+    "near_breakout_points": 5.0,
     "sell_fee": 0.13,
     "sell_fee_is_default": true,
     "faller_thresholds": {
@@ -68,6 +71,8 @@
     "fell_recently": "4-week change of -10% or less, or 1-week change of -8% or less (nearest observations 24 to 32 and 5 to 9 days back); sorted by 4-week change, most negative first",
     "far_below_high": "price 20% or more below the highest price of the prior 26 weeks (at least 13 observed); sorted by drawdown, deepest first",
     "buy_faller": "buy only when the landed entry price is at least 10% below the TCGplayer market price seen within 3 days, the same untested rule as store gaps; otherwise watch. A fall alone is never a buy",
+    "near": "NEAR when a row is not a buy but its landed entry price is at or below the TCGplayer market price (within 10% of the buy level) for fallers and store gaps, or its 13-week margin is between -5 points and 0 for breakouts; WATCH otherwise. A default band, not backtested",
+    "expectation": "median 52-week change of comparable products (category, age, state) in the TCGplayer weekly archive, applied to the market price; a historical base rate, not a forecast, and it changes no signal",
     "fund_move": "one-week move of 10% or more in a product the fund holds, information only"
   },
   "counts": {
@@ -78,7 +83,8 @@
     "far_below_high": 24,
     "store_gaps": 16,
     "fund_moves": 5,
-    "buy_signals": 1
+    "buy_signals": 1,
+    "near": 1
   },
   "new_breakouts": [
     {
@@ -120,7 +126,23 @@
       },
       "entry_note": null,
       "signal": "no_buy",
-      "signal_reason": "entry premium over market +43.2% is not below the historical 13-week median return of +10.1% (margin -33.1 points)"
+      "signal_reason": "entry premium over market +43.2% is not below the historical 13-week median return of +10.1% (margin -33.1 points)",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": 23.13,
+      "exp_1y_price": 283.02,
+      "exp_1y_low": 255.47,
+      "exp_1y_high": 325.8,
+      "exp_1y_return_pct": 26.29,
+      "exp_1y_basis": {
+        "level": "cell",
+        "cell": "booster_box / over_3y / breakout",
+        "category": "booster_box",
+        "age": "over_3y",
+        "state": "breakout",
+        "products": 61,
+        "product_weeks": 191
+      },
+      "exp_1y_vs_landed_pct": -11.83
     },
     {
       "uuid": "edde415d-40cb-599d-9427-add0e16a275f",
@@ -161,7 +183,23 @@
       },
       "entry_note": null,
       "signal": "no_buy",
-      "signal_reason": "entry premium over market +26.4% is not below the historical 13-week median return of +10.1% (margin -16.3 points)"
+      "signal_reason": "entry premium over market +26.4% is not below the historical 13-week median return of +10.1% (margin -16.3 points)",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": 12.91,
+      "exp_1y_price": 1352.84,
+      "exp_1y_low": 1204.07,
+      "exp_1y_high": 1598.26,
+      "exp_1y_return_pct": 31.58,
+      "exp_1y_basis": {
+        "level": "category_age",
+        "cell": "booster_case / 1_to_3y",
+        "category": "booster_case",
+        "age": "1_to_3y",
+        "state": "breakout",
+        "products": 59,
+        "product_weeks": 2141
+      },
+      "exp_1y_vs_landed_pct": 4.07
     }
   ],
   "tracked_breakouts": [
@@ -201,7 +239,23 @@
       },
       "entry_note": null,
       "signal": "no_buy",
-      "signal_reason": "entry premium over market +17.3% is not below the historical 13-week median return of +10.1% (margin -7.2 points)"
+      "signal_reason": "entry premium over market +17.3% is not below the historical 13-week median return of +10.1% (margin -7.2 points)",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": 6.11,
+      "exp_1y_price": 1557.28,
+      "exp_1y_low": 1387.32,
+      "exp_1y_high": 1836.95,
+      "exp_1y_return_pct": 31.3,
+      "exp_1y_basis": {
+        "level": "cell",
+        "cell": "booster_case / 1_to_3y / other",
+        "category": "booster_case",
+        "age": "1_to_3y",
+        "state": "other",
+        "products": 59,
+        "product_weeks": 2101
+      },
+      "exp_1y_vs_landed_pct": 11.95
     },
     {
       "uuid": "80d73d1b-eb1a-56c5-8ebf-1c6124393b25",
@@ -239,7 +293,23 @@
       },
       "entry_note": null,
       "signal": "no_buy",
-      "signal_reason": "entry premium over market +17.9% is not below the historical 13-week median return of +10.1% (margin -7.8 points)"
+      "signal_reason": "entry premium over market +17.9% is not below the historical 13-week median return of +10.1% (margin -7.8 points)",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": 6.64,
+      "exp_1y_price": 322.35,
+      "exp_1y_low": 278.5,
+      "exp_1y_high": 367.63,
+      "exp_1y_return_pct": 18.44,
+      "exp_1y_basis": {
+        "level": "cell",
+        "cell": "booster_box / over_3y / other",
+        "category": "booster_box",
+        "age": "over_3y",
+        "state": "other",
+        "products": 162,
+        "product_weeks": 9715
+      },
+      "exp_1y_vs_landed_pct": 0.42
     },
     {
       "uuid": "82f149e3-03b0-54cd-bc5f-6dda9ed00477",
@@ -277,7 +347,23 @@
       },
       "entry_note": null,
       "signal": "no_buy",
-      "signal_reason": "entry premium over market +40.4% is not below the historical 13-week median return of +10.1% (margin -30.3 points)"
+      "signal_reason": "entry premium over market +40.4% is not below the historical 13-week median return of +10.1% (margin -30.3 points)",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": 21.56,
+      "exp_1y_price": 2199.31,
+      "exp_1y_low": 1959.28,
+      "exp_1y_high": 2594.29,
+      "exp_1y_return_pct": 31.3,
+      "exp_1y_basis": {
+        "level": "cell",
+        "cell": "booster_case / 1_to_3y / other",
+        "category": "booster_case",
+        "age": "1_to_3y",
+        "state": "other",
+        "products": 59,
+        "product_weeks": 2101
+      },
+      "exp_1y_vs_landed_pct": -6.47
     },
     {
       "uuid": "c2aedc93-0012-55de-a320-6e9c5a380620",
@@ -315,7 +401,23 @@
       },
       "entry_note": null,
       "signal": "no_buy",
-      "signal_reason": "entry premium over market +49.9% is not below the historical 13-week median return of +10.1% (margin -39.7 points)"
+      "signal_reason": "entry premium over market +49.9% is not below the historical 13-week median return of +10.1% (margin -39.7 points)",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": 26.52,
+      "exp_1y_price": 1184.03,
+      "exp_1y_low": 1022.98,
+      "exp_1y_high": 1350.38,
+      "exp_1y_return_pct": 18.44,
+      "exp_1y_basis": {
+        "level": "cell",
+        "cell": "booster_box / over_3y / other",
+        "category": "booster_box",
+        "age": "over_3y",
+        "state": "other",
+        "products": 162,
+        "product_weeks": 9715
+      },
+      "exp_1y_vs_landed_pct": -20.96
     }
   ],
   "declines": [
@@ -354,7 +456,23 @@
       "discount_to_market_pct": 22.29,
       "cardkingdom_buylist": 0.0,
       "signal": "watch",
-      "signal_reason": "landed price is 22.3% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+      "signal_reason": "landed price is 22.3% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": 26.4,
+      "exp_1y_price": 357.66,
+      "exp_1y_low": 308.55,
+      "exp_1y_high": 409.4,
+      "exp_1y_return_pct": 18.62,
+      "exp_1y_basis": {
+        "level": "category_age",
+        "cell": "booster_box / over_3y",
+        "category": "booster_box",
+        "age": "over_3y",
+        "state": "far_below_high",
+        "products": 162,
+        "product_weeks": 10184
+      },
+      "exp_1y_vs_landed_pct": -3.0
     },
     {
       "uuid": "12a95a46-1b6f-5d86-b76e-d5c6d08261a1",
@@ -391,7 +509,23 @@
       "discount_to_market_pct": 21.51,
       "cardkingdom_buylist": null,
       "signal": "watch",
-      "signal_reason": "landed price is 21.5% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+      "signal_reason": "landed price is 21.5% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": 25.93,
+      "exp_1y_price": 2283.93,
+      "exp_1y_low": 1982.39,
+      "exp_1y_high": 2581.38,
+      "exp_1y_return_pct": 22.93,
+      "exp_1y_basis": {
+        "level": "category_age",
+        "cell": "booster_case / over_3y",
+        "category": "booster_case",
+        "age": "over_3y",
+        "state": "far_below_high",
+        "products": 63,
+        "product_weeks": 2203
+      },
+      "exp_1y_vs_landed_pct": 1.17
     },
     {
       "uuid": "fc92f5e4-94af-520a-b635-9403f7d8c26a",
@@ -428,7 +562,23 @@
       "discount_to_market_pct": 59.46,
       "cardkingdom_buylist": 130.0,
       "signal": "watch",
-      "signal_reason": "landed price is 59.5% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+      "signal_reason": "landed price is 59.5% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": 43.56,
+      "exp_1y_price": 111.11,
+      "exp_1y_low": 94.87,
+      "exp_1y_high": 140.3,
+      "exp_1y_return_pct": 18.28,
+      "exp_1y_basis": {
+        "level": "category_age",
+        "cell": "booster_box / under_1y",
+        "category": "booster_box",
+        "age": "under_1y",
+        "state": "far_below_high",
+        "products": 51,
+        "product_weeks": 1850
+      },
+      "exp_1y_vs_landed_pct": -25.83
     },
     {
       "uuid": "3d76ef6d-1959-5995-b7d5-2c1abc7ac17a",
@@ -465,7 +615,23 @@
       "discount_to_market_pct": 22.05,
       "cardkingdom_buylist": 0.0,
       "signal": "watch",
-      "signal_reason": "landed price is 22.1% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+      "signal_reason": "landed price is 22.1% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": 26.26,
+      "exp_1y_price": 519.75,
+      "exp_1y_low": 443.77,
+      "exp_1y_high": 656.27,
+      "exp_1y_return_pct": 18.28,
+      "exp_1y_basis": {
+        "level": "category_age",
+        "cell": "booster_box / under_1y",
+        "category": "booster_box",
+        "age": "under_1y",
+        "state": "far_below_high",
+        "products": 51,
+        "product_weeks": 1850
+      },
+      "exp_1y_vs_landed_pct": -3.09
     }
   ],
   "fallers": {
@@ -505,7 +671,23 @@
         "discount_to_market_pct": 22.29,
         "cardkingdom_buylist": 0.0,
         "signal": "watch",
-        "signal_reason": "landed price is 22.3% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 22.3% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 26.4,
+        "exp_1y_price": 357.66,
+        "exp_1y_low": 308.55,
+        "exp_1y_high": 409.4,
+        "exp_1y_return_pct": 18.62,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_box / over_3y",
+          "category": "booster_box",
+          "age": "over_3y",
+          "state": "far_below_high",
+          "products": 162,
+          "product_weeks": 10184
+        },
+        "exp_1y_vs_landed_pct": -3.0
       },
       {
         "uuid": "12a95a46-1b6f-5d86-b76e-d5c6d08261a1",
@@ -542,7 +724,23 @@
         "discount_to_market_pct": 21.51,
         "cardkingdom_buylist": null,
         "signal": "watch",
-        "signal_reason": "landed price is 21.5% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 21.5% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 25.93,
+        "exp_1y_price": 2283.93,
+        "exp_1y_low": 1982.39,
+        "exp_1y_high": 2581.38,
+        "exp_1y_return_pct": 22.93,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_case / over_3y",
+          "category": "booster_case",
+          "age": "over_3y",
+          "state": "far_below_high",
+          "products": 63,
+          "product_weeks": 2203
+        },
+        "exp_1y_vs_landed_pct": 1.17
       },
       {
         "uuid": "fc92f5e4-94af-520a-b635-9403f7d8c26a",
@@ -579,7 +777,23 @@
         "discount_to_market_pct": 59.46,
         "cardkingdom_buylist": 130.0,
         "signal": "watch",
-        "signal_reason": "landed price is 59.5% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 59.5% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 43.56,
+        "exp_1y_price": 111.11,
+        "exp_1y_low": 94.87,
+        "exp_1y_high": 140.3,
+        "exp_1y_return_pct": 18.28,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_box / under_1y",
+          "category": "booster_box",
+          "age": "under_1y",
+          "state": "far_below_high",
+          "products": 51,
+          "product_weeks": 1850
+        },
+        "exp_1y_vs_landed_pct": -25.83
       },
       {
         "uuid": "3d76ef6d-1959-5995-b7d5-2c1abc7ac17a",
@@ -616,7 +830,23 @@
         "discount_to_market_pct": 22.05,
         "cardkingdom_buylist": 0.0,
         "signal": "watch",
-        "signal_reason": "landed price is 22.1% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 22.1% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 26.26,
+        "exp_1y_price": 519.75,
+        "exp_1y_low": 443.77,
+        "exp_1y_high": 656.27,
+        "exp_1y_return_pct": 18.28,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_box / under_1y",
+          "category": "booster_box",
+          "age": "under_1y",
+          "state": "far_below_high",
+          "products": 51,
+          "product_weeks": 1850
+        },
+        "exp_1y_vs_landed_pct": -3.09
       },
       {
         "uuid": "9f730c77-137a-5c4d-905d-8e9ab96a1739",
@@ -653,7 +883,23 @@
         "discount_to_market_pct": 30.17,
         "cardkingdom_buylist": 0.0,
         "signal": "watch",
-        "signal_reason": "landed price is 30.2% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 30.2% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 30.86,
+        "exp_1y_price": 850.75,
+        "exp_1y_low": 726.39,
+        "exp_1y_high": 1074.23,
+        "exp_1y_return_pct": 18.28,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_box / under_1y",
+          "category": "booster_box",
+          "age": "under_1y",
+          "state": "far_below_high",
+          "products": 51,
+          "product_weeks": 1850
+        },
+        "exp_1y_vs_landed_pct": -9.13
       },
       {
         "uuid": "902b75b6-1ce5-5b4e-9927-789ed3c75dbd",
@@ -690,7 +936,23 @@
         "discount_to_market_pct": 23.63,
         "cardkingdom_buylist": null,
         "signal": "watch",
-        "signal_reason": "landed price is 23.6% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 23.6% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 27.2,
+        "exp_1y_price": 2827.46,
+        "exp_1y_low": 2501.49,
+        "exp_1y_high": 3489.46,
+        "exp_1y_return_pct": 9.81,
+        "exp_1y_basis": {
+          "level": "cell",
+          "cell": "booster_case / under_1y / other",
+          "category": "booster_case",
+          "age": "under_1y",
+          "state": "other",
+          "products": 44,
+          "product_weeks": 1308
+        },
+        "exp_1y_vs_landed_pct": -11.18
       },
       {
         "uuid": "fbb14d9d-d8f1-593f-8a7c-dd4a50e437c3",
@@ -727,7 +989,23 @@
         "discount_to_market_pct": 21.84,
         "cardkingdom_buylist": 0.0,
         "signal": "watch",
-        "signal_reason": "landed price is 21.8% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 21.8% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 26.13,
+        "exp_1y_price": 169.27,
+        "exp_1y_low": 144.53,
+        "exp_1y_high": 213.73,
+        "exp_1y_return_pct": 18.28,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_box / under_1y",
+          "category": "booster_box",
+          "age": "under_1y",
+          "state": "far_below_high",
+          "products": 51,
+          "product_weeks": 1850
+        },
+        "exp_1y_vs_landed_pct": -2.92
       },
       {
         "uuid": "bb875e88-7ce6-5d55-949f-c0b56ba9273b",
@@ -764,7 +1042,23 @@
         "discount_to_market_pct": 14.23,
         "cardkingdom_buylist": null,
         "signal": "watch",
-        "signal_reason": "landed price is 14.2% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 14.2% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 21.21,
+        "exp_1y_price": 933.49,
+        "exp_1y_low": 825.87,
+        "exp_1y_high": 1152.06,
+        "exp_1y_return_pct": 9.81,
+        "exp_1y_basis": {
+          "level": "cell",
+          "cell": "booster_case / under_1y / other",
+          "category": "booster_case",
+          "age": "under_1y",
+          "state": "other",
+          "products": 44,
+          "product_weeks": 1308
+        },
+        "exp_1y_vs_landed_pct": -3.87
       },
       {
         "uuid": "4fef7824-8ef6-5c23-a649-2886a4170823",
@@ -801,7 +1095,23 @@
         "discount_to_market_pct": -37.4,
         "cardkingdom_buylist": null,
         "signal": "watch",
-        "signal_reason": "landed price is 37.4% below the TCGplayer market price, too wide to trust without a look at the listing"
+        "signal_reason": "landed price is 37.4% below the TCGplayer market price, too wide to trust without a look at the listing",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 0.0,
+        "exp_1y_price": 141.69,
+        "exp_1y_low": 121.89,
+        "exp_1y_high": 174.26,
+        "exp_1y_return_pct": 10.55,
+        "exp_1y_basis": {
+          "level": "category",
+          "cell": "booster_pack",
+          "category": "booster_pack",
+          "age": "under_1y",
+          "state": "other",
+          "products": 129,
+          "product_weeks": 8130
+        },
+        "exp_1y_vs_landed_pct": 76.58
       }
     ],
     "far_below_high": [
@@ -840,7 +1150,23 @@
         "discount_to_market_pct": 142.86,
         "cardkingdom_buylist": null,
         "signal": "watch",
-        "signal_reason": "landed price is 142.9% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 142.9% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 62.94,
+        "exp_1y_price": 9.67,
+        "exp_1y_low": 8.49,
+        "exp_1y_high": 11.39,
+        "exp_1y_return_pct": 5.4,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_pack / over_3y",
+          "category": "booster_pack",
+          "age": "over_3y",
+          "state": "far_below_high",
+          "products": 99,
+          "product_weeks": 6350
+        },
+        "exp_1y_vs_landed_pct": -56.58
       },
       {
         "uuid": "fc92f5e4-94af-520a-b635-9403f7d8c26a",
@@ -877,7 +1203,23 @@
         "discount_to_market_pct": 59.46,
         "cardkingdom_buylist": 130.0,
         "signal": "watch",
-        "signal_reason": "landed price is 59.5% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 59.5% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 43.56,
+        "exp_1y_price": 111.11,
+        "exp_1y_low": 94.87,
+        "exp_1y_high": 140.3,
+        "exp_1y_return_pct": 18.28,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_box / under_1y",
+          "category": "booster_box",
+          "age": "under_1y",
+          "state": "far_below_high",
+          "products": 51,
+          "product_weeks": 1850
+        },
+        "exp_1y_vs_landed_pct": -25.83
       },
       {
         "uuid": "f1915383-5a20-5d4a-9d95-0b05c4c06300",
@@ -914,7 +1256,23 @@
         "discount_to_market_pct": 26.76,
         "cardkingdom_buylist": null,
         "signal": "watch",
-        "signal_reason": "landed price is 26.8% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 26.8% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 29.0,
+        "exp_1y_price": 708.56,
+        "exp_1y_low": 623.8,
+        "exp_1y_high": 893.06,
+        "exp_1y_return_pct": 11.18,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_case / under_1y",
+          "category": "booster_case",
+          "age": "under_1y",
+          "state": "far_below_high",
+          "products": 44,
+          "product_weeks": 1392
+        },
+        "exp_1y_vs_landed_pct": -12.29
       },
       {
         "uuid": "9f9d93b9-2314-5886-ad9a-f61da75df04f",
@@ -951,7 +1309,23 @@
         "discount_to_market_pct": 69.72,
         "cardkingdom_buylist": null,
         "signal": "watch",
-        "signal_reason": "landed price is 69.7% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 69.7% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 46.97,
+        "exp_1y_price": 42.15,
+        "exp_1y_low": 37.01,
+        "exp_1y_high": 49.69,
+        "exp_1y_return_pct": 5.4,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_pack / over_3y",
+          "category": "booster_pack",
+          "age": "over_3y",
+          "state": "far_below_high",
+          "products": 99,
+          "product_weeks": 6350
+        },
+        "exp_1y_vs_landed_pct": -37.9
       },
       {
         "uuid": "fbb14d9d-d8f1-593f-8a7c-dd4a50e437c3",
@@ -988,7 +1362,23 @@
         "discount_to_market_pct": 21.84,
         "cardkingdom_buylist": 0.0,
         "signal": "watch",
-        "signal_reason": "landed price is 21.8% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 21.8% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 26.13,
+        "exp_1y_price": 169.27,
+        "exp_1y_low": 144.53,
+        "exp_1y_high": 213.73,
+        "exp_1y_return_pct": 18.28,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_box / under_1y",
+          "category": "booster_box",
+          "age": "under_1y",
+          "state": "far_below_high",
+          "products": 51,
+          "product_weeks": 1850
+        },
+        "exp_1y_vs_landed_pct": -2.92
       },
       {
         "uuid": "5ee527f5-2ff2-50ed-992b-e8a062e5cd3d",
@@ -1025,7 +1415,23 @@
         "discount_to_market_pct": 96.43,
         "cardkingdom_buylist": 0.0,
         "signal": "watch",
-        "signal_reason": "landed price is 96.4% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 96.4% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 54.18,
+        "exp_1y_price": 13.65,
+        "exp_1y_low": 12.29,
+        "exp_1y_high": 15.84,
+        "exp_1y_return_pct": 1.54,
+        "exp_1y_basis": {
+          "level": "category",
+          "cell": "deck",
+          "category": "deck",
+          "age": "under_1y",
+          "state": "far_below_high",
+          "products": 283,
+          "product_weeks": 11000
+        },
+        "exp_1y_vs_landed_pct": -48.3
       },
       {
         "uuid": "4a908972-22ab-5291-872d-aa2e3f04cc10",
@@ -1062,7 +1468,23 @@
         "discount_to_market_pct": 22.29,
         "cardkingdom_buylist": 0.0,
         "signal": "watch",
-        "signal_reason": "landed price is 22.3% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 22.3% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 26.4,
+        "exp_1y_price": 357.66,
+        "exp_1y_low": 308.55,
+        "exp_1y_high": 409.4,
+        "exp_1y_return_pct": 18.62,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_box / over_3y",
+          "category": "booster_box",
+          "age": "over_3y",
+          "state": "far_below_high",
+          "products": 162,
+          "product_weeks": 10184
+        },
+        "exp_1y_vs_landed_pct": -3.0
       },
       {
         "uuid": "3d76ef6d-1959-5995-b7d5-2c1abc7ac17a",
@@ -1099,7 +1521,23 @@
         "discount_to_market_pct": 22.05,
         "cardkingdom_buylist": 0.0,
         "signal": "watch",
-        "signal_reason": "landed price is 22.1% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 22.1% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 26.26,
+        "exp_1y_price": 519.75,
+        "exp_1y_low": 443.77,
+        "exp_1y_high": 656.27,
+        "exp_1y_return_pct": 18.28,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_box / under_1y",
+          "category": "booster_box",
+          "age": "under_1y",
+          "state": "far_below_high",
+          "products": 51,
+          "product_weeks": 1850
+        },
+        "exp_1y_vs_landed_pct": -3.09
       },
       {
         "uuid": "28d49eb7-16ae-5ed9-8f37-efff67fd54c1",
@@ -1136,7 +1574,23 @@
         "discount_to_market_pct": 29.39,
         "cardkingdom_buylist": 146.0,
         "signal": "watch",
-        "signal_reason": "landed price is 29.4% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 29.4% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 30.44,
+        "exp_1y_price": 182.39,
+        "exp_1y_low": 155.73,
+        "exp_1y_high": 230.3,
+        "exp_1y_return_pct": 18.28,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_box / under_1y",
+          "category": "booster_box",
+          "age": "under_1y",
+          "state": "far_below_high",
+          "products": 51,
+          "product_weeks": 1850
+        },
+        "exp_1y_vs_landed_pct": -8.59
       },
       {
         "uuid": "955729fe-e6e5-513f-ba6b-b7481974c8cd",
@@ -1173,7 +1627,23 @@
         "discount_to_market_pct": 32.44,
         "cardkingdom_buylist": 0.0,
         "signal": "watch",
-        "signal_reason": "landed price is 32.4% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 32.4% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 32.05,
+        "exp_1y_price": 45.97,
+        "exp_1y_low": 39.54,
+        "exp_1y_high": 56.53,
+        "exp_1y_return_pct": 10.55,
+        "exp_1y_basis": {
+          "level": "category",
+          "cell": "booster_pack",
+          "category": "booster_pack",
+          "age": "under_1y",
+          "state": "far_below_high",
+          "products": 129,
+          "product_weeks": 8130
+        },
+        "exp_1y_vs_landed_pct": -16.52
       },
       {
         "uuid": "1b6f6615-f599-5392-8825-f981c5f657b5",
@@ -1210,7 +1680,23 @@
         "discount_to_market_pct": 36.77,
         "cardkingdom_buylist": 0.0,
         "signal": "watch",
-        "signal_reason": "landed price is 36.8% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 36.8% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 34.19,
+        "exp_1y_price": 134.73,
+        "exp_1y_low": 115.04,
+        "exp_1y_high": 170.12,
+        "exp_1y_return_pct": 18.28,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_box / under_1y",
+          "category": "booster_box",
+          "age": "under_1y",
+          "state": "far_below_high",
+          "products": 51,
+          "product_weeks": 1850
+        },
+        "exp_1y_vs_landed_pct": -13.52
       },
       {
         "uuid": "9d80fc25-556f-5917-a76b-074e390931fb",
@@ -1247,7 +1733,23 @@
         "discount_to_market_pct": 7.3,
         "cardkingdom_buylist": null,
         "signal": "watch",
-        "signal_reason": "landed price is 7.3% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 7.3% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 16.12,
+        "exp_1y_price": 182.08,
+        "exp_1y_low": 155.46,
+        "exp_1y_high": 229.91,
+        "exp_1y_return_pct": 18.28,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_box / under_1y",
+          "category": "booster_box",
+          "age": "under_1y",
+          "state": "far_below_high",
+          "products": 51,
+          "product_weeks": 1850
+        },
+        "exp_1y_vs_landed_pct": 10.23
       },
       {
         "uuid": "5aa1ca1e-e5e4-5fbd-be40-a0aaee76c04e",
@@ -1284,7 +1786,23 @@
         "discount_to_market_pct": 28.02,
         "cardkingdom_buylist": 341.0,
         "signal": "watch",
-        "signal_reason": "landed price is 28.0% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 28.0% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 29.7,
+        "exp_1y_price": 519.01,
+        "exp_1y_low": 443.14,
+        "exp_1y_high": 655.35,
+        "exp_1y_return_pct": 18.28,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_box / under_1y",
+          "category": "booster_box",
+          "age": "under_1y",
+          "state": "far_below_high",
+          "products": 51,
+          "product_weeks": 1850
+        },
+        "exp_1y_vs_landed_pct": -7.61
       },
       {
         "uuid": "ef0e07aa-63e6-5bef-8d8b-1dc09d4f1d45",
@@ -1321,7 +1839,23 @@
         "discount_to_market_pct": 6.17,
         "cardkingdom_buylist": null,
         "signal": "watch",
-        "signal_reason": "landed price is 6.2% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 6.2% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 15.23,
+        "exp_1y_price": 795.55,
+        "exp_1y_low": 679.26,
+        "exp_1y_high": 1004.53,
+        "exp_1y_return_pct": 18.28,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_box / under_1y",
+          "category": "booster_box",
+          "age": "under_1y",
+          "state": "far_below_high",
+          "products": 51,
+          "product_weeks": 1850
+        },
+        "exp_1y_vs_landed_pct": 11.41
       },
       {
         "uuid": "12a95a46-1b6f-5d86-b76e-d5c6d08261a1",
@@ -1358,7 +1892,23 @@
         "discount_to_market_pct": 21.51,
         "cardkingdom_buylist": null,
         "signal": "watch",
-        "signal_reason": "landed price is 21.5% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 21.5% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 25.93,
+        "exp_1y_price": 2283.93,
+        "exp_1y_low": 1982.39,
+        "exp_1y_high": 2581.38,
+        "exp_1y_return_pct": 22.93,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_case / over_3y",
+          "category": "booster_case",
+          "age": "over_3y",
+          "state": "far_below_high",
+          "products": 63,
+          "product_weeks": 2203
+        },
+        "exp_1y_vs_landed_pct": 1.17
       },
       {
         "uuid": "48356071-10d6-5277-8260-b0ab5bd7b82b",
@@ -1395,7 +1945,23 @@
         "discount_to_market_pct": 33.13,
         "cardkingdom_buylist": 0.0,
         "signal": "watch",
-        "signal_reason": "landed price is 33.1% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 33.1% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 32.4,
+        "exp_1y_price": 47.65,
+        "exp_1y_low": 40.99,
+        "exp_1y_high": 58.6,
+        "exp_1y_return_pct": 10.55,
+        "exp_1y_basis": {
+          "level": "category",
+          "cell": "booster_pack",
+          "category": "booster_pack",
+          "age": "under_1y",
+          "state": "far_below_high",
+          "products": 129,
+          "product_weeks": 8130
+        },
+        "exp_1y_vs_landed_pct": -16.96
       },
       {
         "uuid": "bd162fa8-c37a-522a-b2f2-e6a97ef9dafb",
@@ -1432,7 +1998,23 @@
         "discount_to_market_pct": 28.41,
         "cardkingdom_buylist": 195.0,
         "signal": "watch",
-        "signal_reason": "landed price is 28.4% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 28.4% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 29.91,
+        "exp_1y_price": 139.56,
+        "exp_1y_low": 105.92,
+        "exp_1y_high": 179.64,
+        "exp_1y_return_pct": 11.66,
+        "exp_1y_basis": {
+          "level": "cell",
+          "cell": "deck / over_3y / far_below_high",
+          "category": "deck",
+          "age": "over_3y",
+          "state": "far_below_high",
+          "products": 38,
+          "product_weeks": 399
+        },
+        "exp_1y_vs_landed_pct": -13.05
       },
       {
         "uuid": "8fb173c2-250c-5919-8431-cc24685d10d3",
@@ -1469,7 +2051,23 @@
         "discount_to_market_pct": 28.84,
         "cardkingdom_buylist": 0.0,
         "signal": "watch",
-        "signal_reason": "landed price is 28.8% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 28.8% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 30.14,
+        "exp_1y_price": 72.3,
+        "exp_1y_low": 62.2,
+        "exp_1y_high": 88.92,
+        "exp_1y_return_pct": 10.55,
+        "exp_1y_basis": {
+          "level": "category",
+          "cell": "booster_pack",
+          "category": "booster_pack",
+          "age": "under_1y",
+          "state": "far_below_high",
+          "products": 129,
+          "product_weeks": 8130
+        },
+        "exp_1y_vs_landed_pct": -14.19
       },
       {
         "uuid": "b57609aa-65ff-5699-aecd-ecb54e81b3eb",
@@ -1506,7 +2104,23 @@
         "discount_to_market_pct": 12.88,
         "cardkingdom_buylist": null,
         "signal": "watch",
-        "signal_reason": "landed price is 12.9% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 12.9% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 20.27,
+        "exp_1y_price": 982.59,
+        "exp_1y_low": 865.04,
+        "exp_1y_high": 1238.44,
+        "exp_1y_return_pct": 11.18,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_case / under_1y",
+          "category": "booster_case",
+          "age": "under_1y",
+          "state": "far_below_high",
+          "products": 44,
+          "product_weeks": 1392
+        },
+        "exp_1y_vs_landed_pct": -1.51
       },
       {
         "uuid": "b146e6c1-eea1-571c-8d51-b18aa4efd1dc",
@@ -1543,7 +2157,23 @@
         "discount_to_market_pct": 39.35,
         "cardkingdom_buylist": 26.0,
         "signal": "watch",
-        "signal_reason": "landed price is 39.4% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 39.4% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 35.41,
+        "exp_1y_price": 27.16,
+        "exp_1y_low": 20.61,
+        "exp_1y_high": 34.95,
+        "exp_1y_return_pct": 11.66,
+        "exp_1y_basis": {
+          "level": "cell",
+          "cell": "deck / over_3y / far_below_high",
+          "category": "deck",
+          "age": "over_3y",
+          "state": "far_below_high",
+          "products": 38,
+          "product_weeks": 399
+        },
+        "exp_1y_vs_landed_pct": -19.86
       },
       {
         "uuid": "9f730c77-137a-5c4d-905d-8e9ab96a1739",
@@ -1580,7 +2210,23 @@
         "discount_to_market_pct": 30.17,
         "cardkingdom_buylist": 0.0,
         "signal": "watch",
-        "signal_reason": "landed price is 30.2% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 30.2% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 30.86,
+        "exp_1y_price": 850.75,
+        "exp_1y_low": 726.39,
+        "exp_1y_high": 1074.23,
+        "exp_1y_return_pct": 18.28,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_box / under_1y",
+          "category": "booster_box",
+          "age": "under_1y",
+          "state": "far_below_high",
+          "products": 51,
+          "product_weeks": 1850
+        },
+        "exp_1y_vs_landed_pct": -9.13
       },
       {
         "uuid": "875f0d0f-4af9-5996-afbf-f98d1c7f1a6f",
@@ -1617,7 +2263,23 @@
         "discount_to_market_pct": 18.0,
         "cardkingdom_buylist": 292.0,
         "signal": "watch",
-        "signal_reason": "landed price is 18.0% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 18.0% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 23.73,
+        "exp_1y_price": 432.84,
+        "exp_1y_low": 373.4,
+        "exp_1y_high": 495.46,
+        "exp_1y_return_pct": 18.62,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_box / over_3y",
+          "category": "booster_box",
+          "age": "over_3y",
+          "state": "far_below_high",
+          "products": 162,
+          "product_weeks": 10184
+        },
+        "exp_1y_vs_landed_pct": 0.53
       },
       {
         "uuid": "7ea2f344-7d44-52fd-84b1-b0aba90c913e",
@@ -1654,7 +2316,23 @@
         "discount_to_market_pct": 15.5,
         "cardkingdom_buylist": null,
         "signal": "watch",
-        "signal_reason": "landed price is 15.5% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 15.5% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 22.08,
+        "exp_1y_price": 3188.42,
+        "exp_1y_low": 2807.0,
+        "exp_1y_high": 4018.65,
+        "exp_1y_return_pct": 11.18,
+        "exp_1y_basis": {
+          "level": "category_age",
+          "cell": "booster_case / under_1y",
+          "category": "booster_case",
+          "age": "under_1y",
+          "state": "far_below_high",
+          "products": 44,
+          "product_weeks": 1392
+        },
+        "exp_1y_vs_landed_pct": -3.74
       },
       {
         "uuid": "1f0ac974-90e0-5159-91ac-f067c316d32a",
@@ -1691,11 +2369,154 @@
         "discount_to_market_pct": 85.96,
         "cardkingdom_buylist": 22.0,
         "signal": "watch",
-        "signal_reason": "landed price is 86.0% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test."
+        "signal_reason": "landed price is 86.0% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+        "signal_grade": "watch",
+        "gap_to_buy_pct": 51.6,
+        "exp_1y_price": 24.19,
+        "exp_1y_low": 18.35,
+        "exp_1y_high": 31.13,
+        "exp_1y_return_pct": 11.66,
+        "exp_1y_basis": {
+          "level": "cell",
+          "cell": "deck / over_3y / far_below_high",
+          "category": "deck",
+          "age": "over_3y",
+          "state": "far_below_high",
+          "products": 38,
+          "product_weeks": 399
+        },
+        "exp_1y_vs_landed_pct": -39.95
       }
     ]
   },
   "store_gaps": [
+    {
+      "uuid": "a65e0802-6422-5d24-bd04-8568cf5218ff",
+      "name": "March of the Machine Jumpstart Booster Box",
+      "set": "March of the Machine",
+      "category": "booster_box",
+      "subtype": "jumpstart",
+      "links": {
+        "tcgplayer": "https://mtgjson.com/links/362c73dd7d34ce5c",
+        "cardkingdom": null
+      },
+      "store": "cardkingdom_retail",
+      "price": 124.99,
+      "landed_price": 133.74,
+      "reference_store": "tcgplayer_market",
+      "reference_price": 164.19,
+      "change_pct": -18.5,
+      "listed": {
+        "cardkingdom_retail": 124.99,
+        "tcgplayer_market": 153.45,
+        "tcgplayer_listed_median": 177.0
+      },
+      "landed_prices": {
+        "cardkingdom_retail": 133.74,
+        "tcgplayer_market": 164.19,
+        "tcgplayer_listed_median": 189.39
+      },
+      "observed": {
+        "cardkingdom_retail": "2026-10-07",
+        "tcgplayer_market": "2026-10-07",
+        "tcgplayer_listed_median": "2026-10-07"
+      },
+      "scope_price": 153.45,
+      "market_price": 153.45,
+      "market_observed": "2026-10-07",
+      "discount_to_market_pct": -12.84,
+      "signal": "buy",
+      "signal_reason": "landed price is 12.8% below the TCGplayer market price, at or beyond the 10% default threshold. This rule has no historical test.",
+      "signal_grade": "buy",
+      "gap_to_buy_pct": 0.0,
+      "cross_venue": true,
+      "cardkingdom_buylist": 81.0,
+      "exit_note": {
+        "cardkingdom_buylist": 81.0,
+        "buylist_pct_of_landed": 60.6,
+        "other_store": "tcgplayer_market",
+        "other_listed": 153.45,
+        "other_after_fee": 133.5,
+        "gap_after_fee_pct": -0.18,
+        "sell_fee": 0.13
+      },
+      "exp_1y_price": 181.75,
+      "exp_1y_low": 157.03,
+      "exp_1y_high": 207.28,
+      "exp_1y_return_pct": 18.44,
+      "exp_1y_basis": {
+        "level": "cell",
+        "cell": "booster_box / over_3y / other",
+        "category": "booster_box",
+        "age": "over_3y",
+        "state": "other",
+        "products": 162,
+        "product_weeks": 9715
+      },
+      "exp_1y_vs_landed_pct": 35.9
+    },
+    {
+      "uuid": "43eeee0c-8899-5fa1-9017-c359fa7ac2a0",
+      "name": "Mirrodin Theme Deck Little Bashers",
+      "set": "Mirrodin",
+      "category": "deck",
+      "subtype": "theme",
+      "links": {
+        "tcgplayer": "https://mtgjson.com/links/b288f5d3a6be1371",
+        "cardkingdom": null
+      },
+      "store": "cardkingdom_retail",
+      "price": 32.99,
+      "landed_price": 43.3,
+      "reference_store": "tcgplayer_market",
+      "reference_price": 52.27,
+      "change_pct": -17.2,
+      "listed": {
+        "cardkingdom_retail": 32.99,
+        "tcgplayer_market": 44.18
+      },
+      "landed_prices": {
+        "cardkingdom_retail": 43.3,
+        "tcgplayer_market": 52.27
+      },
+      "observed": {
+        "cardkingdom_retail": "2026-10-07",
+        "tcgplayer_market": "2026-10-07"
+      },
+      "scope_price": 44.18,
+      "market_price": 44.18,
+      "market_observed": "2026-10-07",
+      "discount_to_market_pct": -1.99,
+      "signal": "no_buy",
+      "signal_reason": "landed price is 2.0% below the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+      "signal_grade": "near",
+      "gap_to_buy_pct": 8.17,
+      "cross_venue": true,
+      "cardkingdom_buylist": 13.0,
+      "exit_note": {
+        "cardkingdom_buylist": 13.0,
+        "buylist_pct_of_landed": 30.0,
+        "other_store": "tcgplayer_market",
+        "other_listed": 44.18,
+        "other_after_fee": 38.44,
+        "gap_after_fee_pct": -11.23,
+        "sell_fee": 0.13
+      },
+      "exp_1y_price": 44.54,
+      "exp_1y_low": 40.38,
+      "exp_1y_high": 51.75,
+      "exp_1y_return_pct": 0.82,
+      "exp_1y_basis": {
+        "level": "cell",
+        "cell": "deck / over_3y / other",
+        "category": "deck",
+        "age": "over_3y",
+        "state": "other",
+        "products": 278,
+        "product_weeks": 9858
+      },
+      "exp_1y_vs_landed_pct": 2.86
+    },
     {
       "uuid": "a5e37936-b5bd-5590-a53e-eae594dfa141",
       "name": "Antiquities Booster Box",
@@ -1730,6 +2551,8 @@
       "discount_to_market_pct": null,
       "signal": "no_buy",
       "signal_reason": "no current TCGplayer market price to compare against. This rule has no historical test.",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": null,
       "cross_venue": true,
       "cardkingdom_buylist": 22750.0,
       "exit_note": {
@@ -1740,7 +2563,13 @@
         "other_after_fee": 52199.99,
         "gap_after_fee_pct": 39.39,
         "sell_fee": 0.13
-      }
+      },
+      "exp_1y_price": null,
+      "exp_1y_low": null,
+      "exp_1y_high": null,
+      "exp_1y_return_pct": null,
+      "exp_1y_basis": null,
+      "exp_1y_vs_landed_pct": null
     },
     {
       "uuid": "6a96fe22-ef37-5ff6-8d40-aae91120ad31",
@@ -1776,6 +2605,8 @@
       "discount_to_market_pct": null,
       "signal": "no_buy",
       "signal_reason": "no current TCGplayer market price to compare against. This rule has no historical test.",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": null,
       "cross_venue": true,
       "cardkingdom_buylist": 2340.0,
       "exit_note": {
@@ -1786,7 +2617,13 @@
         "other_after_fee": 5217.38,
         "gap_after_fee_pct": 35.45,
         "sell_fee": 0.13
-      }
+      },
+      "exp_1y_price": null,
+      "exp_1y_low": null,
+      "exp_1y_high": null,
+      "exp_1y_return_pct": null,
+      "exp_1y_basis": null,
+      "exp_1y_vs_landed_pct": null
     },
     {
       "uuid": "083e15ac-d73e-545d-a47e-2eb2fc32d36d",
@@ -1822,6 +2659,8 @@
       "discount_to_market_pct": null,
       "signal": "no_buy",
       "signal_reason": "no current TCGplayer market price to compare against. This rule has no historical test.",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": null,
       "cross_venue": true,
       "cardkingdom_buylist": 1800.0,
       "exit_note": {
@@ -1832,7 +2671,13 @@
         "other_after_fee": 3914.99,
         "gap_after_fee_pct": 21.96,
         "sell_fee": 0.13
-      }
+      },
+      "exp_1y_price": null,
+      "exp_1y_low": null,
+      "exp_1y_high": null,
+      "exp_1y_return_pct": null,
+      "exp_1y_basis": null,
+      "exp_1y_vs_landed_pct": null
     },
     {
       "uuid": "a1ea3da8-2816-5441-b4c2-a83c51238b15",
@@ -1868,6 +2713,8 @@
       "discount_to_market_pct": null,
       "signal": "no_buy",
       "signal_reason": "no current TCGplayer market price to compare against. This rule has no historical test.",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": null,
       "cross_venue": true,
       "cardkingdom_buylist": 3900.0,
       "exit_note": {
@@ -1878,7 +2725,13 @@
         "other_after_fee": 7394.99,
         "gap_after_fee_pct": 15.19,
         "sell_fee": 0.13
-      }
+      },
+      "exp_1y_price": null,
+      "exp_1y_low": null,
+      "exp_1y_high": null,
+      "exp_1y_return_pct": null,
+      "exp_1y_basis": null,
+      "exp_1y_vs_landed_pct": null
     },
     {
       "uuid": "e09568a6-c7b4-53a9-8ae6-7bfd05a9c769",
@@ -1914,6 +2767,8 @@
       "discount_to_market_pct": null,
       "signal": "no_buy",
       "signal_reason": "no current TCGplayer market price to compare against. This rule has no historical test.",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": null,
       "cross_venue": true,
       "cardkingdom_buylist": 1430.0,
       "exit_note": {
@@ -1924,7 +2779,13 @@
         "other_after_fee": 2609.99,
         "gap_after_fee_pct": 10.88,
         "sell_fee": 0.13
-      }
+      },
+      "exp_1y_price": null,
+      "exp_1y_low": null,
+      "exp_1y_high": null,
+      "exp_1y_return_pct": null,
+      "exp_1y_basis": null,
+      "exp_1y_vs_landed_pct": null
     },
     {
       "uuid": "0da24da5-ff1a-503a-bc0b-4314a4e5077f",
@@ -1960,6 +2821,8 @@
       "discount_to_market_pct": null,
       "signal": "no_buy",
       "signal_reason": "no current TCGplayer market price to compare against. This rule has no historical test.",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": null,
       "cross_venue": true,
       "cardkingdom_buylist": 35.0,
       "exit_note": {
@@ -1970,7 +2833,13 @@
         "other_after_fee": 47.84,
         "gap_after_fee_pct": -6.21,
         "sell_fee": 0.13
-      }
+      },
+      "exp_1y_price": null,
+      "exp_1y_low": null,
+      "exp_1y_high": null,
+      "exp_1y_return_pct": null,
+      "exp_1y_basis": null,
+      "exp_1y_vs_landed_pct": null
     },
     {
       "uuid": "4a4bed55-a98f-592b-b52f-9d50f55d66d6",
@@ -2006,6 +2875,8 @@
       "discount_to_market_pct": null,
       "signal": "no_buy",
       "signal_reason": "no current TCGplayer market price to compare against. This rule has no historical test.",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": null,
       "cross_venue": true,
       "cardkingdom_buylist": 1235.0,
       "exit_note": {
@@ -2016,7 +2887,13 @@
         "other_after_fee": 2087.99,
         "gap_after_fee_pct": 2.71,
         "sell_fee": 0.13
-      }
+      },
+      "exp_1y_price": null,
+      "exp_1y_low": null,
+      "exp_1y_high": null,
+      "exp_1y_return_pct": null,
+      "exp_1y_basis": null,
+      "exp_1y_vs_landed_pct": null
     },
     {
       "uuid": "d2f434d0-9f62-595d-8b84-aadaff035412",
@@ -2052,6 +2929,8 @@
       "discount_to_market_pct": null,
       "signal": "no_buy",
       "signal_reason": "no current TCGplayer market price to compare against. This rule has no historical test.",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": null,
       "cross_venue": true,
       "cardkingdom_buylist": 26.0,
       "exit_note": {
@@ -2062,7 +2941,13 @@
         "other_after_fee": 34.79,
         "gap_after_fee_pct": -13.69,
         "sell_fee": 0.13
-      }
+      },
+      "exp_1y_price": null,
+      "exp_1y_low": null,
+      "exp_1y_high": null,
+      "exp_1y_return_pct": null,
+      "exp_1y_basis": null,
+      "exp_1y_vs_landed_pct": null
     },
     {
       "uuid": "abb81fe0-95ce-5abf-b4a3-a09beea5732b",
@@ -2101,6 +2986,8 @@
       "discount_to_market_pct": 1.69,
       "signal": "no_buy",
       "signal_reason": "landed price is 1.7% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": 11.49,
       "cross_venue": true,
       "cardkingdom_buylist": 0.0,
       "exit_note": {
@@ -2111,56 +2998,21 @@
         "other_after_fee": 24.23,
         "gap_after_fee_pct": -14.44,
         "sell_fee": 0.13
-      }
-    },
-    {
-      "uuid": "a65e0802-6422-5d24-bd04-8568cf5218ff",
-      "name": "March of the Machine Jumpstart Booster Box",
-      "set": "March of the Machine",
-      "category": "booster_box",
-      "subtype": "jumpstart",
-      "links": {
-        "tcgplayer": "https://mtgjson.com/links/362c73dd7d34ce5c",
-        "cardkingdom": null
       },
-      "store": "cardkingdom_retail",
-      "price": 124.99,
-      "landed_price": 133.74,
-      "reference_store": "tcgplayer_market",
-      "reference_price": 164.19,
-      "change_pct": -18.5,
-      "listed": {
-        "cardkingdom_retail": 124.99,
-        "tcgplayer_market": 153.45,
-        "tcgplayer_listed_median": 177.0
+      "exp_1y_price": 29.31,
+      "exp_1y_low": 25.73,
+      "exp_1y_high": 34.56,
+      "exp_1y_return_pct": 5.23,
+      "exp_1y_basis": {
+        "level": "cell",
+        "cell": "booster_pack / over_3y / other",
+        "category": "booster_pack",
+        "age": "over_3y",
+        "state": "other",
+        "products": 99,
+        "product_weeks": 6022
       },
-      "landed_prices": {
-        "cardkingdom_retail": 133.74,
-        "tcgplayer_market": 164.19,
-        "tcgplayer_listed_median": 189.39
-      },
-      "observed": {
-        "cardkingdom_retail": "2026-10-07",
-        "tcgplayer_market": "2026-10-07",
-        "tcgplayer_listed_median": "2026-10-07"
-      },
-      "scope_price": 153.45,
-      "market_price": 153.45,
-      "market_observed": "2026-10-07",
-      "discount_to_market_pct": -12.84,
-      "signal": "buy",
-      "signal_reason": "landed price is 12.8% below the TCGplayer market price, at or beyond the 10% default threshold. This rule has no historical test.",
-      "cross_venue": true,
-      "cardkingdom_buylist": 81.0,
-      "exit_note": {
-        "cardkingdom_buylist": 81.0,
-        "buylist_pct_of_landed": 60.6,
-        "other_store": "tcgplayer_market",
-        "other_listed": 153.45,
-        "other_after_fee": 133.5,
-        "gap_after_fee_pct": -0.18,
-        "sell_fee": 0.13
-      }
+      "exp_1y_vs_landed_pct": 3.5
     },
     {
       "uuid": "a2124d73-1822-5b99-8724-e1b36dd695f5",
@@ -2199,6 +3051,8 @@
       "discount_to_market_pct": 1.98,
       "signal": "no_buy",
       "signal_reason": "landed price is 2.0% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": 11.75,
       "cross_venue": true,
       "cardkingdom_buylist": 0.0,
       "exit_note": {
@@ -2209,7 +3063,21 @@
         "other_after_fee": 24.16,
         "gap_after_fee_pct": -14.69,
         "sell_fee": 0.13
-      }
+      },
+      "exp_1y_price": 29.22,
+      "exp_1y_low": 25.66,
+      "exp_1y_high": 34.46,
+      "exp_1y_return_pct": 5.23,
+      "exp_1y_basis": {
+        "level": "cell",
+        "cell": "booster_pack / over_3y / other",
+        "category": "booster_pack",
+        "age": "over_3y",
+        "state": "other",
+        "products": 99,
+        "product_weeks": 6022
+      },
+      "exp_1y_vs_landed_pct": 3.18
     },
     {
       "uuid": "f63def18-5714-59e7-a761-4f5b65f035fa",
@@ -2248,6 +3116,8 @@
       "discount_to_market_pct": 7.59,
       "signal": "no_buy",
       "signal_reason": "landed price is 7.6% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": 16.35,
       "cross_venue": true,
       "cardkingdom_buylist": 0.0,
       "exit_note": {
@@ -2258,53 +3128,21 @@
         "other_after_fee": 18.57,
         "gap_after_fee_pct": -19.14,
         "sell_fee": 0.13
-      }
-    },
-    {
-      "uuid": "43eeee0c-8899-5fa1-9017-c359fa7ac2a0",
-      "name": "Mirrodin Theme Deck Little Bashers",
-      "set": "Mirrodin",
-      "category": "deck",
-      "subtype": "theme",
-      "links": {
-        "tcgplayer": "https://mtgjson.com/links/b288f5d3a6be1371",
-        "cardkingdom": null
       },
-      "store": "cardkingdom_retail",
-      "price": 32.99,
-      "landed_price": 43.3,
-      "reference_store": "tcgplayer_market",
-      "reference_price": 52.27,
-      "change_pct": -17.2,
-      "listed": {
-        "cardkingdom_retail": 32.99,
-        "tcgplayer_market": 44.18
+      "exp_1y_price": 22.47,
+      "exp_1y_low": 19.73,
+      "exp_1y_high": 26.49,
+      "exp_1y_return_pct": 5.23,
+      "exp_1y_basis": {
+        "level": "cell",
+        "cell": "booster_pack / over_3y / other",
+        "category": "booster_pack",
+        "age": "over_3y",
+        "state": "other",
+        "products": 99,
+        "product_weeks": 6022
       },
-      "landed_prices": {
-        "cardkingdom_retail": 43.3,
-        "tcgplayer_market": 52.27
-      },
-      "observed": {
-        "cardkingdom_retail": "2026-10-07",
-        "tcgplayer_market": "2026-10-07"
-      },
-      "scope_price": 44.18,
-      "market_price": 44.18,
-      "market_observed": "2026-10-07",
-      "discount_to_market_pct": -1.99,
-      "signal": "no_buy",
-      "signal_reason": "landed price is 2.0% below the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
-      "cross_venue": true,
-      "cardkingdom_buylist": 13.0,
-      "exit_note": {
-        "cardkingdom_buylist": 13.0,
-        "buylist_pct_of_landed": 30.0,
-        "other_store": "tcgplayer_market",
-        "other_listed": 44.18,
-        "other_after_fee": 38.44,
-        "gap_after_fee_pct": -11.23,
-        "sell_fee": 0.13
-      }
+      "exp_1y_vs_landed_pct": -2.18
     },
     {
       "uuid": "e74fdcef-517f-50e4-9b0d-997b9ffcb031",
@@ -2340,6 +3178,8 @@
       "discount_to_market_pct": null,
       "signal": "no_buy",
       "signal_reason": "no current TCGplayer market price to compare against. This rule has no historical test.",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": null,
       "cross_venue": true,
       "cardkingdom_buylist": 1755.0,
       "exit_note": {
@@ -2350,7 +3190,13 @@
         "other_after_fee": 2827.5,
         "gap_after_fee_pct": -2.13,
         "sell_fee": 0.13
-      }
+      },
+      "exp_1y_price": null,
+      "exp_1y_low": null,
+      "exp_1y_high": null,
+      "exp_1y_return_pct": null,
+      "exp_1y_basis": null,
+      "exp_1y_vs_landed_pct": null
     },
     {
       "uuid": "06db5c26-8fc7-53d2-b1a7-45727958e4c3",
@@ -2386,6 +3232,8 @@
       "discount_to_market_pct": null,
       "signal": "no_buy",
       "signal_reason": "no current TCGplayer market price to compare against. This rule has no historical test.",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": null,
       "cross_venue": true,
       "cardkingdom_buylist": 130.0,
       "exit_note": {
@@ -2396,7 +3244,13 @@
         "other_after_fee": 173.99,
         "gap_after_fee_pct": -2.91,
         "sell_fee": 0.13
-      }
+      },
+      "exp_1y_price": null,
+      "exp_1y_low": null,
+      "exp_1y_high": null,
+      "exp_1y_return_pct": null,
+      "exp_1y_basis": null,
+      "exp_1y_vs_landed_pct": null
     },
     {
       "uuid": "82697abd-23fa-5ab8-8fd4-c835c77bdc7c",
@@ -2435,6 +3289,8 @@
       "discount_to_market_pct": 6.74,
       "signal": "no_buy",
       "signal_reason": "landed price is 6.7% above the TCGplayer market price, short of the 10% default threshold. This rule has no historical test.",
+      "signal_grade": "watch",
+      "gap_to_buy_pct": 15.68,
       "cross_venue": true,
       "cardkingdom_buylist": 0.0,
       "exit_note": {
@@ -2445,7 +3301,21 @@
         "other_after_fee": 22.21,
         "gap_after_fee_pct": -18.49,
         "sell_fee": 0.13
-      }
+      },
+      "exp_1y_price": 26.87,
+      "exp_1y_low": 23.59,
+      "exp_1y_high": 31.68,
+      "exp_1y_return_pct": 5.23,
+      "exp_1y_basis": {
+        "level": "cell",
+        "cell": "booster_pack / over_3y / other",
+        "category": "booster_pack",
+        "age": "over_3y",
+        "state": "other",
+        "products": 99,
+        "product_weeks": 6022
+      },
+      "exp_1y_vs_landed_pct": -1.39
     }
   ],
   "fund_moves": [
@@ -2465,7 +3335,21 @@
       "reference_date": "2026-09-30",
       "change_pct": -13.9,
       "tcgplayer_market_date": "2026-10-07",
-      "held_as": "Marvel Super Heroes Jumpstart Booster Box"
+      "held_as": "Marvel Super Heroes Jumpstart Booster Box",
+      "exp_1y_price": 111.11,
+      "exp_1y_low": 94.87,
+      "exp_1y_high": 140.3,
+      "exp_1y_return_pct": 18.28,
+      "exp_1y_basis": {
+        "level": "category_age",
+        "cell": "booster_box / under_1y",
+        "category": "booster_box",
+        "age": "under_1y",
+        "state": "far_below_high",
+        "products": 51,
+        "product_weeks": 1850
+      },
+      "exp_1y_vs_landed_pct": null
     },
     {
       "uuid": "fbb14d9d-d8f1-593f-8a7c-dd4a50e437c3",
@@ -2483,7 +3367,21 @@
       "reference_date": "2026-09-30",
       "change_pct": -13.8,
       "tcgplayer_market_date": "2026-10-07",
-      "held_as": "Reality Fracture Play Booster Box"
+      "held_as": "Reality Fracture Play Booster Box",
+      "exp_1y_price": 169.27,
+      "exp_1y_low": 144.53,
+      "exp_1y_high": 213.73,
+      "exp_1y_return_pct": 18.28,
+      "exp_1y_basis": {
+        "level": "category_age",
+        "cell": "booster_box / under_1y",
+        "category": "booster_box",
+        "age": "under_1y",
+        "state": "far_below_high",
+        "products": 51,
+        "product_weeks": 1850
+      },
+      "exp_1y_vs_landed_pct": null
     },
     {
       "uuid": "3d76ef6d-1959-5995-b7d5-2c1abc7ac17a",
@@ -2501,7 +3399,21 @@
       "reference_date": "2026-09-30",
       "change_pct": -13.7,
       "tcgplayer_market_date": "2026-10-07",
-      "held_as": "Reality Fracture Collector Booster Box"
+      "held_as": "Reality Fracture Collector Booster Box",
+      "exp_1y_price": 519.75,
+      "exp_1y_low": 443.77,
+      "exp_1y_high": 656.27,
+      "exp_1y_return_pct": 18.28,
+      "exp_1y_basis": {
+        "level": "category_age",
+        "cell": "booster_box / under_1y",
+        "category": "booster_box",
+        "age": "under_1y",
+        "state": "far_below_high",
+        "products": 51,
+        "product_weeks": 1850
+      },
+      "exp_1y_vs_landed_pct": null
     },
     {
       "uuid": "4fef7824-8ef6-5c23-a649-2886a4170823",
@@ -2519,7 +3431,21 @@
       "reference_date": "2026-09-30",
       "change_pct": -12.2,
       "tcgplayer_market_date": "2026-10-07",
-      "held_as": "Secret Lair x MSCHF - The Zeta Set Booster Pack"
+      "held_as": "Secret Lair x MSCHF - The Zeta Set Booster Pack",
+      "exp_1y_price": 141.69,
+      "exp_1y_low": 121.89,
+      "exp_1y_high": 174.26,
+      "exp_1y_return_pct": 10.55,
+      "exp_1y_basis": {
+        "level": "category",
+        "cell": "booster_pack",
+        "category": "booster_pack",
+        "age": "under_1y",
+        "state": "other",
+        "products": 129,
+        "product_weeks": 8130
+      },
+      "exp_1y_vs_landed_pct": null
     },
     {
       "uuid": "ac894328-92e0-52fc-b0e1-c2362c666b3e",
@@ -2537,7 +3463,21 @@
       "reference_date": "2026-09-30",
       "change_pct": -10.3,
       "tcgplayer_market_date": "2026-10-07",
-      "held_as": "The Hobbit Bundle"
+      "held_as": "The Hobbit Bundle",
+      "exp_1y_price": 69.09,
+      "exp_1y_low": 59.83,
+      "exp_1y_high": 82.39,
+      "exp_1y_return_pct": 14.59,
+      "exp_1y_basis": {
+        "level": "all",
+        "cell": "all products",
+        "category": "bundle",
+        "age": "under_1y",
+        "state": "far_below_high",
+        "products": 766,
+        "product_weeks": 40808
+      },
+      "exp_1y_vs_landed_pct": null
     }
   ],
   "buy_signals": [
@@ -2557,7 +3497,21 @@
       "links": {
         "tcgplayer": "https://mtgjson.com/links/362c73dd7d34ce5c",
         "cardkingdom": null
-      }
+      },
+      "exp_1y_price": 181.75,
+      "exp_1y_low": 157.03,
+      "exp_1y_high": 207.28,
+      "exp_1y_return_pct": 18.44,
+      "exp_1y_basis": {
+        "level": "cell",
+        "cell": "booster_box / over_3y / other",
+        "category": "booster_box",
+        "age": "over_3y",
+        "state": "other",
+        "products": 162,
+        "product_weeks": 9715
+      },
+      "exp_1y_vs_landed_pct": 35.9
     }
   ],
   "newly_added": [],
@@ -2974,6 +3928,489 @@
       "below_high_20_beat_26w_pct": 52.0,
       "below_high_20_median_raw_26w_pct": 10.0,
       "all_products_median_raw_26w_pct": 7.0
+    },
+    "forward_52w": {
+      "horizon_weeks": 52,
+      "min_products": 30,
+      "start_dates": 82,
+      "first_start": "2024-02-12",
+      "last_start": "2025-09-01",
+      "product_weeks": 40808,
+      "products": 766,
+      "note": "Distinct start dates with a 52-week forward observation: the archive begins in February 2024, so this is little more than one independent year of outcomes. Product-weeks overlap heavily. A historical base rate, not a forecast.",
+      "definitions": {
+        "far_below_high": "20 percent or more below the highest of the previous 26 weeks (at least 13 observed)",
+        "breakout": "4-week rise of 10 percent or more and above the previous 26 weeks' high",
+        "other": "neither",
+        "age": "years since set release at the start date: under_1y, 1_to_3y, over_3y, unknown",
+        "fallback": "a cell with fewer than 30 distinct products falls back to category x age, then category, then all products"
+      },
+      "levels": {
+        "cell": [
+          {
+            "category": "booster_box",
+            "age": "1_to_3y",
+            "state": "breakout",
+            "median_pct": 64.16,
+            "p25_pct": 36.37,
+            "p75_pct": 99.29,
+            "product_weeks": 215,
+            "products": 41
+          },
+          {
+            "category": "booster_box",
+            "age": "1_to_3y",
+            "state": "far_below_high",
+            "median_pct": 166.68,
+            "p25_pct": 130.85,
+            "p75_pct": 174.3,
+            "product_weeks": 37,
+            "products": 4
+          },
+          {
+            "category": "booster_box",
+            "age": "1_to_3y",
+            "state": "other",
+            "median_pct": 37.75,
+            "p25_pct": 18.0,
+            "p75_pct": 66.79,
+            "product_weeks": 3656,
+            "products": 80
+          },
+          {
+            "category": "booster_box",
+            "age": "over_3y",
+            "state": "breakout",
+            "median_pct": 26.29,
+            "p25_pct": 14.0,
+            "p75_pct": 45.38,
+            "product_weeks": 191,
+            "products": 61
+          },
+          {
+            "category": "booster_box",
+            "age": "over_3y",
+            "state": "far_below_high",
+            "median_pct": 21.74,
+            "p25_pct": -3.25,
+            "p75_pct": 41.34,
+            "product_weeks": 278,
+            "products": 19
+          },
+          {
+            "category": "booster_box",
+            "age": "over_3y",
+            "state": "other",
+            "median_pct": 18.44,
+            "p25_pct": 2.33,
+            "p75_pct": 35.08,
+            "product_weeks": 9715,
+            "products": 162
+          },
+          {
+            "category": "booster_box",
+            "age": "under_1y",
+            "state": "breakout",
+            "median_pct": 48.3,
+            "p25_pct": 12.28,
+            "p75_pct": 92.41,
+            "product_weeks": 79,
+            "products": 21
+          },
+          {
+            "category": "booster_box",
+            "age": "under_1y",
+            "state": "far_below_high",
+            "median_pct": 20.54,
+            "p25_pct": 5.86,
+            "p75_pct": 44.67,
+            "product_weeks": 280,
+            "products": 19
+          },
+          {
+            "category": "booster_box",
+            "age": "under_1y",
+            "state": "other",
+            "median_pct": 16.33,
+            "p25_pct": -0.6,
+            "p75_pct": 49.69,
+            "product_weeks": 1491,
+            "products": 51
+          },
+          {
+            "category": "booster_case",
+            "age": "1_to_3y",
+            "state": "breakout",
+            "median_pct": 69.27,
+            "p25_pct": 35.92,
+            "p75_pct": 151.18,
+            "product_weeks": 40,
+            "products": 16
+          },
+          {
+            "category": "booster_case",
+            "age": "1_to_3y",
+            "state": "other",
+            "median_pct": 31.3,
+            "p25_pct": 16.97,
+            "p75_pct": 54.88,
+            "product_weeks": 2101,
+            "products": 59
+          },
+          {
+            "category": "booster_case",
+            "age": "over_3y",
+            "state": "breakout",
+            "median_pct": 37.41,
+            "p25_pct": 15.58,
+            "p75_pct": 55.43,
+            "product_weeks": 23,
+            "products": 10
+          },
+          {
+            "category": "booster_case",
+            "age": "over_3y",
+            "state": "far_below_high",
+            "median_pct": 49.04,
+            "p25_pct": 37.11,
+            "p75_pct": 52.51,
+            "product_weeks": 24,
+            "products": 1
+          },
+          {
+            "category": "booster_case",
+            "age": "over_3y",
+            "state": "other",
+            "median_pct": 22.59,
+            "p25_pct": 6.17,
+            "p75_pct": 38.48,
+            "product_weeks": 2156,
+            "products": 63
+          },
+          {
+            "category": "booster_case",
+            "age": "under_1y",
+            "state": "breakout",
+            "median_pct": 52.75,
+            "p25_pct": 16.48,
+            "p75_pct": 141.83,
+            "product_weeks": 34,
+            "products": 10
+          },
+          {
+            "category": "booster_case",
+            "age": "under_1y",
+            "state": "far_below_high",
+            "median_pct": 30.02,
+            "p25_pct": 17.54,
+            "p75_pct": 50.87,
+            "product_weeks": 50,
+            "products": 4
+          },
+          {
+            "category": "booster_case",
+            "age": "under_1y",
+            "state": "other",
+            "median_pct": 9.81,
+            "p25_pct": -2.85,
+            "p75_pct": 35.52,
+            "product_weeks": 1308,
+            "products": 44
+          },
+          {
+            "category": "booster_pack",
+            "age": "1_to_3y",
+            "state": "breakout",
+            "median_pct": 90.12,
+            "p25_pct": 60.37,
+            "p75_pct": 123.93,
+            "product_weeks": 99,
+            "products": 17
+          },
+          {
+            "category": "booster_pack",
+            "age": "1_to_3y",
+            "state": "far_below_high",
+            "median_pct": 127.04,
+            "p25_pct": 49.27,
+            "p75_pct": 200.78,
+            "product_weeks": 19,
+            "products": 4
+          },
+          {
+            "category": "booster_pack",
+            "age": "1_to_3y",
+            "state": "other",
+            "median_pct": 40.16,
+            "p25_pct": 15.3,
+            "p75_pct": 84.8,
+            "product_weeks": 978,
+            "products": 28
+          },
+          {
+            "category": "booster_pack",
+            "age": "over_3y",
+            "state": "breakout",
+            "median_pct": 3.97,
+            "p25_pct": -11.31,
+            "p75_pct": 26.87,
+            "product_weeks": 100,
+            "products": 33
+          },
+          {
+            "category": "booster_pack",
+            "age": "over_3y",
+            "state": "far_below_high",
+            "median_pct": 11.21,
+            "p25_pct": -5.67,
+            "p75_pct": 27.4,
+            "product_weeks": 228,
+            "products": 17
+          },
+          {
+            "category": "booster_pack",
+            "age": "over_3y",
+            "state": "other",
+            "median_pct": 5.23,
+            "p25_pct": -7.61,
+            "p75_pct": 24.08,
+            "product_weeks": 6022,
+            "products": 99
+          },
+          {
+            "category": "booster_pack",
+            "age": "under_1y",
+            "state": "breakout",
+            "median_pct": 58.53,
+            "p25_pct": 19.53,
+            "p75_pct": 81.62,
+            "product_weeks": 51,
+            "products": 9
+          },
+          {
+            "category": "booster_pack",
+            "age": "under_1y",
+            "state": "far_below_high",
+            "median_pct": 55.15,
+            "p25_pct": 36.09,
+            "p75_pct": 91.86,
+            "product_weeks": 100,
+            "products": 8
+          },
+          {
+            "category": "booster_pack",
+            "age": "under_1y",
+            "state": "other",
+            "median_pct": 51.29,
+            "p25_pct": 19.17,
+            "p75_pct": 82.37,
+            "product_weeks": 533,
+            "products": 21
+          },
+          {
+            "category": "deck",
+            "age": "1_to_3y",
+            "state": "breakout",
+            "median_pct": -24.07,
+            "p25_pct": -24.67,
+            "p75_pct": -23.59,
+            "product_weeks": 3,
+            "products": 1
+          },
+          {
+            "category": "deck",
+            "age": "1_to_3y",
+            "state": "far_below_high",
+            "median_pct": 25.59,
+            "p25_pct": 21.37,
+            "p75_pct": 27.17,
+            "product_weeks": 7,
+            "products": 2
+          },
+          {
+            "category": "deck",
+            "age": "1_to_3y",
+            "state": "other",
+            "median_pct": 4.32,
+            "p25_pct": -2.83,
+            "p75_pct": 14.22,
+            "product_weeks": 616,
+            "products": 14
+          },
+          {
+            "category": "deck",
+            "age": "over_3y",
+            "state": "breakout",
+            "median_pct": 6.98,
+            "p25_pct": -9.7,
+            "p75_pct": 24.36,
+            "product_weeks": 117,
+            "products": 64
+          },
+          {
+            "category": "deck",
+            "age": "over_3y",
+            "state": "far_below_high",
+            "median_pct": 11.66,
+            "p25_pct": -15.26,
+            "p75_pct": 43.72,
+            "product_weeks": 399,
+            "products": 38
+          },
+          {
+            "category": "deck",
+            "age": "over_3y",
+            "state": "other",
+            "median_pct": 0.82,
+            "p25_pct": -8.59,
+            "p75_pct": 17.14,
+            "product_weeks": 9858,
+            "products": 278
+          }
+        ],
+        "category_age": [
+          {
+            "category": "booster_box",
+            "age": "1_to_3y",
+            "median_pct": 39.57,
+            "p25_pct": 18.68,
+            "p75_pct": 68.87,
+            "product_weeks": 3908,
+            "products": 80
+          },
+          {
+            "category": "booster_box",
+            "age": "over_3y",
+            "median_pct": 18.62,
+            "p25_pct": 2.33,
+            "p75_pct": 35.78,
+            "product_weeks": 10184,
+            "products": 162
+          },
+          {
+            "category": "booster_box",
+            "age": "under_1y",
+            "median_pct": 18.28,
+            "p25_pct": 0.99,
+            "p75_pct": 49.35,
+            "product_weeks": 1850,
+            "products": 51
+          },
+          {
+            "category": "booster_case",
+            "age": "1_to_3y",
+            "median_pct": 31.58,
+            "p25_pct": 17.11,
+            "p75_pct": 55.45,
+            "product_weeks": 2141,
+            "products": 59
+          },
+          {
+            "category": "booster_case",
+            "age": "over_3y",
+            "median_pct": 22.93,
+            "p25_pct": 6.7,
+            "p75_pct": 38.94,
+            "product_weeks": 2203,
+            "products": 63
+          },
+          {
+            "category": "booster_case",
+            "age": "under_1y",
+            "median_pct": 11.18,
+            "p25_pct": -2.12,
+            "p75_pct": 40.13,
+            "product_weeks": 1392,
+            "products": 44
+          },
+          {
+            "category": "booster_pack",
+            "age": "1_to_3y",
+            "median_pct": 48.3,
+            "p25_pct": 17.34,
+            "p75_pct": 89.28,
+            "product_weeks": 1096,
+            "products": 30
+          },
+          {
+            "category": "booster_pack",
+            "age": "over_3y",
+            "median_pct": 5.4,
+            "p25_pct": -7.46,
+            "p75_pct": 24.26,
+            "product_weeks": 6350,
+            "products": 99
+          },
+          {
+            "category": "booster_pack",
+            "age": "under_1y",
+            "median_pct": 52.46,
+            "p25_pct": 21.0,
+            "p75_pct": 83.96,
+            "product_weeks": 684,
+            "products": 21
+          },
+          {
+            "category": "deck",
+            "age": "1_to_3y",
+            "median_pct": 4.39,
+            "p25_pct": -2.84,
+            "p75_pct": 14.67,
+            "product_weeks": 626,
+            "products": 14
+          },
+          {
+            "category": "deck",
+            "age": "over_3y",
+            "median_pct": 0.97,
+            "p25_pct": -8.93,
+            "p75_pct": 18.13,
+            "product_weeks": 10374,
+            "products": 279
+          }
+        ],
+        "category": [
+          {
+            "category": "booster_box",
+            "median_pct": 22.64,
+            "p25_pct": 5.04,
+            "p75_pct": 44.26,
+            "product_weeks": 15942,
+            "products": 231
+          },
+          {
+            "category": "booster_case",
+            "median_pct": 24.12,
+            "p25_pct": 7.4,
+            "p75_pct": 46.66,
+            "product_weeks": 5736,
+            "products": 123
+          },
+          {
+            "category": "booster_pack",
+            "median_pct": 10.55,
+            "p25_pct": -4.9,
+            "p75_pct": 35.96,
+            "product_weeks": 8130,
+            "products": 129
+          },
+          {
+            "category": "deck",
+            "median_pct": 1.54,
+            "p25_pct": -8.59,
+            "p75_pct": 17.85,
+            "product_weeks": 11000,
+            "products": 283
+          }
+        ],
+        "all": {
+          "median_pct": 14.59,
+          "p25_pct": -0.77,
+          "p75_pct": 36.65,
+          "product_weeks": 40808,
+          "products": 766
+        }
+      }
     },
     "vs_reference": {
       "products": -28,
