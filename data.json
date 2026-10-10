@@ -6,17 +6,17 @@
     "source": "portfolio_ledger.json"
   },
   "summary": {
-    "nav": 16740.37,
-    "invested": 12717.56,
-    "perf_pct": 31.63,
-    "positions": 52,
-    "marked": 43,
-    "marked_pct": 94.6,
+    "nav": 17863.82,
+    "invested": 14001.55,
+    "perf_pct": 27.58,
+    "positions": 53,
+    "marked": 44,
+    "marked_pct": 95.1,
     "first_acq": "2024-06-06",
     "inception": "2024-11-01",
     "feed_start": "2024-02-08",
     "asof": "2026-10-10",
-    "mwr_pct": 31.63,
+    "mwr_pct": 27.58,
     "mwr_irr_pct": 75.87,
     "twr_pct": 226.1,
     "capital_years": 5534.0,
@@ -1632,11 +1632,11 @@
     ],
     [
       "2026-10-10",
-      16649.74,
-      12717.56,
-      30.92,
+      17933.73,
+      14001.55,
+      28.08,
       42,
-      52,
+      53,
       226.1,
       75.87,
       46.19
@@ -1672,6 +1672,12 @@
       1287.55,
       1123.84,
       -12.71
+    ],
+    [
+      "Phyrexia: All Will Be One",
+      1283.99,
+      1123.45,
+      -12.5
     ],
     [
       "Reality Fracture",
@@ -1729,6 +1735,16 @@
       7144.04,
       175.63,
       "2025-09-29",
+      true
+    ],
+    [
+      "Phyrexia All Will Be One Collector Booster Box",
+      "Phyrexia: All Will Be One",
+      1,
+      1283.99,
+      1123.45,
+      -12.5,
+      "2026-10-10",
       true
     ],
     [

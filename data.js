@@ -4,9 +4,9 @@
 // Built by 01_Engines/report_engine/capital_site_data.py. Do not hand edit.
 var DATA = {
   summary: {
-    nav: 16740.37, invested: 12717.56, perf_pct: 31.63, positions: 52,
-    marked: 43, marked_pct: 94.6, feed_start: "2024-02-08",
-    mwr_pct: 31.63, mwr_irr_pct: 75.87, twr_pct: 226.1,
+    nav: 17863.82, invested: 14001.55, perf_pct: 27.58, positions: 53,
+    marked: 44, marked_pct: 95.1, feed_start: "2024-02-08",
+    mwr_pct: 27.58, mwr_irr_pct: 75.87, twr_pct: 226.1,
     capital_years: 5534.0, avg_capital: 2361.32, bench_pct: 46.19,
     first_acq: "2024-06-06", inception: "2024-11-01", asof: "2026-10-10"
   },
@@ -83,13 +83,14 @@ var DATA = {
     ["2026-10-02", 16639.39, 12570.67, 32.37, 41, 51, 229.24, 83.13, 45.8], ["2026-10-03", 16625.32, 12570.67, 32.25, 41, 51, 228.95, 82.25, 45.8],
     ["2026-10-04", 16593.54, 12570.67, 32.0, 41, 51, 228.29, 81.0, 45.86], ["2026-10-05", 16520.17, 12570.67, 31.42, 41, 51, 226.75, 78.9, 45.84],
     ["2026-10-06", 16521.68, 12570.67, 31.43, 41, 51, 226.78, 78.39, 45.97], ["2026-10-07", 16672.72, 12717.56, 31.1, 41, 52, 226.87, 77.93, 46.01],
-    ["2026-10-08", 16632.33, 12717.56, 30.78, 42, 52, 225.74, 76.57, 46.04], ["2026-10-10", 16649.74, 12717.56, 30.92, 42, 52, 226.1, 75.87, 46.19]
+    ["2026-10-08", 16632.33, 12717.56, 30.78, 42, 52, 225.74, 76.57, 46.04], ["2026-10-10", 17933.73, 14001.55, 28.08, 42, 53, 226.1, 75.87, 46.19]
   ],
   buckets: [
     ["Vintage / Legacy sealed", 3294.2, 3387.94, 2.85],
     ["The Hobbit", 3228.04, 2744.13, -14.99],
     ["LOTR: Tales of Middle-earth", 3142.22, 7751.38, 146.68],
     ["Marvel Super Heroes", 1287.55, 1123.84, -12.71],
+    ["Phyrexia: All Will Be One", 1283.99, 1123.45, -12.5],
     ["Reality Fracture", 791.74, 571.96, -27.76],
     ["Secret Lair x MSCHF", 413.39, 479.72, 16.05],
     ["Other collectibles", 190.46, 281.09, 47.58],
@@ -99,6 +100,7 @@ var DATA = {
   ],
   holdings: [
     ["The Lord of the Rings: Tales of Middle-earth Special Edition Collector Booster Box", "LOTR: Tales of Middle-earth", 1, 2591.93, 7144.04, 175.63, "2025-09-29", true],
+    ["Phyrexia All Will Be One Collector Booster Box", "Phyrexia: All Will Be One", 1, 1283.99, 1123.45, -12.5, "2026-10-10", true],
     ["The Hobbit Collector Booster Display", "The Hobbit", 1, 839.85, 707.81, -15.72, "2026-07-18", true],
     ["The Hobbit Collector Booster Box", "The Hobbit", 1, 795.0, 707.81, -10.97, "2026-08-13", true],
     ["Reality Fracture Collector Booster Box", "Reality Fracture", 1, 641.95, 432.3, -32.66, "2026-09-07", true],
