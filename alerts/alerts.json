@@ -57,11 +57,11 @@
     }
   },
   "ebay": {
-    "connected": false,
+    "connected": true,
     "as_of": null,
-    "validation_since": null,
+    "validation_since": "2026-10-11",
     "use_asks": false,
-    "note": "eBay not connected",
+    "note": "eBay connected, asks under validation since 2026-10-11",
     "totals": {
       "products": 0,
       "results": 0,
