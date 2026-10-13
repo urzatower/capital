@@ -6,17 +6,17 @@
     "source": "portfolio_ledger.json"
   },
   "summary": {
-    "nav": 17761.92,
-    "invested": 14001.55,
-    "perf_pct": 26.86,
-    "positions": 53,
+    "nav": 18831.92,
+    "invested": 15071.55,
+    "perf_pct": 24.95,
+    "positions": 54,
     "marked": 44,
-    "marked_pct": 95.1,
+    "marked_pct": 88.4,
     "first_acq": "2024-06-06",
     "inception": "2024-11-01",
     "feed_start": "2024-02-08",
     "asof": "2026-10-12",
-    "mwr_pct": 26.86,
+    "mwr_pct": 24.95,
     "mwr_irr_pct": 69.57,
     "twr_pct": 224.04,
     "capital_years": 5610.0,
@@ -1654,11 +1654,11 @@
     ],
     [
       "2026-10-12",
-      17671.29,
-      14001.55,
-      26.21,
+      18741.29,
+      15071.55,
+      24.35,
       43,
-      53,
+      54,
       224.04,
       69.57,
       46.24
@@ -1673,9 +1673,9 @@
   "buckets": [
     [
       "Vintage / Legacy sealed",
-      3294.2,
-      3388.95,
-      2.88
+      4364.2,
+      4458.95,
+      2.17
     ],
     [
       "The Hobbit",
@@ -1768,6 +1768,16 @@
       -12.5,
       "2026-10-10",
       true
+    ],
+    [
+      "Urza's Legacy Theme Deck Display (12 decks, sealed)",
+      "Vintage / Legacy sealed",
+      1,
+      1070.0,
+      1070.0,
+      0.0,
+      "2026-10-12",
+      false
     ],
     [
       "The Hobbit Collector Booster Display",
