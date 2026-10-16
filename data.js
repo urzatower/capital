@@ -4,9 +4,9 @@
 // Built by 01_Engines/report_engine/capital_site_data.py. Do not hand edit.
 var DATA = {
   summary: {
-    nav: 18773.67, invested: 15071.55, perf_pct: 24.56, positions: 54,
-    marked: 44, marked_pct: 88.4, feed_start: "2024-02-08",
-    mwr_pct: 24.56, mwr_irr_pct: 66.36, twr_pct: 222.92,
+    nav: 19700.6, invested: 15935.58, perf_pct: 23.63, positions: 55,
+    marked: 45, marked_pct: 89.0, feed_start: "2024-02-08",
+    mwr_pct: 23.63, mwr_irr_pct: 66.36, twr_pct: 222.92,
     capital_years: 5776.0, avg_capital: 2447.43, bench_pct: 48.51,
     first_acq: "2024-06-06", inception: "2024-11-01", asof: "2026-10-16"
   },
@@ -86,10 +86,10 @@ var DATA = {
     ["2026-10-08", 16632.33, 12717.56, 30.78, 42, 52, 225.74, 76.57, 48.18], ["2026-10-10", 17933.73, 14001.55, 28.08, 42, 53, 226.1, 75.87, 48.34],
     ["2026-10-11", 17709.07, 14001.55, 26.48, 43, 53, 224.77, 70.83, 48.38], ["2026-10-12", 18741.29, 15071.55, 24.35, 43, 54, 224.04, 69.57, 48.4],
     ["2026-10-13", 18676.04, 15071.55, 23.92, 43, 54, 222.78, 67.75, 48.42], ["2026-10-14", 18664.16, 15071.55, 23.84, 43, 54, 222.55, 67.01, 48.44],
-    ["2026-10-15", 18697.66, 15071.55, 24.06, 43, 54, 223.2, 67.15, 48.44], ["2026-10-16", 18683.04, 15071.55, 23.96, 43, 54, 222.92, 66.36, 48.51]
+    ["2026-10-15", 18697.66, 15071.55, 24.06, 43, 54, 223.2, 67.15, 48.44], ["2026-10-16", 19547.07, 15935.58, 22.66, 43, 55, 222.92, 66.36, 48.51]
   ],
   buckets: [
-    ["Vintage / Legacy sealed", 4364.2, 4464.85, 2.31],
+    ["Vintage / Legacy sealed", 5228.23, 5391.78, 3.13],
     ["The Hobbit", 3228.04, 2666.32, -17.4],
     ["LOTR: Tales of Middle-earth", 3142.22, 7741.52, 146.37],
     ["Marvel Super Heroes", 1287.55, 1120.36, -12.99],
@@ -105,6 +105,7 @@ var DATA = {
     ["The Lord of the Rings: Tales of Middle-earth Special Edition Collector Booster Box", "LOTR: Tales of Middle-earth", 1, 2591.93, 7136.03, 175.32, "2025-09-29", true],
     ["Phyrexia All Will Be One Collector Booster Box", "Phyrexia: All Will Be One", 1, 1283.99, 1129.41, -12.04, "2026-10-10", true],
     ["Urza's Legacy Theme Deck Display (12 decks, sealed)", "Vintage / Legacy sealed", 1, 1070.0, 1070.0, 0.0, "2026-10-12", false],
+    ["Revised Edition Starter Deck", "Vintage / Legacy sealed", 1, 864.03, 926.93, 7.28, "2026-10-16", true],
     ["The Hobbit Collector Booster Display", "The Hobbit", 1, 839.85, 695.01, -17.25, "2026-07-18", true],
     ["The Hobbit Collector Booster Box", "The Hobbit", 1, 795.0, 695.01, -12.58, "2026-08-13", true],
     ["Reality Fracture Collector Booster Box", "Reality Fracture", 1, 641.95, 426.29, -33.59, "2026-09-07", true],
