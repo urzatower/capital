@@ -6,17 +6,17 @@
     "source": "portfolio_ledger.json"
   },
   "summary": {
-    "nav": 19700.6,
+    "nav": 19637.7,
     "invested": 15935.58,
-    "perf_pct": 23.63,
+    "perf_pct": 23.23,
     "positions": 55,
-    "marked": 45,
-    "marked_pct": 89.0,
+    "marked": 44,
+    "marked_pct": 83.6,
     "first_acq": "2024-06-06",
     "inception": "2024-11-01",
     "feed_start": "2024-02-08",
     "asof": "2026-10-16",
-    "mwr_pct": 23.63,
+    "mwr_pct": 23.23,
     "mwr_irr_pct": 66.36,
     "twr_pct": 222.92,
     "capital_years": 5776.0,
@@ -1718,8 +1718,8 @@
     [
       "Vintage / Legacy sealed",
       5228.23,
-      5391.78,
-      3.13
+      5328.88,
+      1.93
     ],
     [
       "The Hobbit",
@@ -1828,10 +1828,10 @@
       "Vintage / Legacy sealed",
       1,
       864.03,
-      926.93,
-      7.28,
+      864.03,
+      0.0,
       "2026-10-16",
-      true
+      false
     ],
     [
       "The Hobbit Collector Booster Display",

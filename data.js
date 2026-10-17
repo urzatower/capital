@@ -4,9 +4,9 @@
 // Built by 01_Engines/report_engine/capital_site_data.py. Do not hand edit.
 var DATA = {
   summary: {
-    nav: 19700.6, invested: 15935.58, perf_pct: 23.63, positions: 55,
-    marked: 45, marked_pct: 89.0, feed_start: "2024-02-08",
-    mwr_pct: 23.63, mwr_irr_pct: 66.36, twr_pct: 222.92,
+    nav: 19637.7, invested: 15935.58, perf_pct: 23.23, positions: 55,
+    marked: 44, marked_pct: 83.6, feed_start: "2024-02-08",
+    mwr_pct: 23.23, mwr_irr_pct: 66.36, twr_pct: 222.92,
     capital_years: 5776.0, avg_capital: 2447.43, bench_pct: 48.51,
     first_acq: "2024-06-06", inception: "2024-11-01", asof: "2026-10-16"
   },
@@ -89,7 +89,7 @@ var DATA = {
     ["2026-10-15", 18697.66, 15071.55, 24.06, 43, 54, 223.2, 67.15, 48.44], ["2026-10-16", 19547.07, 15935.58, 22.66, 43, 55, 222.92, 66.36, 48.51]
   ],
   buckets: [
-    ["Vintage / Legacy sealed", 5228.23, 5391.78, 3.13],
+    ["Vintage / Legacy sealed", 5228.23, 5328.88, 1.93],
     ["The Hobbit", 3228.04, 2666.32, -17.4],
     ["LOTR: Tales of Middle-earth", 3142.22, 7741.52, 146.37],
     ["Marvel Super Heroes", 1287.55, 1120.36, -12.99],
@@ -105,7 +105,7 @@ var DATA = {
     ["The Lord of the Rings: Tales of Middle-earth Special Edition Collector Booster Box", "LOTR: Tales of Middle-earth", 1, 2591.93, 7136.03, 175.32, "2025-09-29", true],
     ["Phyrexia All Will Be One Collector Booster Box", "Phyrexia: All Will Be One", 1, 1283.99, 1129.41, -12.04, "2026-10-10", true],
     ["Urza's Legacy Theme Deck Display (12 decks, sealed)", "Vintage / Legacy sealed", 1, 1070.0, 1070.0, 0.0, "2026-10-12", false],
-    ["Revised Edition Starter Deck", "Vintage / Legacy sealed", 1, 864.03, 926.93, 7.28, "2026-10-16", true],
+    ["Revised Edition Starter Deck", "Vintage / Legacy sealed", 1, 864.03, 864.03, 0.0, "2026-10-16", false],
     ["The Hobbit Collector Booster Display", "The Hobbit", 1, 839.85, 695.01, -17.25, "2026-07-18", true],
     ["The Hobbit Collector Booster Box", "The Hobbit", 1, 795.0, 695.01, -12.58, "2026-08-13", true],
     ["Reality Fracture Collector Booster Box", "Reality Fracture", 1, 641.95, 426.29, -33.59, "2026-09-07", true],
