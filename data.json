@@ -1,7 +1,7 @@
 {
   "meta": {
     "name": "Urza Tower Capital LP",
-    "asof": "2026-10-17",
+    "asof": "2026-10-18",
     "currency": "USD",
     "source": "portfolio_ledger.json"
   },
@@ -15,13 +15,13 @@
     "first_acq": "2024-06-06",
     "inception": "2024-11-01",
     "feed_start": "2024-02-08",
-    "asof": "2026-10-17",
+    "asof": "2026-10-18",
     "mwr_pct": 0.0,
     "mwr_irr_pct": 0.0,
     "twr_pct": 0.0,
-    "capital_years": 5819.0,
-    "avg_capital": 2462.79,
-    "bench_pct": 48.6
+    "capital_years": 5863.0,
+    "avg_capital": 2478.54,
+    "bench_pct": 48.52
   },
   "series_columns": [
     "date",
@@ -1717,6 +1717,17 @@
       0.0,
       0.0,
       48.6
+    ],
+    [
+      "2026-10-18",
+      15950.54,
+      15950.54,
+      0.0,
+      0,
+      56,
+      0.0,
+      0.0,
+      48.52
     ]
   ],
   "buckets_columns": [
@@ -2368,9 +2379,9 @@
   "benchmark": {
     "name": "Sealed Magic booster box index",
     "base_date": "2024-11-01",
-    "as_of": "2026-10-17",
-    "constituents": 249,
-    "since_inception_pct": 48.6,
+    "as_of": "2026-10-18",
+    "constituents": 247,
+    "since_inception_pct": 48.52,
     "first_observation": "2024-02-08",
     "method": "Capped value-weighted, chain-linked index of every Magic booster box priced by TCGplayer (market price; weekly archive from 2024-02-08, daily from 2026-08-28). No box above 10% of the basket; a price that moves more than fivefold between observations is treated as an error. Rebased to the book's inception."
   },
@@ -2548,7 +2559,7 @@
       10,
       0.0,
       0,
-      0.63
+      0.58
     ]
   ],
   "yearly": [
@@ -2565,7 +2576,7 @@
     [
       2026,
       0.0,
-      30.07
+      30.01
     ]
   ],
   "thin_book": 5

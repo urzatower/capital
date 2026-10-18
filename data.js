@@ -1,14 +1,14 @@
 // Urza Tower Capital LP - portfolio ledger.
 // Single source of truth for both index.html and facts.html.
-// Generated from 02_Data/portfolio_ledger.json, marked 2026-10-17.
+// Generated from 02_Data/portfolio_ledger.json, marked 2026-10-18.
 // Built by 01_Engines/report_engine/capital_site_data.py. Do not hand edit.
 var DATA = {
   summary: {
     nav: 15950.54, invested: 15950.54, perf_pct: 0.0, positions: 56,
     marked: 0, marked_pct: 0.0, feed_start: "2024-02-08",
     mwr_pct: 0.0, mwr_irr_pct: 0.0, twr_pct: 0.0,
-    capital_years: 5819.0, avg_capital: 2462.79, bench_pct: 48.6,
-    first_acq: "2024-06-06", inception: "2024-11-01", asof: "2026-10-17"
+    capital_years: 5863.0, avg_capital: 2478.54, bench_pct: 48.52,
+    first_acq: "2024-06-06", inception: "2024-11-01", asof: "2026-10-18"
   },
   series: [
     ["2024-11-01", 72.69, 72.69, 0.0, 0, 2, 0.0, 0.0, 0.0], ["2024-11-04", 72.69, 72.69, 0.0, 0, 2, 0.0, -0.0, 0.07],
@@ -87,7 +87,7 @@ var DATA = {
     ["2026-10-11", 14001.55, 14001.55, 0.0, 0, 53, 0.0, -0.0, 48.38], ["2026-10-12", 15071.55, 15071.55, 0.0, 0, 54, 0.0, -0.0, 48.4],
     ["2026-10-13", 15071.55, 15071.55, 0.0, 0, 54, 0.0, -0.0, 48.42], ["2026-10-14", 15071.55, 15071.55, 0.0, 0, 54, 0.0, -0.0, 48.44],
     ["2026-10-15", 15071.55, 15071.55, 0.0, 0, 54, 0.0, -0.0, 48.44], ["2026-10-16", 15935.58, 15935.58, 0.0, 0, 55, 0.0, -0.0, 48.51],
-    ["2026-10-17", 15950.54, 15950.54, 0.0, 0, 56, 0.0, 0.0, 48.6]
+    ["2026-10-17", 15950.54, 15950.54, 0.0, 0, 56, 0.0, 0.0, 48.6], ["2026-10-18", 15950.54, 15950.54, 0.0, 0, 56, 0.0, 0.0, 48.52]
   ],
   buckets: [
     ["Vintage / Legacy sealed", 5228.23, 5228.23, 0.0],
@@ -160,8 +160,8 @@ var DATA = {
     ["The Hobbit Play Booster Pack (sleeved retail blister)", "The Hobbit", 2, 14.96, 14.96, 0.0, "2026-10-17", false],
     ["LOTR Collector Booster Sample Pack", "LOTR: Tales of Middle-earth", 1, 11.72, 11.72, 0.0, "2025-11-25", false]
   ],
-  monthly: [[2024, 11, 0.0, 0, 0.65], [2024, 12, 0.0, 0, 0.93], [2025, 1, 0.0, 0, 0.49], [2025, 2, 0.0, 0, 0.25], [2025, 3, 0.0, 0, 1.06], [2025, 4, 0.0, 0, 0.79], [2025, 5, 0.0, 0, 1.03], [2025, 6, 0.0, 0, 1.49], [2025, 7, 0.0, 0, 1.99], [2025, 8, 0.0, 0, 3.18], [2025, 9, 0.0, 0, 1.94], [2025, 10, 0.0, 0, 0.0], [2025, 11, 0.0, 0, -0.28], [2025, 12, 0.0, 0, -0.1], [2026, 1, 0.0, 0, 2.37], [2026, 2, 0.0, 0, 2.45], [2026, 3, 0.0, 0, 3.39], [2026, 4, 0.0, 0, 1.7], [2026, 5, 0.0, 0, 1.3], [2026, 6, 0.0, 0, 5.17], [2026, 7, 0.0, 0, 3.95], [2026, 8, 0.0, 0, 3.45], [2026, 9, 0.0, 0, 2.31], [2026, 10, 0.0, 0, 0.63]],
-  yearly: [[2024, 0.0, 1.59], [2025, 0.0, 12.44], [2026, 0.0, 30.07]],
+  monthly: [[2024, 11, 0.0, 0, 0.65], [2024, 12, 0.0, 0, 0.93], [2025, 1, 0.0, 0, 0.49], [2025, 2, 0.0, 0, 0.25], [2025, 3, 0.0, 0, 1.06], [2025, 4, 0.0, 0, 0.79], [2025, 5, 0.0, 0, 1.03], [2025, 6, 0.0, 0, 1.49], [2025, 7, 0.0, 0, 1.99], [2025, 8, 0.0, 0, 3.18], [2025, 9, 0.0, 0, 1.94], [2025, 10, 0.0, 0, 0.0], [2025, 11, 0.0, 0, -0.28], [2025, 12, 0.0, 0, -0.1], [2026, 1, 0.0, 0, 2.37], [2026, 2, 0.0, 0, 2.45], [2026, 3, 0.0, 0, 3.39], [2026, 4, 0.0, 0, 1.7], [2026, 5, 0.0, 0, 1.3], [2026, 6, 0.0, 0, 5.17], [2026, 7, 0.0, 0, 3.95], [2026, 8, 0.0, 0, 3.45], [2026, 9, 0.0, 0, 2.31], [2026, 10, 0.0, 0, 0.58]],
+  yearly: [[2024, 0.0, 1.59], [2025, 0.0, 12.44], [2026, 0.0, 30.01]],
   thin_book: 5,
-  benchmark: {"name": "Sealed Magic booster box index", "base_date": "2024-11-01", "as_of": "2026-10-17", "constituents": 249, "since_inception_pct": 48.6, "first_observation": "2024-02-08", "method": "Capped value-weighted, chain-linked index of every Magic booster box priced by TCGplayer (market price; weekly archive from 2024-02-08, daily from 2026-08-28). No box above 10% of the basket; a price that moves more than fivefold between observations is treated as an error. Rebased to the book's inception."}
+  benchmark: {"name": "Sealed Magic booster box index", "base_date": "2024-11-01", "as_of": "2026-10-18", "constituents": 247, "since_inception_pct": 48.52, "first_observation": "2024-02-08", "method": "Capped value-weighted, chain-linked index of every Magic booster box priced by TCGplayer (market price; weekly archive from 2024-02-08, daily from 2026-08-28). No box above 10% of the basket; a price that moves more than fivefold between observations is treated as an error. Rebased to the book's inception."}
 };
