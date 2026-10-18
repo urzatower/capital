@@ -6,10 +6,10 @@
     "source": "portfolio_ledger.json"
   },
   "summary": {
-    "nav": 15935.58,
-    "invested": 15935.58,
+    "nav": 15950.54,
+    "invested": 15950.54,
     "perf_pct": 0.0,
-    "positions": 55,
+    "positions": 56,
     "marked": 0,
     "marked_pct": 0.0,
     "first_acq": "2024-06-06",
@@ -17,7 +17,7 @@
     "feed_start": "2024-02-08",
     "asof": "2026-10-17",
     "mwr_pct": 0.0,
-    "mwr_irr_pct": -0.0,
+    "mwr_irr_pct": 0.0,
     "twr_pct": 0.0,
     "capital_years": 5819.0,
     "avg_capital": 2462.79,
@@ -1709,13 +1709,13 @@
     ],
     [
       "2026-10-17",
-      15935.58,
-      15935.58,
+      15950.54,
+      15950.54,
       0.0,
       0,
-      55,
+      56,
       0.0,
-      -0.0,
+      0.0,
       48.6
     ]
   ],
@@ -1734,8 +1734,8 @@
     ],
     [
       "The Hobbit",
-      3228.04,
-      3228.04,
+      3243.0,
+      3243.0,
       0.0
     ],
     [
@@ -2342,6 +2342,16 @@
       19.25,
       0.0,
       "2026-05-11",
+      false
+    ],
+    [
+      "The Hobbit Play Booster Pack (sleeved retail blister)",
+      "The Hobbit",
+      2,
+      14.96,
+      14.96,
+      0.0,
+      "2026-10-17",
       false
     ],
     [
