@@ -6,19 +6,19 @@
     "source": "portfolio_ledger.json"
   },
   "summary": {
-    "nav": 20026.59,
-    "invested": 15950.54,
-    "perf_pct": 25.55,
-    "positions": 56,
-    "marked": 56,
+    "nav": 20449.27,
+    "invested": 16453.38,
+    "perf_pct": 24.29,
+    "positions": 58,
+    "marked": 58,
     "marked_pct": 100.0,
     "first_acq": "2024-06-06",
     "inception": "2024-11-01",
     "feed_start": "2024-02-08",
     "asof": "2026-10-22",
-    "mwr_pct": 25.55,
-    "mwr_irr_pct": 72.5,
-    "twr_pct": 135.83,
+    "mwr_pct": 24.29,
+    "mwr_irr_pct": 71.95,
+    "twr_pct": 135.47,
     "capital_years": 6038.0,
     "avg_capital": 2540.76,
     "bench_pct": 48.59
@@ -1764,13 +1764,13 @@
     ],
     [
       "2026-10-22",
-      20060.44,
-      15950.54,
-      25.77,
+      20533.28,
+      16453.38,
+      24.8,
       56,
-      56,
-      135.83,
-      72.5,
+      58,
+      135.47,
+      71.95,
       48.59
     ]
   ],
@@ -1788,16 +1788,16 @@
       11.24
     ],
     [
+      "LOTR: Tales of Middle-earth",
+      3457.86,
+      8009.0,
+      131.62
+    ],
+    [
       "The Hobbit",
       3243.0,
       2503.84,
       -22.79
-    ],
-    [
-      "LOTR: Tales of Middle-earth",
-      3142.22,
-      7731.27,
-      146.04
     ],
     [
       "Marvel Super Heroes",
@@ -1826,8 +1826,14 @@
     [
       "Other collectibles",
       190.46,
-      460.0,
-      141.52
+      430.0,
+      125.77
+    ],
+    [
+      "Sorcery: Contested Realm",
+      187.2,
+      174.95,
+      -6.54
     ],
     [
       "March of the Machine",
@@ -2015,6 +2021,17 @@
       "TCGplayer market price"
     ],
     [
+      "LOTR Tales of Middle-earth Set Booster Box",
+      "LOTR: Tales of Middle-earth",
+      1,
+      315.64,
+      277.73,
+      -12.01,
+      "2026-10-22",
+      true,
+      "TCGplayer market price"
+    ],
+    [
       "Revised Edition Booster Pack",
       "Vintage / Legacy sealed",
       1,
@@ -2107,9 +2124,20 @@
       "Other collectibles",
       1,
       190.46,
-      460.0,
-      141.52,
+      430.0,
+      125.77,
       "2026-09-15",
+      true,
+      "lowest eBay ask"
+    ],
+    [
+      "Sorcery: Contested Realm Beta Edition Booster Box",
+      "Sorcery: Contested Realm",
+      1,
+      187.2,
+      174.95,
+      -6.54,
+      "2026-10-22",
       true,
       "lowest eBay ask"
     ],
@@ -2658,7 +2686,7 @@
     [
       2026,
       10,
-      -3.4,
+      -3.55,
       56,
       0.62
     ]
@@ -2676,7 +2704,7 @@
     ],
     [
       2026,
-      63.06,
+      62.81,
       30.06
     ]
   ],
