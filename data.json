@@ -6,9 +6,9 @@
     "source": "portfolio_ledger.json"
   },
   "summary": {
-    "nav": 23309.47,
+    "nav": 23258.34,
     "invested": 18816.1,
-    "perf_pct": 23.88,
+    "perf_pct": 23.61,
     "positions": 60,
     "marked": 60,
     "marked_pct": 100.0,
@@ -16,12 +16,12 @@
     "inception": "2024-11-01",
     "feed_start": "2024-02-08",
     "asof": "2026-10-26",
-    "mwr_pct": 23.88,
-    "mwr_irr_pct": 67.22,
-    "twr_pct": 135.06,
+    "mwr_pct": 23.61,
+    "mwr_irr_pct": 66.31,
+    "twr_pct": 134.47,
     "capital_years": 6227.0,
     "avg_capital": 2608.27,
-    "bench_pct": 48.41
+    "bench_pct": 48.87
   },
   "series_columns": [
     "date",
@@ -1808,14 +1808,14 @@
     ],
     [
       "2026-10-26",
-      22758.15,
+      22707.02,
       18816.1,
-      20.95,
+      20.68,
       60,
       60,
-      135.06,
-      67.22,
-      48.41
+      134.47,
+      66.31,
+      48.87
     ]
   ],
   "buckets_columns": [
@@ -1828,26 +1828,26 @@
     [
       "Vintage / Legacy sealed",
       7590.95,
-      8717.72,
-      14.84
+      8717.96,
+      14.85
     ],
     [
       "LOTR: Tales of Middle-earth",
       3457.86,
-      8054.36,
-      132.93
+      8053.26,
+      132.9
     ],
     [
       "The Hobbit",
       3243.0,
-      2477.92,
-      -23.59
+      2447.45,
+      -24.53
     ],
     [
       "Marvel Super Heroes",
       1287.55,
-      1134.34,
-      -11.9
+      1137.79,
+      -11.63
     ],
     [
       "Phyrexia: All Will Be One",
@@ -1858,14 +1858,14 @@
     [
       "Reality Fracture",
       791.74,
-      538.84,
-      -31.94
+      527.99,
+      -33.31
     ],
     [
       "Secret Lair x MSCHF",
       413.39,
-      331.12,
-      -19.9
+      318.76,
+      -22.89
     ],
     [
       "Other collectibles",
@@ -1894,8 +1894,8 @@
     [
       "Marvel's Spider-Man",
       78.1,
-      93.01,
-      19.09
+      92.97,
+      19.04
     ]
   ],
   "holdings_columns": [
@@ -1981,8 +1981,8 @@
       "The Hobbit",
       1,
       839.85,
-      682.85,
-      -18.69,
+      666.34,
+      -20.66,
       "2026-07-18",
       true,
       "TCGplayer market price"
@@ -1992,8 +1992,8 @@
       "The Hobbit",
       1,
       795.0,
-      682.85,
-      -14.11,
+      666.34,
+      -16.18,
       "2026-08-13",
       true,
       "TCGplayer market price"
@@ -2003,8 +2003,8 @@
       "Reality Fracture",
       1,
       641.95,
-      409.37,
-      -36.23,
+      399.17,
+      -37.82,
       "2026-09-07",
       true,
       "TCGplayer market price"
@@ -2036,8 +2036,8 @@
       "Marvel Super Heroes",
       1,
       534.95,
-      464.2,
-      -13.23,
+      463.79,
+      -13.3,
       "2026-06-06",
       true,
       "TCGplayer market price"
@@ -2047,8 +2047,8 @@
       "Marvel Super Heroes",
       1,
       502.33,
-      464.2,
-      -7.59,
+      463.79,
+      -7.67,
       "2026-06-03",
       true,
       "TCGplayer market price"
@@ -2069,8 +2069,8 @@
       "The Hobbit",
       2,
       374.5,
-      272.86,
-      -27.14,
+      273.8,
+      -26.89,
       "2026-09-07",
       true,
       "TCGplayer market price"
@@ -2080,8 +2080,8 @@
       "LOTR: Tales of Middle-earth",
       1,
       337.1,
-      290.65,
-      -13.78,
+      289.92,
+      -14.0,
       "2026-05-16",
       true,
       "TCGplayer market price"
@@ -2091,8 +2091,8 @@
       "LOTR: Tales of Middle-earth",
       1,
       315.64,
-      290.65,
-      -7.92,
+      289.92,
+      -8.15,
       "2026-10-22",
       true,
       "TCGplayer market price"
@@ -2124,8 +2124,8 @@
       "The Hobbit",
       28,
       239.4,
-      145.04,
-      -39.42,
+      145.32,
+      -39.3,
       "2026-08-23",
       true,
       "TCGplayer market price"
@@ -2146,8 +2146,8 @@
       "The Hobbit",
       1,
       207.05,
-      136.43,
-      -34.11,
+      136.9,
+      -33.88,
       "2026-08-18",
       true,
       "TCGplayer market price"
@@ -2157,8 +2157,8 @@
       "The Hobbit",
       1,
       206.26,
-      136.43,
-      -33.86,
+      136.9,
+      -33.63,
       "2026-08-24",
       true,
       "TCGplayer market price"
@@ -2168,8 +2168,8 @@
       "The Hobbit",
       1,
       203.29,
-      136.43,
-      -32.89,
+      136.9,
+      -32.66,
       "2026-05-18",
       true,
       "TCGplayer market price"
@@ -2179,8 +2179,8 @@
       "The Hobbit",
       1,
       197.94,
-      136.43,
-      -31.08,
+      136.9,
+      -30.84,
       "2026-05-13",
       true,
       "TCGplayer market price"
@@ -2212,8 +2212,8 @@
       "Reality Fracture",
       1,
       149.79,
-      129.47,
-      -13.57,
+      128.82,
+      -14.0,
       "2026-09-08",
       true,
       "TCGplayer market price"
@@ -2267,8 +2267,8 @@
       "Marvel Super Heroes",
       1,
       127.28,
-      101.16,
-      -20.52,
+      105.67,
+      -16.98,
       "2026-05-30",
       true,
       "TCGplayer market price"
@@ -2278,8 +2278,8 @@
       "Marvel Super Heroes",
       1,
       122.99,
-      104.78,
-      -14.81,
+      104.54,
+      -15.0,
       "2026-06-08",
       true,
       "TCGplayer market price"
@@ -2289,8 +2289,8 @@
       "Secret Lair x MSCHF",
       1,
       119.13,
-      82.78,
-      -30.51,
+      79.69,
+      -33.11,
       "2026-09-02",
       true,
       "TCGplayer market price"
@@ -2300,8 +2300,8 @@
       "Secret Lair x MSCHF",
       1,
       117.1,
-      82.78,
-      -29.31,
+      79.69,
+      -31.95,
       "2026-09-02",
       true,
       "TCGplayer market price"
@@ -2333,8 +2333,8 @@
       "Secret Lair x MSCHF",
       1,
       89.88,
-      82.78,
-      -7.9,
+      79.69,
+      -11.34,
       "2026-09-02",
       true,
       "TCGplayer market price"
@@ -2344,8 +2344,8 @@
       "Secret Lair x MSCHF",
       1,
       87.28,
-      82.78,
-      -5.16,
+      79.69,
+      -8.7,
       "2026-09-02",
       true,
       "TCGplayer market price"
@@ -2366,8 +2366,8 @@
       "Marvel's Spider-Man",
       1,
       78.1,
-      93.01,
-      19.09,
+      92.97,
+      19.04,
       "2026-02-16",
       true,
       "TCGplayer market price"
@@ -2377,8 +2377,8 @@
       "The Hobbit",
       1,
       74.89,
-      45.69,
-      -38.99,
+      46.1,
+      -38.44,
       "2026-05-01",
       true,
       "TCGplayer market price"
@@ -2432,8 +2432,8 @@
       "LOTR: Tales of Middle-earth",
       6,
       51.3,
-      70.26,
-      36.96,
+      71.22,
+      38.83,
       "2024-06-06",
       true,
       "TCGplayer market price"
@@ -2454,8 +2454,8 @@
       "The Hobbit",
       1,
       44.93,
-      51.54,
-      14.71,
+      50.74,
+      12.93,
       "2026-05-01",
       true,
       "TCGplayer market price"
@@ -2465,8 +2465,8 @@
       "The Hobbit",
       1,
       44.93,
-      41.01,
-      -8.72,
+      40.83,
+      -9.13,
       "2026-05-01",
       true,
       "TCGplayer market price"
@@ -2487,8 +2487,8 @@
       "Vintage / Legacy sealed",
       3,
       38.37,
-      37.02,
-      -3.52,
+      37.2,
+      -3.05,
       "2025-11-25",
       true,
       "TCGplayer market price"
@@ -2509,8 +2509,8 @@
       "LOTR: Tales of Middle-earth",
       2,
       26.41,
-      37.94,
-      43.66,
+      37.92,
+      43.58,
       "2025-11-25",
       true,
       "TCGplayer market price"
@@ -2520,8 +2520,8 @@
       "LOTR: Tales of Middle-earth",
       1,
       23.99,
-      52.67,
-      119.55,
+      52.1,
+      117.17,
       "2024-11-28",
       true,
       "TCGplayer market price"
@@ -2542,8 +2542,8 @@
       "Vintage / Legacy sealed",
       1,
       19.25,
-      12.34,
-      -35.9,
+      12.4,
+      -35.58,
       "2026-05-11",
       true,
       "TCGplayer market price"
@@ -2553,8 +2553,8 @@
       "The Hobbit",
       2,
       14.96,
-      10.36,
-      -30.75,
+      10.38,
+      -30.61,
       "2026-10-17",
       true,
       "TCGplayer market price"
@@ -2564,8 +2564,8 @@
       "LOTR: Tales of Middle-earth",
       1,
       11.72,
-      18.97,
-      61.86,
+      18.96,
+      61.77,
       "2025-11-25",
       true,
       "TCGplayer market price"
@@ -2574,9 +2574,9 @@
   "benchmark": {
     "name": "Sealed Magic booster box index",
     "base_date": "2024-11-01",
-    "as_of": "2026-10-25",
-    "constituents": 242,
-    "since_inception_pct": 48.41,
+    "as_of": "2026-10-26",
+    "constituents": 245,
+    "since_inception_pct": 48.87,
     "first_observation": "2024-02-08",
     "method": "Capped value-weighted, chain-linked index of every Magic booster box priced by TCGplayer (market price; weekly archive from 2024-02-08, daily from 2026-08-28). No box above 10% of the basket; a price that moves more than fivefold between observations is treated as an error. Rebased to the book's inception."
   },
@@ -2752,9 +2752,9 @@
     [
       2026,
       10,
-      -3.72,
+      -3.96,
       60,
-      0.5
+      0.81
     ]
   ],
   "yearly": [
@@ -2770,8 +2770,8 @@
     ],
     [
       2026,
-      62.52,
-      29.9
+      62.12,
+      30.31
     ]
   ],
   "thin_book": 5
