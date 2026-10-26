@@ -4,9 +4,9 @@
 // Built by 01_Engines/report_engine/capital_site_data.py. Do not hand edit.
 var DATA = {
   summary: {
-    nav: 23258.34, invested: 18816.1, perf_pct: 23.61, positions: 60,
+    nav: 23258.34, invested: 18653.38, perf_pct: 24.69, positions: 60,
     marked: 60, marked_pct: 100.0, feed_start: "2024-02-08",
-    mwr_pct: 23.61, mwr_irr_pct: 66.31, twr_pct: 134.47,
+    mwr_pct: 24.69, mwr_irr_pct: 69.21, twr_pct: 134.47,
     capital_years: 6227.0, avg_capital: 2608.27, bench_pct: 48.87,
     first_acq: "2024-06-06", inception: "2024-11-01", asof: "2026-10-26"
   },
@@ -90,11 +90,11 @@ var DATA = {
     ["2026-10-17", 19552.77, 15950.54, 22.58, 48, 56, 136.89, 65.67, 48.6], ["2026-10-18", 20128.86, 15950.54, 26.2, 56, 56, 136.63, 76.07, 48.52],
     ["2026-10-19", 20107.08, 15950.54, 26.06, 56, 56, 136.38, 75.07, 48.51], ["2026-10-20", 20102.02, 15950.54, 26.03, 56, 56, 136.32, 74.4, 48.6],
     ["2026-10-21", 20091.55, 15950.54, 25.96, 56, 56, 136.19, 73.63, 48.6], ["2026-10-22", 20533.28, 16453.38, 24.8, 56, 58, 135.47, 71.95, 48.59],
-    ["2026-10-23", 20481.77, 16453.38, 24.48, 58, 58, 135.44, 70.45, 48.59], ["2026-10-24", 21596.61, 17576.88, 22.87, 58, 59, 135.34, 69.75, 48.6],
-    ["2026-10-25", 22815.97, 18816.1, 21.26, 58, 60, 135.12, 68.83, 48.41], ["2026-10-26", 22707.02, 18816.1, 20.68, 60, 60, 134.47, 66.31, 48.87]
+    ["2026-10-23", 20481.77, 16453.38, 24.48, 58, 58, 135.44, 70.45, 48.59], ["2026-10-24", 21523.11, 17503.38, 22.97, 58, 59, 135.34, 69.75, 48.6],
+    ["2026-10-25", 22653.25, 18653.38, 21.44, 58, 60, 135.12, 68.84, 48.41], ["2026-10-26", 22707.02, 18653.38, 21.73, 60, 60, 134.47, 69.21, 48.87]
   ],
   buckets: [
-    ["Vintage / Legacy sealed", 7590.95, 8717.96, 14.85],
+    ["Vintage / Legacy sealed", 7428.23, 8717.96, 17.36],
     ["LOTR: Tales of Middle-earth", 3457.86, 8053.26, 132.9],
     ["The Hobbit", 3243.0, 2447.45, -24.53],
     ["Marvel Super Heroes", 1287.55, 1137.79, -11.63],
@@ -110,9 +110,9 @@ var DATA = {
   holdings: [
     ["The Lord of the Rings: Tales of Middle-earth Special Edition Collector Booster Box", "LOTR: Tales of Middle-earth", 1, 2591.93, 7144.04, 175.63, "2025-09-29", true, "TCGplayer market price"],
     ["Phyrexia All Will Be One Collector Booster Box", "Phyrexia: All Will Be One", 1, 1283.99, 1132.85, -11.77, "2026-10-10", true, "TCGplayer market price"],
-    ["Fourth Edition Booster Box", "Vintage / Legacy sealed", 1, 1239.22, 1599.99, 29.11, "2026-10-25", true, "lowest eBay ask"],
-    ["Pro Tour Collector Set, Inaugural Edition (1996, New York City, factory sealed)", "Vintage / Legacy sealed", 1, 1123.5, 1299.98, 15.71, "2026-10-24", true, "lowest eBay ask"],
+    ["Fourth Edition Booster Box", "Vintage / Legacy sealed", 1, 1150.0, 1599.99, 39.13, "2026-10-25", true, "lowest eBay ask"],
     ["Urza's Legacy Theme Deck Display (12 decks, sealed)", "Vintage / Legacy sealed", 1, 1070.0, 1500.0, 40.19, "2026-10-12", true, "lowest eBay ask"],
+    ["Pro Tour Collector Set, Inaugural Edition (1996, New York City, factory sealed)", "Vintage / Legacy sealed", 1, 1050.0, 1299.98, 23.81, "2026-10-24", true, "lowest eBay ask"],
     ["Revised Edition Starter Deck", "Vintage / Legacy sealed", 1, 864.03, 934.92, 8.2, "2026-10-16", true, "TCGplayer market price"],
     ["The Hobbit Collector Booster Display", "The Hobbit", 1, 839.85, 666.34, -20.66, "2026-07-18", true, "TCGplayer market price"],
     ["The Hobbit Collector Booster Box", "The Hobbit", 1, 795.0, 666.34, -16.18, "2026-08-13", true, "TCGplayer market price"],
