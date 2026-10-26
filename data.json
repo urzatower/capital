@@ -1,26 +1,26 @@
 {
   "meta": {
     "name": "Urza Tower Capital LP",
-    "asof": "2026-10-25",
+    "asof": "2026-10-26",
     "currency": "USD",
     "source": "portfolio_ledger.json"
   },
   "summary": {
-    "nav": 20414.58,
-    "invested": 16453.38,
-    "perf_pct": 24.08,
-    "positions": 58,
-    "marked": 58,
+    "nav": 23309.47,
+    "invested": 18816.1,
+    "perf_pct": 23.88,
+    "positions": 60,
+    "marked": 60,
     "marked_pct": 100.0,
     "first_acq": "2024-06-06",
     "inception": "2024-11-01",
     "feed_start": "2024-02-08",
-    "asof": "2026-10-25",
-    "mwr_pct": 24.08,
-    "mwr_irr_pct": 68.86,
-    "twr_pct": 135.12,
-    "capital_years": 6173.0,
-    "avg_capital": 2588.62,
+    "asof": "2026-10-26",
+    "mwr_pct": 23.88,
+    "mwr_irr_pct": 67.22,
+    "twr_pct": 135.06,
+    "capital_years": 6227.0,
+    "avg_capital": 2608.27,
     "bench_pct": 48.41
   },
   "series_columns": [
@@ -1786,24 +1786,35 @@
     ],
     [
       "2026-10-24",
-      20473.11,
-      16453.38,
-      24.43,
+      21596.61,
+      17576.88,
+      22.87,
       58,
-      58,
+      59,
       135.34,
       69.75,
       48.6
     ],
     [
       "2026-10-25",
-      20453.25,
-      16453.38,
-      24.31,
+      22815.97,
+      18816.1,
+      21.26,
       58,
-      58,
+      60,
       135.12,
-      68.86,
+      68.83,
+      48.41
+    ],
+    [
+      "2026-10-26",
+      22758.15,
+      18816.1,
+      20.95,
+      60,
+      60,
+      135.06,
+      67.22,
       48.41
     ]
   ],
@@ -1816,9 +1827,9 @@
   "buckets": [
     [
       "Vintage / Legacy sealed",
-      5228.23,
-      5817.75,
-      11.28
+      7590.95,
+      8717.72,
+      14.84
     ],
     [
       "LOTR: Tales of Middle-earth",
@@ -1877,8 +1888,8 @@
     [
       "Pokemon",
       144.97,
-      64.95,
-      -55.2
+      59.87,
+      -58.7
     ],
     [
       "Marvel's Spider-Man",
@@ -1920,6 +1931,28 @@
       "2026-10-10",
       true,
       "TCGplayer market price"
+    ],
+    [
+      "Fourth Edition Booster Box",
+      "Vintage / Legacy sealed",
+      1,
+      1239.22,
+      1599.99,
+      29.11,
+      "2026-10-25",
+      true,
+      "lowest eBay ask"
+    ],
+    [
+      "Pro Tour Collector Set, Inaugural Edition (1996, New York City, factory sealed)",
+      "Vintage / Legacy sealed",
+      1,
+      1123.5,
+      1299.98,
+      15.71,
+      "2026-10-24",
+      true,
+      "lowest eBay ask"
     ],
     [
       "Urza's Legacy Theme Deck Display (12 decks, sealed)",
@@ -2212,8 +2245,8 @@
       "Pokemon",
       1,
       144.97,
-      64.95,
-      -55.2,
+      59.87,
+      -58.7,
       "2026-09-08",
       true,
       "lowest eBay ask"
@@ -2719,8 +2752,8 @@
     [
       2026,
       10,
-      -3.69,
-      58,
+      -3.72,
+      60,
       0.5
     ]
   ],
@@ -2737,7 +2770,7 @@
     ],
     [
       2026,
-      62.57,
+      62.52,
       29.9
     ]
   ],

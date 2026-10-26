@@ -1,59 +1,61 @@
 date,position,bucket,quantity,all_in_cost_usd,marked_value_usd,weight_pct,return_pct,acquired,price_source
-2026-10-25,"The Lord of the Rings: Tales of Middle-earth Special Edition Collector Booster Box","LOTR: Tales of Middle-earth",1,2591.93,7144.04,34.99,175.63,2025-09-29,TCGplayer market price
-2026-10-25,"Urza's Legacy Theme Deck Display (12 decks, sealed)","Vintage / Legacy sealed",1,1070.00,1500.00,7.35,40.19,2026-10-12,lowest eBay ask
-2026-10-25,"Phyrexia All Will Be One Collector Booster Box","Phyrexia: All Will Be One",1,1283.99,1132.85,5.55,-11.77,2026-10-10,TCGplayer market price
-2026-10-25,"Revised Edition Starter Deck","Vintage / Legacy sealed",1,864.03,934.92,4.58,8.20,2026-10-16,TCGplayer market price
-2026-10-25,"The Hobbit Collector Booster Display","The Hobbit",1,839.85,682.85,3.34,-18.69,2026-07-18,TCGplayer market price
-2026-10-25,"The Hobbit Collector Booster Box","The Hobbit",1,795.00,682.85,3.34,-14.11,2026-08-13,TCGplayer market price
-2026-10-25,"Fallen Empires Booster Box (sealed)","Vintage / Legacy sealed",1,534.99,575.80,2.82,7.63,2026-08-08,TCGplayer market price
-2026-10-25,"Antiquities Booster Pack","Vintage / Legacy sealed",1,535.00,566.75,2.78,5.93,2026-05-13,TCGplayer market price
-2026-10-25,"Urza's Saga Tournament Pack","Vintage / Legacy sealed",1,481.48,472.36,2.31,-1.89,2026-05-13,TCGplayer market price
-2026-10-25,"Marvel Super Heroes Collector Booster Box","Marvel Super Heroes",1,534.95,464.20,2.27,-13.23,2026-06-06,TCGplayer market price
-2026-10-25,"Marvel Super Heroes Collector Booster Display","Marvel Super Heroes",1,502.33,464.20,2.27,-7.59,2026-06-03,TCGplayer market price
-2026-10-25,"World of Warcraft: Forever Collector's Edition","Other collectibles",1,190.46,430.00,2.11,125.77,2026-09-15,lowest eBay ask
-2026-10-25,"Reality Fracture Collector Booster Box","Reality Fracture",1,641.95,409.37,2.01,-36.23,2026-09-07,TCGplayer market price
-2026-10-25,"Revised Edition Booster Pack","Vintage / Legacy sealed",1,300.66,344.38,1.69,14.54,2026-05-13,TCGplayer market price
-2026-10-25,"LOTR Tales of Middle-earth Set Booster Box","LOTR: Tales of Middle-earth",1,337.10,290.65,1.42,-13.78,2026-05-16,TCGplayer market price
-2026-10-25,"LOTR Tales of Middle-earth Set Booster Box","LOTR: Tales of Middle-earth",1,315.64,290.65,1.42,-7.92,2026-10-22,TCGplayer market price
-2026-10-25,"The Hobbit Play Booster Box","The Hobbit",2,374.50,272.86,1.34,-27.14,2026-09-07,TCGplayer market price
-2026-10-25,"Urza's Saga Booster Pack","Vintage / Legacy sealed",1,288.89,266.82,1.31,-7.64,2026-05-13,TCGplayer market price
-2026-10-25,"Sorcery: Contested Realm Beta Edition Booster Box","Sorcery: Contested Realm",1,187.20,174.95,0.86,-6.54,2026-10-22,lowest eBay ask
-2026-10-25,"March of the Machine Jumpstart Booster Box","March of the Machine",1,146.89,164.49,0.81,11.98,2026-10-07,TCGplayer market price
-2026-10-25,"Ice Age Starter Deck (1995)","Vintage / Legacy sealed",1,207.58,159.99,0.78,-22.93,2026-08-08,lowest eBay ask
-2026-10-25,"The Hobbit Play Booster Pack (sleeved retail blister)","The Hobbit",28,239.40,145.04,0.71,-39.42,2026-08-23,TCGplayer market price
-2026-10-25,"Classic Sixth Edition 2-Player Starter Deck","Vintage / Legacy sealed",1,69.54,145.01,0.71,108.53,2026-08-03,TCGplayer market price
-2026-10-25,"Urza's Legacy Booster Pack","Vintage / Legacy sealed",1,147.93,138.02,0.68,-6.70,2026-05-13,TCGplayer market price
-2026-10-25,"The Hobbit Play Booster Box","The Hobbit",1,207.05,136.43,0.67,-34.11,2026-08-18,TCGplayer market price
-2026-10-25,"The Hobbit Play Booster Box","The Hobbit",1,206.26,136.43,0.67,-33.86,2026-08-24,TCGplayer market price
-2026-10-25,"The Hobbit Play Booster Box","The Hobbit",1,203.29,136.43,0.67,-32.89,2026-05-18,TCGplayer market price
-2026-10-25,"The Hobbit Play Booster Box","The Hobbit",1,197.94,136.43,0.67,-31.08,2026-05-13,TCGplayer market price
-2026-10-25,"Legions Theme Deck - Zombies Unleashed","Vintage / Legacy sealed",1,107.00,134.99,0.66,26.16,2026-05-21,TCGplayer market price
-2026-10-25,"Fifth Edition Starter Deck","Vintage / Legacy sealed",1,141.23,131.79,0.65,-6.68,2026-08-01,TCGplayer market price
-2026-10-25,"Reality Fracture Play Booster Box","Reality Fracture",1,149.79,129.47,0.63,-13.57,2026-09-08,TCGplayer market price
-2026-10-25,"Marvel Super Heroes Jumpstart Booster Box","Marvel Super Heroes",1,122.99,104.78,0.51,-14.81,2026-06-08,TCGplayer market price
-2026-10-25,"Marvel Super Heroes Play Booster Box","Marvel Super Heroes",1,127.28,101.16,0.50,-20.52,2026-05-30,TCGplayer market price
-2026-10-25,"Mirrodin Tournament Pack","Vintage / Legacy sealed",1,113.42,100.62,0.49,-11.29,2026-05-21,TCGplayer market price
-2026-10-25,"Marvel's Spider-Man Bundle: Gift Edition","Marvel's Spider-Man",1,78.10,93.01,0.46,19.09,2026-02-16,TCGplayer market price
-2026-10-25,"Secret Lair x MSCHF - The Zeta Set Booster Pack","Secret Lair x MSCHF",1,119.13,82.78,0.41,-30.51,2026-09-02,TCGplayer market price
-2026-10-25,"Secret Lair x MSCHF - The Zeta Set Booster Pack","Secret Lair x MSCHF",1,117.10,82.78,0.41,-29.31,2026-09-02,TCGplayer market price
-2026-10-25,"Secret Lair x MSCHF - The Zeta Set Booster Pack","Secret Lair x MSCHF",1,89.88,82.78,0.41,-7.90,2026-09-02,TCGplayer market price
-2026-10-25,"Secret Lair x MSCHF - The Zeta Set Booster Pack","Secret Lair x MSCHF",1,87.28,82.78,0.41,-5.16,2026-09-02,TCGplayer market price
-2026-10-25,"LOTR Starter Kit","LOTR: Tales of Middle-earth",1,21.39,80.18,0.39,274.85,2024-11-01,lowest eBay ask
-2026-10-25,"The Lord of the Rings: Tales of Middle-earth Sleeved Set Booster Pack","LOTR: Tales of Middle-earth",6,51.30,70.26,0.34,36.96,2024-06-06,TCGplayer market price
-2026-10-25,"LOTR Commander Deck 2 + Collector Booster Sample Pack","LOTR: Tales of Middle-earth",1,78.38,69.00,0.34,-11.97,2026-03-23,lowest eBay ask
-2026-10-25,"Darksteel Theme Deck - Transference","Vintage / Legacy sealed",1,66.06,65.03,0.32,-1.56,2026-05-21,TCGplayer market price
-2026-10-25,"Pokemon TCG: 30th Celebration Booster Bundle","Pokemon",1,144.97,64.95,0.32,-55.20,2026-09-08,lowest eBay ask
-2026-10-25,"Urza's Saga Theme Deck - Sleeper","Vintage / Legacy sealed",1,64.18,63.78,0.31,-0.62,2026-08-01,TCGplayer market price
-2026-10-25,"Fourth Edition Booster Pack","Vintage / Legacy sealed",1,41.58,59.95,0.29,44.18,2026-05-06,lowest eBay ask
-2026-10-25,"LOTR Scene Box - Gandalf in Pelennor Fields","LOTR: Tales of Middle-earth",1,23.99,52.67,0.26,119.55,2024-11-28,TCGplayer market price
-2026-10-25,"The Hobbit Scene Box - Treasures of Smaug","The Hobbit",1,44.93,51.54,0.25,14.71,2026-05-01,TCGplayer market price
-2026-10-25,"The Hobbit Bundle","The Hobbit",1,74.89,45.69,0.22,-38.99,2026-05-01,TCGplayer market price
-2026-10-25,"Portal Starter Set Demo / Sealed Pack","Vintage / Legacy sealed",1,63.56,44.84,0.22,-29.45,2026-05-11,lowest eBay ask
-2026-10-25,"Fifth Edition Booster Pack","Vintage / Legacy sealed",1,46.74,41.34,0.20,-11.55,2026-05-06,TCGplayer market price
-2026-10-25,"The Hobbit Scene Box - Crack the Plates","The Hobbit",1,44.93,41.01,0.20,-8.72,2026-05-01,TCGplayer market price
-2026-10-25,"LOTR Collector Booster Sample Pack","LOTR: Tales of Middle-earth",2,26.41,37.94,0.19,43.66,2025-11-25,TCGplayer market price
-2026-10-25,"Fallen Empires Booster Pack","Vintage / Legacy sealed",3,38.37,37.02,0.18,-3.52,2025-11-25,TCGplayer market price
-2026-10-25,"Chronicles Booster Pack","Vintage / Legacy sealed",1,26.74,22.00,0.11,-17.73,2026-05-11,lowest eBay ask
-2026-10-25,"LOTR Collector Booster Sample Pack","LOTR: Tales of Middle-earth",1,11.72,18.97,0.09,61.86,2025-11-25,TCGplayer market price
-2026-10-25,"Fallen Empires Booster Pack","Vintage / Legacy sealed",1,19.25,12.34,0.06,-35.90,2026-05-11,TCGplayer market price
-2026-10-25,"The Hobbit Play Booster Pack (sleeved retail blister)","The Hobbit",2,14.96,10.36,0.05,-30.75,2026-10-17,TCGplayer market price
+2026-10-26,"The Lord of the Rings: Tales of Middle-earth Special Edition Collector Booster Box","LOTR: Tales of Middle-earth",1,2591.93,7144.04,30.65,175.63,2025-09-29,TCGplayer market price
+2026-10-26,"Fourth Edition Booster Box","Vintage / Legacy sealed",1,1239.22,1599.99,6.86,29.11,2026-10-25,lowest eBay ask
+2026-10-26,"Urza's Legacy Theme Deck Display (12 decks, sealed)","Vintage / Legacy sealed",1,1070.00,1500.00,6.44,40.19,2026-10-12,lowest eBay ask
+2026-10-26,"Pro Tour Collector Set, Inaugural Edition (1996, New York City, factory sealed)","Vintage / Legacy sealed",1,1123.50,1299.98,5.58,15.71,2026-10-24,lowest eBay ask
+2026-10-26,"Phyrexia All Will Be One Collector Booster Box","Phyrexia: All Will Be One",1,1283.99,1132.85,4.86,-11.77,2026-10-10,TCGplayer market price
+2026-10-26,"Revised Edition Starter Deck","Vintage / Legacy sealed",1,864.03,934.92,4.01,8.20,2026-10-16,TCGplayer market price
+2026-10-26,"The Hobbit Collector Booster Display","The Hobbit",1,839.85,682.85,2.93,-18.69,2026-07-18,TCGplayer market price
+2026-10-26,"The Hobbit Collector Booster Box","The Hobbit",1,795.00,682.85,2.93,-14.11,2026-08-13,TCGplayer market price
+2026-10-26,"Fallen Empires Booster Box (sealed)","Vintage / Legacy sealed",1,534.99,575.80,2.47,7.63,2026-08-08,TCGplayer market price
+2026-10-26,"Antiquities Booster Pack","Vintage / Legacy sealed",1,535.00,566.75,2.43,5.93,2026-05-13,TCGplayer market price
+2026-10-26,"Urza's Saga Tournament Pack","Vintage / Legacy sealed",1,481.48,472.36,2.03,-1.89,2026-05-13,TCGplayer market price
+2026-10-26,"Marvel Super Heroes Collector Booster Box","Marvel Super Heroes",1,534.95,464.20,1.99,-13.23,2026-06-06,TCGplayer market price
+2026-10-26,"Marvel Super Heroes Collector Booster Display","Marvel Super Heroes",1,502.33,464.20,1.99,-7.59,2026-06-03,TCGplayer market price
+2026-10-26,"World of Warcraft: Forever Collector's Edition","Other collectibles",1,190.46,430.00,1.84,125.77,2026-09-15,lowest eBay ask
+2026-10-26,"Reality Fracture Collector Booster Box","Reality Fracture",1,641.95,409.37,1.76,-36.23,2026-09-07,TCGplayer market price
+2026-10-26,"Revised Edition Booster Pack","Vintage / Legacy sealed",1,300.66,344.38,1.48,14.54,2026-05-13,TCGplayer market price
+2026-10-26,"LOTR Tales of Middle-earth Set Booster Box","LOTR: Tales of Middle-earth",1,337.10,290.65,1.25,-13.78,2026-05-16,TCGplayer market price
+2026-10-26,"LOTR Tales of Middle-earth Set Booster Box","LOTR: Tales of Middle-earth",1,315.64,290.65,1.25,-7.92,2026-10-22,TCGplayer market price
+2026-10-26,"The Hobbit Play Booster Box","The Hobbit",2,374.50,272.86,1.17,-27.14,2026-09-07,TCGplayer market price
+2026-10-26,"Urza's Saga Booster Pack","Vintage / Legacy sealed",1,288.89,266.82,1.14,-7.64,2026-05-13,TCGplayer market price
+2026-10-26,"Sorcery: Contested Realm Beta Edition Booster Box","Sorcery: Contested Realm",1,187.20,174.95,0.75,-6.54,2026-10-22,lowest eBay ask
+2026-10-26,"March of the Machine Jumpstart Booster Box","March of the Machine",1,146.89,164.49,0.71,11.98,2026-10-07,TCGplayer market price
+2026-10-26,"Ice Age Starter Deck (1995)","Vintage / Legacy sealed",1,207.58,159.99,0.69,-22.93,2026-08-08,lowest eBay ask
+2026-10-26,"The Hobbit Play Booster Pack (sleeved retail blister)","The Hobbit",28,239.40,145.04,0.62,-39.42,2026-08-23,TCGplayer market price
+2026-10-26,"Classic Sixth Edition 2-Player Starter Deck","Vintage / Legacy sealed",1,69.54,145.01,0.62,108.53,2026-08-03,TCGplayer market price
+2026-10-26,"Urza's Legacy Booster Pack","Vintage / Legacy sealed",1,147.93,138.02,0.59,-6.70,2026-05-13,TCGplayer market price
+2026-10-26,"The Hobbit Play Booster Box","The Hobbit",1,207.05,136.43,0.59,-34.11,2026-08-18,TCGplayer market price
+2026-10-26,"The Hobbit Play Booster Box","The Hobbit",1,206.26,136.43,0.59,-33.86,2026-08-24,TCGplayer market price
+2026-10-26,"The Hobbit Play Booster Box","The Hobbit",1,203.29,136.43,0.59,-32.89,2026-05-18,TCGplayer market price
+2026-10-26,"The Hobbit Play Booster Box","The Hobbit",1,197.94,136.43,0.59,-31.08,2026-05-13,TCGplayer market price
+2026-10-26,"Legions Theme Deck - Zombies Unleashed","Vintage / Legacy sealed",1,107.00,134.99,0.58,26.16,2026-05-21,TCGplayer market price
+2026-10-26,"Fifth Edition Starter Deck","Vintage / Legacy sealed",1,141.23,131.79,0.57,-6.68,2026-08-01,TCGplayer market price
+2026-10-26,"Reality Fracture Play Booster Box","Reality Fracture",1,149.79,129.47,0.56,-13.57,2026-09-08,TCGplayer market price
+2026-10-26,"Marvel Super Heroes Jumpstart Booster Box","Marvel Super Heroes",1,122.99,104.78,0.45,-14.81,2026-06-08,TCGplayer market price
+2026-10-26,"Marvel Super Heroes Play Booster Box","Marvel Super Heroes",1,127.28,101.16,0.43,-20.52,2026-05-30,TCGplayer market price
+2026-10-26,"Mirrodin Tournament Pack","Vintage / Legacy sealed",1,113.42,100.62,0.43,-11.29,2026-05-21,TCGplayer market price
+2026-10-26,"Marvel's Spider-Man Bundle: Gift Edition","Marvel's Spider-Man",1,78.10,93.01,0.40,19.09,2026-02-16,TCGplayer market price
+2026-10-26,"Secret Lair x MSCHF - The Zeta Set Booster Pack","Secret Lair x MSCHF",1,119.13,82.78,0.36,-30.51,2026-09-02,TCGplayer market price
+2026-10-26,"Secret Lair x MSCHF - The Zeta Set Booster Pack","Secret Lair x MSCHF",1,117.10,82.78,0.36,-29.31,2026-09-02,TCGplayer market price
+2026-10-26,"Secret Lair x MSCHF - The Zeta Set Booster Pack","Secret Lair x MSCHF",1,89.88,82.78,0.36,-7.90,2026-09-02,TCGplayer market price
+2026-10-26,"Secret Lair x MSCHF - The Zeta Set Booster Pack","Secret Lair x MSCHF",1,87.28,82.78,0.36,-5.16,2026-09-02,TCGplayer market price
+2026-10-26,"LOTR Starter Kit","LOTR: Tales of Middle-earth",1,21.39,80.18,0.34,274.85,2024-11-01,lowest eBay ask
+2026-10-26,"The Lord of the Rings: Tales of Middle-earth Sleeved Set Booster Pack","LOTR: Tales of Middle-earth",6,51.30,70.26,0.30,36.96,2024-06-06,TCGplayer market price
+2026-10-26,"LOTR Commander Deck 2 + Collector Booster Sample Pack","LOTR: Tales of Middle-earth",1,78.38,69.00,0.30,-11.97,2026-03-23,lowest eBay ask
+2026-10-26,"Darksteel Theme Deck - Transference","Vintage / Legacy sealed",1,66.06,65.03,0.28,-1.56,2026-05-21,TCGplayer market price
+2026-10-26,"Urza's Saga Theme Deck - Sleeper","Vintage / Legacy sealed",1,64.18,63.78,0.27,-0.62,2026-08-01,TCGplayer market price
+2026-10-26,"Fourth Edition Booster Pack","Vintage / Legacy sealed",1,41.58,59.95,0.26,44.18,2026-05-06,lowest eBay ask
+2026-10-26,"Pokemon TCG: 30th Celebration Booster Bundle","Pokemon",1,144.97,59.87,0.26,-58.70,2026-09-08,lowest eBay ask
+2026-10-26,"LOTR Scene Box - Gandalf in Pelennor Fields","LOTR: Tales of Middle-earth",1,23.99,52.67,0.23,119.55,2024-11-28,TCGplayer market price
+2026-10-26,"The Hobbit Scene Box - Treasures of Smaug","The Hobbit",1,44.93,51.54,0.22,14.71,2026-05-01,TCGplayer market price
+2026-10-26,"The Hobbit Bundle","The Hobbit",1,74.89,45.69,0.20,-38.99,2026-05-01,TCGplayer market price
+2026-10-26,"Portal Starter Set Demo / Sealed Pack","Vintage / Legacy sealed",1,63.56,44.84,0.19,-29.45,2026-05-11,lowest eBay ask
+2026-10-26,"Fifth Edition Booster Pack","Vintage / Legacy sealed",1,46.74,41.34,0.18,-11.55,2026-05-06,TCGplayer market price
+2026-10-26,"The Hobbit Scene Box - Crack the Plates","The Hobbit",1,44.93,41.01,0.18,-8.72,2026-05-01,TCGplayer market price
+2026-10-26,"LOTR Collector Booster Sample Pack","LOTR: Tales of Middle-earth",2,26.41,37.94,0.16,43.66,2025-11-25,TCGplayer market price
+2026-10-26,"Fallen Empires Booster Pack","Vintage / Legacy sealed",3,38.37,37.02,0.16,-3.52,2025-11-25,TCGplayer market price
+2026-10-26,"Chronicles Booster Pack","Vintage / Legacy sealed",1,26.74,22.00,0.09,-17.73,2026-05-11,lowest eBay ask
+2026-10-26,"LOTR Collector Booster Sample Pack","LOTR: Tales of Middle-earth",1,11.72,18.97,0.08,61.86,2025-11-25,TCGplayer market price
+2026-10-26,"Fallen Empires Booster Pack","Vintage / Legacy sealed",1,19.25,12.34,0.05,-35.90,2026-05-11,TCGplayer market price
+2026-10-26,"The Hobbit Play Booster Pack (sleeved retail blister)","The Hobbit",2,14.96,10.36,0.04,-30.75,2026-10-17,TCGplayer market price
