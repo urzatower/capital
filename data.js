@@ -4,9 +4,9 @@
 // Built by 01_Engines/report_engine/capital_site_data.py. Do not hand edit.
 var DATA = {
   summary: {
-    nav: 22999.67, invested: 18653.38, perf_pct: 23.3, positions: 60,
-    marked: 60, marked_pct: 100.0, feed_start: "2024-02-08",
-    mwr_pct: 23.3, mwr_irr_pct: 62.0, twr_pct: 131.8,
+    nav: 24247.92, invested: 19986.52, perf_pct: 21.32, positions: 62,
+    marked: 62, marked_pct: 100.0, feed_start: "2024-02-08",
+    mwr_pct: 21.32, mwr_irr_pct: 62.08, twr_pct: 131.85,
     capital_years: 6482.0, avg_capital: 2699.6, bench_pct: 49.09,
     first_acq: "2024-06-06", inception: "2024-11-01", asof: "2026-10-31"
   },
@@ -94,12 +94,12 @@ var DATA = {
     ["2026-10-25", 22653.25, 18653.38, 21.44, 58, 60, 135.12, 68.84, 48.41], ["2026-10-26", 22707.02, 18653.38, 21.73, 60, 60, 134.47, 69.21, 48.87],
     ["2026-10-27", 22655.47, 18653.38, 21.46, 60, 60, 133.94, 67.73, 48.79], ["2026-10-28", 22604.15, 18653.38, 21.18, 60, 60, 133.41, 66.27, 48.75],
     ["2026-10-29", 22475.87, 18653.38, 20.49, 60, 60, 132.08, 63.5, 48.81], ["2026-10-30", 22479.79, 18653.38, 20.51, 60, 60, 132.12, 63.04, 49.16],
-    ["2026-10-31", 22448.35, 18653.38, 20.34, 60, 60, 131.8, 62.0, 49.09]
+    ["2026-10-31", 23786.36, 19986.52, 19.01, 60, 62, 131.85, 62.08, 49.09]
   ],
   buckets: [
     ["Vintage / Legacy sealed", 7428.23, 8730.76, 17.53],
+    ["The Hobbit", 4576.14, 3574.46, -21.89],
     ["LOTR: Tales of Middle-earth", 3457.86, 7995.08, 131.21],
-    ["The Hobbit", 3243.0, 2331.08, -28.12],
     ["Marvel Super Heroes", 1287.55, 1131.95, -12.08],
     ["Phyrexia: All Will Be One", 1283.99, 1139.3, -11.27],
     ["Reality Fracture", 791.74, 486.84, -38.51],
@@ -107,7 +107,7 @@ var DATA = {
     ["Other collectibles", 190.46, 430.0, 125.77],
     ["Sorcery: Contested Realm", 187.2, 174.95, -6.54],
     ["March of the Machine", 146.89, 156.91, 6.82],
-    ["Pokemon", 144.97, 55.0, -62.06],
+    ["Pokemon", 144.97, 59.87, -58.7],
     ["Marvel's Spider-Man", 78.1, 93.6, 19.85]
   ],
   holdings: [
@@ -119,6 +119,8 @@ var DATA = {
     ["Revised Edition Starter Deck", "Vintage / Legacy sealed", 1, 864.03, 946.93, 9.59, "2026-10-16", true, "TCGplayer market price"],
     ["The Hobbit Collector Booster Display", "The Hobbit", 1, 839.85, 621.69, -25.98, "2026-07-18", true, "TCGplayer market price"],
     ["The Hobbit Collector Booster Box", "The Hobbit", 1, 795.0, 621.69, -21.8, "2026-08-13", true, "TCGplayer market price"],
+    ["The Hobbit Collector Booster Display", "The Hobbit", 1, 666.59, 621.69, -6.74, "2026-10-31", true, "TCGplayer market price"],
+    ["The Hobbit Collector Booster Display", "The Hobbit", 1, 666.55, 621.69, -6.73, "2026-10-31", true, "TCGplayer market price"],
     ["Reality Fracture Collector Booster Box", "Reality Fracture", 1, 641.95, 365.7, -43.03, "2026-09-07", true, "TCGplayer market price"],
     ["Antiquities Booster Pack", "Vintage / Legacy sealed", 1, 535.0, 566.75, 5.93, "2026-05-13", true, "TCGplayer market price"],
     ["Fallen Empires Booster Box (sealed)", "Vintage / Legacy sealed", 1, 534.99, 573.22, 7.15, "2026-08-08", true, "TCGplayer market price"],
@@ -141,7 +143,7 @@ var DATA = {
     ["Reality Fracture Play Booster Box", "Reality Fracture", 1, 149.79, 121.14, -19.13, "2026-09-08", true, "TCGplayer market price"],
     ["Urza's Legacy Booster Pack", "Vintage / Legacy sealed", 1, 147.93, 138.02, -6.7, "2026-05-13", true, "TCGplayer market price"],
     ["March of the Machine Jumpstart Booster Box", "March of the Machine", 1, 146.89, 156.91, 6.82, "2026-10-07", true, "TCGplayer market price"],
-    ["Pokemon TCG: 30th Celebration Booster Bundle", "Pokemon", 1, 144.97, 55.0, -62.06, "2026-09-08", true, "lowest eBay ask"],
+    ["Pokemon TCG: 30th Celebration Booster Bundle", "Pokemon", 1, 144.97, 59.87, -58.7, "2026-09-08", true, "lowest eBay ask"],
     ["Fifth Edition Starter Deck", "Vintage / Legacy sealed", 1, 141.23, 131.79, -6.68, "2026-08-01", true, "TCGplayer market price"],
     ["Marvel Super Heroes Play Booster Box", "Marvel Super Heroes", 1, 127.28, 107.78, -15.32, "2026-05-30", true, "TCGplayer market price"],
     ["Marvel Super Heroes Jumpstart Booster Box", "Marvel Super Heroes", 1, 122.99, 101.67, -17.33, "2026-06-08", true, "TCGplayer market price"],
@@ -172,8 +174,8 @@ var DATA = {
     ["The Hobbit Play Booster Pack (sleeved retail blister)", "The Hobbit", 2, 14.96, 10.74, -28.21, "2026-10-17", true, "TCGplayer market price"],
     ["LOTR Collector Booster Sample Pack", "LOTR: Tales of Middle-earth", 1, 11.72, 18.94, 61.6, "2025-11-25", true, "TCGplayer market price"]
   ],
-  monthly: [[2024, 11, -19.58, 2, 0.65], [2024, 12, 4.96, 3, 0.93], [2025, 1, 18.21, 3, 0.49], [2025, 2, 2.36, 3, 0.25], [2025, 3, 14.13, 3, 1.06], [2025, 4, -0.34, 3, 0.79], [2025, 5, -11.49, 3, 1.03], [2025, 6, 7.25, 3, 1.49], [2025, 7, 11.56, 3, 1.99], [2025, 8, 5.07, 3, 3.18], [2025, 9, 7.74, 3, 1.94], [2025, 10, 3.55, 4, 0.0], [2025, 11, 0.4, 4, -0.28], [2025, 12, -0.11, 7, -0.1], [2026, 1, -2.56, 7, 2.37], [2026, 2, -1.23, 8, 2.45], [2026, 3, 9.25, 8, 3.39], [2026, 4, 3.26, 8, 1.7], [2026, 5, 10.79, 24, 1.3], [2026, 6, 26.13, 28, 5.17], [2026, 7, 3.94, 29, 3.95], [2026, 8, 4.31, 38, 3.45], [2026, 9, 2.62, 45, 2.31], [2026, 10, -5.05, 60, 0.96]],
-  yearly: [[2024, -15.59, 1.59], [2025, 71.34, 12.44], [2026, 60.28, 30.5]],
+  monthly: [[2024, 11, -19.58, 2, 0.65], [2024, 12, 4.96, 3, 0.93], [2025, 1, 18.21, 3, 0.49], [2025, 2, 2.36, 3, 0.25], [2025, 3, 14.13, 3, 1.06], [2025, 4, -0.34, 3, 0.79], [2025, 5, -11.49, 3, 1.03], [2025, 6, 7.25, 3, 1.49], [2025, 7, 11.56, 3, 1.99], [2025, 8, 5.07, 3, 3.18], [2025, 9, 7.74, 3, 1.94], [2025, 10, 3.55, 4, 0.0], [2025, 11, 0.4, 4, -0.28], [2025, 12, -0.11, 7, -0.1], [2026, 1, -2.56, 7, 2.37], [2026, 2, -1.23, 8, 2.45], [2026, 3, 9.25, 8, 3.39], [2026, 4, 3.26, 8, 1.7], [2026, 5, 10.79, 24, 1.3], [2026, 6, 26.13, 28, 5.17], [2026, 7, 3.94, 29, 3.95], [2026, 8, 4.31, 38, 3.45], [2026, 9, 2.62, 45, 2.31], [2026, 10, -5.03, 60, 0.96]],
+  yearly: [[2024, -15.59, 1.59], [2025, 71.34, 12.44], [2026, 60.31, 30.5]],
   thin_book: 5,
   benchmark: {"name": "Sealed Magic booster box index", "base_date": "2024-11-01", "as_of": "2026-10-31", "constituents": 245, "since_inception_pct": 49.09, "first_observation": "2024-02-08", "method": "Capped value-weighted, chain-linked index of every Magic booster box priced by TCGplayer (market price; weekly archive from 2024-02-08, daily from 2026-08-28). No box above 10% of the basket; a price that moves more than fivefold between observations is treated as an error. Rebased to the book's inception."}
 };

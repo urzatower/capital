@@ -6,19 +6,19 @@
     "source": "portfolio_ledger.json"
   },
   "summary": {
-    "nav": 22999.67,
-    "invested": 18653.38,
-    "perf_pct": 23.3,
-    "positions": 60,
-    "marked": 60,
+    "nav": 24247.92,
+    "invested": 19986.52,
+    "perf_pct": 21.32,
+    "positions": 62,
+    "marked": 62,
     "marked_pct": 100.0,
     "first_acq": "2024-06-06",
     "inception": "2024-11-01",
     "feed_start": "2024-02-08",
     "asof": "2026-10-31",
-    "mwr_pct": 23.3,
-    "mwr_irr_pct": 62.0,
-    "twr_pct": 131.8,
+    "mwr_pct": 21.32,
+    "mwr_irr_pct": 62.08,
+    "twr_pct": 131.85,
     "capital_years": 6482.0,
     "avg_capital": 2699.6,
     "bench_pct": 49.09
@@ -1863,13 +1863,13 @@
     ],
     [
       "2026-10-31",
-      22448.35,
-      18653.38,
-      20.34,
+      23786.36,
+      19986.52,
+      19.01,
       60,
-      60,
-      131.8,
-      62.0,
+      62,
+      131.85,
+      62.08,
       49.09
     ]
   ],
@@ -1887,16 +1887,16 @@
       17.53
     ],
     [
+      "The Hobbit",
+      4576.14,
+      3574.46,
+      -21.89
+    ],
+    [
       "LOTR: Tales of Middle-earth",
       3457.86,
       7995.08,
       131.21
-    ],
-    [
-      "The Hobbit",
-      3243.0,
-      2331.08,
-      -28.12
     ],
     [
       "Marvel Super Heroes",
@@ -1943,8 +1943,8 @@
     [
       "Pokemon",
       144.97,
-      55.0,
-      -62.06
+      59.87,
+      -58.7
     ],
     [
       "Marvel's Spider-Man",
@@ -2050,6 +2050,28 @@
       621.69,
       -21.8,
       "2026-08-13",
+      true,
+      "TCGplayer market price"
+    ],
+    [
+      "The Hobbit Collector Booster Display",
+      "The Hobbit",
+      1,
+      666.59,
+      621.69,
+      -6.74,
+      "2026-10-31",
+      true,
+      "TCGplayer market price"
+    ],
+    [
+      "The Hobbit Collector Booster Display",
+      "The Hobbit",
+      1,
+      666.55,
+      621.69,
+      -6.73,
+      "2026-10-31",
       true,
       "TCGplayer market price"
     ],
@@ -2300,8 +2322,8 @@
       "Pokemon",
       1,
       144.97,
-      55.0,
-      -62.06,
+      59.87,
+      -58.7,
       "2026-09-08",
       true,
       "lowest eBay ask"
@@ -2807,7 +2829,7 @@
     [
       2026,
       10,
-      -5.05,
+      -5.03,
       60,
       0.96
     ]
@@ -2825,7 +2847,7 @@
     ],
     [
       2026,
-      60.28,
+      60.31,
       30.5
     ]
   ],
